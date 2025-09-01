@@ -8,7 +8,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        currentWepaon.Fire();
+        if(Input.GetButton("Fire1"))
+            currentWepaon.Fire();
     }
 
 }
