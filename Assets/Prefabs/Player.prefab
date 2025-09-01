@@ -343,6 +343,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1841799004909324204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4797062715503371578}
+  - component: {fileID: 5775854514814204955}
+  m_Layer: 8
+  m_Name: BombWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4797062715503371578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841799004909324204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4959698181846369732}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5775854514814204955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841799004909324204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2c4fd2424e1374e81e752fcd76e24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: 9352cf2b9f9b07c42a70eb1eb16f66f8, type: 2}
+  firePoint: {fileID: 9210927539604299523}
+  spreadCircle: {fileID: 0}
 --- !u!1 &1846700310788561516
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +554,7 @@ Transform:
   - {fileID: 1583163543935525544}
   - {fileID: 9210927539604299523}
   - {fileID: 7585518747232182608}
+  - {fileID: 4797062715503371578}
   - {fileID: 2055261511377793169}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -586,6 +634,8 @@ MonoBehaviour:
   weapon: {fileID: 4099000881596288707}
   defaultWeaponData: {fileID: 11400000, guid: 00f6bfc07a0482042b2b21b19ff06be8, type: 2}
   subWeaponData: {fileID: 11400000, guid: b910d25284b10be4ab16b46851d1aad7, type: 2}
+  bombWeapon: {fileID: 5775854514814204955}
+  bombCount: 3
 --- !u!114 &3281789081572713383
 MonoBehaviour:
   m_ObjectHideFlags: 0

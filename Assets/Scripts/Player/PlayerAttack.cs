@@ -5,8 +5,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Weapon weapon;
     [SerializeField] private WeaponData defaultWeaponData;
     [SerializeField] private WeaponData subWeaponData;
+    [SerializeField] private Weapon bombWeapon;
+    [SerializeField] private int bombCount = 3;
+
     private bool isUsingDefaultWeapon = true;
     private PlayerAnimationController animationController;
+
 
     private void Start()
     {
@@ -17,29 +21,39 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            weapon?.Fire();
-            animationController.SetBool_Upper("IsShooting", true);
-
-            if (!isUsingDefaultWeapon)
-            {
-                if (weapon.CurrentAmmo <= 0)
-                {
-                    SwitchWeapon();
-                    subWeaponData = null;
-                }
-            }
-        }
+        if (Input.GetMouseButton(0)) Fire();
         else if (Input.GetMouseButtonUp(0))
-        {
             animationController.SetBool_Upper("IsShooting", false);
-        }
 
         if (Input.GetKeyDown(KeyCode.Q))
-        {
             SwitchWeapon();
+
+        if (Input.GetMouseButtonDown(1))
+            UseBomb();
+    }
+
+    public void Fire()
+    {
+        weapon?.Fire();
+        animationController.SetBool_Upper("IsShooting", true);
+
+        if (!isUsingDefaultWeapon)
+        {
+            if (weapon.CurrentAmmo <= 0)
+            {
+                SwitchWeapon();
+                subWeaponData = null;
+            }
         }
+    }
+
+    public void UseBomb()
+    {
+        if (bombCount <= 0) return;
+
+        bombCount--;
+        bombWeapon?.Fire();
+        Debug.Log("ÆøÅº »ç¿ë!!! ³²Àº ÆøÅº: " + bombCount);
     }
 
     public void SwitchWeapon()
