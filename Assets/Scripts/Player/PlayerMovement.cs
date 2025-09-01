@@ -15,10 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayerMask; // 바닥 레이어 마스크
     [SerializeField] private float groundCheckDistance = 0.4f; // 바닥 체크 거리
 
+    private bool isSitting = false;
     private Rigidbody2D rb;
     private PlayerOneWayPlatform oneWayPlatform;
     private PlayerAnimationController animationController;
-
 
     void Start()
     {
@@ -26,32 +26,45 @@ public class PlayerMovement : MonoBehaviour
         oneWayPlatform = GetComponent<PlayerOneWayPlatform>();
         animationController = GetComponent<PlayerAnimationController>();
     }
-
     void Update()
     {
-        // 좌우 이동
+        HandleMovement();
+        HandleJumpAndSit();
+        ApplyGravityModifiers();
+    }
+
+    private void HandleMovement()
+    {
+        if (isSitting) return;
+
         float moveX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
 
-        animationController.SetBool_Upper("IsMoving", moveX != 0);
-        animationController.SetBool_Lower("IsMoving", moveX != 0);
+        bool isMoving = moveX != 0;
+        animationController.SetBool_Upper("IsMoving", isMoving);
+        animationController.SetBool_Lower("IsMoving", isMoving);
+        animationController.SetAnimSpeed(moveX >= 0 ? 1f : -1f);
+    }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+    private void HandleJumpAndSit()
+    {
+        bool isSittingInput = Input.GetKey(KeyCode.S);
+        bool isJumpingInput = Input.GetButton("Jump");
+
+        if (IsGrounded())
         {
-            // 뛰어내리기
-            if (Input.GetKey(KeyCode.S))
+            isSitting = isSittingInput;
+
+            if (isJumpingInput)
             {
-                oneWayPlatform.Drop();
-            }
-            // 점프
-            else
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                if (isSittingInput)
+                    oneWayPlatform.Drop();
+                else
+                    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
         }
 
-        animationController.SetAnimSpeed(moveX >= 0 ? 1f : -1f);
-
+        // 애니메이션 상태 업데이트
         if (oneWayPlatform.IsDropping)
         {
             animationController.SetBool_Upper("IsDropping", true);
@@ -63,9 +76,13 @@ public class PlayerMovement : MonoBehaviour
             animationController.SetBool_Lower("IsDropping", false);
             animationController.SetBool_Lower("IsJumping", !IsGrounded());
             animationController.SetBool_Upper("IsJumping", !IsGrounded());
+            animationController.SetBool_Lower("IsSitting", isSittingInput);
+            animationController.SetUpperActive(!isSittingInput);
         }
+    }
 
-        // === 중력 보정 ===
+    private void ApplyGravityModifiers()
+    {
         if (rb.velocity.y < 0) // 하강 중
             rb.velocity += Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime * Vector2.up;
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) // 상승 중인데 버튼을 뗀 경우

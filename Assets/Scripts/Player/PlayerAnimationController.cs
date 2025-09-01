@@ -21,4 +21,13 @@ public class PlayerAnimationController : MonoBehaviour
         upperBodyAnimator.SetFloat("Speed", speed);
         lowerBodyAnimator.SetFloat("Speed", speed);
     }
+
+    public void SetUpperActive(bool active)
+    {
+        upperBodyAnimator.gameObject.SetActive(active);
+    }
+
+    public void SetLowerActive(bool active) {
+        lowerBodyAnimator.gameObject.SetActive(active);
+    }
 }
