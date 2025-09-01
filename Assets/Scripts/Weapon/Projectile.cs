@@ -4,7 +4,6 @@ public class Projectile : MonoBehaviour
 {
     public float speed = 10f;
     public int damage = 20;
-    public float lifetime = 5f;
     public GameObject hitEffect;
 
     private Rigidbody2D rb;
@@ -17,7 +16,11 @@ public class Projectile : MonoBehaviour
     private void Start()
     {
         SetDirection(transform.right); // 초기 방향 설정
-        Destroy(gameObject, lifetime);
+    }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 
     public void SetDirection(Vector2 direction)
