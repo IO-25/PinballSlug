@@ -377,7 +377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4959698181846369732}
   attackDamage: 1
-  attackRate: 0.4
+  attackRate: 0.2
   bulletPrefab: {fileID: 6532974473074499661, guid: ccc6598f944425640ad04cb8bb1cfd6d, type: 3}
 --- !u!1 &7062296982023713364
 GameObject:
