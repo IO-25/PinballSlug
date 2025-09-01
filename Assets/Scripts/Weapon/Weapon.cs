@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
 
     [Header("탄 퍼짐 설정")]
     [SerializeField] private GameObject spreadCircle; // 퍼짐 범위 시각화용 오브젝트
-    [SerializeField] private float baseSpread = 0f;    // 최소 퍼짐 각도(도 단위)
+    [SerializeField] private float minSpread = 0f;    // 최소 퍼짐 각도(도 단위)
     [SerializeField] private float maxSpread = 15f;    // 최대 퍼짐 각도
     [SerializeField] private float maxDistance = 10f;  // 최대 거리(이 이상이면 maxSpread 적용)
 
@@ -28,9 +28,9 @@ public class Weapon : MonoBehaviour
 
         // 거리 비율 계산
         float t = Mathf.Clamp01(distance / maxDistance);
-        float spread = Mathf.Lerp(baseSpread, maxSpread, t);
+        float spread = Mathf.Lerp(minSpread, maxSpread, t);
 
-        Debug.Log($"Distance: {distance}, Spread: {spread}");
+        // 탄 퍼짐 원 조정
         spreadCircle.transform.position = end;
         spreadCircle.transform.localScale = Vector3.one * (Mathf.Tan(spread * Mathf.Deg2Rad) * distance * 2f);
     }
@@ -48,7 +48,7 @@ public class Weapon : MonoBehaviour
 
         // 거리 비율 계산
         float t = Mathf.Clamp01(distance / maxDistance);
-        float spread = Mathf.Lerp(baseSpread, maxSpread, t);
+        float spread = Mathf.Lerp(minSpread, maxSpread, t);
 
         // 랜덤 각도 추가
         float randomAngle = Random.Range(-spread, spread);
