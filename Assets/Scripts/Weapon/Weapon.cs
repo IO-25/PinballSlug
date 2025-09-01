@@ -6,7 +6,16 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject spreadCircle; // 퍼짐 범위 시각화용 오브젝트
 
+    private int currentAmmo;
     private float nextAttackTime = 0f;
+
+    public int CurrentAmmo => currentAmmo;
+
+    public void Initialize(WeaponData newWeaponData)
+    {
+        weaponData = newWeaponData;
+        currentAmmo = weaponData.maxAmmo;
+    }
 
     private void Update()
     {
@@ -29,6 +38,7 @@ public class Weapon : MonoBehaviour
     public virtual void Fire()
     {
         if (Time.time < nextAttackTime) return;
+        if (weaponData.useAmmo && currentAmmo <= 0) return;
 
         nextAttackTime = Time.time + weaponData.attackRate;
 
@@ -46,7 +56,13 @@ public class Weapon : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + randomAngle;
         Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
 
+        // 탄환 생성
         Instantiate(weaponData.bulletPrefab, firePoint.position, rot);
+
+        // 탄약 감소
+        if(weaponData.useAmmo)
+            currentAmmo = Mathf.Max(0, currentAmmo - 1);
+        Debug.Log($"Current Ammo: {currentAmmo}");
     }
 
 }

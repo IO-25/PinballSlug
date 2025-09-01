@@ -501,7 +501,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -823,6 +823,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1436190948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4099000881596288707, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+  m_PrefabInstance: {fileID: 8940883815177938432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2c4fd2424e1374e81e752fcd76e24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8940883815177938432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,6 +890,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6591215267978983056, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 1436190948}
+    - target: {fileID: 6591215267978983056, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+      propertyPath: weaponObject
+      value: 
+      objectReference: {fileID: 1436190948}
+    - target: {fileID: 6591215267978983056, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+      propertyPath: subWeaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: b910d25284b10be4ab16b46851d1aad7, type: 2}
+    - target: {fileID: 6591215267978983056, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+      propertyPath: defaultWeaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: 00f6bfc07a0482042b2b21b19ff06be8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
