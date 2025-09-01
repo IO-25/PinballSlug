@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     BoxCollider2D enemyCollider;
 
     [Header("Àû Á¤º¸")]
+    public int maxHealth = 0;
     public int curHealth = 0;
     bool isInitialized = false;
 
@@ -22,6 +23,7 @@ public class Enemy : MonoBehaviour
     {
         if (isInitialized)
             return;
+        maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
         enemySprite = referenceEnemy.enemySprite;
         enemyCollider.size = referenceEnemy.enemySize;
