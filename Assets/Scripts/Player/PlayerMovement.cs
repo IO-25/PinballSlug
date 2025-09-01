@@ -35,13 +35,6 @@ public class PlayerMovement : MonoBehaviour
 
         animationController.SetBool_Upper("IsMoving", moveX != 0);
         animationController.SetBool_Lower("IsMoving", moveX != 0);
-        
-        animationController.SetAnimSpeed(moveX >= 0 ? 1f : -1f);
-
-        Debug.Log(IsGrounded());
-        animationController.SetBool_Lower("IsJumping", !IsGrounded());
-        animationController.SetBool_Upper("IsJumping", !IsGrounded());
-
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
@@ -55,6 +48,21 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
+        }
+
+        animationController.SetAnimSpeed(moveX >= 0 ? 1f : -1f);
+
+        if (oneWayPlatform.IsDropping)
+        {
+            animationController.SetBool_Upper("IsDropping", true);
+            animationController.SetBool_Lower("IsDropping", true);
+        }
+        else
+        {
+            animationController.SetBool_Upper("IsDropping", false);
+            animationController.SetBool_Lower("IsDropping", false);
+            animationController.SetBool_Lower("IsJumping", !IsGrounded());
+            animationController.SetBool_Upper("IsJumping", !IsGrounded());
         }
 
         // === 중력 보정 ===
