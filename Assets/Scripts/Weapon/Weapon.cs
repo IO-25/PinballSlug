@@ -2,19 +2,20 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [Header("공격 관련")]
+    [SerializeField] private WeaponData weaponData;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private float attackDamage = 1;
-    [SerializeField] private float attackRate = 1f;
-    [SerializeField] private GameObject bulletPrefab;
-
-    [Header("탄 퍼짐 설정")]
     [SerializeField] private GameObject spreadCircle; // 퍼짐 범위 시각화용 오브젝트
-    [SerializeField] private float minSpread = 0f;    // 최소 퍼짐 각도(도 단위)
-    [SerializeField] private float maxSpread = 15f;    // 최대 퍼짐 각도
-    [SerializeField] private float maxDistance = 10f;  // 최대 거리(이 이상이면 maxSpread 적용)
 
+    private int currentAmmo;
     private float nextAttackTime = 0f;
+
+    public int CurrentAmmo => currentAmmo;
+
+    public void Initialize(WeaponData newWeaponData)
+    {
+        weaponData = newWeaponData;
+        currentAmmo = weaponData.maxAmmo;
+    }
 
     private void Update()
     {
@@ -26,8 +27,8 @@ public class Weapon : MonoBehaviour
         float distance = Vector2.Distance(start, end);
 
         // 거리 비율 계산
-        float t = Mathf.Clamp01(distance / maxDistance);
-        float spread = Mathf.Lerp(minSpread, maxSpread, t);
+        float t = Mathf.Clamp01(distance / weaponData.maxDistance);
+        float spread = Mathf.Lerp(weaponData.minSpread, weaponData.maxSpread, t);
 
         // 탄 퍼짐 원 조정
         spreadCircle.transform.position = end;
@@ -37,8 +38,9 @@ public class Weapon : MonoBehaviour
     public virtual void Fire()
     {
         if (Time.time < nextAttackTime) return;
+        if (weaponData.useAmmo && currentAmmo <= 0) return;
 
-        nextAttackTime = Time.time + attackRate;
+        nextAttackTime = Time.time + weaponData.attackRate;
 
         Vector2 start = firePoint.position;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -46,15 +48,21 @@ public class Weapon : MonoBehaviour
         float distance = Vector2.Distance(start, end);
 
         // 거리 비율 계산
-        float t = Mathf.Clamp01(distance / maxDistance);
-        float spread = Mathf.Lerp(minSpread, maxSpread, t);
+        float t = Mathf.Clamp01(distance / weaponData.maxDistance);
+        float spread = Mathf.Lerp(weaponData.minSpread, weaponData.maxSpread, t);
 
         // 랜덤 각도 추가
         float randomAngle = Random.Range(-spread, spread);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + randomAngle;
         Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
 
-        Instantiate(bulletPrefab, firePoint.position, rot);
+        // 탄환 생성
+        Instantiate(weaponData.bulletPrefab, firePoint.position, rot);
+
+        // 탄약 감소
+        if(weaponData.useAmmo)
+            currentAmmo = Mathf.Max(0, currentAmmo - 1);
+        Debug.Log($"Current Ammo: {currentAmmo}");
     }
 
 }
