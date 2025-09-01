@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77129e1fff21e0f4d9484a6ac7f81247, type: 3}
   m_Name: TestWepaonData01
   m_EditorClassIdentifier: 
-  weaponName: New Weapon
+  weaponName: DefaultWeapon
   weaponIcon: {fileID: 0}
   bulletPrefab: {fileID: 6532974473074499661, guid: ccc6598f944425640ad04cb8bb1cfd6d, type: 3}
   attackDamage: 1
