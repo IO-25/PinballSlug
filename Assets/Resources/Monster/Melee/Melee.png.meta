@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 853226f0b53e10746988cdd2c101de51
+guid: 2b0d6d732389a484bbd69e601faea09e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,76 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ranged_Run_0
+      name: Melee_run_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 483
-        width: 44
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29ba1c44638fad445b22f36109c1eaed
-      internalID: -1436913835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 483
-        width: 44
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65a8325a2b3237648be419992a927560
-      internalID: -918223402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_2
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 483
-        width: 44
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f857251ad94cdd24e9315109ed1392ba
-      internalID: -170903130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_3
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 483
-        width: 43
-        height: 38
+        x: 2
+        y: 1067
+        width: 51
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,743 +150,932 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9974ea63387b7b044bfce4eed49a6334
-      internalID: -761881537
+      spriteID: 870f9d0f7928d6f4cb2c826106b153c5
+      internalID: -2060852077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Run_4
+      name: Melee_run_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 483
-        width: 43
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 55
+        y: 1067
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e67b2d95f5ef84096ddec986de888a
-      internalID: -1223744544
+      spriteID: 6bcd8966f9fa3c04f9ad632ce8351b83
+      internalID: -1321762300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Run_5
+      name: Melee_run_2
       rect:
         serializedVersion: 2
-        x: 238
-        y: 483
-        width: 43
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e12e664de3f97244ba60d8e18a9c456
-      internalID: -839717917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_6
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 483
-        width: 43
-        height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5511045274843d45a34cc462c1a61f8
-      internalID: -1300400177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_7
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 483
-        width: 44
-        height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad34d87b6d1b05d4bb68099fc4fc690c
-      internalID: -904816433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_8
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 442
-        width: 44
-        height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dec80895e1c87264fae75625ae1e017d
-      internalID: 1899965022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_9
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 442
-        width: 44
-        height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a93d50c1365cc34abf71a253d7c544f
-      internalID: 437570117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_10
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 442
-        width: 43
-        height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42250cee8f098c64c912196fd92d2e28
-      internalID: 1944079037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_11
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 442
-        width: 44
-        height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19ccb097450720a419975518a255638c
-      internalID: -660061250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_12
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 442
-        width: 43
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22a4791dedb96544dbdb281ad36164a7
-      internalID: -794829528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_13
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 442
-        width: 43
-        height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bd78653bdaa15546a25e5dfe3bb1b06
-      internalID: 1075114433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_14
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 442
-        width: 44
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bc37000d0885384689736168971a6b2
-      internalID: -393098714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Run_15
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 442
-        width: 44
-        height: 39
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52eb5c62e4004d540b99f404c7770baa
-      internalID: 604007883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_2
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 197
-        width: 54
-        height: 44
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc7737ff68f3df34ea2e8529c1f3a8b3
-      internalID: 1064763971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_4
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 197
-        width: 63
-        height: 43
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a6e1ef0e1fe4d64bbd04834ea8c9e13
-      internalID: 1010378108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_5
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 197
-        width: 64
-        height: 54
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec619673db0b58d46bd475d2bdc9bd3f
-      internalID: 1454992766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_0
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 197
-        width: 44
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4e80942565fc9b41bf70f2270a5336e
-      internalID: -1395974263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 197
-        width: 49
-        height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f44001bddb1c6d74ea434755f84fc827
-      internalID: -2087163545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_3
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 197
-        width: 55
-        height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3edc5ebe807c7764e985644f4611a932
-      internalID: 1542780637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_6
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 134
-        width: 61
-        height: 52
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e79c67b62524ee940bef7f7ff6b1fae3
-      internalID: 1437315179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_7
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 134
-        width: 54
-        height: 51
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: daa15fe597ca65f4eac2c1ee8560d6be
-      internalID: -1697860066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_8
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 134
+        x: 108
+        y: 1067
         width: 50
-        height: 57
-      alignment: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ca9b477f0e2524cadf94de65553302
+      internalID: 396814484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_run_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1067
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e8382581552f642bbe6c5aef0cc3f9
+      internalID: -1801143597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_run_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1067
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bc71dbbad100d4381e7f107e0c4852
+      internalID: -1312858706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_run_5
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1067
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630adc13017e0db4895750235f443513
+      internalID: -314357757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_run_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1067
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde315408005f73409fd18fa5c0ef7d7
+      internalID: 724214074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_run_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1067
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e7bf45da2e51e4aaa9796f377934e6
+      internalID: -378486576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_run_8
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1066
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f736bc8f4da80c742b7faadfb4a3e752
+      internalID: 1289267198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_run_9
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1065
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6ef679539d5b647a587194af111c5d
+      internalID: 1446518292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 618
+        width: 39
+        height: 23
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64a2178f38ea65649b5f0fb25e25d4b4
-      internalID: -749207883
+      spriteID: eab216e360ed462459cdb2820a5adfa7
+      internalID: -375078303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_9
+      name: Melee_death_1
       rect:
         serializedVersion: 2
-        x: 187
-        y: 134
-        width: 46
-        height: 53
-      alignment: 6
+        x: 43
+        y: 618
+        width: 43
+        height: 24
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 101fa5c8fe18eca4186e71ec62a18755
-      internalID: -344760167
+      spriteID: c70fb29257d9bf84399cb39dc6aaf680
+      internalID: -390615278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_10
+      name: Melee_death_2
       rect:
         serializedVersion: 2
-        x: 237
-        y: 134
+        x: 88
+        y: 618
         width: 44
-        height: 52
-      alignment: 6
+        height: 27
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39ef1470f405cf64298872a242357aaa
-      internalID: -184989594
+      spriteID: 30d59486b1e860b4d86fe016261d517e
+      internalID: 232328431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_11
+      name: Melee_death_3
       rect:
         serializedVersion: 2
-        x: 285
-        y: 134
-        width: 45
-        height: 52
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5437c4bf15ae1e64ca33b4790033d31e
-      internalID: -1492918900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_12
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 134
-        width: 45
-        height: 53
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41b8bebcea5ae944a883d4854c4d5b59
-      internalID: -1260961588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_13
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 72
+        x: 134
+        y: 618
         width: 43
-        height: 53
-      alignment: 6
+        height: 31
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed8aa00f2168c24da263eb2a4482722
-      internalID: 1105786561
+      spriteID: bddc717e606c65147a64a9b96ccce7b1
+      internalID: 1546465212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_14
+      name: Melee_death_4
       rect:
         serializedVersion: 2
-        x: 51
-        y: 72
-        width: 43
-        height: 54
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b797e970c51bfa47a8d412ade3310c0
-      internalID: 1545470496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_15
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 72
-        width: 40
-        height: 56
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b84c791d31ba2c42916c3d7e256d49d
-      internalID: -450230613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_16
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 72
+        x: 179
+        y: 618
         width: 41
-        height: 57
-      alignment: 6
+        height: 27
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 780c507bb4084ba4aa4fdfa97759b1ca
-      internalID: -1778163899
+      spriteID: 00f6599841bd6904596fe62f19e3cddb
+      internalID: 49189708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_17
+      name: Melee_death_5
       rect:
         serializedVersion: 2
-        x: 188
-        y: 72
+        x: 222
+        y: 618
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044b432eee61119458e7d531a5949baf
+      internalID: 747982317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 618
         width: 35
-        height: 54
-      alignment: 6
+        height: 28
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59c117979ec3c2646bf766a73e084a62
-      internalID: 1020916661
+      spriteID: 07f4c47e18077a540b786201cb536971
+      internalID: 1465001685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_18
+      name: Melee_death_7
       rect:
         serializedVersion: 2
-        x: 228
-        y: 72
+        x: 301
+        y: 618
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6565d17f4957d49973bf682b91dffd
+      internalID: -517347653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 618
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099fbc25ecca1034ebeca5ac4bdca7d5
+      internalID: 817789420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_9
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 618
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b249e9516591f4d9df48c99c264645
+      internalID: -42403481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_10
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 618
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719eae964996f1042ac34a9850cda9bf
+      internalID: -1444845480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 618
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb096d8a2e04c143b60b37d47e8c428
+      internalID: -1038260477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_12
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 618
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e32a0789c537c54d86381f060cc11cb
+      internalID: -1165700039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_13
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 618
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca17de95720bcf4e86921367311e071
+      internalID: -2133702295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_14
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 618
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65886d851c2b0fd4984152ad1dd0dd21
+      internalID: -2085753725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_15
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 618
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190e5bea085cc9a4ab0aa522ac2b7a3a
+      internalID: 281721581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_death_16
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 618
         width: 35
-        height: 56
-      alignment: 6
+        height: 29
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80a5ea330aa5338498ff8eb32b5c92d4
-      internalID: 1842056991
+      spriteID: 3e23de53ccc2cec4b9a7d36d1e886682
+      internalID: 987923621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_19
+      name: Melee_death_17
       rect:
         serializedVersion: 2
-        x: 268
-        y: 78
-        width: 31
-        height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7feb219b5b471714faa89032d8a5f4fd
-      internalID: -1841162120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranged_Die_20
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 83
+        x: 705
+        y: 618
         width: 33
-        height: 32
-      alignment: 6
+        height: 27
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06f247f7fbab7614a94fb51ea4791e40
-      internalID: -267220737
+      spriteID: 96b648b8c735b244f8feeff7d598b0f1
+      internalID: 261601423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_21
+      name: Melee_death_18
       rect:
         serializedVersion: 2
-        x: 345
-        y: 82
+        x: 740
+        y: 618
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747598aa97e90e146b53c725e2370426
+      internalID: -712760334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 574
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7fdcd659f8d0949bc73797f4dcf55b
+      internalID: -16603268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 573
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961389a21c9e910479e86fa51e2cea25
+      internalID: 1088165910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 573
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b91eca3f8532e84bb93ca1e5fa0c589
+      internalID: -368163483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 573
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3142626a4762a40a25fe448640bb04
+      internalID: -1498451202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 573
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3647f00b3936149ab38626056068db
+      internalID: -637885531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 572
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d920dea69d1a74c86f0a825887d5dc
+      internalID: -1232974688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 572
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2322896cbdf80c9499648073455eacc3
+      internalID: 1316005984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 572
         width: 30
         height: 34
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a894d45a2fe1ae4c8a4383981de0500
-      internalID: -2005855489
+      spriteID: 7ade6fa70bf21514d81da2d594e1e8cc
+      internalID: -444010605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranged_Die_22
+      name: Melee_sfx_8
       rect:
         serializedVersion: 2
-        x: 10
-        y: 32
-        width: 61
-        height: 23
-      alignment: 6
+        x: 261
+        y: 572
+        width: 29
+        height: 34
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f106b64fe4c769e4b91db7604e17e091
-      internalID: 295880158
+      spriteID: 415ea47d810d0b14faba13e5dc647d60
+      internalID: -985139030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 572
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c387a06556614e4f9a07345e28543ac
+      internalID: 1626926783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 572
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7449bbf61a6eb4a478e3f65f75496885
+      internalID: 832788902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 572
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79e1b8534366fc43ab9a9a48403975b
+      internalID: 568230802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_12
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 572
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eaf0423e5d0775488af620bca90e416
+      internalID: -2038223881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_13
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 572
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0d44031e74b874a8923e2f28f36c1f
+      internalID: 418883130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_14
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 572
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df43f5db83ec4344ba62f490dc6413f
+      internalID: 1775047231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melee_sfx_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 572
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45ad3562f337db49b9e89887470e02c
+      internalID: -1757123225
       vertices: []
       indices: 
       edges: []
@@ -965,188 +1091,51 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ranged_0: 266638466
-      Ranged_100: 954064826
-      Ranged_101: 171522083
-      Ranged_102: -1295290713
-      Ranged_103: 980524494
-      Ranged_104: -366768189
-      Ranged_105: -375906551
-      Ranged_106: -1981307603
-      Ranged_107: 399470275
-      Ranged_108: -483821917
-      Ranged_109: 1596585080
-      Ranged_110: 886068746
-      Ranged_112: 848667558
-      Ranged_113: -271580276
-      Ranged_114: -194181589
-      Ranged_115: -111632670
-      Ranged_116: 220710379
-      Ranged_117: 1405522331
-      Ranged_118: -1157924748
-      Ranged_119: 945042862
-      Ranged_120: -1178893859
-      Ranged_121: -569229122
-      Ranged_122: 287916779
-      Ranged_123: 1080180754
-      Ranged_124: -1124104808
-      Ranged_125: -1579229455
-      Ranged_126: -1463159209
-      Ranged_127: 434216634
-      Ranged_128: -37972686
-      Ranged_129: 847412058
-      Ranged_130: 1714536552
-      Ranged_131: -908677629
-      Ranged_132: -878220857
-      Ranged_133: 1251439802
-      Ranged_134: 421409099
-      Ranged_135: 753862731
-      Ranged_136: -165533526
-      Ranged_137: -1667938077
-      Ranged_138: 499471031
-      Ranged_139: -1223306756
-      Ranged_140: 931677382
-      Ranged_141: -1375104121
-      Ranged_142: 258027097
-      Ranged_143: -2052623183
-      Ranged_144: -1837115320
-      Ranged_145: 725718670
-      Ranged_146: 1680169769
-      Ranged_147: 1505728917
-      Ranged_148: -1685010073
-      Ranged_149: 2139764026
-      Ranged_150: -658241663
-      Ranged_151: 599651076
-      Ranged_152: -26110646
-      Ranged_153: -1117374713
-      Ranged_154: 555291440
-      Ranged_155: -1752969982
-      Ranged_156: 252837420
-      Ranged_157: 1120525100
-      Ranged_158: -616175478
-      Ranged_159: -1697342370
-      Ranged_160: -2024047314
-      Ranged_161: -1212718233
-      Ranged_162: -804000302
-      Ranged_163: 1137831485
-      Ranged_164: -522193085
-      Ranged_165: 516409914
-      Ranged_166: -1945474108
-      Ranged_167: 1061932201
-      Ranged_168: 456520558
-      Ranged_169: -1791820398
-      Ranged_170: -651030496
-      Ranged_171: -1547777846
-      Ranged_172: -1347270742
-      Ranged_173: -1713035578
-      Ranged_174: 1701238749
-      Ranged_175: -1877674128
-      Ranged_176: 1686194416
-      Ranged_177: 482146058
-      Ranged_178: -1482940096
-      Ranged_179: 187796710
-      Ranged_180: -281459706
-      Ranged_32: -1826588280
-      Ranged_33: 1534916500
-      Ranged_34: -1635539420
-      Ranged_35: -225375816
-      Ranged_36: 560608586
-      Ranged_37: -1569964961
-      Ranged_38: 1348003396
-      Ranged_39: 534185105
-      Ranged_40: 566081931
-      Ranged_41: -1177334420
-      Ranged_42: 780443456
-      Ranged_43: -1462343281
-      Ranged_44: 1880549089
-      Ranged_45: -712810224
-      Ranged_46: 295582586
-      Ranged_47: 1918821121
-      Ranged_48: 1233030309
-      Ranged_49: 976383209
-      Ranged_50: -348285951
-      Ranged_51: 1548010980
-      Ranged_52: 640792263
-      Ranged_53: -1575784977
-      Ranged_54: -620562438
-      Ranged_55: 1930527433
-      Ranged_56: 1304498971
-      Ranged_57: 1726506342
-      Ranged_58: -1098879870
-      Ranged_59: 2087830666
-      Ranged_60: -291626604
-      Ranged_61: -56721748
-      Ranged_62: 1593430967
-      Ranged_63: 2005175351
-      Ranged_64: -1407399772
-      Ranged_65: 1799697655
-      Ranged_67: -1680718421
-      Ranged_68: 9520241
-      Ranged_69: -1992189924
-      Ranged_74: 399564574
-      Ranged_78: 2123470136
-      Ranged_84: -1446283627
-      Ranged_85: 1139624795
-      Ranged_91: 2046945837
-      Ranged_93: -1198267981
-      Ranged_94: -1269812699
-      Ranged_97: -1641126299
-      Ranged_99: 893913854
-      Ranged_Damaged_0: 1066303951
-      Ranged_Damaged_1: -1425489095
-      Ranged_Damaged_10: -576731657
-      Ranged_Damaged_11: 1471096026
-      Ranged_Damaged_12: -517343876
-      Ranged_Damaged_13: -834022637
-      Ranged_Damaged_14: -1837472155
-      Ranged_Damaged_15: -1486403497
-      Ranged_Damaged_2: -1209194787
-      Ranged_Damaged_3: 1051154131
-      Ranged_Damaged_4: 1395571671
-      Ranged_Damaged_5: -756077460
-      Ranged_Damaged_6: -1798802056
-      Ranged_Damaged_7: 337305921
-      Ranged_Damaged_8: 474232569
-      Ranged_Damaged_9: 619800951
-      Ranged_Die_0: -1395974263
-      Ranged_Die_1: -2087163545
-      Ranged_Die_10: -184989594
-      Ranged_Die_11: -1492918900
-      Ranged_Die_12: -1260961588
-      Ranged_Die_13: 1105786561
-      Ranged_Die_14: 1545470496
-      Ranged_Die_15: -450230613
-      Ranged_Die_16: -1778163899
-      Ranged_Die_17: 1020916661
-      Ranged_Die_18: 1842056991
-      Ranged_Die_19: -1841162120
-      Ranged_Die_2: 1064763971
-      Ranged_Die_20: -267220737
-      Ranged_Die_21: -2005855489
-      Ranged_Die_22: 295880158
-      Ranged_Die_3: 1542780637
-      Ranged_Die_4: 1010378108
-      Ranged_Die_5: 1454992766
-      Ranged_Die_6: 1437315179
-      Ranged_Die_7: -1697860066
-      Ranged_Die_8: -749207883
-      Ranged_Die_9: -344760167
-      Ranged_Run_0: -1436913835
-      Ranged_Run_1: -918223402
-      Ranged_Run_10: 1944079037
-      Ranged_Run_11: -660061250
-      Ranged_Run_12: -794829528
-      Ranged_Run_13: 1075114433
-      Ranged_Run_14: -393098714
-      Ranged_Run_15: 604007883
-      Ranged_Run_2: -170903130
-      Ranged_Run_3: -761881537
-      Ranged_Run_4: -1223744544
-      Ranged_Run_5: -839717917
-      Ranged_Run_6: -1300400177
-      Ranged_Run_7: -904816433
-      Ranged_Run_8: 1899965022
-      Ranged_Run_9: 437570117
+      Melee_death_0: -375078303
+      Melee_death_1: -390615278
+      Melee_death_10: -1444845480
+      Melee_death_11: -1038260477
+      Melee_death_12: -1165700039
+      Melee_death_13: -2133702295
+      Melee_death_14: -2085753725
+      Melee_death_15: 281721581
+      Melee_death_16: 987923621
+      Melee_death_17: 261601423
+      Melee_death_18: -712760334
+      Melee_death_2: 232328431
+      Melee_death_3: 1546465212
+      Melee_death_4: 49189708
+      Melee_death_5: 747982317
+      Melee_death_6: 1465001685
+      Melee_death_7: -517347653
+      Melee_death_8: 817789420
+      Melee_death_9: -42403481
+      Melee_run_0: -2060852077
+      Melee_run_1: -1321762300
+      Melee_run_2: 396814484
+      Melee_run_3: -1801143597
+      Melee_run_4: -1312858706
+      Melee_run_5: -314357757
+      Melee_run_6: 724214074
+      Melee_run_7: -378486576
+      Melee_run_8: 1289267198
+      Melee_run_9: 1446518292
+      Melee_sfx_0: -16603268
+      Melee_sfx_1: 1088165910
+      Melee_sfx_10: 832788902
+      Melee_sfx_11: 568230802
+      Melee_sfx_12: -2038223881
+      Melee_sfx_13: 418883130
+      Melee_sfx_14: 1775047231
+      Melee_sfx_15: -1757123225
+      Melee_sfx_2: -368163483
+      Melee_sfx_3: -1498451202
+      Melee_sfx_4: -637885531
+      Melee_sfx_5: -1232974688
+      Melee_sfx_6: 1316005984
+      Melee_sfx_7: -444010605
+      Melee_sfx_8: -985139030
+      Melee_sfx_9: 1626926783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
