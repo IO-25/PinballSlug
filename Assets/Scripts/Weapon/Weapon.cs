@@ -4,7 +4,6 @@ public class Weapon : MonoBehaviour
 {
     [Header("공격 관련")]
     [SerializeField] private Transform firePoint;
-    [SerializeField] private float accuracy = 1f;
     [SerializeField] private float attackDamage = 1;
     [SerializeField] private float attackRate = 1f;
     [SerializeField] private GameObject bulletPrefab;
