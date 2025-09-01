@@ -7,14 +7,15 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
 
     [Header("이동 관련")]
-    public float moveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 5f;
 
     [Header("점프 관련")]
-    public float jumpForce = 10f;
-    public float fallMultiplier = 2.5f;    // 내려갈 때 가속도
-    public float lowJumpMultiplier = 2f;   // 점프 버튼 빨리 뗄 때 가속도
-    public Transform groundCheck; // 바닥 체크용 트랜스폼
-    public LayerMask groundLayerMask; // 바닥 레이어 마스크
+    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float fallMultiplier = 2.5f;    // 내려갈 때 가속도
+    [SerializeField] private float lowJumpMultiplier = 2f;   // 점프 버튼 빨리 뗄 때 가속도
+    [SerializeField] private Transform groundCheck; // 바닥 체크용 트랜스폼
+    [SerializeField] private LayerMask groundLayerMask; // 바닥 레이어 마스크
+    [SerializeField] private float groundCheckDistance; // 바닥 체크 거리
 
     void Start()
     {
@@ -46,6 +47,15 @@ public class Player : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.Raycast(groundCheck.position, Vector2.down, 0.1f, groundLayerMask);
+        return Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayerMask);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(groundCheck.position, groundCheck.position + Vector3.down * groundCheckDistance);
+        }
     }
 }

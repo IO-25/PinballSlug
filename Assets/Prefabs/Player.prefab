@@ -184,6 +184,7 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 65
+  groundCheckDistance: 0.4
 --- !u!114 &6591215267978983056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +276,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -295,7 +296,7 @@ LineRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 0, b: 0, a: 0.78431374}
       key1: {r: 1, g: 0, b: 0, a: 0.78431374}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0.39215687}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
