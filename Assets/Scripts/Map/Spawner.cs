@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
     [Header("발판 생성 기준점")]
     public Transform spawnPoint;
 
-    [Header("생성될 범위 설정 (3개)")]
+    [Header("생성될 범위 설정")]
     [Tooltip("x:중심 X, y:중심 Y, z:너비, w:높이")]
     public List<Vector4> spawnRanges; 
 
@@ -30,8 +30,7 @@ public class Spawner : MonoBehaviour
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
-
-        // 첫 발판 그룹 생성 시간을 현재 시간으로 설정
+        
         nextSpawnTime = Time.time;
     }
 
@@ -47,7 +46,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    // 모든 범위에서 발판을 한 번에 하나씩 생성하는 함수
+    // 모든 범위에서 발판을 한 번에 하나씩 생성
     void SpawnAllPlatformsAtOnce()
     {
         if (spawnRanges == null || spawnRanges.Count == 0)
@@ -62,7 +61,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    // 단일 발판 생성을 담당하는 함수
+    // 단일 발판 생성
     void SpawnPlatformFromRange(Vector4 selectedRange)
     {
         float centerX = selectedRange.x;
@@ -100,6 +99,7 @@ public class Spawner : MonoBehaviour
         return null;
     }
 
+    //범위 설정
     void OnDrawGizmosSelected()
     {
         if (spawnPoint != null && spawnRanges != null)
