@@ -367,6 +367,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &2529009883416291020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7585518747232182608}
+  - component: {fileID: 4099000881596288707}
+  m_Layer: 8
+  m_Name: Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7585518747232182608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529009883416291020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4959698181846369732}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4099000881596288707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529009883416291020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2c4fd2424e1374e81e752fcd76e24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: 00f6bfc07a0482042b2b21b19ff06be8, type: 2}
+  firePoint: {fileID: 4959698181846369732}
+  spreadCircle: {fileID: 1325724657515292101}
 --- !u!1 &3716215183403420150
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +427,6 @@ GameObject:
   - component: {fileID: 4687607016135735538}
   - component: {fileID: 2467570041537056974}
   - component: {fileID: 6591215267978983056}
-  - component: {fileID: 1035210327889482301}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -404,6 +450,7 @@ Transform:
   - {fileID: 904218529821196014}
   - {fileID: 1583163543935525544}
   - {fileID: 9210927539604299523}
+  - {fileID: 7585518747232182608}
   - {fileID: 2055261511377793169}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -480,27 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8712c53cdac1634b9e412bd1d5f1e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWepaon: {fileID: 1035210327889482301}
---- !u!114 &1035210327889482301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716215183403420150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd2c4fd2424e1374e81e752fcd76e24d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 4959698181846369732}
-  attackDamage: 1
-  attackRate: 0.2
-  bulletPrefab: {fileID: 6532974473074499661, guid: ccc6598f944425640ad04cb8bb1cfd6d, type: 3}
-  spreadCircle: {fileID: 1325724657515292101}
-  minSpread: 0
-  maxSpread: 5
-  maxDistance: 5
+  currentWepaon: {fileID: 4099000881596288707}
 --- !u!1 &7062296982023713364
 GameObject:
   m_ObjectHideFlags: 0
