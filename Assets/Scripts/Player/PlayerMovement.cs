@@ -79,6 +79,9 @@ public class PlayerMovement : MonoBehaviour
             animationController.SetBool_Lower("IsSitting", isSittingInput);
             animationController.SetUpperActive(!isSittingInput);
         }
+
+        if(isJumpingInput)
+            animationController.SetUpperActive(true);
     }
 
     private void ApplyGravityModifiers()

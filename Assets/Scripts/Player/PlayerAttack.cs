@@ -6,9 +6,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private WeaponData defaultWeaponData;
     [SerializeField] private WeaponData subWeaponData;
     private bool isUsingDefaultWeapon = true;
+    private PlayerAnimationController animationController;
 
     private void Start()
     {
+        animationController = GetComponent<PlayerAnimationController>();
+
         Equip(defaultWeaponData);
     }
 
@@ -17,6 +20,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             weapon?.Fire();
+            animationController.SetBool_Upper("IsShooting", true);
 
             if (!isUsingDefaultWeapon)
             {
@@ -26,6 +30,10 @@ public class PlayerAttack : MonoBehaviour
                     subWeaponData = null;
                 }
             }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            animationController.SetBool_Upper("IsShooting", false);
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
