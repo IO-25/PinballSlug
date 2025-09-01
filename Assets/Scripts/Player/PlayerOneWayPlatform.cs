@@ -12,7 +12,7 @@ public class PlayerOneWayPlatform : MonoBehaviour
     private void Awake()
     {
         if(playerCollider == null)
-            playerCollider = GetComponent<Collider2D>();
+            playerCollider = GetComponentInChildren<Collider2D>();
     }
 
     public void Drop()

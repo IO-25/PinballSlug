@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb19690a2f8881e4fafbd56dd7629c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  playerCollider: {fileID: 8950405485825527096}
 --- !u!114 &6591215267978983056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,12 +494,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4959698181846369732}
-  accuracy: 1
   attackDamage: 1
   attackRate: 0.2
   bulletPrefab: {fileID: 6532974473074499661, guid: ccc6598f944425640ad04cb8bb1cfd6d, type: 3}
   spreadCircle: {fileID: 1325724657515292101}
-  baseSpread: 0
+  minSpread: 0
   maxSpread: 5
   maxDistance: 5
 --- !u!1 &7062296982023713364
