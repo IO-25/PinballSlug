@@ -8,12 +8,6 @@ public class TrajectoryRenderer : MonoBehaviour
     [SerializeField] private LayerMask obstacleLayerMask;
     [SerializeField] private float reflectionRenderDistance = 1f;
 
-    // 1. Ray 발사
-    // 2. 충돌 감지
-    // 3. 반사 벡터 계산
-    // 4. LineRenderer에 점 추가
-
-
     private void Awake()
     {
         if (lineRenderer == null)
