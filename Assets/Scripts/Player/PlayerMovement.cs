@@ -41,8 +41,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
 
         bool isMoving = moveX != 0;
-        animationController.SetBool_Upper("IsMoving", isMoving);
-        animationController.SetBool_Lower("IsMoving", isMoving);
+        animationController.SetBool("IsMoving", isMoving);
         animationController.SetAnimSpeed(moveX >= 0 ? 1f : -1f);
     }
 
@@ -62,26 +61,20 @@ public class PlayerMovement : MonoBehaviour
                 else
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
+
+            if(isSittingInput)
+                animationController.SetBool("IsShooting", false);
+
         }
+
+        animationController.SetBool("IsDropping", oneWayPlatform.IsDropping);
 
         // 애니메이션 상태 업데이트
-        if (oneWayPlatform.IsDropping)
+        if (!oneWayPlatform.IsDropping)
         {
-            animationController.SetBool_Upper("IsDropping", true);
-            animationController.SetBool_Lower("IsDropping", true);
+            animationController.SetBool("IsJumping", !IsGrounded());
+            animationController.SetBool("IsSitting", isSittingInput);
         }
-        else
-        {
-            animationController.SetBool_Upper("IsDropping", false);
-            animationController.SetBool_Lower("IsDropping", false);
-            animationController.SetBool_Lower("IsJumping", !IsGrounded());
-            animationController.SetBool_Upper("IsJumping", !IsGrounded());
-            animationController.SetBool_Lower("IsSitting", isSittingInput);
-            animationController.SetUpperActive(!isSittingInput);
-        }
-
-        if(isJumpingInput)
-            animationController.SetUpperActive(true);
     }
 
     private void ApplyGravityModifiers()
