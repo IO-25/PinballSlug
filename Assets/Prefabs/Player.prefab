@@ -230,7 +230,7 @@ MonoBehaviour:
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  reflectionRenderDistance: 1
+  reflectionRenderDistance: 2
 --- !u!120 &7674234757391734254
 LineRenderer:
   serializedVersion: 2

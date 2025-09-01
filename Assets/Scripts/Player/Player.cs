@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D rb;
-
     [Header("이동 관련")]
     [SerializeField] private float moveSpeed = 5f;
 
@@ -17,21 +15,30 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayerMask; // 바닥 레이어 마스크
     [SerializeField] private float groundCheckDistance; // 바닥 체크 거리
 
+    private Rigidbody2D rb;
+    private PlayerOneWayPlatform oneWayPlatform;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        oneWayPlatform = GetComponent<PlayerOneWayPlatform>();
     }
 
     void Update()
     {
         // 좌우 이동
-        float moveX = Input.GetAxis("Horizontal");
+        float moveX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
 
-        // 점프 시작
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            // 뛰어내리기
+            if(Input.GetKey(KeyCode.S))
+                oneWayPlatform.Drop();
+            // 점프
+            else
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
         // === 중력 보정 ===
