@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Lerker
   m_EditorClassIdentifier: 
   InitialHealth: 0
-  enemySprite: {fileID: -1090844568, guid: 46cbbcf93f60c124ba0f74a8c8772f37, type: 3}
-  AvailableRow: 0100000001000000
+  EnemyAnimatorController: {fileID: 9100000, guid: b03b2935c8960c34ab4e8187baafed21, type: 2}
   enemySize: {x: 1, y: 1}
   behaviours: []

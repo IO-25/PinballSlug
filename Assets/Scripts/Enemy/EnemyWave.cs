@@ -7,6 +7,8 @@ public class EnemyWave : MonoBehaviour
     public static int LANECOUNT = 8;
 
     public Enemy[] enemy = new Enemy[LANECOUNT];
+    public bool isInitialized = false;
+    public int waveEnemyCount = 0;
     private void Awake()
     {
         for (int i = 0; i < LANECOUNT; i++)
@@ -19,11 +21,22 @@ public class EnemyWave : MonoBehaviour
     {
         if (data == null)
         {
+            if (enemy[index] != null && enemy[index].isInitialized)
+                waveEnemyCount--;
+
+            if (isInitialized && waveEnemyCount == 0)
+            {
+                Destroy(gameObject);
+            }
             enemy[index].gameObject.SetActive(false);
             enemy[index] = null;
         }
         else
         {
+            if (enemy[index] == null || !enemy[index].isInitialized)
+                waveEnemyCount++;
+            enemy[index].parentWave = this;
+            enemy[index].index = index;
             enemy[index].Init(data);
             enemy[index].transform.localPosition += Vector3.up * (data.enemySize.y - 1);
         }

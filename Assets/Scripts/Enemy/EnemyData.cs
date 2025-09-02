@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyData : ScriptableObject
 {
     public int InitialHealth;
-    public Sprite enemySprite;
+    public RuntimeAnimatorController EnemyAnimatorController;
     public Vector2 enemySize = Vector2.one;
     [SerializeReference] public EnemyBehaviour[] behaviours;
 }

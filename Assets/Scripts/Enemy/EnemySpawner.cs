@@ -74,6 +74,9 @@ public class EnemySpawner : MonoBehaviour
                 wave.SetEnemy(i, null);
             }
         }
-
+        if(wave.waveEnemyCount == 0)
+            Destroy(wave);
+        else
+            wave.isInitialized = true;
     }
 }
