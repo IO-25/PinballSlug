@@ -67,6 +67,7 @@ public class PlayerAttack : MonoBehaviour
     public void Equip(WeaponData weaponData)
     {
         weapon.Initialize(weaponData);
+        animationController.SetAnimController(weaponData.upperAnimController, weaponData.lowerAnimController);
         Debug.Log($"Equipped {weaponData.weaponName}");
     }
 }

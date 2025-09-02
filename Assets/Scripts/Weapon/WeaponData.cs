@@ -9,6 +9,8 @@ public class WeaponData : ScriptableObject
     [Header("기본 정보")]
     public string weaponName = "New Weapon";
     public Sprite weaponIcon;
+    public RuntimeAnimatorController upperAnimController;
+    public RuntimeAnimatorController lowerAnimController;
 
     [Header("공격 관련")]
     public GameObject bulletPrefab;
