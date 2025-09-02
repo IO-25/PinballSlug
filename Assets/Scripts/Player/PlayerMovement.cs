@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             if(isSittingInput)
-                animationController.SetBool("IsShooting", false);
+                animationController.SetBool_Upper("IsShooting", false);
 
         }
 

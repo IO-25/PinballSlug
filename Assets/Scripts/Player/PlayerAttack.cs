@@ -23,9 +23,10 @@ public class PlayerAttack : MonoBehaviour
     {
         Look();
 
-        if (Input.GetMouseButton(0)) Fire();
+        if (Input.GetMouseButton(0)) 
+            Fire();
         else if (Input.GetMouseButtonUp(0))
-            animationController.SetBool_Upper("IsShooting", false);
+            animationController.SetBool("IsShooting", false);
 
         if (Input.GetKeyDown(KeyCode.Q))
             SwitchWeapon();
@@ -46,7 +47,7 @@ public class PlayerAttack : MonoBehaviour
     public void Fire()
     {
         weapon?.Fire();
-        animationController.SetBool_Upper("IsShooting", true);
+        animationController.SetBool("IsShooting", true);
 
         if (!isUsingDefaultWeapon)
         {
