@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     [Header("Àû Á¤º¸")]
     public int maxHealth = 0;
     public int curHealth = 0;
-    bool isInitialized = false;
+    public bool isInitialized = false;
 
     public EnemyBehaviour[] behaviours;
 

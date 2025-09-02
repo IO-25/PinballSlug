@@ -20,6 +20,7 @@ public class EnemyWave : MonoBehaviour
         if (data == null)
         {
             enemy[index].gameObject.SetActive(false);
+            enemy[index] = null;
         }
         else
         {
