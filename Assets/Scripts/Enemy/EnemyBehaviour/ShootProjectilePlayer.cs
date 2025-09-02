@@ -6,9 +6,10 @@ using UnityEngine;
 public class ShootProjectilePlayer : EnemyBehaviour
 {
     [SerializeField] GameObject ProjectilePrefab;
-    public override void EnemyAction()
+
+    public override void EnemyAction(Transform t)
     {
         //Check Player and Shoot at That Direction
-        throw new System.NotImplementedException();
+        Debug.Log("Shoot to Player");
     }
 }
