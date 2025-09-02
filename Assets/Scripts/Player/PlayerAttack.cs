@@ -13,9 +13,24 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Transform downFirePoint;
     [SerializeField] private TrajectoryRenderer trajectoryRenderer;
 
+    [Range(0f, 1f)]
+    public float forwardAttackRange = 0.8f;
+
     private bool isUsingDefaultWeapon = true;
     private PlayerAnimationController animationController;
 
+    void OnEnable()
+    {
+        if(weapon) weapon.gameObject.SetActive(true);
+        if(trajectoryRenderer) trajectoryRenderer.gameObject.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        if (weapon) weapon.gameObject.SetActive(false);
+        if (trajectoryRenderer) trajectoryRenderer.gameObject.SetActive(false);
+        animationController.SetBool("IsShooting", false);
+    }
 
     private void Start()
     {
@@ -45,15 +60,14 @@ public class PlayerAttack : MonoBehaviour
         Vector2 start = transform.position;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (end - start).normalized;
-        animationController.SetFloat_Upper("Y", dir.y);
-
+        UpdateDirecitronY(dir.y);
         trajectoryRenderer.RenderTrajectory(GetFirePoint());
-        weapon?.Look(GetFirePoint());
+        weapon.Look(GetFirePoint());
     }
 
     public void Fire()
     {
-        weapon?.Fire(GetFirePoint());
+        weapon.Fire(GetFirePoint());
         animationController.SetBool("IsShooting", true);
 
         if (!isUsingDefaultWeapon)
@@ -71,7 +85,7 @@ public class PlayerAttack : MonoBehaviour
         if (bombCount <= 0) return;
 
         bombCount--;
-        bombWeapon?.Fire(GetFirePoint());
+        bombWeapon.Fire(GetFirePoint());
         Debug.Log("ÆøÅº »ç¿ë!!! ³²Àº ÆøÅº: " + bombCount);
     }
 
@@ -90,12 +104,22 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log($"Equipped {weaponData.weaponName}");
     }
 
+    public void UpdateDirecitronY(float dirY)
+    {
+        if (dirY > forwardAttackRange)
+            animationController.SetFloat_Upper("Y", 1f);   // À§ÂÊ
+        else if (dirY < -forwardAttackRange)
+            animationController.SetFloat_Upper("Y", -1f);  // ¾Æ·¡ÂÊ
+        else
+            animationController.SetFloat_Upper("Y", 0f);   // Á¤¸é
+    }
+
     public Vector2 GetFirePoint()
     {
         float y = animationController.upperBodyAnimator.GetFloat("Y");
-        if (y > 0.5f)
+        if (y > forwardAttackRange)
             return upFirePoint.position;
-        else if (y < -0.5f)
+        else if (y < -forwardAttackRange)
             return downFirePoint.position;
         else
             return forwardFirePoint.position;

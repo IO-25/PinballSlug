@@ -10,6 +10,19 @@ public class Weapon : MonoBehaviour
 
     public int CurrentAmmo => currentAmmo;
 
+    private void OnEnable()
+    {
+        if(spreadCircle)
+            spreadCircle.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        if (spreadCircle)
+            spreadCircle.SetActive(false);
+    }
+
+
     public void Initialize(WeaponData newWeaponData)
     {
         weaponData = newWeaponData;
