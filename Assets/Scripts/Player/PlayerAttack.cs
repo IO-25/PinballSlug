@@ -21,6 +21,8 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        Look();
+
         if (Input.GetMouseButton(0)) Fire();
         else if (Input.GetMouseButtonUp(0))
             animationController.SetBool_Upper("IsShooting", false);
@@ -30,6 +32,15 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
             UseBomb();
+    }
+
+    public void Look()
+    {
+        Vector2 start = transform.position;
+        Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 dir = (end - start).normalized;
+
+        animationController.SetFloat_Upper("Y", dir.y);
     }
 
     public void Fire()
