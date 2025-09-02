@@ -16,6 +16,18 @@ public class PlayerAttack : MonoBehaviour
     private bool isUsingDefaultWeapon = true;
     private PlayerAnimationController animationController;
 
+    void OnEnable()
+    {
+        if(weapon) weapon.gameObject.SetActive(true);
+        if(trajectoryRenderer) trajectoryRenderer.gameObject.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        if (weapon) weapon.gameObject.SetActive(false);
+        if (trajectoryRenderer) trajectoryRenderer.gameObject.SetActive(false);
+        animationController.SetBool("IsShooting", false);
+    }
 
     private void Start()
     {
@@ -48,12 +60,12 @@ public class PlayerAttack : MonoBehaviour
         animationController.SetFloat_Upper("Y", dir.y);
 
         trajectoryRenderer.RenderTrajectory(GetFirePoint());
-        weapon?.Look(GetFirePoint());
+        weapon.Look(GetFirePoint());
     }
 
     public void Fire()
     {
-        weapon?.Fire(GetFirePoint());
+        weapon.Fire(GetFirePoint());
         animationController.SetBool("IsShooting", true);
 
         if (!isUsingDefaultWeapon)
@@ -71,7 +83,7 @@ public class PlayerAttack : MonoBehaviour
         if (bombCount <= 0) return;
 
         bombCount--;
-        bombWeapon?.Fire(GetFirePoint());
+        bombWeapon.Fire(GetFirePoint());
         Debug.Log("ÆøÅº »ç¿ë!!! ³²Àº ÆøÅº: " + bombCount);
     }
 

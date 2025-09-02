@@ -12,4 +12,26 @@ public class Player : MonoBehaviour
     public PlayerAttack PlayerAttack => playerAttack;
     public PlayerAnimationController PlayerAnimationController => playerAnimationController;
 
+    private void Awake()
+    {
+        playerMovement = GetComponent<PlayerMovement>();
+        playerAttack = GetComponent<PlayerAttack>();
+        playerAnimationController = GetComponent<PlayerAnimationController>();
+    }
+
+    public void Die()
+    {
+        playerMovement.enabled = false;
+        playerAttack.enabled = false;
+        playerAnimationController.SetBool("IsDying", true);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Die();
+        }
+    }
+
 }
