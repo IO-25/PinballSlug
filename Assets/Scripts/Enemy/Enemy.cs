@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public EnemyWave parentWave = null;
+    public int index;
+
+    const string DIEANIMATIONSTRING = "IsDie";
     SpriteRenderer boxSpriteRenderer;
-    [SerializeField] SpriteRenderer enemySpriteRenderer;
+    [SerializeField] Animator enemyAnimator;
     BoxCollider2D enemyCollider;
 
     [Header("Àû Á¤º¸")]
     public int maxHealth = 0;
     public int curHealth = 0;
-    bool isInitialized = false;
+    public bool isInitialized = false;
 
     public EnemyBehaviour[] behaviours;
 
@@ -28,7 +32,7 @@ public class Enemy : MonoBehaviour
             return;
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
-        enemySpriteRenderer.sprite = referenceEnemy.enemySprite;
+        enemyAnimator.runtimeAnimatorController = referenceEnemy.EnemyAnimatorController;
         boxSpriteRenderer.size = referenceEnemy.enemySize * 2;
         enemyCollider.size = referenceEnemy.enemySize * 2;
         behaviours = referenceEnemy.behaviours;
@@ -59,8 +63,8 @@ public class Enemy : MonoBehaviour
 
     private void OnDead()
     {
+        enemyAnimator.SetBool(DIEANIMATIONSTRING, true);
         StopAllCoroutines();
-        Destroy(this);
     }
 
 }

@@ -8,27 +8,53 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] EnemyData[] normalEnemyData;
     [SerializeField] EnemyData LerkerData;
 
-    //Currently 60% for Test
+    //Testing values
+    //Need to change with Stage Values later
     float spawnProbability = 0.6f;
     float[] enemyProbability = { 65, 25, 10 };
+    int[] lerkerSpawnIndex = { 0, 4 };
+    float[] lerkerSpawnIndexProbability = { 75, 25 };
+    float lastLerkerTime = 0.0f;
+    float lerkerSpawnTime = 5.0f;
+    bool isLerkerSpawnable = false;
 
-    //Test Update, Remove at the End
+
+    //Test Update, Remove Debug at the End
     public void Update()
     {
+        //Debug
         if (Input.GetKeyDown(KeyCode.V))
             GenerateWave();
+        //Debug End
+
+        if (!isLerkerSpawnable && Time.fixedTime - lastLerkerTime >= lerkerSpawnTime)
+        {
+            isLerkerSpawnable=true;
+        }
     }
 
     public void GenerateWave()
     {
-        //Need to Fix with Object Pooling
         EnemyWave wave = Instantiate(wavePrefab);
+        int? lerkerIndex = null;
+        //Spawn Lerker if possible
+        if (isLerkerSpawnable)
+        {
+            lerkerIndex = lerkerSpawnIndex[RandomManager.RandomPicker(lerkerSpawnIndexProbability)];
+            wave.SetEnemy((int)lerkerIndex, LerkerData);
+            isLerkerSpawnable = false;
+            lastLerkerTime = Time.fixedTime;
+        }
+
         for (int i = 0; i < EnemyWave.LANECOUNT; i++)
         {
+            if (wave.enemy[i].isInitialized)
+                continue;
             if (Random.Range(0.0f, 1.0f) <= spawnProbability)
             {
                 EnemyData selectedEnemy = normalEnemyData[RandomManager.RandomPicker(enemyProbability)];
-                if (selectedEnemy.enemySize.y + i > EnemyWave.LANECOUNT)
+                if (selectedEnemy.enemySize.y + i > EnemyWave.LANECOUNT ||
+                    (lerkerIndex != null && i < lerkerIndex && i + selectedEnemy.enemySize.y > lerkerIndex))
                 {
                     wave.SetEnemy(i, null);
                     continue;
@@ -48,6 +74,9 @@ public class EnemySpawner : MonoBehaviour
                 wave.SetEnemy(i, null);
             }
         }
-
+        if(wave.waveEnemyCount == 0)
+            Destroy(wave);
+        else
+            wave.isInitialized = true;
     }
 }
