@@ -14,7 +14,8 @@ Shader "UI/UI_ChromaKey"
 
         ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha
-
+        Cull Off
+        
         Pass
         {
             CGPROGRAM

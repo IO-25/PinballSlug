@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class MapGameManager : MonoBehaviour
 {
     public ScoreDisplayManager scoreDisplayManager;
     private int currentScore = 0;

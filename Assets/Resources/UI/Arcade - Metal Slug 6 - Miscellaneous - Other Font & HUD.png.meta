@@ -1466,6 +1466,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Arcade - Metal Slug 6 - Miscellaneous - Other Font & HUD_1
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 721
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c9f6209182fc6478bcfe19e85beb18
+      internalID: -1463026590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Metal Slug 6 - Miscellaneous - Other Font & HUD_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 848
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769aaa5879ab31b4985203110bb08df8
+      internalID: -1913200639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1489,6 +1531,8 @@ TextureImporter:
       9: -36081318
       A: 1565126406
       Arcade - Metal Slug 6 - Miscellaneous - Other Font & HUD_0: 609322090
+      Arcade - Metal Slug 6 - Miscellaneous - Other Font & HUD_1: -1463026590
+      Arcade - Metal Slug 6 - Miscellaneous - Other Font & HUD_2: -1913200639
       Arcade - Metal Slug 6 - Miscellaneous - Other Font & HUD_53: 535105841
       Arcade - Metal Slug 6 - Miscellaneous - Other Font & HUD_54: 950430286
       B: 1339535096
