@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Hydra
   m_EditorClassIdentifier: 
   InitialHealth: 50
-  enemySprite: {fileID: -1436913835, guid: 853226f0b53e10746988cdd2c101de51, type: 3}
-  AvailableRow: 0101010101010101
+  EnemyAnimatorController: {fileID: 9100000, guid: 82a449262e0307d428d9a8ade37b97f4, type: 2}
   enemySize: {x: 1, y: 1}
   behaviours:
   - {fileID: 11400000, guid: 66eaab29bc6f20742b77d3db1b29d9c0, type: 2}

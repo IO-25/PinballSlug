@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Mutallisk
   m_EditorClassIdentifier: 
   InitialHealth: 130
-  enemySprite: {fileID: -1977836357, guid: 72bf31c2408281042b64085b4eeb065f, type: 3}
-  AvailableRow: 0101010101010101
+  EnemyAnimatorController: {fileID: 9100000, guid: e4317ed442570ca42870e27e560a95dd, type: 2}
   enemySize: {x: 1, y: 2}
   behaviours:
   - {fileID: 11400000, guid: 787e02f2372f9b8499f95b0c19694bae, type: 2}
