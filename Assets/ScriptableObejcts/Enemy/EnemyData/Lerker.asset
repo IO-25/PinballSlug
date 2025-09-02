@@ -16,5 +16,4 @@ MonoBehaviour:
   enemySprite: {fileID: 0}
   AvailableRow: 0000000100000001
   enemySize: {x: 1, y: 1}
-  behaviours:
-  - {fileID: 11400000, guid: a39d2257056fde045b16a00be68ae794, type: 2}
+  behaviours: []

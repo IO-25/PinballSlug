@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: HydraRandom
   m_EditorClassIdentifier: 
   ActionCooldown: 2
-  ProjectilePrefab: {fileID: 6532974473074499661, guid: ccc6598f944425640ad04cb8bb1cfd6d, type: 3}
+  ProjectilePrefab: {fileID: 6532974473074499661, guid: 86940b4484611a7458ed0be3bd99f894, type: 3}

@@ -5,7 +5,13 @@ using UnityEngine;
 public class ShootLaserFloor : EnemyBehaviour
 {
     [SerializeField] GameObject LaserPrefab;
-    public override void EnemyAction()
+
+    public override IEnumerator ActionCorutine(Transform t)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void EnemyAction(Transform t)
     {
         throw new System.NotImplementedException();
     }

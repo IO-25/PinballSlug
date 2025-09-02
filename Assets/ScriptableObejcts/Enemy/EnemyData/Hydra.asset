@@ -18,4 +18,3 @@ MonoBehaviour:
   enemySize: {x: 1, y: 1}
   behaviours:
   - {fileID: 11400000, guid: 66eaab29bc6f20742b77d3db1b29d9c0, type: 2}
-  - {fileID: 11400000, guid: c259eeb49bdee1b4e873a9d505b4bc11, type: 2}

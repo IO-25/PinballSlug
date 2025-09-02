@@ -5,8 +5,11 @@ using UnityEngine;
 public class ShootProjectileRandom : EnemyBehaviour
 {
     [SerializeField] GameObject ProjectilePrefab;
-    public override void EnemyAction()
+
+    public override void EnemyAction(Transform t)
     {
-        throw new System.NotImplementedException();
+        Projectile projectile = Instantiate(ProjectilePrefab, t).GetComponent<Projectile>();
+        float randomangle = Random.Range(-80.0f, 80.0f);
+        projectile.SetDirection(Quaternion.Euler(0,0,randomangle) * -t.right);
     }
 }

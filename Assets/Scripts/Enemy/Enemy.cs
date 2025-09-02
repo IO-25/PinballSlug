@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     public int curHealth = 0;
     bool isInitialized = false;
 
+    public EnemyBehaviour[] behaviours;
+
 
     private void Awake()
     {
@@ -27,7 +29,11 @@ public class Enemy : MonoBehaviour
         curHealth = referenceEnemy.InitialHealth;
         enemySpriteRenderer.sprite = referenceEnemy.enemySprite;
         enemyCollider.size = referenceEnemy.enemySize;
+        behaviours = referenceEnemy.behaviours;
         isInitialized = true;
+
+        for (int i = 0; i < behaviours.Length; i++)
+            StartCoroutine(behaviours[i].ActionCorutine(this.transform));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -42,15 +48,16 @@ public class Enemy : MonoBehaviour
             //Apply Damage
     }
 
-    private void OnDamageApplied()
+    private void OnDamageApplied(int damage)
     {
-        curHealth--;
+        curHealth -= damage;
         if (curHealth <= 0)
             OnDead();
     }
 
     private void OnDead()
     {
+        StopAllCoroutines();
         Destroy(this);
     }
 
