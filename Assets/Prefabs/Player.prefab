@@ -746,7 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: -3670911867248435948}
-  spawnPoint: {x: 0, y: 0}
+  spawnPoint: {x: -8, y: -4}
   spawnDelay: 2
 --- !u!114 &3483987462671586581
 MonoBehaviour:
