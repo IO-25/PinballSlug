@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float lowJumpMultiplier = 4f;   // 점프 버튼 빨리 뗄 때 가속도
     [SerializeField] private Transform groundCheck; // 바닥 체크용 트랜스폼
     [SerializeField] private LayerMask groundLayerMask; // 바닥 레이어 마스크
-    [SerializeField] private float groundCheckDistance = 0.4f; // 바닥 체크 거리
+    [SerializeField] private Vector2 groundCheckSize = new(0.5f, 0.4f); // 바닥 체크 거리
 
     private bool isSitting = false;
     private Rigidbody2D rb;
@@ -86,14 +86,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private bool IsGrounded()
-        => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayerMask);
+        => Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayerMask);
 
     private void OnDrawGizmos()
     {
         if (groundCheck != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(groundCheck.position, groundCheck.position + Vector3.down * groundCheckDistance);
+            Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
         }
     }
 }
