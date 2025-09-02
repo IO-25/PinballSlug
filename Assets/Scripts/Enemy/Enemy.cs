@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    Sprite enemySprite;
+    SpriteRenderer enemySpriteRenderer;
     BoxCollider2D enemyCollider;
 
     [Header("Àû Á¤º¸")]
@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        enemySprite = GetComponent<Sprite>();
+        enemySpriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<BoxCollider2D>();
     }
 
@@ -25,12 +25,12 @@ public class Enemy : MonoBehaviour
             return;
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
-        enemySprite = referenceEnemy.enemySprite;
+        enemySpriteRenderer.sprite = referenceEnemy.enemySprite;
         enemyCollider.size = referenceEnemy.enemySize;
         isInitialized = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         //if collision is End of the Map
             //GameOver
