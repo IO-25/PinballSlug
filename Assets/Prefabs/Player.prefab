@@ -640,7 +640,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -677,14 +677,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 10
-  fallMultiplier: 5
-  lowJumpMultiplier: 4
+  maxJumpTime: 0.3
+  jumpInitialVelocity: 10
+  jumpCancelVelocity: 4
+  fallMultiplier: 4
   groundCheck: {fileID: 1583163543935525544}
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 65
-  groundCheckSize: {x: 1.2, y: 0.4}
+  groundCheckBoxSize: {x: 1.2, y: 0.4}
 --- !u!114 &2467570041537056974
 MonoBehaviour:
   m_ObjectHideFlags: 0
