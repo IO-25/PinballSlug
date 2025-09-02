@@ -15,15 +15,9 @@ public class TrajectoryRenderer : MonoBehaviour
             lineRenderer = GetComponent<LineRenderer>();
     }
 
-    private void Update()
-    {
-        RenderTrajectory();
-    }
-
-    public void RenderTrajectory()
+    public void RenderTrajectory(Vector2 start)
     {
         lineRenderer.positionCount = 0;
-        Vector2 start = transform.position;
         Vector2 end = GetMousePos();
         Vector2 dir = (end - start).normalized;
         RaycastHit2D hit = Physics2D.CircleCast(start, castRadius, dir, 100f, obstacleLayerMask);
