@@ -27,7 +27,21 @@ public class EnemySpawner : MonoBehaviour
         {
             if (Random.Range(0.0f, 1.0f) <= spawnProbability)
             {
-                wave.SetEnemy(i, normalEnemyData[RandomPicker(enemyProbability)]);
+                EnemyData selectedEnemy = normalEnemyData[RandomPicker(enemyProbability)];
+                if (selectedEnemy.enemySize.y + i > EnemyWave.LANECOUNT)
+                {
+                    wave.SetEnemy(i, null);
+                    continue;
+                }
+                wave.SetEnemy(i, selectedEnemy);
+                if (selectedEnemy.enemySize.y > 1)
+                {
+                    for (int j = 1; j < selectedEnemy.enemySize.y; j++)
+                    {
+                        wave.SetEnemy(i + j, null);
+                        i++;
+                    }
+                }
             }
             else
             {

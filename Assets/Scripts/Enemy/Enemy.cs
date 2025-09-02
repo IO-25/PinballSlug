@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    SpriteRenderer enemySpriteRenderer;
+    SpriteRenderer boxSpriteRenderer;
+    [SerializeField] SpriteRenderer enemySpriteRenderer;
     BoxCollider2D enemyCollider;
 
     [Header("Àû Á¤º¸")]
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        enemySpriteRenderer = GetComponent<SpriteRenderer>();
+        boxSpriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<BoxCollider2D>();
     }
 
@@ -28,7 +29,8 @@ public class Enemy : MonoBehaviour
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
         enemySpriteRenderer.sprite = referenceEnemy.enemySprite;
-        enemyCollider.size = referenceEnemy.enemySize;
+        boxSpriteRenderer.size = referenceEnemy.enemySize * 2;
+        enemyCollider.size = referenceEnemy.enemySize * 2;
         behaviours = referenceEnemy.behaviours;
         isInitialized = true;
 
