@@ -707,6 +707,7 @@ MonoBehaviour:
   forwardFirePoint: {fileID: 5866974385980924832}
   downFirePoint: {fileID: 8708290397053373218}
   trajectoryRenderer: {fileID: 6035906121636470669}
+  forwardAttackRange: 0.9
 --- !u!114 &3281789081572713383
 MonoBehaviour:
   m_ObjectHideFlags: 0
