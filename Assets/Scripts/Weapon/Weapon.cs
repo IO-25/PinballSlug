@@ -3,7 +3,6 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private WeaponData weaponData;
-    [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject spreadCircle; // 퍼짐 범위 시각화용 오브젝트
 
     private int currentAmmo;
@@ -17,12 +16,12 @@ public class Weapon : MonoBehaviour
         currentAmmo = weaponData.maxAmmo;
     }
 
-    private void Update()
+    public void Look(Vector2 firePoint)
     {
         // 탄 퍼짐 시각화
         if (spreadCircle == null) return;
 
-        Vector2 start = firePoint.position;
+        Vector2 start = firePoint;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float distance = Vector2.Distance(start, end);
 
@@ -35,14 +34,14 @@ public class Weapon : MonoBehaviour
         spreadCircle.transform.localScale = Vector3.one * (Mathf.Tan(spread * Mathf.Deg2Rad) * distance * 2f);
     }
 
-    public virtual void Fire()
+    public virtual void Fire(Vector2 firePoint)
     {
         if (Time.time < nextAttackTime) return;
         if (weaponData.useAmmo && currentAmmo <= 0) return;
 
         nextAttackTime = Time.time + weaponData.attackRate;
 
-        Vector2 start = firePoint.position;
+        Vector2 start = firePoint;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (end - start).normalized;
         float distance = Vector2.Distance(start, end);
@@ -57,7 +56,7 @@ public class Weapon : MonoBehaviour
         Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
 
         // 탄환 생성
-        Instantiate(weaponData.bulletPrefab, firePoint.position, rot);
+        Instantiate(weaponData.bulletPrefab, firePoint, rot);
 
         // 탄약 감소
         if(weaponData.useAmmo)

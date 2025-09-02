@@ -8,6 +8,11 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Weapon bombWeapon;
     [SerializeField] private int bombCount = 3;
 
+    [SerializeField] private Transform upFirePoint;
+    [SerializeField] private Transform forwardFirePoint;
+    [SerializeField] private Transform downFirePoint;
+    [SerializeField] private TrajectoryRenderer trajectoryRenderer;
+
     private bool isUsingDefaultWeapon = true;
     private PlayerAnimationController animationController;
 
@@ -40,13 +45,15 @@ public class PlayerAttack : MonoBehaviour
         Vector2 start = transform.position;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (end - start).normalized;
-
         animationController.SetFloat_Upper("Y", dir.y);
+
+        trajectoryRenderer.RenderTrajectory(GetFirePoint());
+        weapon?.Look(GetFirePoint());
     }
 
     public void Fire()
     {
-        weapon?.Fire();
+        weapon?.Fire(GetFirePoint());
         animationController.SetBool("IsShooting", true);
 
         if (!isUsingDefaultWeapon)
@@ -64,7 +71,7 @@ public class PlayerAttack : MonoBehaviour
         if (bombCount <= 0) return;
 
         bombCount--;
-        bombWeapon?.Fire();
+        bombWeapon?.Fire(GetFirePoint());
         Debug.Log("ÆøÅº »ç¿ë!!! ³²Àº ÆøÅº: " + bombCount);
     }
 
@@ -81,5 +88,16 @@ public class PlayerAttack : MonoBehaviour
         weapon.Initialize(weaponData);
         animationController.SetAnimController(weaponData.upperAnimController, weaponData.lowerAnimController);
         Debug.Log($"Equipped {weaponData.weaponName}");
+    }
+
+    public Vector2 GetFirePoint()
+    {
+        float y = animationController.upperBodyAnimator.GetFloat("Y");
+        if (y > 0.5f)
+            return upFirePoint.position;
+        else if (y < -0.5f)
+            return downFirePoint.position;
+        else
+            return forwardFirePoint.position;
     }
 }
