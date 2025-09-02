@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: SubWeapon
   weaponIcon: {fileID: 0}
+  upperAnimController: {fileID: 22100000, guid: 17ab8888f8843fc4c82e463938e23209, type: 2}
+  lowerAnimController: {fileID: 22100000, guid: 800e524f92c6dbe43900df835b54e30c, type: 2}
   bulletPrefab: {fileID: 6532974473074499661, guid: 64fc60cb4605bc24a8ff62ce7043a391, type: 3}
   attackDamage: 1
   attackRate: 0.2
   maxAmmo: 30
   useAmmo: 1
   minSpread: 0
-  maxSpread: 15
+  maxSpread: 5
   maxDistance: 10

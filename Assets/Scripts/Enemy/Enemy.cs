@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    SpriteRenderer enemySpriteRenderer;
+    SpriteRenderer boxSpriteRenderer;
+    [SerializeField] SpriteRenderer enemySpriteRenderer;
     BoxCollider2D enemyCollider;
 
     [Header("Àû Á¤º¸")]
@@ -12,10 +13,12 @@ public class Enemy : MonoBehaviour
     public int curHealth = 0;
     bool isInitialized = false;
 
+    public EnemyBehaviour[] behaviours;
+
 
     private void Awake()
     {
-        enemySpriteRenderer = GetComponent<SpriteRenderer>();
+        boxSpriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<BoxCollider2D>();
     }
 
@@ -26,8 +29,13 @@ public class Enemy : MonoBehaviour
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
         enemySpriteRenderer.sprite = referenceEnemy.enemySprite;
-        enemyCollider.size = referenceEnemy.enemySize;
+        boxSpriteRenderer.size = referenceEnemy.enemySize * 2;
+        enemyCollider.size = referenceEnemy.enemySize * 2;
+        behaviours = referenceEnemy.behaviours;
         isInitialized = true;
+
+        for (int i = 0; i < behaviours.Length; i++)
+            StartCoroutine(behaviours[i].ActionCorutine(this.transform));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -42,15 +50,16 @@ public class Enemy : MonoBehaviour
             //Apply Damage
     }
 
-    private void OnDamageApplied()
+    private void OnDamageApplied(int damage)
     {
-        curHealth--;
+        curHealth -= damage;
         if (curHealth <= 0)
             OnDead();
     }
 
     private void OnDead()
     {
+        StopAllCoroutines();
         Destroy(this);
     }
 

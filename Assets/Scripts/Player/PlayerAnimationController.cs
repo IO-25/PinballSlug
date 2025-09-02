@@ -6,6 +6,17 @@ public class PlayerAnimationController : MonoBehaviour
     public Animator upperBodyAnimator;
     public Animator lowerBodyAnimator;
 
+    public void SetAnimController(RuntimeAnimatorController upper, RuntimeAnimatorController lower)
+    {
+        upperBodyAnimator.runtimeAnimatorController = upper;
+        lowerBodyAnimator.runtimeAnimatorController = lower;
+    }
+
+    public void SetFloat_Upper(string param, float value)
+    {
+        upperBodyAnimator.SetFloat(param, value);
+    }
+
     public void SetBool(string param, bool value)
     {
         upperBodyAnimator.SetBool(param, value);

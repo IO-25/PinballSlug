@@ -3,7 +3,6 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private WeaponData weaponData;
-    [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject spreadCircle; // ÆÛÁü ¹üÀ§ ½Ã°¢È­¿ë ¿ÀºêÁ§Æ®
 
     private int currentAmmo;
@@ -11,18 +10,31 @@ public class Weapon : MonoBehaviour
 
     public int CurrentAmmo => currentAmmo;
 
+    private void OnEnable()
+    {
+        if(spreadCircle)
+            spreadCircle.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        if (spreadCircle)
+            spreadCircle.SetActive(false);
+    }
+
+
     public void Initialize(WeaponData newWeaponData)
     {
         weaponData = newWeaponData;
         currentAmmo = weaponData.maxAmmo;
     }
 
-    private void Update()
+    public void Look(Vector2 firePoint)
     {
         // Åº ÆÛÁü ½Ã°¢È­
         if (spreadCircle == null) return;
 
-        Vector2 start = firePoint.position;
+        Vector2 start = firePoint;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float distance = Vector2.Distance(start, end);
 
@@ -35,14 +47,14 @@ public class Weapon : MonoBehaviour
         spreadCircle.transform.localScale = Vector3.one * (Mathf.Tan(spread * Mathf.Deg2Rad) * distance * 2f);
     }
 
-    public virtual void Fire()
+    public virtual void Fire(Vector2 firePoint)
     {
         if (Time.time < nextAttackTime) return;
         if (weaponData.useAmmo && currentAmmo <= 0) return;
 
         nextAttackTime = Time.time + weaponData.attackRate;
 
-        Vector2 start = firePoint.position;
+        Vector2 start = firePoint;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (end - start).normalized;
         float distance = Vector2.Distance(start, end);
@@ -57,7 +69,7 @@ public class Weapon : MonoBehaviour
         Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
 
         // ÅºÈ¯ »ý¼º
-        Instantiate(weaponData.bulletPrefab, firePoint.position, rot);
+        Instantiate(weaponData.bulletPrefab, firePoint, rot);
 
         // Åº¾à °¨¼Ò
         if(weaponData.useAmmo)
