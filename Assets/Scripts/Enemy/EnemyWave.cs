@@ -24,6 +24,7 @@ public class EnemyWave : MonoBehaviour
         else
         {
             enemy[index].Init(data);
+            enemy[index].transform.localPosition += Vector3.up * (data.enemySize.y - 1);
         }
     }
 }

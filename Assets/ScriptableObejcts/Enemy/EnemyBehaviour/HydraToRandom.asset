@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 010e810ff5d550f4c858119ed8b2f46a, type: 3}
-  m_Name: HydraRandom
+  m_Script: {fileID: 11500000, guid: df679a305ca784549941e6a2f1ebd52b, type: 3}
+  m_Name: HydraToRandom
   m_EditorClassIdentifier: 
   ActionCooldown: 2
-  PossibleActions:
-  - {fileID: 11400000, guid: e7ee3f1d8fe558e418aeda086c12f6f9, type: 2}
-  - {fileID: 11400000, guid: 423a0daea56a4a84187bb28ebe291f5f, type: 2}
+  ProjectilePrefab: {fileID: 6532974473074499661, guid: 86940b4484611a7458ed0be3bd99f894, type: 3}
