@@ -9,18 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77129e1fff21e0f4d9484a6ac7f81247, type: 3}
-  m_Name: TestWepaonData03
+  m_Script: {fileID: 11500000, guid: d9cb99b72fe85a341aff80b9776dfe48, type: 3}
+  m_Name: Shotgun
   m_EditorClassIdentifier: 
-  weaponName: BombWeapon
+  weaponName: Shotgun
   weaponIcon: {fileID: 0}
   upperAnimController: {fileID: 22100000, guid: 17ab8888f8843fc4c82e463938e23209, type: 2}
   lowerAnimController: {fileID: 22100000, guid: 800e524f92c6dbe43900df835b54e30c, type: 2}
-  bulletPrefab: {fileID: 6532974473074499661, guid: 0ba820a95888f7849acd75f6b59c7736, type: 3}
-  attackDamage: 1
-  attackRate: 10
-  maxAmmo: 3
-  useAmmo: 0
+  bulletPrefab: {fileID: 6532974473074499661, guid: 64fc60cb4605bc24a8ff62ce7043a391, type: 3}
+  attackDamage: 4
+  attackRate: 5
+  maxAmmo: 40
+  useAmmo: 1
   minSpread: 0
-  maxSpread: 0
+  maxSpread: 15
   maxDistance: 10
+  bulletCount: 10

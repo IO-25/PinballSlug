@@ -961,21 +961,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3483987462671586581, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
-      propertyPath: maxHealth
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3716215183403420150, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4265296917813636340, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
-      propertyPath: spawnPoint.x
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4265296917813636340, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
-      propertyPath: spawnPoint.y
-      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4959698181846369732, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
       propertyPath: m_LocalPosition.x
