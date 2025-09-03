@@ -116,7 +116,7 @@ public class PlayerAttack : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (mousePos - CurrentFirePoint).normalized;
 
-        Laser laser = Instantiate(laserPrefab);
+        Laser laser = Instantiate(laserPrefab, transform);
         laser.ShotLaser(laserPoint.position, dir);
         Debug.Log($"ÆøÅº »ç¿ë! ³²Àº ÆøÅº: {currentLaserCount}");
     }
