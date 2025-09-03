@@ -181,7 +181,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.6015258
+      time: 0.9
       value: 2
       inSlope: 0
       outSlope: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
+      time: 1.5
       value: 0
       inSlope: 0
       outSlope: 0
@@ -201,14 +201,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  expandDuration: 0.3
-  holdMaxDuration: 0.9
-  shrinkDuration: 0.3
   widthMultiplier: 2
-  minLaserWidth: 0.4
-  maxLaserWidth: 2.5
-  lifetime: 1.5
-  damage: 500
+  damage: 10
   maxDistance: 100
   hitBlockerMask:
     serializedVersion: 2
@@ -216,4 +210,3 @@ MonoBehaviour:
   damageTargetMask:
     serializedVersion: 2
     m_Bits: 512
-  damageApplyRatio: 0.5

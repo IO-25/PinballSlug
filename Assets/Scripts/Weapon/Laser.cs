@@ -6,21 +6,22 @@ public class Laser : MonoBehaviour
 {
     [SerializeField] private LineRenderer lineRenderer; // 레이저 시각화를 위한 LineRenderer
     [SerializeField] private AnimationCurve laserWidthOverTime; // 레이저 굵기 변화 곡선
+    [SerializeField] private float widthMultiplier = 2f; // 레이저 크기 배율
 
+    /*
     [SerializeField] private float expandDuration = 0.3f; // 최소 굵기에서 최대 굵기로 변화하는 시간
     [SerializeField] private float holdMaxDuration = 0.9f; // 최대 굵기 유지 시간
     [SerializeField] private float shrinkDuration = 0.3f; // 최대 굵기에서 최소 굵기로 변화하는 시간
-    [SerializeField] private float widthMultiplier = 2f; // 레이저 크기 배율
     [SerializeField] private float minLaserWidth = 0.4f; // 레이저 굵기 배율
     [SerializeField] private float maxLaserWidth = 2.5f; // 레이저 굵기 배율
-    [SerializeField] private float lifetime = 1.5f; // 레이저 지속시간
+    */
 
     [SerializeField] private int damage = 5; // 공격 데미지
+    [SerializeField] private float damageInterval = 0.1f; // 데미지 적용 간격
     [SerializeField] private float maxDistance = 100f; // 최대 사거리
     [SerializeField] private LayerMask hitBlockerMask; // 레이저가 충돌할 레이어 마스크
     [SerializeField] private LayerMask damageTargetMask; // 레이저가 충돌할 레이어 마스크
-
-    [SerializeField, Range(0f, 1f)] private float damageApplyRatio = 0.5f; // 데미지 적용 타이밍 (0~1 사이)
+    private float nextDamageTime = 0f;
 
     private void Awake()
     {
@@ -42,11 +43,13 @@ public class Laser : MonoBehaviour
             lineRenderer.SetPosition(1, transform.position + transform.right * 100f);
 
         StartCoroutine(PlayAnimation());
-        StartCoroutine(ActiveCollider());
     }
 
-    void ActiveDamage()
+    private void ApplyDamage()
     {
+        if (Time.time < nextDamageTime) return;
+        nextDamageTime = Time.time + damageInterval;
+
         // BoxCast 실행
         float colliderWidth = lineRenderer.widthMultiplier;
         float colliderLength = Vector2.Distance(lineRenderer.GetPosition(0), lineRenderer.GetPosition(1));
@@ -60,22 +63,24 @@ public class Laser : MonoBehaviour
         foreach (var coll in colls)
         {
             if (coll.TryGetComponent<IDamageable>(out var damageable))
-            {
                 damageable.TakeDamage(damage);
-                Debug.Log("Laser Hit: " + coll.gameObject.name);
-            }
         }
-    }
-
-    IEnumerator ActiveCollider()
-    {
-        yield return new WaitForSeconds(lifetime * damageApplyRatio);
-        ActiveDamage();
     }
 
     IEnumerator PlayAnimation()
     {
-        
+        float time = 0;
+        float endTime = laserWidthOverTime.keys[laserWidthOverTime.length - 1].time;
+
+        while (time < endTime)
+        {
+            time += Time.deltaTime;
+            lineRenderer.widthMultiplier = laserWidthOverTime.Evaluate(time) * widthMultiplier;
+            ApplyDamage();
+            yield return null;
+        }
+
+        /*
         float time = 0;
         // 굵기 증가
         while (time < expandDuration)
@@ -95,16 +100,8 @@ public class Laser : MonoBehaviour
             lineRenderer.widthMultiplier = Mathf.Lerp(maxLaserWidth, minLaserWidth, time / expandDuration) * widthMultiplier;
             yield return null;
         }
-        
-        /*
-        float time = 0;
-        while (time < duration)
-        {
-            time += Time.deltaTime;
-            lineRenderer.widthMultiplier = laserWidthOverTime.Evaluate(time / duration) * widthMultiplier;
-            yield return null;
-        }
         */
+
         Destroy(gameObject);
     }
 
