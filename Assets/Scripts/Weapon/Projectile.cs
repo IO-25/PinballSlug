@@ -1,27 +1,25 @@
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class Projectile : MonoBehaviour, IDamageable
 {
-    public float speed = 10f;
-    public int damage = 20;
-    public GameObject hitEffect;
+    [SerializeField] private float speed = 10f;
+    [SerializeField] private int damage = 20;
+    [SerializeField] private GameObject hitEffect;
+    [SerializeField] private LayerMask targetLayerMask;
 
     private Rigidbody2D rb;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    private void Awake() 
+        => rb = GetComponent<Rigidbody2D>();
 
-    private void Start()
-    {
-        SetDirection(transform.right); // 초기 방향 설정
-    }
+    private void Start() 
+        => SetDirection(transform.right); // 초기 방향 설정
 
-    private void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
+    private void OnBecameInvisible() 
+        => Destroy(gameObject);
+
+    public void TakeDamage(int damage) 
+        => Destroy(gameObject);
 
     public void SetDirection(Vector2 direction)
     {
@@ -29,21 +27,23 @@ public class Projectile : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (hitEffect != null)
             Instantiate(hitEffect, transform.position, Quaternion.identity);
 
-        // 적과 충돌하면 데미지
-        IDamageable damageable = collision.collider.GetComponent<IDamageable>();
+        // 타겟이 아니면 종료
+        if (((1 << collision.gameObject.layer) & targetLayerMask) == 0) return;
+
+        IDamageable damageable = collision.collider.GetComponentInParent<IDamageable>();
         if (damageable != null)
         {
             damageable.TakeDamage(damage);
             Destroy(gameObject);
-            return;
         }
     }
+
+
     private void OnDrawGizmos()
     {
         if (rb == null) return;
