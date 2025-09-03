@@ -1,36 +1,34 @@
 using UnityEngine;
 
+public enum WeaponType
+{
+    Pistol,
+    MachineGun,
+    Shotgun,
+}
+
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private WeaponData weaponData;
-    [SerializeField] private GameObject spreadCircle; // 퍼짐 범위 시각화용 오브젝트
+    [SerializeField] protected WeaponData weaponData;
+    [SerializeField] private GameObject spreadCircle;
+    [SerializeField] private TrajectoryRenderer trajectoryRenderer;
 
-    private int currentAmmo;
-    private float nextAttackTime = 0f;
+    protected int currentAmmo;
+    protected float nextAttackTime = 0f;
 
     public int CurrentAmmo => currentAmmo;
+    public WeaponData WeaponData => weaponData;
 
-    private void OnEnable()
+    public virtual void Initialize()
     {
-        if(spreadCircle)
-            spreadCircle.SetActive(true);
-    }
-
-    private void OnDisable()
-    {
-        if (spreadCircle)
-            spreadCircle.SetActive(false);
-    }
-
-
-    public void Initialize(WeaponData newWeaponData)
-    {
-        weaponData = newWeaponData;
+        if (weaponData == null) return;
         currentAmmo = weaponData.maxAmmo;
     }
 
     public void Look(Vector2 firePoint)
     {
+        trajectoryRenderer.RenderTrajectory(firePoint);
+
         // 탄 퍼짐 시각화
         if (spreadCircle == null) return;
 
@@ -52,19 +50,15 @@ public class Weapon : MonoBehaviour
         if (Time.time < nextAttackTime) return;
         if (weaponData.useAmmo && currentAmmo <= 0) return;
 
-        nextAttackTime = Time.time + weaponData.attackRate;
+        nextAttackTime = Time.time + (1 / weaponData.attackRate);
 
         Vector2 start = firePoint;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (end - start).normalized;
         float distance = Vector2.Distance(start, end);
 
-        // 거리 비율 계산
-        float t = Mathf.Clamp01(distance / weaponData.maxDistance);
-        float spread = Mathf.Lerp(weaponData.minSpread, weaponData.maxSpread, t);
-
         // 랜덤 각도 추가
-        float randomAngle = Random.Range(-spread, spread);
+        float randomAngle = GetRandomSpreadAngle(distance);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + randomAngle;
         Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
 
@@ -75,6 +69,19 @@ public class Weapon : MonoBehaviour
         if(weaponData.useAmmo)
             currentAmmo = Mathf.Max(0, currentAmmo - 1);
         Debug.Log($"Current Ammo: {currentAmmo}");
+    }
+
+    protected float GetSpreadAngle(float distance)
+    {
+        // 거리 비율 계산
+        float t = Mathf.Clamp01(distance / weaponData.maxDistance);
+        return Mathf.Lerp(weaponData.minSpread, weaponData.maxSpread, t);
+    }
+
+    protected float GetRandomSpreadAngle(float distance)
+    {
+        float spread = GetSpreadAngle(distance);
+        return Random.Range(-spread, spread);
     }
 
 }

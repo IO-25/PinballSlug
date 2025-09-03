@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Juggling
   m_EditorClassIdentifier: 
   InitialHealth: 30
-  enemySprite: {fileID: 1602296539, guid: 17e70cdcc43db6b409780295e905fb28, type: 3}
-  AvailableRow: 0101010101010101
+  EnemyAnimatorController: {fileID: 9100000, guid: 8b247912b2ad0e84daa5aafe7aa5fc0b, type: 2}
   enemySize: {x: 1, y: 1}
   behaviours: []

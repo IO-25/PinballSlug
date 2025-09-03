@@ -1,127 +1,184 @@
+using System;
+using System.Reflection;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SerializeField] private Weapon weapon;
-    [SerializeField] private WeaponData defaultWeaponData;
-    [SerializeField] private WeaponData subWeaponData;
-    [SerializeField] private Weapon bombWeapon;
-    [SerializeField] private int bombCount = 3;
-
+    [Header("공격 관련")]
+    [Range(0f, 1f)]
+    [SerializeField] private float forwardAttackRange = 0.8f;
     [SerializeField] private Transform upFirePoint;
     [SerializeField] private Transform forwardFirePoint;
     [SerializeField] private Transform downFirePoint;
-    [SerializeField] private TrajectoryRenderer trajectoryRenderer;
+    // [SerializeField] private GameObject spreadCircle;
 
-    [Range(0f, 1f)]
-    public float forwardAttackRange = 0.8f;
+    [Header("무기 관련")]
+    [SerializeField] private Transform weaponParent;
+    [SerializeField] private int weaponSlotSize = 2;
+    private Weapon[] weaponSlots = null;
+    private int currentWeaponIndex = 0;
 
-    private bool isUsingDefaultWeapon = true;
+    [Header("폭탄 관련")]
+    [SerializeField] private Weapon bombWeapon;
+    [SerializeField] private int bombCount = 3;
+
     private PlayerAnimationController animationController;
+
+    public Weapon CurrentWeapon => weaponSlots[currentWeaponIndex];
+
+    public Vector2 CurrentFirePoint
+    {
+        get
+        {
+            float y = animationController.upperBodyAnimator.GetFloat("Y");
+            if (y > forwardAttackRange) return upFirePoint.position;
+            if (y < -forwardAttackRange) return downFirePoint.position;
+            return forwardFirePoint.position;
+        }
+    }
 
     void OnEnable()
     {
-        if(weapon) weapon.gameObject.SetActive(true);
-        if(trajectoryRenderer) trajectoryRenderer.gameObject.SetActive(true);
+        if (CurrentWeapon != null)
+            CurrentWeapon.gameObject.SetActive(true);
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
-        if (weapon) weapon.gameObject.SetActive(false);
-        if (trajectoryRenderer) trajectoryRenderer.gameObject.SetActive(false);
+        if (CurrentWeapon != null)
+            CurrentWeapon.gameObject.SetActive(false);
         animationController.SetBool("IsShooting", false);
     }
 
-    private void Start()
+    void Awake()
     {
-        animationController = GetComponent<PlayerAnimationController>();
-
-        Equip(defaultWeaponData);
+        Initialize();
     }
 
     void Update()
     {
-        Look();
-
-        if (Input.GetMouseButton(0)) 
-            Fire();
-        else if (Input.GetMouseButtonUp(0))
-            animationController.SetBool("IsShooting", false);
-
-        if (Input.GetKeyDown(KeyCode.Q))
-            SwitchWeapon();
-
-        if (Input.GetMouseButtonDown(1))
-            UseBomb();
+        HandleLook();
+        HandleInput();
     }
 
-    public void Look()
+    private void Initialize()
     {
-        Vector2 start = transform.position;
-        Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 dir = (end - start).normalized;
-        UpdateDirecitronY(dir.y);
-        trajectoryRenderer.RenderTrajectory(GetFirePoint());
-        weapon.Look(GetFirePoint());
+        currentWeaponIndex = 0;
+        weaponSlots = new Weapon[weaponSlotSize];
+        animationController = GetComponent<PlayerAnimationController>();
+        EquipWeapon(WeaponType.Pistol);
+        EquipWeapon(WeaponType.Shotgun);
+        CurrentWeapon.gameObject.SetActive(true);
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetMouseButton(0)) Fire();
+        else if (Input.GetMouseButtonUp(0)) animationController.SetBool("IsShooting", false);
+        if (Input.GetKeyDown(KeyCode.Q)) SwitchWeapon();
+        if (Input.GetMouseButtonDown(1)) UseBomb();
+    }
+
+    private void HandleLook()
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 dir = (mousePos - (Vector2)transform.position).normalized;
+
+        UpdateDirectionY(dir.y);
+        CurrentWeapon.Look(CurrentFirePoint);
     }
 
     public void Fire()
     {
-        weapon.Fire(GetFirePoint());
+        if (CurrentWeapon == null) return;
+
+        CurrentWeapon.Fire(CurrentFirePoint);
         animationController.SetBool("IsShooting", true);
 
-        if (!isUsingDefaultWeapon)
-        {
-            if (weapon.CurrentAmmo <= 0)
-            {
-                SwitchWeapon();
-                subWeaponData = null;
-            }
-        }
+        if (CurrentWeapon.CurrentAmmo <= 0)
+            UnequipWeapon();
     }
 
     public void UseBomb()
     {
         if (bombCount <= 0) return;
-
         bombCount--;
-        bombWeapon.Fire(GetFirePoint());
-        Debug.Log("폭탄 사용!!! 남은 폭탄: " + bombCount);
+        bombWeapon.Fire(CurrentFirePoint);
+        Debug.Log($"폭탄 사용! 남은 폭탄: {bombCount}");
     }
 
-    public void SwitchWeapon()
+    private void SwitchWeapon()
     {
-        if(subWeaponData == null) return;
+        if (weaponSlots.Length <= 1) return;
+        if (FindNextWeaponIndex() == currentWeaponIndex) return; // 다른 무기가 없으면 종료
 
-        isUsingDefaultWeapon = !isUsingDefaultWeapon;
-        Equip(isUsingDefaultWeapon ? defaultWeaponData : subWeaponData);
+        if(CurrentWeapon != null)
+            CurrentWeapon.gameObject.SetActive(false);
+
+        currentWeaponIndex = FindNextWeaponIndex();
+        CurrentWeapon.gameObject.SetActive(true);
+
+        animationController.SetAnimController(
+            CurrentWeapon.WeaponData.upperAnimController,
+            CurrentWeapon.WeaponData.lowerAnimController
+        );
+
+        Debug.Log($"무기 교체: {CurrentWeapon.WeaponData.weaponName}");
     }
 
-    public void Equip(WeaponData weaponData)
+    public void EquipWeapon(WeaponType weaponType)
     {
-        weapon.Initialize(weaponData);
-        animationController.SetAnimController(weaponData.upperAnimController, weaponData.lowerAnimController);
-        Debug.Log($"Equipped {weaponData.weaponName}");
+        // 빈 슬롯 찾기
+        int index = FindEmptySlotIndex();
+
+        // 무기 생성 및 초기화
+        GameObject weaponPrefab = Resources.Load<GameObject>($"Weapon/{weaponType}");
+        Weapon newWeapon = Instantiate(weaponPrefab, weaponParent).GetComponent<Weapon>();
+        newWeapon.Initialize();
+
+        weaponSlots[index] = newWeapon;
+        CurrentWeapon.gameObject.SetActive(false);
+        Debug.Log($"무기 획득: {weaponSlots[index].WeaponData.weaponName}");
     }
 
-    public void UpdateDirecitronY(float dirY)
+    public void UnequipWeapon()
     {
-        if (dirY > forwardAttackRange)
-            animationController.SetFloat_Upper("Y", 1f);   // 위쪽
-        else if (dirY < -forwardAttackRange)
-            animationController.SetFloat_Upper("Y", -1f);  // 아래쪽
-        else
-            animationController.SetFloat_Upper("Y", 0f);   // 정면
+        if (weaponSlots[currentWeaponIndex] == null) return;
+
+        Debug.Log($"무기 해제: {weaponSlots[currentWeaponIndex].WeaponData.weaponName}");
+        Destroy(weaponSlots[currentWeaponIndex].gameObject);
+        weaponSlots[currentWeaponIndex] = null;
+
+        // 다음 무기로 자동 전환
+        SwitchWeapon();
     }
 
-    public Vector2 GetFirePoint()
+    private int FindNextWeaponIndex()
     {
-        float y = animationController.upperBodyAnimator.GetFloat("Y");
-        if (y > forwardAttackRange)
-            return upFirePoint.position;
-        else if (y < -forwardAttackRange)
-            return downFirePoint.position;
-        else
-            return forwardFirePoint.position;
+        int nextIndex = (currentWeaponIndex + 1) % weaponSlots.Length;
+        while (nextIndex != currentWeaponIndex)
+        {
+            if (weaponSlots[nextIndex] != null) return nextIndex;
+            nextIndex = (nextIndex + 1) % weaponSlots.Length;
+        }
+        return currentWeaponIndex; // 다른 무기가 없으면 현재 인덱스 반환
     }
+
+
+    private int FindEmptySlotIndex()
+    {
+        for (int i = 0; i < weaponSlots.Length; i++)
+            if (weaponSlots[i] == null) return i;
+
+        return weaponSlots.Length - 1; // 빈 슬롯이 없으면 마지막 인덱스 반환
+    }
+
+    private void UpdateDirectionY(float dirY)
+    {
+        float value = dirY > forwardAttackRange ? 1f :
+                      dirY < -forwardAttackRange ? -1f : 0f;
+
+        animationController.SetFloat_Upper("Y", value);
+    }
+
 }
