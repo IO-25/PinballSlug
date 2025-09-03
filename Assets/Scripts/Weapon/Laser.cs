@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
+    [Header("레이저 설정")]
     [SerializeField] private LineRenderer lineRenderer; // 레이저 시각화를 위한 LineRenderer
     [SerializeField] private AnimationCurve laserWidthOverTime; // 레이저 굵기 변화 곡선
     [SerializeField] private float widthMultiplier = 2f; // 레이저 크기 배율
@@ -16,6 +17,7 @@ public class Laser : MonoBehaviour
     [SerializeField] private float maxLaserWidth = 2.5f; // 레이저 굵기 배율
     */
 
+    [Header("데미지 설정")]
     [SerializeField] private int damage = 5; // 공격 데미지
     [SerializeField] private float damageInterval = 0.1f; // 데미지 적용 간격
     [SerializeField] private float maxDistance = 100f; // 최대 사거리
