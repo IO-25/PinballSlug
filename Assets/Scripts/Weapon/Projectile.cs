@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class Projectile : MonoBehaviour, IDamageable
 {
     [SerializeField] private float speed = 10f;
     [SerializeField] private int damage = 20;
@@ -9,20 +9,17 @@ public class Projectile : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    private void Awake() 
+        => rb = GetComponent<Rigidbody2D>();
 
-    private void Start()
-    {
-        SetDirection(transform.right); // 초기 방향 설정
-    }
+    private void Start() 
+        => SetDirection(transform.right); // 초기 방향 설정
 
-    private void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
+    private void OnBecameInvisible() 
+        => Destroy(gameObject);
+
+    public void TakeDamage(int damage) 
+        => Destroy(gameObject);
 
     public void SetDirection(Vector2 direction)
     {
