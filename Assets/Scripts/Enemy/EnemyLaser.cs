@@ -7,15 +7,15 @@ public class EnemyLaser : MonoBehaviour
     LineRenderer lineRenderer;
     [SerializeField] float placementOffset;
     const float laserLength = 100;
-    // Start is called before the first frame update
+
     private void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
     }
     void Start()
     {
-        lineRenderer.SetPosition(0, Vector3.left * placementOffset);
-        lineRenderer.SetPosition(1, Vector3.left  * (laserLength + placementOffset));
+        lineRenderer.SetPosition(0, Vector3.left * placementOffset + transform.parent.localPosition);
+        lineRenderer.SetPosition(1, Vector3.left  * (laserLength + placementOffset) + transform.parent.localPosition);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

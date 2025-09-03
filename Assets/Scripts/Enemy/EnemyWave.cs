@@ -38,7 +38,7 @@ public class EnemyWave : MonoBehaviour
             enemy[index].parentWave = this;
             enemy[index].index = index;
             enemy[index].Init(data);
-            enemy[index].transform.localPosition += Vector3.up * (data.enemySize.y - 1);
+            enemy[index].transform.localPosition += Vector3.up * (data.enemySize.y - 1f) / 2.0f;
         }
     }
 }
