@@ -105,6 +105,7 @@ MonoBehaviour:
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  useDestroyOnHit: 1
 --- !u!58 &-4596809294338563423
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -162,7 +163,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 640
+    m_Bits: 704
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
