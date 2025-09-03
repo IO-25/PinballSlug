@@ -201,13 +201,19 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  expandDuration: 0.3
+  holdMaxDuration: 0.9
+  shrinkDuration: 0.3
+  widthMultiplier: 2
+  minLaserWidth: 0.4
+  maxLaserWidth: 2.5
+  lifetime: 1.5
   damage: 500
   maxDistance: 100
-  duration: 1
-  hitLayerMask:
+  hitBlockerMask:
     serializedVersion: 2
     m_Bits: 1024
-  damageLayerMask:
+  damageTargetMask:
     serializedVersion: 2
     m_Bits: 512
-  hitTiming: 0.4
+  damageApplyRatio: 0.5
