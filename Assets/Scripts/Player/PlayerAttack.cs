@@ -141,6 +141,9 @@ public class PlayerAttack : MonoBehaviour
         Weapon newWeapon = Instantiate(weaponPrefab, weaponParent).GetComponent<Weapon>();
         newWeapon.Initialize();
 
+        if (weaponSlots[index] != null) // ±âÁ¸ ¹«±â Á¦°Å
+            Destroy(weaponSlots[index].gameObject);
+
         weaponSlots[index] = newWeapon;
         weaponSlots[index].gameObject.SetActive(false);
         Debug.Log($"¹«±â È¹µæ: {weaponSlots[index].WeaponData.weaponName}");

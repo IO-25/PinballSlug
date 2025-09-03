@@ -28,6 +28,14 @@ public class Player : MonoBehaviour
         GameManager.Instance.Player = this;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            DropItemFactory.CreateRandomDropItem(PlayerAttack.CurrentFirePoint);
+        }
+    }
+
     public void Initialize()
     {
         playerMovement.enabled = true;
