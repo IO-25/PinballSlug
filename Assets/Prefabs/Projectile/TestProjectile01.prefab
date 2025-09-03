@@ -105,6 +105,7 @@ MonoBehaviour:
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 512
+  useDestroyOnHit: 0
 --- !u!58 &-4596809294338563423
 CircleCollider2D:
   m_ObjectHideFlags: 0
