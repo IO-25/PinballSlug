@@ -19,6 +19,7 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("ÆøÅº °ü·Ã")]
     [SerializeField] private Laser laserPrefab;
+    [SerializeField] private Transform laserPoint;
     [SerializeField] private int laserCount = 10;
 
     private PlayerAnimationController animationController;
@@ -107,7 +108,7 @@ public class PlayerAttack : MonoBehaviour
         Vector2 dir = (mousePos - CurrentFirePoint).normalized;
 
         Laser laser = Instantiate(laserPrefab);
-        laser.ShotLaser(CurrentFirePoint, dir);
+        laser.ShotLaser(laserPoint.position, dir);
         Debug.Log($"ÆøÅº »ç¿ë! ³²Àº ÆøÅº: {laserCount}");
     }
 

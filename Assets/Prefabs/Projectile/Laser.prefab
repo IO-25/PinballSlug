@@ -74,7 +74,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -181,7 +181,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.6015258
+      time: 0.9
       value: 2
       inSlope: 0
       outSlope: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
+      time: 1.5
       value: 0
       inSlope: 0
       outSlope: 0
@@ -201,13 +201,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  damage: 500
+  widthMultiplier: 2
+  damage: 10
   maxDistance: 100
-  duration: 1
-  hitLayerMask:
+  hitBlockerMask:
     serializedVersion: 2
     m_Bits: 1024
-  damageLayerMask:
+  damageTargetMask:
     serializedVersion: 2
     m_Bits: 512
-  hitTiming: 0.4
