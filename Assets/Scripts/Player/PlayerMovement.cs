@@ -86,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Jump()
     {
         if (isJumping) yield break;
+        if (rb.velocity.y > 0) yield break; // 이미 상승 중이면 점프 불가
         isJumping = true;
 
         float time = 0f;
