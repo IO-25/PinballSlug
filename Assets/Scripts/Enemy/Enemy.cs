@@ -33,8 +33,8 @@ public class Enemy : MonoBehaviour, IDamageable
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
         enemyAnimator.runtimeAnimatorController = referenceEnemy.EnemyAnimatorController;
-        boxSpriteRenderer.size = referenceEnemy.enemySize * 2;
-        enemyCollider.size = referenceEnemy.enemySize * 2;
+        boxSpriteRenderer.size = referenceEnemy.enemySize;
+        enemyCollider.size = referenceEnemy.enemySize;
         behaviours = referenceEnemy.behaviours;
         isInitialized = true;
 
