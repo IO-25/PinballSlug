@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
         health = GetComponent<Health>();
 
         health.OnTakeDamage += OnTakeDamage;
+
+        GameManager.Instance.Player = this;
     }
 
     public void Initialize()
