@@ -8,10 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Arcade - Metal Slug 6 - Miscellaneous - Other Font &amp; HUD.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Arcade - Metal Slug 6 - Miscellaneous - Other Font &amp; HUD.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/NewUnlitChromaKeyShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/NewUnlitChromaKeyShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/MapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/MapTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +116,8 @@
       <workItem from="1756705754866" duration="4057000" />
       <workItem from="1756778191859" duration="1635000" />
       <workItem from="1756781279072" duration="11785000" />
+      <workItem from="1756864511174" duration="253000" />
+      <workItem from="1756865849723" duration="1037000" />
     </task>
     <servers />
   </component>

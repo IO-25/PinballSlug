@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2aaf0e13eae8b8a48876e49cfa72b15e
+guid: 09060c3e17c6f9a4b9479496d02f1739
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,49 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup_0
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 389
-        width: 118
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 272120bb8da92744bb0b1084abe447e6
-      internalID: -2029067737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup_1
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 383
-        width: 154
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eaa6e2aee65c524193b3898d02a8280
-      internalID: 1646737354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -174,9 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup_0: -2029067737
-      Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup_1: 1646737354
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
