@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerOneWayPlatform : MonoBehaviour
 {
     [SerializeField] private Collider2D playerCollider;
+    [SerializeField] private float dropTime = 0.2f;
     private Collider2D currentPlatform;
     private bool isDropping = false;
 
@@ -40,7 +41,7 @@ public class PlayerOneWayPlatform : MonoBehaviour
 
         isDropping = true;
         Physics2D.IgnoreCollision(playerCollider, platformCollider, true);
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(dropTime);
         Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
 
         isDropping = false;

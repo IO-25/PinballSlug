@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
     {
         playerMovement.enabled = false;
         playerAttack.enabled = false;
+        playerAnimationController.Initialize();
         playerAnimationController.SetBool("IsDying", true);
     }
 

@@ -42,8 +42,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CurrentWeapon != null)
             CurrentWeapon.gameObject.SetActive(true);
-
-        Debug.Log("PlayerAttack OnEnable");
         Initialize();
     }
 

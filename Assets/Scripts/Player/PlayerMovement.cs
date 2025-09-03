@@ -49,10 +49,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleJumpAndSit()
     {
+        bool isGrounded = IsGrounded();
         bool isSittingInput = Input.GetKey(KeyCode.S);
         bool isJumpingInput = Input.GetButton("Jump");
 
-        if (IsGrounded())
+        if (isGrounded)
         {
             isSitting = isSittingInput;
 
@@ -74,10 +75,11 @@ public class PlayerMovement : MonoBehaviour
         // 애니메이션 상태 업데이트
         if (!oneWayPlatform.IsDropping)
         {
-            animationController.SetBool("IsJumping", !IsGrounded());
-            animationController.SetBool("IsSitting", isSittingInput);
+            animationController.SetBool("IsJumping", !isGrounded);
+            animationController.SetBool("IsSitting", isSittingInput && isGrounded);
         }
     }
+
     IEnumerator Jump()
     {
         if (isJumping) yield break;
