@@ -5,15 +5,6 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public event Action OnGameOver;
-
-    private Player player;
-    public Player Player { get => player; set => player = value; }
-
-    public void GameOver()
-    {
-        Debug.Log("GameOver");
-        OnGameOver?.Invoke();
-    }
-
+    [SerializeField] StageData[] stageDatabase;
+    public StageData[] StageDatabase { get { return stageDatabase; }}
 }
