@@ -6,13 +6,21 @@ public class Laser : MonoBehaviour
 {
     [SerializeField] private LineRenderer lineRenderer; // 레이저 시각화를 위한 LineRenderer
     [SerializeField] private AnimationCurve laserWidthOverTime; // 레이저 굵기 변화 곡선
+
+    [SerializeField] private float expandDuration = 0.3f; // 최소 굵기에서 최대 굵기로 변화하는 시간
+    [SerializeField] private float holdMaxDuration = 0.9f; // 최대 굵기 유지 시간
+    [SerializeField] private float shrinkDuration = 0.3f; // 최대 굵기에서 최소 굵기로 변화하는 시간
+    [SerializeField] private float widthMultiplier = 2f; // 레이저 크기 배율
+    [SerializeField] private float minLaserWidth = 0.4f; // 레이저 굵기 배율
+    [SerializeField] private float maxLaserWidth = 2.5f; // 레이저 굵기 배율
+    [SerializeField] private float lifetime = 1.5f; // 레이저 지속시간
+
     [SerializeField] private int damage = 5; // 공격 데미지
     [SerializeField] private float maxDistance = 100f; // 최대 사거리
-    [SerializeField] private float duration = 1f; // 레이저 지속 시간
-    [SerializeField] private LayerMask hitLayerMask; // 레이저가 충돌할 레이어 마스크
-    [SerializeField] private LayerMask damageLayerMask; // 레이저가 충돌할 레이어 마스크
+    [SerializeField] private LayerMask hitBlockerMask; // 레이저가 충돌할 레이어 마스크
+    [SerializeField] private LayerMask damageTargetMask; // 레이저가 충돌할 레이어 마스크
 
-    [SerializeField, Range(0f, 1f)] private float hitTiming = 0.5f; // 데미지 적용 타이밍 (0~1 사이)
+    [SerializeField, Range(0f, 1f)] private float damageApplyRatio = 0.5f; // 데미지 적용 타이밍 (0~1 사이)
 
     private void Awake()
     {
@@ -27,7 +35,7 @@ public class Laser : MonoBehaviour
 
         lineRenderer.SetPosition(0, transform.position);
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, maxDistance, hitLayerMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, maxDistance, hitBlockerMask);
         if (hit.collider != null)
             lineRenderer.SetPosition(1, hit.point);
         else
@@ -37,10 +45,8 @@ public class Laser : MonoBehaviour
         StartCoroutine(ActiveCollider());
     }
 
-    IEnumerator ActiveCollider()
+    void ActiveDamage()
     {
-        yield return new WaitForSeconds(duration * hitTiming);
-
         // BoxCast 실행
         float colliderWidth = lineRenderer.widthMultiplier;
         float colliderLength = Vector2.Distance(lineRenderer.GetPosition(0), lineRenderer.GetPosition(1));
@@ -48,7 +54,7 @@ public class Laser : MonoBehaviour
         Vector2 size = new(colliderLength, colliderWidth);
         float angle = Mathf.Atan2(transform.right.y, transform.right.x) * Mathf.Rad2Deg;
 
-        Collider2D[] colls = Physics2D.OverlapBoxAll(origin, size, angle, damageLayerMask);
+        Collider2D[] colls = Physics2D.OverlapBoxAll(origin, size, angle, damageTargetMask);
 
         // 충돌 시 데미지 적용
         foreach (var coll in colls)
@@ -59,23 +65,46 @@ public class Laser : MonoBehaviour
                 Debug.Log("Laser Hit: " + coll.gameObject.name);
             }
         }
+    }
 
-        yield return null;
+    IEnumerator ActiveCollider()
+    {
+        yield return new WaitForSeconds(lifetime * damageApplyRatio);
+        ActiveDamage();
     }
 
     IEnumerator PlayAnimation()
     {
-        lineRenderer.enabled = true;
+        
+        float time = 0;
+        // 굵기 증가
+        while (time < expandDuration)
+        {
+            time += Time.deltaTime;
+            lineRenderer.widthMultiplier = Mathf.Lerp(minLaserWidth, maxLaserWidth, time / expandDuration) * widthMultiplier;
+            yield return null;
+        }
 
+        // 최대 굵기 유지
+        yield return new WaitForSeconds(holdMaxDuration);
+
+        // 굵기 감소
+        while (time < shrinkDuration)
+        {
+            time += Time.deltaTime;
+            lineRenderer.widthMultiplier = Mathf.Lerp(maxLaserWidth, minLaserWidth, time / expandDuration) * widthMultiplier;
+            yield return null;
+        }
+        
+        /*
         float time = 0;
         while (time < duration)
         {
             time += Time.deltaTime;
-            lineRenderer.widthMultiplier = laserWidthOverTime.Evaluate(time / duration);
+            lineRenderer.widthMultiplier = laserWidthOverTime.Evaluate(time / duration) * widthMultiplier;
             yield return null;
         }
-        lineRenderer.enabled = false;
-
+        */
         Destroy(gameObject);
     }
 
