@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6996f61-d798-4c88-8f71-e2d0edc17e20" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Arcade - Metal Slug 6 - Miscellaneous - Other Font &amp; HUD.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Arcade - Metal Slug 6 - Miscellaneous - Other Font &amp; HUD.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/MapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/MapTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneChanger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
