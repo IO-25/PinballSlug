@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ public class Enemy : MonoBehaviour, IDamageable
 {
     public EnemyWave parentWave = null;
     public int index;
+
+    public Action OnDeadActions;
 
     const string DIEANIMATIONSTRING = "IsDie";
     SpriteRenderer boxSpriteRenderer;
@@ -42,18 +45,6 @@ public class Enemy : MonoBehaviour, IDamageable
             StartCoroutine(behaviours[i].ActionCorutine(this.transform));
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //if collision is End of the Map
-            //GameOver
-
-        //if collision is Player
-            //Kill Player
-
-        //if collision is Player Projectile
-            //Apply Damage
-    }
-
     public void TakeDamage(int damage)
     {
         curHealth -= damage;
@@ -63,10 +54,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private void OnDead()
     {
-        while (transform.childCount == 0)
-        {
-            DestroyImmediate(transform.GetChild(0));
-        }
+        OnDeadActions();
         enemyAnimator.SetBool(DIEANIMATIONSTRING, true);
         StopAllCoroutines();
     }

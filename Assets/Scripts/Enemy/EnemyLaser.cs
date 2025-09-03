@@ -14,6 +14,7 @@ public class EnemyLaser : MonoBehaviour
     }
     void Start()
     {
+        transform.parent.GetComponent<Enemy>().OnDeadActions += OnDead;
         lineRenderer.SetPosition(0, Vector3.left * placementOffset + transform.parent.position);
         lineRenderer.SetPosition(1, Vector3.left  * (laserLength + placementOffset) + transform.parent.position);
     }
@@ -23,13 +24,8 @@ public class EnemyLaser : MonoBehaviour
         lineRenderer.SetPosition(0, Vector3.left * placementOffset + transform.parent.position);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnDead()
     {
-        if (collision.TryGetComponent<Player>(out Player player))
-        {
-            //Kill Player
-            Debug.Log("Kill Player");
-        }
+        DestroyImmediate(this.gameObject);
     }
-
 }

@@ -22,6 +22,12 @@ public class EnemyWave : MonoBehaviour
         if (isInitialized)
         {
             transform.Translate(leftMovement);
+            //When Wave moved to the leftmost side of the camera
+            if (Camera.main.WorldToViewportPoint(transform.position).x <= 0.0f)
+            {
+                //Add Game Over Logic Here
+                Debug.Log("GameOver");
+            }
         }
     }
 
