@@ -11,9 +11,9 @@ public class ShootProjectilePlayer : EnemyBehaviour
     {
         if (StageManager.Instance.player == null)
             throw new System.Exception("No Player Target in StageManager");
-        Projectile projectile = Instantiate(ProjectilePrefab, t).GetComponent<Projectile>();
+        Projectile projectile = Instantiate(ProjectilePrefab).GetComponent<Projectile>();
+        projectile.transform.position = t.position;
         Vector3 targetposition = StageManager.Instance.player.transform.position;
         projectile.SetDirection((targetposition - t.position));
-
     }
 }
