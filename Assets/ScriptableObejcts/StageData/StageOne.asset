@@ -18,9 +18,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2fad9c2847c7bcc469ea505a631fcb65, type: 2}
   - {fileID: 11400000, guid: 9ba886f03716cce46a26d7ef50fa84ae, type: 2}
   enemyProbability:
-  - 65
-  - 25
-  - 10
+  - 0.65
+  - 0.25
+  - 0.1
   LerkerData: {fileID: 11400000, guid: fdadaa42879254e4f8008ce14b16a378, type: 2}
   LerkerSpawnDelay: 60
   lerkerSpawnIndex: 0000000004000000
