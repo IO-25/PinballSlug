@@ -9,7 +9,11 @@ public class ShootProjectilePlayer : EnemyBehaviour
 
     public override void EnemyAction(Transform t)
     {
-        //Check Player and Shoot at That Direction
-        Debug.Log("Shoot to Player");
+        if (StageManager.Instance.player == null)
+            throw new System.Exception("No Player Target in StageManager");
+        Projectile projectile = Instantiate(ProjectilePrefab, t).GetComponent<Projectile>();
+        Vector3 targetposition = StageManager.Instance.player.transform.position;
+        projectile.SetDirection((targetposition - t.position));
+
     }
 }

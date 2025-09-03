@@ -18,14 +18,13 @@ public static class RandomManager
         for (int i = 0; i < Probability.Length; i++)
         {
             Probability[i] /= sum;
-            if (i > 0)
-                Probability[i] += Probability[i - 1];
         }
 
         float randomNumber = Random.Range(0.0f, 1.0f);
         for (int i = 0; i < Probability.Length; i++)
         {
-            if (randomNumber <= Probability[i])
+            randomNumber -= Probability[i];
+            if (randomNumber <= 0)
                 return i;
         }
         throw new System.Exception("Probability Out Of Range");
