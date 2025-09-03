@@ -8,14 +8,7 @@ public class EnemySpawner : MonoBehaviour
     [Header("General Data")]
     [SerializeField] EnemyWave wavePrefab;
     [SerializeField] StageData stageData;
-    bool isInitialized = false;
-
-    [Header("Lerker")]
-    float lastLerkerTime = 0.0f;
     bool isLerkerSpawnable = false;
-
-    [Header("SpawnRate")]
-    float lastSpawnedTime = 0.0f;
 
     private void Awake()
     {
@@ -28,23 +21,28 @@ public class EnemySpawner : MonoBehaviour
         if (stageData.SpawnDelay == 0.0f)
             throw new System.ArgumentException("Stage Data SpawnDelay is 0");
         EnemyWave.leftMovement = stageData.moveDistance / stageData.SpawnDelay * Time.fixedDeltaTime;
-        isInitialized = true;
+        StartCoroutine(LerkerSpawner());
+        StartCoroutine(WaveGenrator());
     }
 
-    //Test Update, Remove Debug at the End
-    public void Update()
+    public IEnumerator LerkerSpawner()
     {
-        if (!isInitialized)
-            return;
-        if (!isLerkerSpawnable && Time.fixedTime - lastLerkerTime >= stageData.LerkerSpawnDelay)
+        while (true)
         {
-            isLerkerSpawnable=true;
+            if (!isLerkerSpawnable)
+            {
+                yield return new WaitForSeconds(stageData.LerkerSpawnDelay);
+                isLerkerSpawnable = true;
+            }
         }
+    }
 
-        if (Time.fixedTime - lastSpawnedTime >= stageData.SpawnDelay)
+    public IEnumerator WaveGenrator()
+    {
+        while (true)
         {
-            lastSpawnedTime = Time.fixedTime;
             GenerateWave();
+            yield return new WaitForSeconds(stageData.SpawnDelay);
         }
     }
 
@@ -58,7 +56,6 @@ public class EnemySpawner : MonoBehaviour
             lerkerIndex = stageData.lerkerSpawnIndex[RandomManager.RandomPicker(stageData.lerkerSpawnIndexProbability)];
             wave.SetEnemy((int)lerkerIndex, stageData.LerkerData);
             isLerkerSpawnable = false;
-            lastLerkerTime = Time.fixedTime;
         }
 
         for (int i = 0; i < EnemyWave.LANECOUNT; i++)
@@ -93,5 +90,10 @@ public class EnemySpawner : MonoBehaviour
             Destroy(wave);
         else
             wave.isInitialized = true;
+    }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
     }
 }
