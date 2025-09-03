@@ -102,6 +102,9 @@ MonoBehaviour:
   speed: 15
   damage: 20
   hitEffect: {fileID: 0}
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!58 &-4596809294338563423
 CircleCollider2D:
   m_ObjectHideFlags: 0

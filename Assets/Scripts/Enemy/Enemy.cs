@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     public EnemyWave parentWave = null;
     public int index;
@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
             //Apply Damage
     }
 
-    private void OnDamageApplied(int damage)
+    public void TakeDamage(int damage)
     {
         curHealth -= damage;
         if (curHealth <= 0)
@@ -63,6 +63,10 @@ public class Enemy : MonoBehaviour
 
     private void OnDead()
     {
+        while (transform.childCount == 0)
+        {
+            DestroyImmediate(transform.GetChild(0));
+        }
         enemyAnimator.SetBool(DIEANIMATIONSTRING, true);
         StopAllCoroutines();
     }

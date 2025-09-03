@@ -22,9 +22,9 @@ public class Health : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-        currentHealth = Mathf.Max(currentHealth - damage, 0);
-        OnHealthChanged?.Invoke(currentHealth);
         OnTakeDamage?.Invoke(currentHealth);
+        currentHealth = Mathf.Max(currentHealth - 1, 0);
+        OnHealthChanged?.Invoke(currentHealth);
 
         if (currentHealth <= 0) Die();
     }
