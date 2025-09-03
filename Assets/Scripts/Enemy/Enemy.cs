@@ -63,6 +63,10 @@ public class Enemy : MonoBehaviour
 
     private void OnDead()
     {
+        while (transform.childCount == 0)
+        {
+            DestroyImmediate(transform.GetChild(0));
+        }
         enemyAnimator.SetBool(DIEANIMATIONSTRING, true);
         StopAllCoroutines();
     }
