@@ -8,7 +8,7 @@ public class BGDestroyer : MonoBehaviour
     {
         if (other.CompareTag("OneWayPlatform"))
         {
-            // 오브젝트를 비활성화해서 풀로 반환합니다.
+            // 오브젝트를 비활성화해서 풀로 반환
             other.gameObject.SetActive(false);
         }
     }

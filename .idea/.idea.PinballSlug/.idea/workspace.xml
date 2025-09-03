@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c6996f61-d798-4c88-8f71-e2d0edc17e20" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EndScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EndScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/MapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/MapTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/BGDestroyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/BGDestroyer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Spawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreDisplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreDisplayManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/VolumeController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,

@@ -12,7 +12,7 @@ public class SceneChanger : MonoBehaviour
     
     public void GoGameScene()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("MapTest");
     }
 }  
 
