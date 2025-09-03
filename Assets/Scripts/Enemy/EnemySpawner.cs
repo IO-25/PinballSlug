@@ -34,6 +34,8 @@ public class EnemySpawner : MonoBehaviour
                 yield return new WaitForSeconds(stageData.LerkerSpawnDelay);
                 isLerkerSpawnable = true;
             }
+            else
+                yield return null;
         }
     }
 
