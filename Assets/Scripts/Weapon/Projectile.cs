@@ -29,13 +29,14 @@ public class Projectile : MonoBehaviour, IDamageable
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(hitEffect != null)
+        if (hitEffect != null)
             Instantiate(hitEffect, transform.position, Quaternion.identity);
 
-        if (((1 << collision.gameObject.layer) & targetLayerMask) == 0)
-            return;
+        // 타겟이 아니면 종료
+        if (((1 << collision.gameObject.layer) & targetLayerMask) == 0) return;
 
-        if (collision.collider.TryGetComponent<IDamageable>(out var damageable))
+        IDamageable damageable = collision.collider.GetComponentInParent<IDamageable>();
+        if (damageable != null)
         {
             damageable.TakeDamage(damage);
             Destroy(gameObject);
