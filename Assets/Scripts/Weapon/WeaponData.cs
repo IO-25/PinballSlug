@@ -15,7 +15,7 @@ public class WeaponData : ScriptableObject
     [Header("공격 관련")]
     public GameObject bulletPrefab;
     public float attackDamage = 1;
-    public float attackRate = 1f;
+    public float attackRate = 1f; // 1초당 발사하는 총알
     public int maxAmmo = 30;
     public bool useAmmo = true;
 

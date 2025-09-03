@@ -18,7 +18,7 @@ MonoBehaviour:
   lowerAnimController: {fileID: 22100000, guid: 800e524f92c6dbe43900df835b54e30c, type: 2}
   bulletPrefab: {fileID: 6532974473074499661, guid: 0ba820a95888f7849acd75f6b59c7736, type: 3}
   attackDamage: 1
-  attackRate: 0.2
+  attackRate: 10
   maxAmmo: 3
   useAmmo: 0
   minSpread: 0
