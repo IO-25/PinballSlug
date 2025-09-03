@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 6591215267978983056}
   - component: {fileID: 3281789081572713383}
   - component: {fileID: 4265296917813636340}
-  - component: {fileID: 3483987462671586581}
+  - component: {fileID: -7083482247141879246}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -480,7 +480,7 @@ MonoBehaviour:
   player: {fileID: -3670911867248435948}
   spawnPoint: {x: -8, y: -4}
   spawnDelay: 2
---- !u!114 &3483987462671586581
+--- !u!114 &-7083482247141879246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
