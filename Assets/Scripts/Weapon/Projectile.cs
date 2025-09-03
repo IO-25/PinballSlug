@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour, IDamageable
         if (damageable != null)
         {
             damageable.TakeDamage(damage);
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
 
