@@ -26,13 +26,19 @@ public class PlayerOneWayPlatform : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("OneWayPlatform"))
+        {
             currentPlatform = collision.collider;
+            transform.SetParent(collision.transform);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("OneWayPlatform"))
+        {
             currentPlatform = null;
+            transform.SetParent(null);
+        }
     }
 
     IEnumerator DisablePlatform(Collider2D platformCollider)
