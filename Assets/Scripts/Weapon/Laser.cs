@@ -27,7 +27,7 @@ public class Laser : MonoBehaviour
 
         lineRenderer.SetPosition(0, transform.position);
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, hitLayerMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, maxDistance, hitLayerMask);
         if (hit.collider != null)
             lineRenderer.SetPosition(1, hit.point);
         else
@@ -44,15 +44,19 @@ public class Laser : MonoBehaviour
         // BoxCast 실행
         float colliderWidth = lineRenderer.widthMultiplier;
         float colliderLength = Vector2.Distance(lineRenderer.GetPosition(0), lineRenderer.GetPosition(1));
+        Vector2 origin = (Vector2)transform.position + (Vector2)transform.right * (colliderLength / 2);
         Vector2 size = new(colliderLength, colliderWidth);
-        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position + transform.right * (colliderLength / 2), size, 0f, transform.right, 0f, damageLayerMask);
+        float angle = Mathf.Atan2(transform.right.y, transform.right.x) * Mathf.Rad2Deg;
+
+        Collider2D[] colls = Physics2D.OverlapBoxAll(origin, size, angle, damageLayerMask);
+
         // 충돌 시 데미지 적용
-        foreach (var hit in hits)
+        foreach (var coll in colls)
         {
-            if (hit.collider.TryGetComponent<IDamageable>(out var damageable))
+            if (coll.TryGetComponent<IDamageable>(out var damageable))
             {
                 damageable.TakeDamage(damage);
-                Debug.Log("Laser Hit: " + hit.collider.name);
+                Debug.Log("Laser Hit: " + coll.gameObject.name);
             }
         }
 
@@ -74,4 +78,5 @@ public class Laser : MonoBehaviour
 
         Destroy(gameObject);
     }
+
 }
