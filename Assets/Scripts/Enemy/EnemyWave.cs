@@ -5,15 +5,23 @@ using UnityEngine;
 public class EnemyWave : MonoBehaviour
 {
     public static int LANECOUNT = 8;
-
     public Enemy[] enemy = new Enemy[LANECOUNT];
     public bool isInitialized = false;
     public int waveEnemyCount = 0;
+    public static Vector3 leftMovement;
     private void Awake()
     {
         for (int i = 0; i < LANECOUNT; i++)
         {
             enemy[i] = transform.GetChild(i).GetComponent<Enemy>();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (isInitialized)
+        {
+            transform.Translate(leftMovement);
         }
     }
 

@@ -18,24 +18,36 @@ public class EnemySpawner : MonoBehaviour
     float lerkerSpawnTime = 5.0f;
     bool isLerkerSpawnable = false;
 
+    [Header("Spawn Info")]
+    [SerializeField] float SpawnDelay;
+    float lastSpawnedTime = 0.0f;
+    [SerializeField] Vector3 moveDistance;
+
+    private void Start()
+    {
+        if (SpawnDelay == 0)
+            throw new System.ArgumentException("Spawn Delay is 0");
+        EnemyWave.leftMovement = moveDistance / SpawnDelay * Time.fixedDeltaTime;
+    }
 
     //Test Update, Remove Debug at the End
     public void Update()
     {
-        //Debug
-        if (Input.GetKeyDown(KeyCode.V))
-            GenerateWave();
-        //Debug End
-
         if (!isLerkerSpawnable && Time.fixedTime - lastLerkerTime >= lerkerSpawnTime)
         {
             isLerkerSpawnable=true;
+        }
+
+        if (Time.fixedTime - lastSpawnedTime >= SpawnDelay)
+        {
+            lastSpawnedTime = Time.fixedTime;
+            GenerateWave();
         }
     }
 
     public void GenerateWave()
     {
-        EnemyWave wave = Instantiate(wavePrefab);
+        EnemyWave wave = Instantiate(wavePrefab, transform);
         int? lerkerIndex = null;
         //Spawn Lerker if possible
         if (isLerkerSpawnable)
