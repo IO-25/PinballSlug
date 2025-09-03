@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour, IDamageable
     [SerializeField] private int damage = 20;
     [SerializeField] private GameObject hitEffect;
     [SerializeField] private LayerMask targetLayerMask;
-
+    [SerializeField] private bool useDestroyOnHit = false;
     private Rigidbody2D rb;
 
     private void Awake() 
@@ -39,7 +39,8 @@ public class Projectile : MonoBehaviour, IDamageable
         if (damageable != null)
         {
             damageable.TakeDamage(damage);
-            // Destroy(gameObject);
+            if (useDestroyOnHit)
+                Destroy(gameObject);
         }
     }
 

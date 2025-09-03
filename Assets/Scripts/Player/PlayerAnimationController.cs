@@ -6,6 +6,19 @@ public class PlayerAnimationController : MonoBehaviour
     public Animator upperBodyAnimator;
     public Animator lowerBodyAnimator;
 
+    public void Initialize()
+    {
+        SetAnimSpeed(1f);
+        SetBool("IsDying", false);
+        SetBool("IsMoving", false);
+        SetBool("IsJumping", false);
+        SetBool("IsSitting", false);
+        SetBool("IsShooting", false);
+        SetBool("IsDropping", false);
+        SetBool("IsDying", false);
+        SetFloat_Upper("Y", 0f);
+    }
+
     public void SetAnimController(RuntimeAnimatorController upper, RuntimeAnimatorController lower)
     {
         upperBodyAnimator.runtimeAnimatorController = upper;

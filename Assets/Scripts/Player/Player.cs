@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private PlayerAttack playerAttack;
     private PlayerAnimationController playerAnimationController;
     private PlayerSpawner playerSpawner;
-    private Health health;
+    private PlayerHealth playerHealth;
 
     public PlayerMovement PlayerMovement => playerMovement;
     public PlayerAttack PlayerAttack => playerAttack;
@@ -21,9 +21,10 @@ public class Player : MonoBehaviour
         playerAttack = GetComponent<PlayerAttack>();
         playerAnimationController = GetComponent<PlayerAnimationController>();
         playerSpawner = GetComponent<PlayerSpawner>();
-        health = GetComponent<Health>();
+        playerHealth = GetComponent<PlayerHealth>();
 
-        health.OnTakeDamage += OnTakeDamage;
+        playerHealth.OnTakeDamage += OnTakeDamage;
+        playerAnimationController.Initialize();
         StageManager.Instance.player = this;
     }
 
@@ -39,9 +40,8 @@ public class Player : MonoBehaviour
     {
         playerMovement.enabled = true;
         playerAttack.enabled = true;
-        playerAnimationController.SetBool("IsDying", false);
-        playerAnimationController.SetBool("IsMoving", false);
-        playerAnimationController.SetFloat_Upper("Y", 0f);
+        playerHealth.Initialize();
+        playerAnimationController.Initialize();
     }
     
     private void OnTakeDamage(int health)
@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
     {
         playerMovement.enabled = false;
         playerAttack.enabled = false;
+        playerAnimationController.Initialize();
         playerAnimationController.SetBool("IsDying", true);
     }
 
@@ -70,7 +71,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            health.TakeDamage(1);
+            playerHealth.TakeDamage(1);
         }
     }
 

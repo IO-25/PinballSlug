@@ -21,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Laser laserPrefab;
     [SerializeField] private Transform laserPoint;
     [SerializeField] private int laserCount = 10;
+    private int currentLaserCount = 10;
 
     private PlayerAnimationController animationController;
 
@@ -41,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CurrentWeapon != null)
             CurrentWeapon.gameObject.SetActive(true);
+        Initialize();
     }
 
     void OnDisable()
@@ -51,6 +53,14 @@ public class PlayerAttack : MonoBehaviour
     }
 
     void Awake()
+    {
+        animationController = GetComponent<PlayerAnimationController>();
+        weaponSlots = new Weapon[weaponSlotSize];
+        EquipWeapon(WeaponType.Pistol);
+        CurrentWeapon.gameObject.SetActive(true);
+    }
+
+    private void Start()
     {
         Initialize();
     }
@@ -64,11 +74,10 @@ public class PlayerAttack : MonoBehaviour
     private void Initialize()
     {
         currentWeaponIndex = 0;
-        weaponSlots = new Weapon[weaponSlotSize];
-        animationController = GetComponent<PlayerAnimationController>();
-        EquipWeapon(WeaponType.Pistol);
-        EquipWeapon(WeaponType.Shotgun);
-        CurrentWeapon.gameObject.SetActive(true);
+        currentLaserCount = laserCount;
+
+        for(int i = 1; i < weaponSlots.Length; i++)
+            UnequipWeapon(i);
     }
 
     private void HandleInput()
@@ -96,20 +105,20 @@ public class PlayerAttack : MonoBehaviour
         animationController.SetBool("IsShooting", true);
 
         if (CurrentWeapon.CurrentAmmo <= 0)
-            UnequipWeapon();
+            UnequipWeapon(currentWeaponIndex);
     }
 
     public void UseBomb()
     {
-        if (laserCount <= 0) return;
-        laserCount--;
+        if (currentLaserCount <= 0) return;
+        currentLaserCount--;
 
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (mousePos - CurrentFirePoint).normalized;
 
-        Laser laser = Instantiate(laserPrefab);
+        Laser laser = Instantiate(laserPrefab, transform);
         laser.ShotLaser(laserPoint.position, dir);
-        Debug.Log($"ÆøÅº »ç¿ë! ³²Àº ÆøÅº: {laserCount}");
+        Debug.Log($"ÆøÅº »ç¿ë! ³²Àº ÆøÅº: {currentLaserCount}");
     }
 
     private void SwitchWeapon()
@@ -149,13 +158,13 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log($"¹«±â È¹µæ: {weaponSlots[index].WeaponData.weaponName}");
     }
 
-    public void UnequipWeapon()
+    public void UnequipWeapon(int index)
     {
-        if (weaponSlots[currentWeaponIndex] == null) return;
+        if (weaponSlots[index] == null) return;
 
-        Debug.Log($"¹«±â ÇØÁ¦: {weaponSlots[currentWeaponIndex].WeaponData.weaponName}");
-        Destroy(weaponSlots[currentWeaponIndex].gameObject);
-        weaponSlots[currentWeaponIndex] = null;
+        Debug.Log($"¹«±â ÇØÁ¦: {weaponSlots[index].WeaponData.weaponName}");
+        Destroy(weaponSlots[index].gameObject);
+        weaponSlots[index] = null;
 
         // ´ÙÀ½ ¹«±â·Î ÀÚµ¿ ÀüÈ¯
         SwitchWeapon();

@@ -66,9 +66,11 @@ public class Weapon : MonoBehaviour
         Instantiate(weaponData.bulletPrefab, firePoint, rot);
 
         // Åº¾à °¨¼Ò
-        if(weaponData.useAmmo)
+        if (weaponData.useAmmo)
+        {
             currentAmmo = Mathf.Max(0, currentAmmo - 1);
-        Debug.Log($"Current Ammo: {currentAmmo}");
+            Debug.Log($"Current Ammo: {currentAmmo}");
+        }
     }
 
     protected float GetSpreadAngle(float distance)
