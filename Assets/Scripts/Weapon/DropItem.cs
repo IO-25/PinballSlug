@@ -37,7 +37,7 @@ public class DropItem : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // 플레이어가 아이템을 획득했을 때 무기 교체
-            Player player = GameManager.Instance.Player;
+            Player player = StageManager.Instance.player;
             if (player != null)
             {
                 player.PlayerAttack.EquipWeapon(weaponType);
