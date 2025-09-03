@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     private static AudioManager instance;
     private string nextSceneName;
 
+    // 버튼을 누르면 소리가 나고 넘어가도록 만듬
     void Awake()
     {
         if (instance == null)
@@ -23,7 +24,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // 버튼에 연결할 함수
+    // 버튼에 연결
     public void ButtonClickSoundAndLoadScene(string sceneName)
     {
         if (buttonClickSound != null && buttonClickSound.clip != null)
