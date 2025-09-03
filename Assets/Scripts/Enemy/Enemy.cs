@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private void OnDead()
     {
-        OnDeadActions();
+        OnDeadActions?.Invoke();
         enemyAnimator.SetBool(DIEANIMATIONSTRING, true);
         StopAllCoroutines();
     }

@@ -24,8 +24,14 @@ public class EnemyLaser : MonoBehaviour
         lineRenderer.SetPosition(0, Vector3.left * placementOffset + transform.parent.position);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.transform.parent.GetComponent<Player>().OnTakeDamage(1);
+    }
+
     public void OnDead()
     {
-        DestroyImmediate(this.gameObject);
+        transform.parent.GetComponent<Enemy>().OnDeadActions -= OnDead;
+        Destroy(this.gameObject);
     }
 }
