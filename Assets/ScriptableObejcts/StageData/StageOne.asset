@@ -25,7 +25,7 @@ MonoBehaviour:
   LerkerSpawnDelay: 60
   lerkerSpawnIndex: 0000000004000000
   lerkerSpawnIndexProbability:
-  - 75
-  - 25
+  - 0.75
+  - 0.25
   SpawnDelay: 2
   moveDistance: {x: -1, y: 0, z: 0}
