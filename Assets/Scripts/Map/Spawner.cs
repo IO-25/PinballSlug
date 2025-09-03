@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        // 현재 시간이 다음 생성 시간보다 크거나 같을 때 발판 '그룹' 생성
+        // 시간에 맞게 발판 그룹 생성
         if (Time.time >= nextSpawnTime)
         {
             SpawnAllPlatformsAtOnce();

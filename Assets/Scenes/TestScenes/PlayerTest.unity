@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 151562041}
   - component: {fileID: 151562040}
   - component: {fileID: 151562042}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 420496840}
   - component: {fileID: 420496839}
   - component: {fileID: 420496841}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,6 +662,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1180519498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180519500}
+  - component: {fileID: 1180519499}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1180519499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180519498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7feba3c62a90a3f4889024c6d5dc2297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wavePrefab: {fileID: 3352036877587202968, guid: f91b55509664d8b42bd89b1f35436d60, type: 3}
+  normalEnemyData:
+  - {fileID: 11400000, guid: 9a3c1447642cad7459eb23ac7f30db8f, type: 2}
+  - {fileID: 11400000, guid: 2fad9c2847c7bcc469ea505a631fcb65, type: 2}
+  - {fileID: 11400000, guid: 9ba886f03716cce46a26d7ef50fa84ae, type: 2}
+  LerkerData: {fileID: 11400000, guid: fdadaa42879254e4f8008ce14b16a378, type: 2}
+  SpawnDelay: 0
+  moveDistance: {x: 0, y: 0, z: 0}
+--- !u!4 &1180519500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180519498}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.95, y: -5.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181670928
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,7 +756,7 @@ GameObject:
   - component: {fileID: 1205103684}
   - component: {fileID: 1205103683}
   - component: {fileID: 1205103685}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +887,7 @@ GameObject:
   - component: {fileID: 1525722942}
   - component: {fileID: 1525722941}
   m_Layer: 6
-  m_Name: Plane (4)
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1019,7 +1071,8 @@ SceneRoots:
   - {fileID: 8940883815177938432}
   - {fileID: 151562041}
   - {fileID: 420496840}
+  - {fileID: 1205103684}
   - {fileID: 896022698}
   - {fileID: 1525722943}
-  - {fileID: 1205103684}
   - {fileID: 92695587}
+  - {fileID: 1180519500}

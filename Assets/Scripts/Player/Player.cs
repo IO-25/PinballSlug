@@ -24,6 +24,15 @@ public class Player : MonoBehaviour
         health = GetComponent<Health>();
 
         health.OnTakeDamage += OnTakeDamage;
+        StageManager.Instance.player = this;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            DropItemFactory.CreateRandomDropItem(PlayerAttack.CurrentFirePoint);
+        }
     }
 
     public void Initialize()

@@ -143,6 +143,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 383
+        width: 154
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eaa6e2aee65c524193b3898d02a8280
+      internalID: 1646737354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -155,6 +176,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup_0: -2029067737
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - System Setup_1: 1646737354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

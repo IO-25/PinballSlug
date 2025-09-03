@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     public EnemyWave parentWave = null;
     public int index;
@@ -33,8 +33,8 @@ public class Enemy : MonoBehaviour
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
         enemyAnimator.runtimeAnimatorController = referenceEnemy.EnemyAnimatorController;
-        boxSpriteRenderer.size = referenceEnemy.enemySize * 2;
-        enemyCollider.size = referenceEnemy.enemySize * 2;
+        boxSpriteRenderer.size = referenceEnemy.enemySize;
+        enemyCollider.size = referenceEnemy.enemySize;
         behaviours = referenceEnemy.behaviours;
         isInitialized = true;
 
@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
             //Apply Damage
     }
 
-    private void OnDamageApplied(int damage)
+    public void TakeDamage(int damage)
     {
         curHealth -= damage;
         if (curHealth <= 0)

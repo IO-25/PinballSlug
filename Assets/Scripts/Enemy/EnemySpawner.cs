@@ -1,47 +1,62 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    [Header("General Data")]
     [SerializeField] EnemyWave wavePrefab;
-    [SerializeField] EnemyData[] normalEnemyData;
-    [SerializeField] EnemyData LerkerData;
+    [SerializeField] StageData stageData;
+    bool isInitialized = false;
 
-    //Testing values
-    //Need to change with Stage Values later
-    float spawnProbability = 0.6f;
-    float[] enemyProbability = { 65, 25, 10 };
-    int[] lerkerSpawnIndex = { 0, 4 };
-    float[] lerkerSpawnIndexProbability = { 75, 25 };
+    [Header("Lerker")]
     float lastLerkerTime = 0.0f;
-    float lerkerSpawnTime = 5.0f;
     bool isLerkerSpawnable = false;
 
+    [Header("SpawnRate")]
+    float lastSpawnedTime = 0.0f;
+
+    private void Awake()
+    {
+        StageManager.Instance.enemySpawner = this;
+    }
+
+    public void Init(StageData data)
+    {
+        stageData = data;
+        if (stageData.SpawnDelay == 0.0f)
+            throw new System.ArgumentException("Stage Data SpawnDelay is 0");
+        EnemyWave.leftMovement = stageData.moveDistance / stageData.SpawnDelay * Time.fixedDeltaTime;
+        isInitialized = true;
+    }
 
     //Test Update, Remove Debug at the End
     public void Update()
     {
-        //Debug
-        if (Input.GetKeyDown(KeyCode.V))
-            GenerateWave();
-        //Debug End
-
-        if (!isLerkerSpawnable && Time.fixedTime - lastLerkerTime >= lerkerSpawnTime)
+        if (!isInitialized)
+            return;
+        if (!isLerkerSpawnable && Time.fixedTime - lastLerkerTime >= stageData.LerkerSpawnDelay)
         {
             isLerkerSpawnable=true;
+        }
+
+        if (Time.fixedTime - lastSpawnedTime >= stageData.SpawnDelay)
+        {
+            lastSpawnedTime = Time.fixedTime;
+            GenerateWave();
         }
     }
 
     public void GenerateWave()
     {
-        EnemyWave wave = Instantiate(wavePrefab);
+        EnemyWave wave = Instantiate(wavePrefab, transform);
         int? lerkerIndex = null;
         //Spawn Lerker if possible
         if (isLerkerSpawnable)
         {
-            lerkerIndex = lerkerSpawnIndex[RandomManager.RandomPicker(lerkerSpawnIndexProbability)];
-            wave.SetEnemy((int)lerkerIndex, LerkerData);
+            lerkerIndex = stageData.lerkerSpawnIndex[RandomManager.RandomPicker(stageData.lerkerSpawnIndexProbability)];
+            wave.SetEnemy((int)lerkerIndex, stageData.LerkerData);
             isLerkerSpawnable = false;
             lastLerkerTime = Time.fixedTime;
         }
@@ -50,9 +65,9 @@ public class EnemySpawner : MonoBehaviour
         {
             if (wave.enemy[i].isInitialized)
                 continue;
-            if (Random.Range(0.0f, 1.0f) <= spawnProbability)
+            if (Random.Range(0.0f, 1.0f) <= stageData.spawnProbability)
             {
-                EnemyData selectedEnemy = normalEnemyData[RandomManager.RandomPicker(enemyProbability)];
+                EnemyData selectedEnemy = stageData.normalEnemyData[RandomManager.RandomPicker(stageData.  enemyProbability)];
                 if (selectedEnemy.enemySize.y + i > EnemyWave.LANECOUNT ||
                     (lerkerIndex != null && i < lerkerIndex && i + selectedEnemy.enemySize.y > lerkerIndex))
                 {
