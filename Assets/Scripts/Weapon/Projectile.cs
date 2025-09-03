@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 10f;
-    public int damage = 20;
-    public GameObject hitEffect;
+    [SerializeField] private float speed = 10f;
+    [SerializeField] private int damage = 20;
+    [SerializeField] private GameObject hitEffect;
+    [SerializeField] private LayerMask targetLayerMask;
 
     private Rigidbody2D rb;
 
@@ -29,21 +30,22 @@ public class Projectile : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (hitEffect != null)
+        if(hitEffect != null)
             Instantiate(hitEffect, transform.position, Quaternion.identity);
 
-        // 적과 충돌하면 데미지
-        IDamageable damageable = collision.collider.GetComponent<IDamageable>();
-        if (damageable != null)
+        if (((1 << collision.gameObject.layer) & targetLayerMask) == 0)
+            return;
+
+        if (collision.collider.TryGetComponent<IDamageable>(out var damageable))
         {
             damageable.TakeDamage(damage);
             Destroy(gameObject);
-            return;
         }
     }
+
+
     private void OnDrawGizmos()
     {
         if (rb == null) return;

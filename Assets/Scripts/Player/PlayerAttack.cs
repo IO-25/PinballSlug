@@ -10,7 +10,6 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Transform upFirePoint;
     [SerializeField] private Transform forwardFirePoint;
     [SerializeField] private Transform downFirePoint;
-    // [SerializeField] private GameObject spreadCircle;
 
     [Header("¹«±â °ü·Ã")]
     [SerializeField] private Transform weaponParent;
@@ -19,8 +18,8 @@ public class PlayerAttack : MonoBehaviour
     private int currentWeaponIndex = 0;
 
     [Header("ÆøÅº °ü·Ã")]
-    [SerializeField] private Weapon bombWeapon;
-    [SerializeField] private int bombCount = 3;
+    [SerializeField] private Laser laserPrefab;
+    [SerializeField] private int laserCount = 10;
 
     private PlayerAnimationController animationController;
 
@@ -101,10 +100,15 @@ public class PlayerAttack : MonoBehaviour
 
     public void UseBomb()
     {
-        if (bombCount <= 0) return;
-        bombCount--;
-        bombWeapon.Fire(CurrentFirePoint);
-        Debug.Log($"ÆøÅº »ç¿ë! ³²Àº ÆøÅº: {bombCount}");
+        if (laserCount <= 0) return;
+        laserCount--;
+
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 dir = (mousePos - CurrentFirePoint).normalized;
+
+        Laser laser = Instantiate(laserPrefab);
+        laser.ShotLaser(CurrentFirePoint, dir);
+        Debug.Log($"ÆøÅº »ç¿ë! ³²Àº ÆøÅº: {laserCount}");
     }
 
     private void SwitchWeapon()
@@ -137,7 +141,7 @@ public class PlayerAttack : MonoBehaviour
         newWeapon.Initialize();
 
         weaponSlots[index] = newWeapon;
-        CurrentWeapon.gameObject.SetActive(false);
+        weaponSlots[index].gameObject.SetActive(false);
         Debug.Log($"¹«±â È¹µæ: {weaponSlots[index].WeaponData.weaponName}");
     }
 
