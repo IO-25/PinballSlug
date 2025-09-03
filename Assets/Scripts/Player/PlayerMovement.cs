@@ -64,10 +64,13 @@ public class PlayerMovement : MonoBehaviour
                 else
                     StartCoroutine(Jump());
             }
-
-            if(isSittingInput)
+            /*
+            if (isSittingInput)
+            {
                 animationController.SetBool_Upper("IsShooting", false);
-
+                Debug.Log("╬ию╫");
+            }
+            */
         }
 
         animationController.SetBool("IsDropping", oneWayPlatform.IsDropping);
