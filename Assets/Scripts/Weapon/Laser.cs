@@ -31,22 +31,16 @@ public class Laser : MonoBehaviour
             lineRenderer = GetComponent<LineRenderer>();
     }
 
+    // 레이저 발사
     public void ShotLaser(Vector2 firePoint, Vector2 direction)
     {
         transform.position = firePoint;
         transform.right = direction.normalized;
 
-        lineRenderer.SetPosition(0, transform.position);
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, maxDistance, hitBlockerMask);
-        if (hit.collider != null)
-            lineRenderer.SetPosition(1, hit.point);
-        else
-            lineRenderer.SetPosition(1, transform.position + transform.right * 100f);
-
         StartCoroutine(PlayAnimation());
     }
 
+    // 데미지 적용
     private void ApplyDamage()
     {
         if (Time.time < nextDamageTime) return;
@@ -69,6 +63,18 @@ public class Laser : MonoBehaviour
         }
     }
 
+    // 레이저 위치 업데이트
+    void RayCastLineRenderer()
+    {
+        lineRenderer.SetPosition(0, transform.position);
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, maxDistance, hitBlockerMask);
+        if (hit.collider != null)
+            lineRenderer.SetPosition(1, hit.point);
+        else
+            lineRenderer.SetPosition(1, transform.position + transform.right * 100f);
+    }
+
     IEnumerator PlayAnimation()
     {
         float time = 0;
@@ -78,6 +84,7 @@ public class Laser : MonoBehaviour
         {
             time += Time.deltaTime;
             lineRenderer.widthMultiplier = laserWidthOverTime.Evaluate(time) * widthMultiplier;
+            RayCastLineRenderer();
             ApplyDamage();
             yield return null;
         }
