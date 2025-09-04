@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour, IDamageable
@@ -11,14 +12,28 @@ public class Projectile : MonoBehaviour, IDamageable
     [SerializeField] private float projectileLiveDuration = 20.0f;
     private Rigidbody2D rb;
     private Coroutine autoReturnCoroutine;
+    private TrailRenderer trailRenderer;
 
-    private void Awake() 
-        => rb = GetComponent<Rigidbody2D>();
+    private void Awake() {
+        rb = GetComponent<Rigidbody2D>();
+        trailRenderer = GetComponentInChildren<TrailRenderer>();
+    }
 
     private void OnEnable()
     {
+        ClearTrail();
         SetDirection(transform.right); // 초기 방향 설정
+        StartAutoReturn();
+    }
 
+    public void ClearTrail()
+    {
+        if (trailRenderer == null) return;
+        trailRenderer.Clear();
+    }
+
+    private void StartAutoReturn()
+    {
         if (autoReturnCoroutine != null)
             StopCoroutine(autoReturnCoroutine);
         autoReturnCoroutine = StartCoroutine(AutoReturn());
@@ -37,6 +52,7 @@ public class Projectile : MonoBehaviour, IDamageable
 
     public void SetDirection(Vector2 direction)
     {
+
         rb.velocity = direction.normalized * speed;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -56,13 +72,13 @@ public class Projectile : MonoBehaviour, IDamageable
             if (useDestroyOnHit) Return();
         }
     }
+    /*
 
-
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (rb == null) return;
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + (Vector3)(rb.velocity.normalized * 0.5f));
     }
-
+    */
 }
