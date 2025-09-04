@@ -67,14 +67,13 @@ public class PlayerAttack : MonoBehaviour
         currentWeaponIndex = 0;
         currentLaserCount = laserCount;
 
-        weaponSlots = new Weapon[weaponSlotSize];
+        weaponSlots ??= new Weapon[weaponSlotSize];
 
-        if (weaponSlots[0] == null)
-            EquipWeapon(WeaponType.Pistol);
-
-        for (int i = 1; i < weaponSlots.Length; i++)
+        for (int i = 0; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
 
+        Debug.Log(currentWeaponIndex);
+        EquipWeapon(WeaponType.Pistol);
         CurrentWeapon.SetActiveTrajectory(true);
 
         UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
@@ -107,7 +106,10 @@ public class PlayerAttack : MonoBehaviour
         animationController.SetBool("IsShooting", true);
 
         if (CurrentWeapon.CurrentAmmo <= 0)
+        {
             UnequipWeapon(currentWeaponIndex);
+            SwitchWeapon();
+        }
 
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
@@ -178,9 +180,6 @@ public class PlayerAttack : MonoBehaviour
         Destroy(weaponSlots[index].gameObject);
         weaponSlots[index] = null;
         UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
-
-        // ���� ����� �ڵ� ��ȯ
-        SwitchWeapon();
     }
 
     private int FindNextWeaponIndex()
