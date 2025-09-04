@@ -6,9 +6,14 @@ public class PlayerSpawner : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private Vector2 spawnPoint;
     [SerializeField] private float spawnDelay = 2f;
+    private Coroutine coroutine;
 
     public void StartSpawn()
-        => StartCoroutine(SpawnPlayer());
+    {
+        if (coroutine != null)
+            StopCoroutine(coroutine);
+        coroutine = StartCoroutine(SpawnPlayer());
+    }
 
     IEnumerator SpawnPlayer()
     {
