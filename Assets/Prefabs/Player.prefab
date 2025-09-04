@@ -494,8 +494,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81a8f1a577d0024088291942915be89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invincibilityDuration: 2
+  invincibilityDuration: 4
   maxHealth: 3
+  deathSFX: {fileID: 8300000, guid: 6f002ef0581185c48be7477c45b94243, type: 3}
 --- !u!114 &6952354370462291875
 MonoBehaviour:
   m_ObjectHideFlags: 0
