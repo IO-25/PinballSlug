@@ -5,11 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
-    public EnemyWave parentWave = null;
-    public int index;
-
-    public Action OnDeadActions;
-
+    //Base Components
     SpriteRenderer boxSpriteRenderer;
     [SerializeField] EnemyAnimator enemyAnimator;
     [SerializeField] AudioClip hitSound;
@@ -17,12 +13,22 @@ public class Enemy : MonoBehaviour, IDamageable
     BoxCollider2D enemyCollider;
     AudioSource enemyAudioSource;
 
+    [Header("적 웨이브 정보")]
+    public EnemyWave parentWave = null;
+    public int index;
+
     [Header("적 정보")]
+    [HideInInspector] public Action OnDeadActions;
     public int maxHealth = 0;
     public int curHealth = 0;
     public bool isInitialized = false;
 
     public EnemyBehaviour[] behaviours;
+
+    [Header("드랍 정보")]
+    DropItemData[] dropItemDatas;
+    float[] dropRate;
+    [SerializeField] DropItem dropItemPrefab;
 
 
     private void Awake()
@@ -44,6 +50,12 @@ public class Enemy : MonoBehaviour, IDamageable
         behaviours = referenceEnemy.behaviours;
         enemyAudioSource.clip = hitSound;
         isInitialized = true;
+
+        dropItemDatas = referenceEnemy.dropItemDatas;
+        dropRate = referenceEnemy.dropRate;
+
+        if (dropItemDatas.Length != dropRate.Length)
+            throw new System.Exception("DropItem And Drop Rate Size is Different");
 
         for (int i = 0; i < behaviours.Length; i++)
             StartCoroutine(behaviours[i].ActionCorutine(this.transform));
@@ -67,4 +79,14 @@ public class Enemy : MonoBehaviour, IDamageable
         StopAllCoroutines();
     }
 
+    public void DropItemOnDead()
+    {
+        int index = RandomManager.RandomPicker(dropRate);
+        if (dropItemDatas[index] != null)
+        {
+            DropItem drop = Instantiate(dropItemPrefab);
+            drop.transform.position = this.transform.position;
+            drop.Initialize(dropItemDatas[index]);
+        }
+    }
 }
