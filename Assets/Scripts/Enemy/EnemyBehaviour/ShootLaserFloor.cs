@@ -5,17 +5,18 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnemyBehaviour", menuName = "ScriptableObjects/EnemyBehaviour/ShootLaser")]
 public class ShootLaserFloor : EnemyBehaviour
 {
-    [SerializeField] EnemyLaser LaserPrefab;
+    [SerializeField] EnemyLaserContainer LaserContainerPrefab;
 
     public override IEnumerator ActionCorutine(Transform transform)
     {
-        yield return new WaitForSeconds(ActionCooldown);
         EnemyAction(transform);
+        yield return null;
     }
 
 
     public override void EnemyAction(Transform t)
     {
-        EnemyLaser laser = Instantiate(LaserPrefab, t);
+        EnemyLaserContainer lasercontainer = Instantiate(LaserContainerPrefab, t);
+        lasercontainer.warningDuration = ActionCooldown;
     }
 }

@@ -6,6 +6,7 @@ public class EnemyLaser : MonoBehaviour
 {
     LineRenderer lineRenderer;
     [SerializeField] float placementOffset;
+    [SerializeField] Transform shootPivot;
     const float laserLength = 20;
 
     private void Awake()
@@ -14,7 +15,8 @@ public class EnemyLaser : MonoBehaviour
     }
     void Start()
     {
-        transform.parent.GetComponent<Enemy>().OnDeadActions += OnDead;
+        transform.parent.parent.GetComponent<Enemy>().OnDeadActions += OnDead;
+        shootPivot.localPosition = Vector3.left * (placementOffset + 0.8f);
         lineRenderer.SetPosition(0, Vector3.left * placementOffset + transform.parent.position);
         lineRenderer.SetPosition(1, Vector3.left  * (laserLength + placementOffset) + transform.parent.position);
     }

@@ -2874,8 +2874,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca139b36e278b204fb2ce81133f5b7a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreDisplayManager: {fileID: 2041399162}
-  currentScore: 0
+  dontDestroyOnLoad: 1
+  scoreDisplay: {fileID: 0}
+  ammoDisplay: {fileID: 0}
+  bombDisplay: {fileID: 0}
+  weaponUI: {fileID: 0}
 --- !u!4 &1421431401
 Transform:
   m_ObjectHideFlags: 0
@@ -3371,7 +3374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cfbde0a88fa2944a06366c4e6ccc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundPrefab: {fileID: 0}
+  backgroundPrefab: {fileID: 7858471507843080077, guid: 2cbcc761ad24cbd498d9bf3e4154e602, type: 3}
   playerTransform: {fileID: 1146556601}
   maxPieces: 3
   destroyPointX: -20
@@ -4204,6 +4207,8 @@ MonoBehaviour:
   - {fileID: -1116057886, guid: 7df2f3847b326af40936530d011932e3, type: 3}
   - {fileID: -1503569392, guid: 7df2f3847b326af40936530d011932e3, type: 3}
   - {fileID: -36081318, guid: 7df2f3847b326af40936530d011932e3, type: 3}
+  infinityImage: {fileID: 0}
+  infinitySprite: {fileID: 0}
   chromaKeyMaterial: {fileID: 2100000, guid: 9409b3ce8a4ab1e48a87ea4d869da443, type: 2}
 --- !u!114 &2041399163
 MonoBehaviour:
