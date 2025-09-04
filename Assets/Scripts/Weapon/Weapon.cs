@@ -78,8 +78,8 @@ public class Weapon : MonoBehaviour
 
         // ÅºÈ¯ »ý¼º
         Instantiate(weaponData.bulletPrefab, firePoint, rot);
-        AudioClip randomClip = WeaponData.fireSFX[Random.Range(0, WeaponData.fireSFX.Length)];
-        audioSource.PlayOneShot(randomClip);
+
+        PlayFireSFX();
 
         // Åº¾à °¨¼Ò
         if (weaponData.useAmmo)
@@ -102,4 +102,9 @@ public class Weapon : MonoBehaviour
         return Random.Range(-spread, spread);
     }
 
+    protected void PlayFireSFX()
+    {
+        AudioClip randomClip = WeaponData.fireSFX[Random.Range(0, WeaponData.fireSFX.Length)];
+        audioSource.PlayOneShot(randomClip);
+    }
 }
