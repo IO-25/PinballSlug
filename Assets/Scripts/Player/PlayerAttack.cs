@@ -79,6 +79,7 @@ public class PlayerAttack : MonoBehaviour
         for(int i = 1; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
 
+        MapGameManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         MapGameManager.Instance.DisplayBomb(currentLaserCount);
     }
@@ -142,6 +143,7 @@ public class PlayerAttack : MonoBehaviour
             CurrentWeapon.WeaponData.lowerAnimController
         );
 
+        MapGameManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         Debug.Log($"무기 교체: {CurrentWeapon.WeaponData.weaponName}");
     }
@@ -161,6 +163,8 @@ public class PlayerAttack : MonoBehaviour
 
         weaponSlots[index] = newWeapon;
         weaponSlots[index].gameObject.SetActive(false);
+        Debug.Log(weaponSlots[index].WeaponData.weaponIcon);
+        MapGameManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
         MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         Debug.Log($"무기 획득: {weaponSlots[index].WeaponData.weaponName}");
     }
@@ -172,6 +176,7 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log($"무기 해제: {weaponSlots[index].WeaponData.weaponName}");
         Destroy(weaponSlots[index].gameObject);
         weaponSlots[index] = null;
+        MapGameManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
 
         // 다음 무기로 자동 전환
         SwitchWeapon();
@@ -203,6 +208,12 @@ public class PlayerAttack : MonoBehaviour
                       dirY < -forwardAttackRange ? -1f : 0f;
 
         animationController.SetFloat_Upper("Y", value);
+    }
+
+    private Sprite GetWeaponIcon(int index)
+    {
+        if (weaponSlots[index] == null) return null;
+        return weaponSlots[index].WeaponData.weaponIcon;
     }
 
 }

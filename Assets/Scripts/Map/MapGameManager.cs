@@ -8,6 +8,7 @@ public class MapGameManager : Singleton<MapGameManager>
     public ScoreDisplayManager ammoDisplay;
     public ScoreDisplayManager bombDisplay;
     private int currentScore = 0;
+    public WeaponUI weaponUI;
 
 
     /*
@@ -20,6 +21,18 @@ public class MapGameManager : Singleton<MapGameManager>
         }
     }
     */
+
+    public void SetWeaponSlotSprite(Sprite sprite, int index)
+    {
+        if (weaponUI == null) return;
+        weaponUI.SetWeaponSlotSprite(sprite, index);
+    }
+    public void SelectWeaponSlot(int index)
+    {
+        if (weaponUI == null) return;
+        weaponUI.SelectWeaponSlot(index);
+    }
+
 
     public void DisplayAmmo(int ammo, bool useAmmo)
     {
