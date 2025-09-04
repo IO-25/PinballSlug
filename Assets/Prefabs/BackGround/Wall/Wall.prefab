@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 2428462280269769187}
   - component: {fileID: 2280784622662338435}
   - component: {fileID: 501542742708208251}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 3831
+    m_Bits: 1783
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 3679691326912398876}
   - component: {fileID: 5854979160980090629}
   - component: {fileID: 1563512351259279743}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
