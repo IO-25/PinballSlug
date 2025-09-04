@@ -26,7 +26,7 @@ public class EnemyWave : MonoBehaviour
             if (Camera.main.WorldToViewportPoint(transform.position).x <= 0.0f)
             {
                 //Add Game Over Logic Here
-                Debug.Log("GameOver");
+                SceneChanger.GoGameOverScene();
             }
         }
     }
