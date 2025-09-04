@@ -2920,9 +2920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7cddae66552ef43b341a1245bf28d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingsPanel: {fileID: 807167025}
-  pauseButton: {fileID: 1456825278}
-  resumeButton: {fileID: 2010129869}
 --- !u!1 &1456825276
 GameObject:
   m_ObjectHideFlags: 0
