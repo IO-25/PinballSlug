@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010e810ff5d550f4c858119ed8b2f46a, type: 3}
   m_Name: HydraRandom
   m_EditorClassIdentifier: 
-  ActionCooldown: 2
+  ActionCooldown: 4
   PossibleActions:
   - {fileID: 11400000, guid: e7ee3f1d8fe558e418aeda086c12f6f9, type: 2}
   - {fileID: 11400000, guid: 423a0daea56a4a84187bb28ebe291f5f, type: 2}

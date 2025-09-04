@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec43061b09dc0c747bc5a9c5e5955431, type: 3}
   m_Name: LerkerLaser
   m_EditorClassIdentifier: 
-  ActionCooldown: 3
+  ActionCooldown: 4
   LaserContainerPrefab: {fileID: 544819496910234474, guid: 54afec544fc580b4c93839ee06126520, type: 3}
