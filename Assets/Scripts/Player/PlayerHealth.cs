@@ -8,13 +8,16 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private Player player;
     [SerializeField] private float invincibilityDuration = 2f; // 무적 시간
     [SerializeField] private int maxHealth = 3; // 최대 체력
-
+    [SerializeField] private AudioClip deathSFX; // 사망 소리
     private int currentHealth;
     private float nextDamageTime;
+    private AudioSource audioSource;
+
 
     private void Awake()
     {
         player = GetComponent<Player>();
+        audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth; // 체력 초기화
     }
 
@@ -39,6 +42,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         }
         
         player.StartDeathSequence(currentHealth == 0);
+        audioSource.PlayOneShot(deathSFX);
         currentHealth = Mathf.Max(currentHealth - 1, 0);
         OnHealthChanged?.Invoke(currentHealth);
 

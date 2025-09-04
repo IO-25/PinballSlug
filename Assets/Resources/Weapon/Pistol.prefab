@@ -78,7 +78,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -96,8 +96,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 0.78431374}
-      key1: {r: 1, g: 0, b: 0, a: 0.78431374}
+      key0: {r: 1, g: 0, b: 0, a: 0.7058824}
+      key1: {r: 1, g: 0, b: 0, a: 0.7058824}
       key2: {r: 0, g: 0, b: 0, a: 0.39215687}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -128,7 +128,7 @@ LineRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 1
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 3, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
@@ -150,9 +150,10 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   obstacleLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1088
   castRadius: 0.2
   reflectionRenderDistance: 2
+  offsetSpeed: -10
 --- !u!1 &4364155029658128946
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class TrajectoryRenderer : MonoBehaviour
     [SerializeField] private LayerMask obstacleLayerMask;
     [SerializeField] private float castRadius = 0.4f;
     [SerializeField] private float reflectionRenderDistance = 1f;
+    [SerializeField] private float offsetSpeed = 1f;
 
     private void Awake()
     {
@@ -35,6 +36,8 @@ public class TrajectoryRenderer : MonoBehaviour
         {
             AddLinePosition(start + dir * 100f);
         }
+
+        MoveOffset();
     }
 
     private void AddLinePosition(Vector2 position)
@@ -44,6 +47,11 @@ public class TrajectoryRenderer : MonoBehaviour
     }
 
     private Vector2 GetMousePos() => Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+    private void MoveOffset()
+    {
+        lineRenderer.material.mainTextureOffset += new Vector2(Time.deltaTime * offsetSpeed, 0f);
+    }
 
 
 }
