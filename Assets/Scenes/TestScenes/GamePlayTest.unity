@@ -3384,9 +3384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7cddae66552ef43b341a1245bf28d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingsPanel: {fileID: 1344570509}
-  pauseButton: {fileID: 1027015346}
-  resumeButton: {fileID: 1733867214}
 --- !u!114 &1421431404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3959,68 +3956,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591501589}
   m_CullTransparentMesh: 1
---- !u!1 &1629937174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1629937176}
-  - component: {fileID: 1629937175}
-  - component: {fileID: 1629937177}
-  m_Layer: 0
-  m_Name: BackgroundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1629937175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629937174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cfbde0a88fa2944a06366c4e6ccc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundPrefab: {fileID: 6015415691774125930, guid: b9252a638cdd650459a44665e94bddad, type: 3}
-  playerTransform: {fileID: 1146556601}
-  maxPieces: 3
-  destroyPointX: -20
---- !u!4 &1629937176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629937174}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1629937177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629937174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d77c2e61f6075542b8f32e5e171367b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: 5
 --- !u!1 &1659692065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4410,6 +4345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1765772168}
   - component: {fileID: 1765772167}
+  - component: {fileID: 1765772169}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4448,6 +4384,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1765772169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765772166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731fc217494b17c4bbfca58c7d83eec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingsPanel: {fileID: 1446266540}
+  backgroundPrefab: {fileID: 6015415691774125930, guid: b9252a638cdd650459a44665e94bddad, type: 3}
+  playerTransform: {fileID: 9207805186883838742, guid: b9252a638cdd650459a44665e94bddad, type: 3}
+  maxPieces: 3
+  destroyPointX: -110
 --- !u!1 &1914322861
 GameObject:
   m_ObjectHideFlags: 0
@@ -5635,7 +5588,6 @@ SceneRoots:
   - {fileID: 765070480}
   - {fileID: 710546890}
   - {fileID: 1421431401}
-  - {fileID: 1629937176}
   - {fileID: 1979097754}
   - {fileID: 1765772168}
   - {fileID: 2142002332}
