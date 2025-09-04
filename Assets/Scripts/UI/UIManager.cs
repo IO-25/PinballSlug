@@ -33,9 +33,12 @@ public class UIManager : Singleton<UIManager>
     public Sprite emptySprite;
     public List<Sprite> filledSprites;
     public float totalFillTime = 360f;
-
+    
     private float elapsedTime = 0f;
-
+    
+    [Header("Gauge Runner")]
+    public Transform gaugeRunnerInstance;
+    
     void Update()
     {
         UpdateGauge();
@@ -131,7 +134,7 @@ public class UIManager : Singleton<UIManager>
     {
         int filledSections = Mathf.FloorToInt(value);
         float fillProgress = value - filledSections;
-
+        // 게이지 채우기
         for (int i = 0; i < gaugeImages.Count; i++)
         {
             if (i < filledSections)
@@ -147,6 +150,23 @@ public class UIManager : Singleton<UIManager>
             {
                 gaugeImages[i].sprite = emptySprite;
             }
+        }
+        
+        // 게이지 러너
+        if (gaugeRunnerInstance != null && gaugeImages.Count > 0)
+        {
+            float startX = gaugeImages[0].transform.position.x;
+            
+            // 게이지의 총 너비 계산
+            float totalGaugeWidth = 0;
+            foreach(var image in gaugeImages)
+            {
+                totalGaugeWidth += image.rectTransform.rect.width;
+            }
+            
+            float currentX = startX + (totalGaugeWidth * (value / gaugeImages.Count));
+            
+            gaugeRunnerInstance.position = new Vector3(currentX, gaugeRunnerInstance.position.y, gaugeRunnerInstance.position.z);
         }
     }
 }

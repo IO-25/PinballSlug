@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4715824080095310151}
   - component: {fileID: 2001092055106280663}
   m_Layer: 0
-  m_Name: GaugeMoveCharacter
+  m_Name: gaugeRunner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 110, y: 110, z: 22}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 471371583724856823}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6b222297e925d304cbf1462539595c52, type: 2}
+  m_Controller: {fileID: 9100000, guid: 99654177eb22ac1489901cf05294f9e8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
