@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapGameManager : MonoBehaviour
+public class MapGameManager : Singleton<MapGameManager>
 {
-    public ScoreDisplayManager scoreDisplayManager;
+    public ScoreDisplayManager scoreDisplay;
+    public ScoreDisplayManager ammoDisplay;
+    public ScoreDisplayManager bombDisplay;
     private int currentScore = 0;
+    public WeaponUI weaponUI;
 
+
+    /*
     void Update()
     {
         // 'Space' 키를 누르면 점수 1점 추가
@@ -15,22 +20,48 @@ public class MapGameManager : MonoBehaviour
             AddScore(1);
         }
     }
+    */
+
+    public void SetWeaponSlotSprite(Sprite sprite, int index)
+    {
+        if (weaponUI == null) return;
+        weaponUI.SetWeaponSlotSprite(sprite, index);
+    }
+    public void SelectWeaponSlot(int index)
+    {
+        if (weaponUI == null) return;
+        weaponUI.SelectWeaponSlot(index);
+    }
+
+
+    public void DisplayAmmo(int ammo, bool useAmmo)
+    {
+        if (ammoDisplay == null) return;
+        ammoDisplay.UpdateScore(ammo);
+        ammoDisplay.SetInfinity(!useAmmo);
+    }
+
+    public void DisplayBomb(int bomb)
+    {
+        if (bombDisplay == null) return;
+        bombDisplay.UpdateScore(bomb);
+    }
 
     public void AddScore(int amount)
     {
         currentScore += amount;
-        if (scoreDisplayManager != null)
+        if (scoreDisplay != null)
         {
-            scoreDisplayManager.UpdateScore(currentScore);
+            scoreDisplay.UpdateScore(currentScore);
         }
     }
 
-    public void reduceScore(int amount)
+    public void ReduceScore(int amount)
     {
         currentScore -= amount;
-        if (scoreDisplayManager != null)
+        if (scoreDisplay != null)
         {
-            scoreDisplayManager.UpdateScore(currentScore);
+            scoreDisplay.UpdateScore(currentScore);
         }
     }
 }

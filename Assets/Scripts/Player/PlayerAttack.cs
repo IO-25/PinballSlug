@@ -42,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CurrentWeapon != null)
             CurrentWeapon.gameObject.SetActive(true);
+
         Initialize();
     }
 
@@ -56,13 +57,6 @@ public class PlayerAttack : MonoBehaviour
     {
         animationController = GetComponent<PlayerAnimationController>();
         weaponSlots = new Weapon[weaponSlotSize];
-        EquipWeapon(WeaponType.Pistol);
-        CurrentWeapon.gameObject.SetActive(true);
-    }
-
-    private void Start()
-    {
-        Initialize();
     }
 
     void Update()
@@ -73,11 +67,19 @@ public class PlayerAttack : MonoBehaviour
 
     private void Initialize()
     {
+        MapGameManager.Instance.weaponUI.Initialize();
         currentWeaponIndex = 0;
         currentLaserCount = laserCount;
 
-        for(int i = 1; i < weaponSlots.Length; i++)
+        if(weaponSlots[0] == null)
+            EquipWeapon(WeaponType.Pistol);
+
+        for (int i = 1; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
+
+        MapGameManager.Instance.SelectWeaponSlot(currentWeaponIndex);
+        MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
+        MapGameManager.Instance.DisplayBomb(currentLaserCount);
     }
 
     private void HandleInput()
@@ -106,6 +108,8 @@ public class PlayerAttack : MonoBehaviour
 
         if (CurrentWeapon.CurrentAmmo <= 0)
             UnequipWeapon(currentWeaponIndex);
+
+        MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
 
     public void UseBomb()
@@ -118,7 +122,7 @@ public class PlayerAttack : MonoBehaviour
 
         Laser laser = Instantiate(laserPrefab, transform);
         laser.ShotLaser(laserPoint.position, dir);
-        Debug.Log($"ÆøÅº »ç¿ë! ³²Àº ÆøÅº: {currentLaserCount}");
+        MapGameManager.Instance.DisplayBomb(currentLaserCount);
     }
 
     private void SwitchWeapon()
@@ -137,6 +141,8 @@ public class PlayerAttack : MonoBehaviour
             CurrentWeapon.WeaponData.lowerAnimController
         );
 
+        MapGameManager.Instance.SelectWeaponSlot(currentWeaponIndex);
+        MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         Debug.Log($"¹«±â ±³Ã¼: {CurrentWeapon.WeaponData.weaponName}");
     }
 
@@ -155,6 +161,9 @@ public class PlayerAttack : MonoBehaviour
 
         weaponSlots[index] = newWeapon;
         weaponSlots[index].gameObject.SetActive(false);
+        Debug.Log(weaponSlots[index].WeaponData.weaponIcon);
+        MapGameManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
+        MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         Debug.Log($"¹«±â È¹µæ: {weaponSlots[index].WeaponData.weaponName}");
     }
 
@@ -165,6 +174,7 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log($"¹«±â ÇØÁ¦: {weaponSlots[index].WeaponData.weaponName}");
         Destroy(weaponSlots[index].gameObject);
         weaponSlots[index] = null;
+        MapGameManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
 
         // ´ÙÀ½ ¹«±â·Î ÀÚµ¿ ÀüÈ¯
         SwitchWeapon();
@@ -196,6 +206,12 @@ public class PlayerAttack : MonoBehaviour
                       dirY < -forwardAttackRange ? -1f : 0f;
 
         animationController.SetFloat_Upper("Y", value);
+    }
+
+    private Sprite GetWeaponIcon(int index)
+    {
+        if (weaponSlots[index] == null) return null;
+        return weaponSlots[index].WeaponData.weaponIcon;
     }
 
 }
