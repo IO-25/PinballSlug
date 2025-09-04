@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8581a9e5c10354287c1f930435288e, type: 3}
   m_Name: HydraPlayer
   m_EditorClassIdentifier: 
-  ActionCooldown: 2
+  ActionCooldown: 5
   ProjectilePrefab: {fileID: 6532974473074499661, guid: 86940b4484611a7458ed0be3bd99f894, type: 3}

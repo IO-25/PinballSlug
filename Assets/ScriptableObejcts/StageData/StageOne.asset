@@ -22,7 +22,7 @@ MonoBehaviour:
   - 0.25
   - 0.1
   LerkerData: {fileID: 11400000, guid: fdadaa42879254e4f8008ce14b16a378, type: 2}
-  LerkerSpawnDelay: 5
+  LerkerSpawnDelay: 60
   lerkerSpawnIndex: 0000000004000000
   lerkerSpawnIndexProbability:
   - 0.75
