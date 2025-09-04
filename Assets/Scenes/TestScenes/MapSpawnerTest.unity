@@ -1580,6 +1580,18 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4959698181846369732, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959698181846369732, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959698181846369732, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959698181846369732, guid: 2a5277f2b5fc6994e8fb6d93d62cd41a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8
       objectReference: {fileID: 0}
@@ -2863,6 +2875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreDisplayManager: {fileID: 2041399162}
+  currentScore: 0
 --- !u!4 &1421431401
 Transform:
   m_ObjectHideFlags: 0
@@ -3358,8 +3371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cfbde0a88fa2944a06366c4e6ccc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalBackgroundPrefab: {fileID: 6015415691774125930, guid: b9252a638cdd650459a44665e94bddad, type: 3}
-  flippedBackgroundPrefab: {fileID: 7858471507843080077, guid: 2cbcc761ad24cbd498d9bf3e4154e602, type: 3}
+  backgroundPrefab: {fileID: 0}
   playerTransform: {fileID: 1146556601}
   maxPieces: 3
   destroyPointX: -20
