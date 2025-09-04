@@ -37,10 +37,6 @@ public class AudioManager : MonoBehaviour
             // 소리 재생 시간만큼 지연 후 LoadScene 호출
             Invoke("LoadScene", buttonClickSound.clip.length);
         }
-        else
-        {
-            SceneManager.LoadScene(sceneName);
-        }
     }
 
     // 씬 전환

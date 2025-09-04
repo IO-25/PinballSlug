@@ -3502,6 +3502,7 @@ GameObject:
   - component: {fileID: 1765772168}
   - component: {fileID: 1765772167}
   - component: {fileID: 1765772169}
+  - component: {fileID: 1765772170}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3553,10 +3554,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 807167025}
+--- !u!114 &1765772170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765772166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7180818b514e79d46a930a5a2180100a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   backgroundPrefab: {fileID: 6015415691774125930, guid: b9252a638cdd650459a44665e94bddad, type: 3}
   playerTransform: {fileID: 405517137}
   maxPieces: 3
-  destroyPointX: -110
+  destroyPointX: -20
 --- !u!1 &1831434819
 GameObject:
   m_ObjectHideFlags: 0
@@ -3827,6 +3840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603265a229b3e7f46b966481595ee696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 1
   numberSprites: []
   scoreImages: []
   ammoImages: []
