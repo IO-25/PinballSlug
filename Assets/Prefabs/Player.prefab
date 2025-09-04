@@ -496,6 +496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invincibilityDuration: 4
   maxHealth: 3
+  deathSFX: {fileID: 8300000, guid: 6f002ef0581185c48be7477c45b94243, type: 3}
 --- !u!114 &6952354370462291875
 MonoBehaviour:
   m_ObjectHideFlags: 0
