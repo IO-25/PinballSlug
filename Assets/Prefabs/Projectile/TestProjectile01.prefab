@@ -54,6 +54,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   useDestroyOnHit: 0
+  projectileLiveDuration: 20
 --- !u!58 &-4596809294338563423
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128,6 +129,7 @@ GameObject:
   - component: {fileID: 1553396043453169743}
   - component: {fileID: 572828066754755709}
   - component: {fileID: 2237395700429962335}
+  - component: {fileID: 6560928303078299730}
   m_Layer: 9
   m_Name: ProjectileSprite
   m_TagString: Untagged
@@ -336,3 +338,16 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &6560928303078299730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998593794597431145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77adcbd26447a7f4bb713d83d2df4f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnTarget: {fileID: 6532974473074499661}

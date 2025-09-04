@@ -73,7 +73,6 @@ public class PlayerAttack : MonoBehaviour
         for (int i = 0; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
 
-        Debug.Log(currentWeaponIndex);
         EquipWeapon(WeaponType.Pistol);
         CurrentWeapon.SetActiveTrajectory(true);
 
@@ -123,7 +122,9 @@ public class PlayerAttack : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (mousePos - CurrentFirePoint).normalized;
 
-        Laser laser = Instantiate(laserPrefab, transform);
+        Laser laser = ObjectPoolingManager.Instance.Get(laserPrefab.gameObject, transform.position).GetComponent<Laser>();
+        laser.transform.SetParent(transform);
+
         laser.ShotLaser(CurrentFirePoint, dir);
         UIManager.Instance.UpdateBomb(currentLaserCount);
     }
