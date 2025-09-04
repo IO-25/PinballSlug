@@ -75,10 +75,12 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 6.71, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -128,7 +130,7 @@ LineRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 1
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 3, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
@@ -150,9 +152,10 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   obstacleLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1088
   castRadius: 0.2
   reflectionRenderDistance: 2
+  offsetSpeed: -10
 --- !u!1 &6488158194185683579
 GameObject:
   m_ObjectHideFlags: 0

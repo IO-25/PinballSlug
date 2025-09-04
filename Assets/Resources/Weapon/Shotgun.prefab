@@ -225,7 +225,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -275,7 +275,7 @@ LineRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 1
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 3, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
@@ -297,9 +297,10 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   obstacleLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1088
   castRadius: 0.2
   reflectionRenderDistance: 2
+  offsetSpeed: -10
 --- !u!1 &8302326562607135537
 GameObject:
   m_ObjectHideFlags: 0
