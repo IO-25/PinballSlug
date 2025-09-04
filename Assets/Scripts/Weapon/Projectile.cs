@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour, IDamageable
@@ -9,21 +10,30 @@ public class Projectile : MonoBehaviour, IDamageable
     [SerializeField] private bool useDestroyOnHit = false;
     [SerializeField] private float projectileLiveDuration = 20.0f;
     private Rigidbody2D rb;
+    private Coroutine autoReturnCoroutine;
 
     private void Awake() 
         => rb = GetComponent<Rigidbody2D>();
 
-    private void Start()
-    { 
+    private void OnEnable()
+    {
         SetDirection(transform.right); // 초기 방향 설정
-        Destroy(this.gameObject, projectileLiveDuration); // 탄환이 정해진 시간 후 제거
+
+        if (autoReturnCoroutine != null)
+            StopCoroutine(autoReturnCoroutine);
+        autoReturnCoroutine = StartCoroutine(AutoReturn());
     }
 
-    private void OnBecameInvisible() 
-        => Destroy(gameObject);
+    IEnumerator AutoReturn()
+    {
+        yield return new WaitForSeconds(projectileLiveDuration);
+        Return();
+    }
 
-    public void TakeDamage(int damage) 
-        => Destroy(gameObject);
+    private void Return()
+        => ObjectPoolingManager.Instance.Return(gameObject);
+
+    public void TakeDamage(int damage) => Return();
 
     public void SetDirection(Vector2 direction)
     {
@@ -34,7 +44,7 @@ public class Projectile : MonoBehaviour, IDamageable
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (hitEffect != null)
-            Instantiate(hitEffect, transform.position, Quaternion.identity);
+            ObjectPoolingManager.Instance.Get(hitEffect, transform.position, Quaternion.identity);
 
         // 타겟이 아니면 종료
         if (((1 << collision.gameObject.layer) & targetLayerMask) == 0) return;
@@ -43,8 +53,7 @@ public class Projectile : MonoBehaviour, IDamageable
         if (damageable != null)
         {
             damageable.TakeDamage(damage);
-            if (useDestroyOnHit)
-                Destroy(gameObject);
+            if (useDestroyOnHit) Return();
         }
     }
 

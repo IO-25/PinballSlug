@@ -78,7 +78,7 @@ public class Weapon : MonoBehaviour
         Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
 
         // ÅºÈ¯ »ý¼º
-        Instantiate(weaponData.bulletPrefab, firePoint, rot);
+        ObjectPoolingManager.Instance.Get(weaponData.bulletPrefab, firePoint, rot);
 
         PlayFireSFX();
 
@@ -86,7 +86,6 @@ public class Weapon : MonoBehaviour
         if (weaponData.useAmmo)
         {
             currentAmmo = Mathf.Max(0, currentAmmo - 1);
-            Debug.Log($"Current Ammo: {currentAmmo}");
         }
     }
 
