@@ -35,6 +35,11 @@ public class PlayerAnimationController : MonoBehaviour
         upperBodyAnimator.SetBool(param, value);
         lowerBodyAnimator.SetBool(param, value);
     }
+    public void SetTrigger(string param)
+    {
+        upperBodyAnimator.SetTrigger(param);
+        lowerBodyAnimator.SetTrigger(param);
+    }
 
     public void SetBool_Upper(string param, bool value)
     {
