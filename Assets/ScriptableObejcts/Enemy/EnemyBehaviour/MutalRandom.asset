@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: MutalRandom
   m_EditorClassIdentifier: 
   ActionCooldown: 10
+  randomDelayMin: 0
+  randomDelayMax: 4
   ProjectilePrefab: {fileID: 6532974473074499661, guid: 86940b4484611a7458ed0be3bd99f894, type: 3}
