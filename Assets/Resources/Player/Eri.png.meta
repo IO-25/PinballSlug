@@ -4525,148 +4525,148 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eri_Spawn_0
+      name: Eri_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 3205
-        width: 30
-        height: 245
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 4
+        y: 3206
+        width: 31
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e288f3b3a87b3b4ca9f5b964d5f48fe
-      internalID: 744497473
+      spriteID: 182d4efe98249de478a8cb7d1395ac3c
+      internalID: -304425946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eri_Spawn_1
+      name: Eri_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 3205
-        width: 30
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 40
+        y: 3207
+        width: 29
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56995f907458062439736202a37b7eef
-      internalID: -546744669
+      spriteID: 0627e124ff37324488d01d2e41948bba
+      internalID: 1686838603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eri_Spawn_2
+      name: Eri_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 3205
-        width: 30
-        height: 178
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 77
+        y: 3207
+        width: 29
+        height: 173
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c279140c56f77f4ea3c3843e68abe30
-      internalID: 287479950
+      spriteID: 22203ed81b689274bbda1fec2bb9b896
+      internalID: -2004287338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eri_Spawn_3
+      name: Eri_3
       rect:
         serializedVersion: 2
         x: 112
-        y: 3205
-        width: 30
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 3207
+        width: 29
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c48cb79c67f4442af1a12243fcb9b6
-      internalID: 1748387760
+      spriteID: 3c92b4d827440844f826487a7b3eb065
+      internalID: 125636657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eri_Spawn_4
+      name: Eri_4
       rect:
         serializedVersion: 2
         x: 147
-        y: 3205
-        width: 30
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 3207
+        width: 29
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e193bf2356a02045ae62e0d8f9d2eac
-      internalID: 970048987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eri_Spawn_5
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 3205
-        width: 30
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1325e64cd92853842b3027978301d162
+      spriteID: 3d2566c58ab83004b9ef7c5589cd243a
       internalID: -1366738675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eri_Spawn_6
+      name: Eri_5
       rect:
         serializedVersion: 2
-        x: 217
-        y: 3205
-        width: 27
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 182
+        y: 3207
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f739d6e4c74daf34ba7f399ed9007acf
-      internalID: -571888427
+      spriteID: 2a1f129127858524ba1f9f4e9212ac86
+      internalID: 1848445838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 3207
+        width: 26
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de3ca947e92f5e4cadfbeef237e2718
+      internalID: -1740617751
       vertices: []
       indices: 
       edges: []
@@ -4682,6 +4682,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Eri_0: -304425946
+      Eri_1: 1686838603
       Eri_10: -823229271
       Eri_11: -1673237244
       Eri_111: -499808206
@@ -4721,6 +4723,7 @@ TextureImporter:
       Eri_184: 790390228
       Eri_186: 2061632906
       Eri_187: -1413575265
+      Eri_2: -2004287338
       Eri_203: -1244033362
       Eri_206: -1219219201
       Eri_208: 396090899
@@ -4799,6 +4802,7 @@ TextureImporter:
       Eri_297: 884653930
       Eri_298: 1635850928
       Eri_299: 260663959
+      Eri_3: 125636657
       Eri_30: 205231425
       Eri_300: 1257295074
       Eri_301: -1245954527
@@ -4902,6 +4906,7 @@ TextureImporter:
       Eri_397: 2147022527
       Eri_398: -1412673037
       Eri_399: -1790425323
+      Eri_4: -1366738675
       Eri_40: -1588090936
       Eri_400: 1273395033
       Eri_401: -61775738
@@ -4996,6 +5001,7 @@ TextureImporter:
       Eri_497: -1225154183
       Eri_498: -1684760354
       Eri_499: -2062235924
+      Eri_5: 1848445838
       Eri_50: 1076452158
       Eri_500: -836778854
       Eri_501: -1031481351
@@ -5239,13 +5245,6 @@ TextureImporter:
       "Eri_Run_\uD558\uBC18\uC2E0_7": -1462016481
       "Eri_Run_\uD558\uBC18\uC2E0_8": -1462016481
       "Eri_Run_\uD558\uBC18\uC2E0_9": -256275556
-      Eri_Spawn_0: 744497473
-      Eri_Spawn_1: -546744669
-      Eri_Spawn_2: 287479950
-      Eri_Spawn_3: 1748387760
-      Eri_Spawn_4: 970048987
-      Eri_Spawn_5: -1366738675
-      Eri_Spawn_6: -571888427
       "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_0": 78175368
       "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_1": -1413074687
       "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_2": 1668582871
