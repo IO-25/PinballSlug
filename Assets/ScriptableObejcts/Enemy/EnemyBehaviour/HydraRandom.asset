@@ -15,4 +15,4 @@ MonoBehaviour:
   ActionCooldown: 2
   PossibleActions:
   - {fileID: 11400000, guid: e7ee3f1d8fe558e418aeda086c12f6f9, type: 2}
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 423a0daea56a4a84187bb28ebe291f5f, type: 2}

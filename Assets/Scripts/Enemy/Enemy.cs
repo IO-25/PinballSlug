@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +8,10 @@ public class Enemy : MonoBehaviour, IDamageable
     public EnemyWave parentWave = null;
     public int index;
 
-    const string DIEANIMATIONSTRING = "IsDie";
+    public Action OnDeadActions;
+
     SpriteRenderer boxSpriteRenderer;
-    [SerializeField] Animator enemyAnimator;
+    [SerializeField] EnemyAnimator enemyAnimator;
     BoxCollider2D enemyCollider;
 
     [Header("Àû Á¤º¸")]
@@ -32,7 +34,7 @@ public class Enemy : MonoBehaviour, IDamageable
             return;
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
-        enemyAnimator.runtimeAnimatorController = referenceEnemy.EnemyAnimatorController;
+        enemyAnimator.animator.runtimeAnimatorController = referenceEnemy.EnemyAnimatorController;
         boxSpriteRenderer.size = referenceEnemy.enemySize;
         enemyCollider.size = referenceEnemy.enemySize;
         behaviours = referenceEnemy.behaviours;
@@ -42,32 +44,17 @@ public class Enemy : MonoBehaviour, IDamageable
             StartCoroutine(behaviours[i].ActionCorutine(this.transform));
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //if collision is End of the Map
-            //GameOver
-
-        //if collision is Player
-            //Kill Player
-
-        //if collision is Player Projectile
-            //Apply Damage
-    }
-
     public void TakeDamage(int damage)
     {
         curHealth -= damage;
         if (curHealth <= 0)
             OnDead();
+        StartCoroutine(enemyAnimator.DamageFlash());
     }
 
     private void OnDead()
     {
-        while (transform.childCount == 0)
-        {
-            DestroyImmediate(transform.GetChild(0));
-        }
-        enemyAnimator.SetBool(DIEANIMATIONSTRING, true);
+        OnDeadActions?.Invoke();
         StopAllCoroutines();
     }
 

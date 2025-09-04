@@ -49,10 +49,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleJumpAndSit()
     {
+        bool isGrounded = IsGrounded();
         bool isSittingInput = Input.GetKey(KeyCode.S);
         bool isJumpingInput = Input.GetButton("Jump");
 
-        if (IsGrounded())
+        if (isGrounded)
         {
             isSitting = isSittingInput;
 
@@ -63,10 +64,13 @@ public class PlayerMovement : MonoBehaviour
                 else
                     StartCoroutine(Jump());
             }
-
-            if(isSittingInput)
+            /*
+            if (isSittingInput)
+            {
                 animationController.SetBool_Upper("IsShooting", false);
-
+                Debug.Log("앉음");
+            }
+            */
         }
 
         animationController.SetBool("IsDropping", oneWayPlatform.IsDropping);
@@ -74,13 +78,15 @@ public class PlayerMovement : MonoBehaviour
         // 애니메이션 상태 업데이트
         if (!oneWayPlatform.IsDropping)
         {
-            animationController.SetBool("IsJumping", !IsGrounded());
-            animationController.SetBool("IsSitting", isSittingInput);
+            animationController.SetBool("IsJumping", !isGrounded);
+            animationController.SetBool("IsSitting", isSittingInput && isGrounded);
         }
     }
+
     IEnumerator Jump()
     {
         if (isJumping) yield break;
+        if (rb.velocity.y > 0) yield break; // 이미 상승 중이면 점프 불가
         isJumping = true;
 
         float time = 0f;
