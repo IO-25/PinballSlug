@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Pistol
   weaponIcon: {fileID: 45441792, guid: 530bda5ad2448714b91ec75242a58fc3, type: 3}
-  equipSFX: {fileID: 8300000, guid: 9ac1a66a49632ac41b97600cfaba4dc3, type: 3}
+  equipSFX: {fileID: 0}
   upperAnimController: {fileID: 9100000, guid: 8533674528d278b46a0b07ced169ba10, type: 2}
   lowerAnimController: {fileID: 9100000, guid: 3ed2adca5c361414a83e87611bcffd04, type: 2}
   bulletPrefab: {fileID: 6532974473074499661, guid: ccc6598f944425640ad04cb8bb1cfd6d, type: 3}

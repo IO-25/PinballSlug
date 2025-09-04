@@ -5,6 +5,7 @@ public enum WeaponType
     Pistol,
     MachineGun,
     Shotgun,
+    Bomb
 }
 
 public class Weapon : MonoBehaviour

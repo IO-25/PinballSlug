@@ -453,6 +453,7 @@ MonoBehaviour:
   weaponSlotSize: 2
   laserPrefab: {fileID: 4932794236531830924, guid: 4f3105e40a7cef8408119cd3d3d5f162, type: 3}
   laserCount: 10
+  bombEquipSFX: {fileID: 8300000, guid: 47dea10b6058f614e9afc76663106722, type: 3}
 --- !u!114 &3281789081572713383
 MonoBehaviour:
   m_ObjectHideFlags: 0
