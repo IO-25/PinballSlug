@@ -29,6 +29,8 @@ public class Shotgun : Weapon
         // Åº¾à °¨¼Ò
         if (weaponData.useAmmo)
             currentAmmo = Mathf.Max(0, currentAmmo - 1);
+
+        PlayFireSFX();
         Debug.Log($"Current Ammo: {currentAmmo}");
     }
 }

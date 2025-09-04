@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] protected WeaponData weaponData;
     [SerializeField] private GameObject spreadCircle;
     [SerializeField] private TrajectoryRenderer trajectoryRenderer;
+    [SerializeField] private AudioSource audioSource;
 
     protected int currentAmmo;
     protected float nextAttackTime = 0f;
@@ -19,10 +20,23 @@ public class Weapon : MonoBehaviour
     public int CurrentAmmo => currentAmmo;
     public WeaponData WeaponData => weaponData;
 
+    public void SetActiveTrajectory(bool active)
+    {
+        if (trajectoryRenderer != null)
+            trajectoryRenderer.gameObject.SetActive(active);
+        if (spreadCircle != null)
+            spreadCircle.SetActive(active);
+    }
+
     public virtual void Initialize()
     {
         if (weaponData == null) return;
+
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
         currentAmmo = weaponData.maxAmmo;
+
+        SetActiveTrajectory(false);
     }
 
     public void Look(Vector2 firePoint)
@@ -65,6 +79,8 @@ public class Weapon : MonoBehaviour
         // ÅºÈ¯ »ý¼º
         Instantiate(weaponData.bulletPrefab, firePoint, rot);
 
+        PlayFireSFX();
+
         // Åº¾à °¨¼Ò
         if (weaponData.useAmmo)
         {
@@ -86,4 +102,9 @@ public class Weapon : MonoBehaviour
         return Random.Range(-spread, spread);
     }
 
+    protected void PlayFireSFX()
+    {
+        AudioClip randomClip = WeaponData.fireSFX[Random.Range(0, WeaponData.fireSFX.Length)];
+        audioSource.PlayOneShot(randomClip);
+    }
 }
