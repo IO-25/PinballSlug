@@ -1,6 +1,6 @@
 using System;
-using System.Reflection;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -46,7 +46,7 @@ public class PlayerAttack : MonoBehaviour
     void OnDisable()
     {
         if (CurrentWeapon != null)
-            CurrentWeapon.gameObject.SetActive(false);
+            CurrentWeapon.SetActiveTrajectory(false);
         animationController.SetBool("IsShooting", false);
     }
 
@@ -74,6 +74,8 @@ public class PlayerAttack : MonoBehaviour
 
         for (int i = 1; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
+
+        CurrentWeapon.SetActiveTrajectory(true);
 
         UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
@@ -129,10 +131,10 @@ public class PlayerAttack : MonoBehaviour
         if (FindNextWeaponIndex() == currentWeaponIndex) return; // �ٸ� ���Ⱑ ������ ����
 
         if(CurrentWeapon != null)
-            CurrentWeapon.gameObject.SetActive(false);
+            CurrentWeapon.SetActiveTrajectory(false);
 
         currentWeaponIndex = FindNextWeaponIndex();
-        CurrentWeapon.gameObject.SetActive(true);
+        CurrentWeapon.SetActiveTrajectory(true);
 
         animationController.SetAnimController(
             CurrentWeapon.WeaponData.upperAnimController,
@@ -162,7 +164,7 @@ public class PlayerAttack : MonoBehaviour
             Destroy(weaponSlots[index].gameObject);
 
         weaponSlots[index] = newWeapon;
-        weaponSlots[index].gameObject.SetActive(false);
+        weaponSlots[index].SetActiveTrajectory(false);
         audioSource.PlayOneShot(weaponSlots[index].WeaponData.equipSFX);
         UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
