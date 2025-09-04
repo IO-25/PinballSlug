@@ -28,7 +28,7 @@ public class PlayerOneWayPlatform : MonoBehaviour
         if (collision.gameObject.CompareTag("OneWayPlatform"))
         {
             currentPlatform = collision.collider;
-            transform.SetParent(collision.transform);
+            // transform.SetParent(collision.transform);
         }
     }
 
@@ -37,7 +37,7 @@ public class PlayerOneWayPlatform : MonoBehaviour
         if (collision.gameObject.CompareTag("OneWayPlatform"))
         {
             currentPlatform = null;
-            transform.SetParent(null);
+            // transform.SetParent(null);
         }
     }
 

@@ -19,7 +19,7 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("ÆøÅº °ü·Ã")]
     [SerializeField] private Laser laserPrefab;
-    [SerializeField] private Transform laserPoint;
+    // [SerializeField] private Transform laserPoint;
     [SerializeField] private int laserCount = 10;
     private int currentLaserCount = 10;
 
@@ -42,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CurrentWeapon != null)
             CurrentWeapon.gameObject.SetActive(true);
+
         Initialize();
     }
 
@@ -56,13 +57,6 @@ public class PlayerAttack : MonoBehaviour
     {
         animationController = GetComponent<PlayerAnimationController>();
         weaponSlots = new Weapon[weaponSlotSize];
-        EquipWeapon(WeaponType.Pistol);
-        CurrentWeapon.gameObject.SetActive(true);
-    }
-
-    private void Start()
-    {
-        Initialize();
     }
 
     void Update()
@@ -73,10 +67,15 @@ public class PlayerAttack : MonoBehaviour
 
     private void Initialize()
     {
+        if(MapGameManager.Instance.weaponUI)
+            MapGameManager.Instance.weaponUI.Initialize();
         currentWeaponIndex = 0;
         currentLaserCount = laserCount;
 
-        for(int i = 1; i < weaponSlots.Length; i++)
+        if(weaponSlots[0] == null)
+            EquipWeapon(WeaponType.Pistol);
+
+        for (int i = 1; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
 
         MapGameManager.Instance.SelectWeaponSlot(currentWeaponIndex);
@@ -123,7 +122,8 @@ public class PlayerAttack : MonoBehaviour
         Vector2 dir = (mousePos - CurrentFirePoint).normalized;
 
         Laser laser = Instantiate(laserPrefab, transform);
-        laser.ShotLaser(laserPoint.position, dir);
+        laser.ShotLaser(CurrentFirePoint, dir);
+        // laser.ShotLaser(laserPoint.position, dir);
         MapGameManager.Instance.DisplayBomb(currentLaserCount);
     }
 
@@ -150,7 +150,32 @@ public class PlayerAttack : MonoBehaviour
 
     public void EquipWeapon(WeaponType weaponType)
     {
-        // ºó ½½·Ô Ã£±â
+        int index = currentWeaponIndex;
+
+        if (index == 0 && weaponSlots[0])
+        {
+            if (FindEmptySlotIndex() == -1) return;
+            else index = FindEmptySlotIndex();
+        }
+
+        Debug.Log($"EquipWeapon: {weaponType} at slot {index}");
+
+        // ¹«±â »ý¼º ¹× ÃÊ±âÈ­
+        GameObject weaponPrefab = Resources.Load<GameObject>($"Weapon/{weaponType}");
+        Weapon newWeapon = Instantiate(weaponPrefab, weaponParent).GetComponent<Weapon>();
+        newWeapon.Initialize();
+
+        if (weaponSlots[index] != null) // ±âÁ¸ ¹«±â Á¦°Å
+            Destroy(weaponSlots[index].gameObject);
+
+        weaponSlots[index] = newWeapon;
+        weaponSlots[index].gameObject.SetActive(false);
+        Debug.Log(weaponSlots[index].WeaponData.weaponIcon);
+        MapGameManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
+        MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
+        Debug.Log($"¹«±â È¹µæ: {weaponSlots[index].WeaponData.weaponName}");
+
+        /*
         int index = FindEmptySlotIndex();
 
         // ¹«±â »ý¼º ¹× ÃÊ±âÈ­
@@ -167,6 +192,7 @@ public class PlayerAttack : MonoBehaviour
         MapGameManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
         MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         Debug.Log($"¹«±â È¹µæ: {weaponSlots[index].WeaponData.weaponName}");
+        */
     }
 
     public void UnequipWeapon(int index)
@@ -199,7 +225,7 @@ public class PlayerAttack : MonoBehaviour
         for (int i = 0; i < weaponSlots.Length; i++)
             if (weaponSlots[i] == null) return i;
 
-        return weaponSlots.Length - 1; // ºó ½½·ÔÀÌ ¾øÀ¸¸é ¸¶Áö¸· ÀÎµ¦½º ¹ÝÈ¯
+        return -1; // ºó ½½·ÔÀÌ ¾øÀ¸¸é -1 ¹ÝÈ¯
     }
 
     private void UpdateDirectionY(float dirY)

@@ -7,7 +7,7 @@ public class WeaponUI : MonoBehaviour
 {
     public WeaponSlot[] weaponSlots;
 
-    public void Awake()
+    public void Initialize()
     {
         foreach (var weaponSlot in weaponSlots)
             weaponSlot.Initialize();

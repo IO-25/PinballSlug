@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4208806775362724326}
   m_Layer: 8
   m_Name: LowerBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 5309667263117636771}
   m_Layer: 8
   m_Name: Weapons
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 741243853439011166}
   m_Layer: 8
   m_Name: FirePoints
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 8950405485825527096}
   m_Layer: 8
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 7337381286133468592}
   m_Layer: 8
   m_Name: LaserPoint
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 3281789081572713383}
   - component: {fileID: 4265296917813636340}
   - component: {fileID: -7083482247141879246}
+  - component: {fileID: 6952354370462291875}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -346,7 +347,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 904218529821196014}
@@ -450,7 +451,6 @@ MonoBehaviour:
   weaponParent: {fileID: 5309667263117636771}
   weaponSlotSize: 2
   laserPrefab: {fileID: 4932794236531830924, guid: 4f3105e40a7cef8408119cd3d3d5f162, type: 3}
-  laserPoint: {fileID: 7337381286133468592}
   laserCount: 10
 --- !u!114 &3281789081572713383
 MonoBehaviour:
@@ -495,6 +495,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invincibilityDuration: 1
   maxHealth: 3
+--- !u!114 &6952354370462291875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3716215183403420150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d77c2e61f6075542b8f32e5e171367b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 2
 --- !u!1 &3875734393440781347
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +550,7 @@ GameObject:
   - component: {fileID: 1583163543935525544}
   m_Layer: 8
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -601,7 +614,7 @@ GameObject:
   - component: {fileID: 5621327489254680365}
   m_Layer: 8
   m_Name: UpperBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

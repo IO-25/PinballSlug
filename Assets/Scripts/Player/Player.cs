@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
         playerSpawner = GetComponent<PlayerSpawner>();
         playerHealth = GetComponent<PlayerHealth>();
 
-        playerHealth.OnTakeDamage += OnTakeDamage;
         playerAnimationController.Initialize();
         StageManager.Instance.player = this;
     }
@@ -40,26 +39,20 @@ public class Player : MonoBehaviour
     {
         playerMovement.enabled = true;
         playerAttack.enabled = true;
-        playerHealth.Initialize();
+        playerHealth.enabled = true;
         playerAnimationController.Initialize();
     }
-    
-    public void OnTakeDamage(int health)
-    {
-        TakeDamage();
-        if (health > 0)
-            playerSpawner.StartSpawn();
-        else
-            Die();
-    }
 
-
-    private void TakeDamage()
+    public void StartDeathSequence(bool isDead = false)
     {
         playerMovement.enabled = false;
         playerAttack.enabled = false;
+        playerHealth.enabled = false;
         playerAnimationController.Initialize();
         playerAnimationController.SetBool("IsDying", true);
+
+        if (isDead) Die();
+        else playerSpawner.StartSpawn();
     }
 
     private void Die()
