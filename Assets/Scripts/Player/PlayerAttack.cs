@@ -20,6 +20,7 @@ public class PlayerAttack : MonoBehaviour
     [Header("��ź ����")]
     [SerializeField] private Laser laserPrefab;
     [SerializeField] private int laserCount = 10;
+    [SerializeField] private AudioClip bombEquipSFX;
     private int currentLaserCount = 10;
 
     private PlayerAnimationController animationController;
@@ -167,7 +168,9 @@ public class PlayerAttack : MonoBehaviour
 
         weaponSlots[index] = newWeapon;
         weaponSlots[index].SetActiveTrajectory(false);
-        audioSource.PlayOneShot(weaponSlots[index].WeaponData.equipSFX);
+        AudioClip equipSFX = weaponSlots[index].WeaponData.equipSFX;
+        if (equipSFX != null)
+            audioSource.PlayOneShot(equipSFX);
         UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
@@ -180,6 +183,13 @@ public class PlayerAttack : MonoBehaviour
         Destroy(weaponSlots[index].gameObject);
         weaponSlots[index] = null;
         UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
+    }
+
+    public void EquipBomb()
+    {
+        currentLaserCount = laserCount;
+        audioSource.PlayOneShot(bombEquipSFX);
+        UIManager.Instance.UpdateBomb(currentLaserCount);
     }
 
     private int FindNextWeaponIndex()

@@ -36,11 +36,18 @@ public class DropItem : MonoBehaviour
         {
             // 플레이어가 아이템을 획득했을 때 무기 교체
             Player player = StageManager.Instance.player;
-            if (player != null)
+            if (player == null) return;
+
+            if (dropItemData.weaponType == WeaponType.Bomb)
+            {
+                player.PlayerAttack.EquipBomb();
+            }
+            else
             {
                 player.PlayerAttack.EquipWeapon(dropItemData.weaponType);
-                Destroy(gameObject);
             }
+
+            Destroy(gameObject);
         }
     }
 }
