@@ -540,7 +540,6 @@ GameObject:
   - component: {fileID: 738229155}
   - component: {fileID: 738229154}
   - component: {fileID: 738229153}
-  - component: {fileID: 738229156}
   m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
@@ -616,9 +615,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 738229156}
-        m_TargetAssemblyTypeName: SceneChangeBtn, Assembly-CSharp
-        m_MethodName: ToGameScene
+      - m_Target: {fileID: 1551263112}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: GoGameScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -666,18 +665,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738229151}
   m_CullTransparentMesh: 1
---- !u!114 &738229156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738229151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd94ae61968b5f544a067b113cb0dac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &775222228
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +820,6 @@ GameObject:
   - component: {fileID: 910223605}
   - component: {fileID: 910223604}
   - component: {fileID: 910223603}
-  - component: {fileID: 910223606}
   m_Layer: 5
   m_Name: MainButton
   m_TagString: Untagged
@@ -908,9 +894,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 910223606}
-        m_TargetAssemblyTypeName: SceneChangeBtn, Assembly-CSharp
-        m_MethodName: ToMainScene
+      - m_Target: {fileID: 1551263112}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: GoStartScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -958,18 +944,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910223601}
   m_CullTransparentMesh: 1
---- !u!114 &910223606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 910223601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd94ae61968b5f544a067b113cb0dac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &914793307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1319,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414516611}
   m_CullTransparentMesh: 1
+--- !u!1 &1551263111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551263113}
+  - component: {fileID: 1551263112}
+  m_Layer: 0
+  m_Name: SceneChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1551263112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551263111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b460298dcdc911f44b9da2a38b562dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1551263113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551263111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1708772800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,4 +1665,5 @@ SceneRoots:
   - {fileID: 2067903054}
   - {fileID: 381164034}
   - {fileID: 834199267}
+  - {fileID: 1551263113}
   - {fileID: 1708772802}

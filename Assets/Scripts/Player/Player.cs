@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        SceneChanger.GoGameOverScene();
+        Debug.Log("GameOver");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

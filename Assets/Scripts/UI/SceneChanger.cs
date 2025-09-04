@@ -3,21 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public static class SceneChanger
+public class SceneChanger : MonoBehaviour
 {
-    public static void GoStartScene()
+    public void GoStartScene()
     {
         SceneManager.LoadScene("StartScene");
     }
     
-    public static void GoGameScene()
+    public void GoGameScene()
     {
-        SceneManager.LoadScene("GameScene");
-    }
-
-    public static void GoGameOverScene()
-    {
-        SceneManager.LoadScene("EndScene");
+        SceneManager.LoadScene("MapTest");
     }
 }  
 
