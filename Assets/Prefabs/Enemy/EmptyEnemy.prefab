@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1200263383058299526}
+  animator: {fileID: 6341614061199810455}
 --- !u!1 &6353012293058017283
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentWave: {fileID: 0}
   index: 0
-  enemyAnimator: {fileID: 6341614061199810455}
+  enemyAnimator: {fileID: 3072491306545627325}
   maxHealth: 0
   curHealth: 0
   isInitialized: 0

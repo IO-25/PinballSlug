@@ -4,29 +4,28 @@ using UnityEngine;
 
 public class BackgroundManager : MonoBehaviour
 {
-    public GameObject normalBackgroundPrefab;  // 원본 배경 프리팹
-    public GameObject flippedBackgroundPrefab; // 뒤집어진 배경 프리팹
-    public Transform playerTransform;         // 플레이어 또는 카메라 트랜스폼
+    public GameObject backgroundPrefab;  // 원본 배경 프리팹 하나만 사용
+    public Transform playerTransform;   // 플레이어 또는 카메라 트랜스폼
 
-    public int maxPieces = 3;                  // 유지할 배경 조각의 최대 개수
-    public float destroyPointX = -20f;        // 배경이 파괴될 X 좌표
+    public int maxPieces = 3;            // 유지할 배경 조각의 최대 개수
+    public float destroyPointX = -20f;  // 배경이 파괴될 X 좌표
 
     private List<GameObject> activePieces = new List<GameObject>();
     private float backgroundWidth;
-    private bool isNextNormal = true;          // 다음 조각이 원본인지 확인
+    private bool isNextFlipped = false;  // 다음 조각이 뒤집힐지 여부
 
     void Start()
     {
         // 필수 요소 확인
-        if (normalBackgroundPrefab == null || flippedBackgroundPrefab == null || playerTransform == null)
+        if (backgroundPrefab == null || playerTransform == null)
         {
-            Debug.LogError("모든 프리팹과 플레이어 트랜스폼을 할당하세요!");
+            Debug.LogError("프리팹과 플레이어 트랜스폼을 할당하세요!");
             enabled = false;
             return;
         }
 
         // 배경 조각의 가로 너비 계산
-        backgroundWidth = normalBackgroundPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.x * normalBackgroundPrefab.transform.localScale.x;
+        backgroundWidth = backgroundPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.x * backgroundPrefab.transform.localScale.x;
 
         // 게임 시작 시 초기 배경 조각 생성
         for (int i = 0; i < maxPieces; i++)
@@ -37,7 +36,7 @@ public class BackgroundManager : MonoBehaviour
 
     void Update()
     {
-        // 첫 번째(가장 왼쪽) 배경 조각의 위치가 지정된 파괴 지점(destroyPointX)보다 작을 경우
+        // 첫 번째(가장 왼쪽) 배경 조각이 지정된 파괴 지점을 벗어났는지 확인
         if (activePieces.Count > 0 && activePieces[0].transform.position.x < playerTransform.position.x + destroyPointX)
         {
             DestroyOldestPiece();
@@ -62,23 +61,22 @@ public class BackgroundManager : MonoBehaviour
             spawnPosition = new Vector3(lastPiecePosition.x + backgroundWidth, lastPiecePosition.y, lastPiecePosition.z);
         }
 
-        // 원본 또는 뒤집힌 프리팹을 번갈아 생성
-        if (isNextNormal)
+        // 원본 프리팹으로 생성
+        newPiece = Instantiate(backgroundPrefab, spawnPosition, Quaternion.identity, transform);
+        
+        // Sprite Renderer 컴포넌트를 가져와서 flipX를 설정
+        SpriteRenderer renderer = newPiece.GetComponent<SpriteRenderer>();
+        if (renderer != null)
         {
-            newPiece = Instantiate(normalBackgroundPrefab, spawnPosition, Quaternion.identity, transform);
-        }
-        else
-        {
-            newPiece = Instantiate(flippedBackgroundPrefab, spawnPosition, Quaternion.identity, transform);
+            renderer.flipX = isNextFlipped;
         }
 
         activePieces.Add(newPiece);
-        isNextNormal = !isNextNormal; // 다음 생성 시 반전
+        isNextFlipped = !isNextFlipped; // 다음 생성 시 반전 상태 토글
     }
 
     void DestroyOldestPiece()
     {
-        // 가장 오래된(가장 왼쪽에 있는) 배경 조각 파괴
         GameObject oldestPiece = activePieces[0];
         activePieces.RemoveAt(0);
         Destroy(oldestPiece);

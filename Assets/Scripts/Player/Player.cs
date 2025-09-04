@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
         playerAnimationController.Initialize();
     }
     
-    private void OnTakeDamage(int health)
+    public void OnTakeDamage(int health)
     {
         TakeDamage();
         if (health > 0)

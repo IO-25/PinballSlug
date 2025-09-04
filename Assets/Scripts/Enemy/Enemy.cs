@@ -10,9 +10,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public Action OnDeadActions;
 
-    const string DIEANIMATIONSTRING = "IsDie";
     SpriteRenderer boxSpriteRenderer;
-    [SerializeField] Animator enemyAnimator;
+    [SerializeField] EnemyAnimator enemyAnimator;
     BoxCollider2D enemyCollider;
 
     [Header("Àû Á¤º¸")]
@@ -35,7 +34,7 @@ public class Enemy : MonoBehaviour, IDamageable
             return;
         maxHealth = referenceEnemy.InitialHealth;
         curHealth = referenceEnemy.InitialHealth;
-        enemyAnimator.runtimeAnimatorController = referenceEnemy.EnemyAnimatorController;
+        enemyAnimator.animator.runtimeAnimatorController = referenceEnemy.EnemyAnimatorController;
         boxSpriteRenderer.size = referenceEnemy.enemySize;
         enemyCollider.size = referenceEnemy.enemySize;
         behaviours = referenceEnemy.behaviours;
@@ -50,12 +49,12 @@ public class Enemy : MonoBehaviour, IDamageable
         curHealth -= damage;
         if (curHealth <= 0)
             OnDead();
+        StartCoroutine(enemyAnimator.DamageFlash());
     }
 
     private void OnDead()
     {
-        OnDeadActions();
-        enemyAnimator.SetBool(DIEANIMATIONSTRING, true);
+        OnDeadActions?.Invoke();
         StopAllCoroutines();
     }
 
