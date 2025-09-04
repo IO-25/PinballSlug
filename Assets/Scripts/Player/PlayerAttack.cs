@@ -42,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CurrentWeapon != null)
             CurrentWeapon.gameObject.SetActive(true);
+
         Initialize();
     }
 
@@ -56,13 +57,6 @@ public class PlayerAttack : MonoBehaviour
     {
         animationController = GetComponent<PlayerAnimationController>();
         weaponSlots = new Weapon[weaponSlotSize];
-        EquipWeapon(WeaponType.Pistol);
-        CurrentWeapon.gameObject.SetActive(true);
-    }
-
-    private void Start()
-    {
-        Initialize();
     }
 
     void Update()
@@ -73,10 +67,14 @@ public class PlayerAttack : MonoBehaviour
 
     private void Initialize()
     {
+        MapGameManager.Instance.weaponUI.Initialize();
         currentWeaponIndex = 0;
         currentLaserCount = laserCount;
 
-        for(int i = 1; i < weaponSlots.Length; i++)
+        if(weaponSlots[0] == null)
+            EquipWeapon(WeaponType.Pistol);
+
+        for (int i = 1; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
 
         MapGameManager.Instance.SelectWeaponSlot(currentWeaponIndex);
