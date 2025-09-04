@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MachineGun
   m_EditorClassIdentifier: 
   weaponName: HeavyMachineGun
-  weaponIcon: {fileID: 0}
+  weaponIcon: {fileID: -1331756682, guid: 530bda5ad2448714b91ec75242a58fc3, type: 3}
   upperAnimController: {fileID: 22100000, guid: 17ab8888f8843fc4c82e463938e23209, type: 2}
   lowerAnimController: {fileID: 22100000, guid: 800e524f92c6dbe43900df835b54e30c, type: 2}
   bulletPrefab: {fileID: 6532974473074499661, guid: 0ba820a95888f7849acd75f6b59c7736, type: 3}
