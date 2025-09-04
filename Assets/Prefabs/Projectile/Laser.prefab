@@ -203,10 +203,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   widthMultiplier: 2
   damage: 10
+  damageInterval: 0.1
   maxDistance: 100
   hitBlockerMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 0
   damageTargetMask:
     serializedVersion: 2
     m_Bits: 512
