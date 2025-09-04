@@ -2843,6 +2843,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413313190}
   m_CullTransparentMesh: 1
+--- !u!1 &1421431399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421431401}
+  - component: {fileID: 1421431400}
+  - component: {fileID: 1421431402}
+  - component: {fileID: 1421431403}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1421431400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421431399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca139b36e278b204fb2ce81133f5b7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 1
+  scoreDisplay: {fileID: 0}
+  ammoDisplay: {fileID: 0}
+  bombDisplay: {fileID: 0}
+  weaponUI: {fileID: 0}
+--- !u!4 &1421431401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421431399}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 740.6594, y: 1039.3214, z: 6.940576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1421431402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421431399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6977c57eedbb04b43bd31d5f6cad2313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothGauge: {fileID: 1479636296}
+  totalFillTime: 36
+--- !u!114 &1421431403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421431399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cddae66552ef43b341a1245bf28d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingsPanel: {fileID: 807167025}
+  pauseButton: {fileID: 1456825278}
+  resumeButton: {fileID: 2010129869}
 --- !u!1 &1456825276
 GameObject:
   m_ObjectHideFlags: 0
@@ -4444,6 +4524,7 @@ SceneRoots:
   - {fileID: 5732757516678845351}
   - {fileID: 3643124459118557673}
   - {fileID: 1848559929}
+  - {fileID: 1421431401}
   - {fileID: 1146556601}
   - {fileID: 765070480}
   - {fileID: 710546890}

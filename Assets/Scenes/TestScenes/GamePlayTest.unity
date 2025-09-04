@@ -3384,9 +3384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7cddae66552ef43b341a1245bf28d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingsPanel: {fileID: 1344570509}
-  pauseButton: {fileID: 1027015346}
-  resumeButton: {fileID: 1733867214}
 --- !u!114 &1421431404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4401,7 +4398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 1446266540}
   backgroundPrefab: {fileID: 6015415691774125930, guid: b9252a638cdd650459a44665e94bddad, type: 3}
-  playerTransform: {fileID: 405517137}
+  playerTransform: {fileID: 9207805186883838742, guid: b9252a638cdd650459a44665e94bddad, type: 3}
   maxPieces: 3
   destroyPointX: -110
 --- !u!1 &1914322861
@@ -5312,7 +5309,6 @@ GameObject:
   - component: {fileID: 2142002331}
   - component: {fileID: 2142002330}
   - component: {fileID: 2142002329}
-  - component: {fileID: 2142002333}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5408,29 +5404,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2142002333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142002328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 603265a229b3e7f46b966481595ee696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberSprites: []
-  scoreImages: []
-  ammoImages: []
-  ammoInfinityImage: {fileID: 0}
-  ammoInfinitySprite: {fileID: 0}
-  bombImages: []
-  weaponUI: {fileID: 0}
-  gaugeImages: []
-  emptySprite: {fileID: 0}
-  filledSprites: []
-  totalFillTime: 360
 --- !u!1001 &3643124459118557673
 PrefabInstance:
   m_ObjectHideFlags: 0
