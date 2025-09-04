@@ -9,6 +9,7 @@ public class WeaponData : ScriptableObject
     [Header("±âº» Á¤º¸")]
     public string weaponName = "New Weapon";
     public Sprite weaponIcon;
+    public AudioClip equipSFX; // È¹µæ ¼Ò¸®
     public RuntimeAnimatorController upperAnimController;
     public RuntimeAnimatorController lowerAnimController;
 

@@ -19,11 +19,11 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("��ź ����")]
     [SerializeField] private Laser laserPrefab;
-    // [SerializeField] private Transform laserPoint;
     [SerializeField] private int laserCount = 10;
     private int currentLaserCount = 10;
 
     private PlayerAnimationController animationController;
+    private AudioSource audioSource;
 
     public Weapon CurrentWeapon => weaponSlots[currentWeaponIndex];
 
@@ -40,9 +40,6 @@ public class PlayerAttack : MonoBehaviour
 
     void OnEnable()
     {
-        if (CurrentWeapon != null)
-            CurrentWeapon.gameObject.SetActive(true);
-
         Initialize();
     }
 
@@ -53,12 +50,6 @@ public class PlayerAttack : MonoBehaviour
         animationController.SetBool("IsShooting", false);
     }
 
-    void Awake()
-    {
-        animationController = GetComponent<PlayerAnimationController>();
-        weaponSlots = new Weapon[weaponSlotSize];
-    }
-
     void Update()
     {
         HandleLook();
@@ -67,12 +58,18 @@ public class PlayerAttack : MonoBehaviour
 
     private void Initialize()
     {
+        if(animationController == null)
+            animationController = GetComponent<PlayerAnimationController>();
+        if(audioSource == null)
+            audioSource = GetComponent<AudioSource>();
         if(UIManager.Instance.weaponUI)
             UIManager.Instance.weaponUI.Initialize();
         currentWeaponIndex = 0;
         currentLaserCount = laserCount;
 
-        if(weaponSlots[0] == null)
+        weaponSlots = new Weapon[weaponSlotSize];
+
+        if (weaponSlots[0] == null)
             EquipWeapon(WeaponType.Pistol);
 
         for (int i = 1; i < weaponSlots.Length; i++)
@@ -123,7 +120,6 @@ public class PlayerAttack : MonoBehaviour
 
         Laser laser = Instantiate(laserPrefab, transform);
         laser.ShotLaser(CurrentFirePoint, dir);
-        // laser.ShotLaser(laserPoint.position, dir);
         UIManager.Instance.UpdateBomb(currentLaserCount);
     }
 
@@ -145,7 +141,6 @@ public class PlayerAttack : MonoBehaviour
 
         UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
-        Debug.Log($"���� ��ü: {CurrentWeapon.WeaponData.weaponName}");
     }
 
     public void EquipWeapon(WeaponType weaponType)
@@ -158,8 +153,6 @@ public class PlayerAttack : MonoBehaviour
             else index = FindEmptySlotIndex();
         }
 
-        Debug.Log($"EquipWeapon: {weaponType} at slot {index}");
-
         // ���� ���� �� �ʱ�ȭ
         GameObject weaponPrefab = Resources.Load<GameObject>($"Weapon/{weaponType}");
         Weapon newWeapon = Instantiate(weaponPrefab, weaponParent).GetComponent<Weapon>();
@@ -170,29 +163,9 @@ public class PlayerAttack : MonoBehaviour
 
         weaponSlots[index] = newWeapon;
         weaponSlots[index].gameObject.SetActive(false);
-        Debug.Log(weaponSlots[index].WeaponData.weaponIcon);
+        audioSource.PlayOneShot(weaponSlots[index].WeaponData.equipSFX);
         UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
-        Debug.Log($"���� ȹ��: {weaponSlots[index].WeaponData.weaponName}");
-
-        /*
-        int index = FindEmptySlotIndex();
-
-        // ���� ���� �� �ʱ�ȭ
-        GameObject weaponPrefab = Resources.Load<GameObject>($"Weapon/{weaponType}");
-        Weapon newWeapon = Instantiate(weaponPrefab, weaponParent).GetComponent<Weapon>();
-        newWeapon.Initialize();
-
-        if (weaponSlots[index] != null) // ���� ���� ����
-            Destroy(weaponSlots[index].gameObject);
-
-        weaponSlots[index] = newWeapon;
-        weaponSlots[index].gameObject.SetActive(false);
-        Debug.Log(weaponSlots[index].WeaponData.weaponIcon);
-        MapGameManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
-        MapGameManager.Instance.DisplayAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
-        Debug.Log($"���� ȹ��: {weaponSlots[index].WeaponData.weaponName}");
-        */
     }
 
     public void UnequipWeapon(int index)
