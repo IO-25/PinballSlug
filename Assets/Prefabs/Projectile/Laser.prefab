@@ -163,7 +163,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.3
+      time: 0.1
       value: 0.2
       inSlope: 0
       outSlope: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.4
+      time: 0.2
       value: 2
       inSlope: 0
       outSlope: 0
@@ -203,10 +203,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   widthMultiplier: 2
   damage: 10
+  damageInterval: 0.1
   maxDistance: 100
   hitBlockerMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 0
   damageTargetMask:
     serializedVersion: 2
     m_Bits: 512
