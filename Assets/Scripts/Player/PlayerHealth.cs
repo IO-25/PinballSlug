@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private void Awake()
     {
         player = GetComponent<Player>();
+        currentHealth = maxHealth; // 체력 초기화
     }
 
     private void OnEnable()
@@ -24,7 +25,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void Initialize()
     {
-        currentHealth = maxHealth; // 체력 초기화
         nextDamageTime = Time.time + invincibilityDuration; // 초기화 시 무적 시간 적용
         OnHealthChanged?.Invoke(currentHealth);
     }
@@ -32,7 +32,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         if (enabled == false) return;
-        if (currentHealth <= 0) return; // 이미 죽었으면 무시
         if (Time.time < nextDamageTime)
         {
             Debug.Log($"남은 무적시간 {(nextDamageTime - Time.time).ToString("F2")}");

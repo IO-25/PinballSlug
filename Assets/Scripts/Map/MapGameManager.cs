@@ -10,18 +10,6 @@ public class MapGameManager : Singleton<MapGameManager>
     private int currentScore = 0;
     public WeaponUI weaponUI;
 
-
-    /*
-    void Update()
-    {
-        // 'Space' 키를 누르면 점수 1점 추가
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AddScore(1);
-        }
-    }
-    */
-
     public void SetWeaponSlotSprite(Sprite sprite, int index)
     {
         if (weaponUI == null) return;
