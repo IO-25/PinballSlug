@@ -13,9 +13,10 @@ public class WeaponData : ScriptableObject
     public RuntimeAnimatorController lowerAnimController;
 
     [Header("공격 관련")]
-    public GameObject bulletPrefab;
-    public float attackDamage = 1;
-    public float attackRate = 1f; // 1초당 발사하는 총알
+    public GameObject bulletPrefab; // 총알 프리팹
+    public AudioClip[] fireSFX; // 발사 소리
+    public float attackDamage = 1; // 공격력
+    public float attackRate = 1f; // 초당 공격 횟수
     public int maxAmmo = 30;
     public bool useAmmo = true;
 
