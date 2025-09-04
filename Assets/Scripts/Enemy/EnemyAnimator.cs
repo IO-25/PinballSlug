@@ -27,6 +27,7 @@ public class EnemyAnimator : MonoBehaviour
     public void OnDieAnimationEnd()
     {
         enemy.parentWave.SetEnemy(enemy.index, null);
+        enemy.DropItemOnDead();
         Destroy(enemy.gameObject);
     }
 
