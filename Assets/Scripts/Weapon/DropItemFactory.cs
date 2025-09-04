@@ -5,10 +5,11 @@ public static class DropItemFactory
 {
     public const string DropItemPrefabPath = "Item/DropItem";
 
-    private static Dictionary<WeaponType, string> dropItemDataNameMapping = new()
+    private static readonly Dictionary<WeaponType, string> dropItemDataNameMapping = new()
     {
         { WeaponType.MachineGun, "DropItem_MachineGun" },
         { WeaponType.Shotgun, "DropItem_Shotgun" },
+        { WeaponType.Bomb, "DropItem_Bomb" },
     };
 
     public static DropItem CreateRandomDropItem(Vector3 position)
@@ -17,6 +18,7 @@ public static class DropItemFactory
         {
             WeaponType.MachineGun,
             WeaponType.Shotgun,
+            WeaponType.Bomb,
         };
 
         WeaponType randomWeapon = possibleWeapons[Random.Range(0, possibleWeapons.Count)];

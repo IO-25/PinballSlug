@@ -169,15 +169,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc099272064e2a741a314064115aadda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentWave: {fileID: 0}
-  index: 0
   enemyAnimator: {fileID: 3072491306545627325}
   hitSound: {fileID: 8300000, guid: 4e80686eb2ac1594681ed00a0548dd50, type: 3}
   deadSound: {fileID: 8300000, guid: 8bd0e0874508d1c49a9518e19d30427b, type: 3}
+  parentWave: {fileID: 0}
+  index: 0
   maxHealth: 0
   curHealth: 0
   isInitialized: 0
   behaviours: []
+  dropItemPrefab: {fileID: 8238195520900563514, guid: 7e56639c7c5839d4cb80c0f9ed71e940, type: 3}
 --- !u!212 &3182530626627667440
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -287,7 +288,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4e80686eb2ac1594681ed00a0548dd50, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 0.5
   Loop: 0
   Mute: 0

@@ -9,4 +9,8 @@ public class EnemyData : ScriptableObject
     public RuntimeAnimatorController EnemyAnimatorController;
     public Vector2 enemySize = Vector2.one;
     [SerializeReference] public EnemyBehaviour[] behaviours;
+
+    [Header("드랍 정보")]
+    public DropItemData[] dropItemDatas;
+    [SerializeField] public float[] dropRate;
 }

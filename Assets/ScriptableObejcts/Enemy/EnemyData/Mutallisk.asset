@@ -17,3 +17,13 @@ MonoBehaviour:
   enemySize: {x: 1, y: 2}
   behaviours:
   - {fileID: 11400000, guid: 787e02f2372f9b8499f95b0c19694bae, type: 2}
+  dropItemDatas:
+  - {fileID: 11400000, guid: 896f3216131c2f54795f6bc038ba261f, type: 2}
+  - {fileID: 11400000, guid: 12c6e13abb113684c99ee977a84b380a, type: 2}
+  - {fileID: 11400000, guid: 59c476a471494b34e9c887da18649759, type: 2}
+  - {fileID: 0}
+  dropRate:
+  - 0.03
+  - 0.03
+  - 0.02
+  - 0.92
