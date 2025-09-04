@@ -26,7 +26,7 @@ public class EnemyLaser : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.transform.parent.GetComponent<Player>().OnTakeDamage(1);
+        collision.transform.parent.GetComponent<PlayerHealth>().TakeDamage(1);
     }
 
     public void OnDead()
