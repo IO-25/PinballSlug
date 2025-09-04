@@ -12,7 +12,10 @@ public class Enemy : MonoBehaviour, IDamageable
 
     SpriteRenderer boxSpriteRenderer;
     [SerializeField] EnemyAnimator enemyAnimator;
+    [SerializeField] AudioClip hitSound;
+    [SerializeField] AudioClip deadSound;
     BoxCollider2D enemyCollider;
+    AudioSource enemyAudioSource;
 
     [Header("Àû Á¤º¸")]
     public int maxHealth = 0;
@@ -26,6 +29,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         boxSpriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<BoxCollider2D>();
+        enemyAudioSource = GetComponent<AudioSource>();
     }
 
     public void Init(EnemyData referenceEnemy)
@@ -38,6 +42,7 @@ public class Enemy : MonoBehaviour, IDamageable
         boxSpriteRenderer.size = referenceEnemy.enemySize;
         enemyCollider.size = referenceEnemy.enemySize;
         behaviours = referenceEnemy.behaviours;
+        enemyAudioSource.clip = hitSound;
         isInitialized = true;
 
         for (int i = 0; i < behaviours.Length; i++)
@@ -46,6 +51,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
+        enemyAudioSource.Play();
         curHealth -= damage;
         if (curHealth <= 0)
             OnDead();
@@ -54,6 +60,9 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private void OnDead()
     {
+        enemyAudioSource.Stop();
+        enemyAudioSource.clip = deadSound;
+        enemyAudioSource.Play();
         OnDeadActions?.Invoke();
         StopAllCoroutines();
     }
