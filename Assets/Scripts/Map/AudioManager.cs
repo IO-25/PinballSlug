@@ -7,9 +7,12 @@ public class AudioManager : MonoBehaviour
 {
     private AudioSource buttonClickSound;
     private static AudioManager instance;
-    private string nextSceneName;
+    
+    public static AudioManager Instance
+    {
+        get { return instance; }
+    }
 
-    // 버튼을 누르면 소리가 나고 넘어가도록 만듬
     void Awake()
     {
         if (instance == null)
@@ -24,24 +27,29 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // 버튼에 연결
     public void ButtonClickSoundAndLoadScene(string sceneName)
     {
         if (buttonClickSound != null && buttonClickSound.clip != null)
         {
-            // 다음 씬 이름
-            nextSceneName = sceneName;
-            
+            Debug.Log("ButtonClickSoundAndLoadScene 호출: 코루틴 시작을 시도합니다.");
             buttonClickSound.Play();
-            
-            // 소리 재생 시간만큼 지연 후 LoadScene 호출
-            Invoke("LoadScene", buttonClickSound.clip.length);
+            StartCoroutine(LoadSceneAfterSound(sceneName, buttonClickSound.clip.length));
         }
     }
 
-    // 씬 전환
-    private void LoadScene()
+    private IEnumerator LoadSceneAfterSound(string sceneName, float soundLength)
     {
-        SceneManager.LoadScene(nextSceneName);
+        Debug.Log("코루틴 시작: " + soundLength + "초 기다립니다.");
+        
+        // 이 부분에서 코루틴이 멈추거나 파괴되는지 확인합니다.
+        yield return new WaitForSeconds(soundLength);
+
+        Debug.Log("코루틴 대기 완료: 씬 로드를 시도합니다.");
+        SceneManager.LoadScene(sceneName);
+    }
+    
+    private void OnDestroy()
+    {
+        Debug.Log("AudioManager: OnDestroy - 오브젝트가 파괴되었습니다. 코루틴이 중단될 수 있습니다.");
     }
 }

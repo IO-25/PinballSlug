@@ -6,19 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c6996f61-d798-4c88-8f71-e2d0edc17e20" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PinballSlug/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EndPoint.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EndPoint.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EndPoint.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EndPoint.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GaugeMoveCharacter.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GaugeMoveCharacter.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GaugeMoveCharacter.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GaugeMoveCharacter.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/EndPoint.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/EndPoint.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GaugeMoveCharacter.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GaugeMoveCharacter.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/Backgroundstraight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/Backgroundstraight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/gaugeRunner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/gaugeRunner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gamescene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gamescene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Backgroundappend.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Backgroundappend.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SmoothGauge.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SmoothGauge.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TimeBasedGauge.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TimeBasedGauge.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/Backgroundappend.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/MapManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartSceneUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/VolumeController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,7 +54,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HeeChan&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -131,6 +133,7 @@
       <workItem from="1756864511174" duration="253000" />
       <workItem from="1756865849723" duration="1037000" />
       <workItem from="1756945848225" duration="305000" />
+      <workItem from="1756996102934" duration="12032000" />
     </task>
     <servers />
   </component>
