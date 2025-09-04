@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2be6e05b6275744eb37e853cc8c5b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 3.5
   damage: 1
   hitEffect: {fileID: 0}
   targetLayerMask:
