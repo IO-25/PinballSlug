@@ -44,6 +44,11 @@ public class PlayerAttack : MonoBehaviour
         Initialize();
     }
 
+    private void Start()
+    {
+        UpdatePlayerAnimator();
+    }
+
     void OnDisable()
     {
         if (CurrentWeapon != null)
@@ -75,7 +80,7 @@ public class PlayerAttack : MonoBehaviour
 
         EquipWeapon(WeaponType.Pistol);
         CurrentWeapon.SetActiveTrajectory(true);
-
+        UpdatePlayerAnimator();
         UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         UIManager.Instance.UpdateBomb(currentLaserCount);
@@ -140,11 +145,8 @@ public class PlayerAttack : MonoBehaviour
         currentWeaponIndex = FindNextWeaponIndex();
         CurrentWeapon.SetActiveTrajectory(true);
 
-        animationController.SetAnimController(
-            CurrentWeapon.WeaponData.upperAnimController,
-            CurrentWeapon.WeaponData.lowerAnimController
-        );
 
+        UpdatePlayerAnimator();
         UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
@@ -172,6 +174,8 @@ public class PlayerAttack : MonoBehaviour
         AudioClip equipSFX = weaponSlots[index].WeaponData.equipSFX;
         if (equipSFX != null)
             audioSource.PlayOneShot(equipSFX);
+
+        UpdatePlayerAnimator();
         UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
@@ -225,6 +229,17 @@ public class PlayerAttack : MonoBehaviour
     {
         if (weaponSlots[index] == null) return null;
         return weaponSlots[index].WeaponData.weaponIcon;
+    }
+
+    private void UpdatePlayerAnimator()
+    {
+        animationController.SetAnimController(
+            CurrentWeapon.WeaponData.upperAnimController,
+            CurrentWeapon.WeaponData.lowerAnimController
+        );
+
+        float speed = CurrentWeapon.WeaponData.attackRate;
+        animationController.SetFloat("ShootSpeed", speed);
     }
 
 }

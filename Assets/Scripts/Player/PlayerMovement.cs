@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
         bool isMoving = moveX != 0;
         animationController.SetBool("IsMoving", isMoving);
-        animationController.SetAnimSpeed(moveX >= 0 ? 1f : -1f);
+        animationController.SetFloat("MoveSpeed", moveX >= 0 ? 1f : -1f);
     }
 
     private void HandleJumpAndSit()

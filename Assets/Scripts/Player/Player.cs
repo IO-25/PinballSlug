@@ -38,11 +38,11 @@ public class Player : MonoBehaviour
 
     public void Initialize()
     {
+        playerAnimationController.Initialize();
+        playerAnimationController.SetTrigger("IsSpawning");
         playerMovement.enabled = true;
         playerAttack.enabled = true;
         playerHealth.enabled = true;
-        playerAnimationController.Initialize();
-        playerAnimationController.SetTrigger("IsSpawning");
     }
 
     public void StartDeathSequence(bool isDead = false)
