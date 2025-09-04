@@ -17,13 +17,16 @@ public class UIManager : MonoBehaviour
     public List<Image> ammoImages;
     public Image ammoInfinityImage;
     public Sprite ammoInfinitySprite;
-
     public List<Image> bombImages;
 
     private int currentScore = 0;
     private int currentAmmo = 0;
     private int currentBomb = 0;
 
+    // 무기 UI 관리
+    [Header("Weapon UI")]
+    public WeaponUI weaponUI;
+    
     // 게이지 관리
     [Header("Gauge Settings")]
     public List<Image> gaugeImages;
@@ -101,6 +104,19 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    // 무기 UI 관리
+    public void SetWeaponSlotSprite(Sprite sprite, int index)
+    {
+        if (weaponUI == null) return;
+        weaponUI.SetWeaponSlotSprite(sprite, index);
+    }
+    
+    public void SelectWeaponSlot(int index)
+    {
+        if (weaponUI == null) return;
+        weaponUI.SelectWeaponSlot(index);
+    }
+    
     // 게이지 관리
     private void UpdateGauge()
     {
