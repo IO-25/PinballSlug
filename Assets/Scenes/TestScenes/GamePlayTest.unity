@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 144495337}
   - component: {fileID: 144495336}
   m_Layer: 5
-  m_Name: ScoreImage_1
+  m_Name: aScoreImage_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 207366148}
   - component: {fileID: 207366147}
   m_Layer: 5
-  m_Name: ScoreImage_10
+  m_Name: bScoreImage_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1461,7 +1461,7 @@ GameObject:
   - component: {fileID: 717233128}
   - component: {fileID: 717233127}
   m_Layer: 5
-  m_Name: ScoreImage_1
+  m_Name: bScoreImage_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1817,7 +1817,6 @@ GameObject:
   - component: {fileID: 816384617}
   - component: {fileID: 816384620}
   - component: {fileID: 816384619}
-  - component: {fileID: 816384618}
   m_Layer: 5
   m_Name: Arms
   m_TagString: Untagged
@@ -1848,36 +1847,6 @@ RectTransform:
   m_AnchoredPosition: {x: -63.987183, y: -69.07953}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &816384618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816384616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bfa4d0ee6789e049bbf880d03bf21e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreImages:
-  - {fileID: 144495336}
-  - {fileID: 1720864074}
-  - {fileID: 2052824098}
-  numberSprites:
-  - {fileID: -720055548, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -1217712247, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 329654440, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 308182947, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 21549963, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -212183300, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 2138747637, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -1116057886, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -1503569392, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -36081318, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  infinityImage: {fileID: 1664426420}
-  infinitySprite: {fileID: 609322090, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  chromaKeyMaterial: {fileID: 2100000, guid: 9409b3ce8a4ab1e48a87ea4d869da443, type: 2}
 --- !u!114 &816384619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3048,7 +3017,6 @@ GameObject:
   - component: {fileID: 1291869544}
   - component: {fileID: 1291869547}
   - component: {fileID: 1291869546}
-  - component: {fileID: 1291869545}
   m_Layer: 5
   m_Name: Bomb
   m_TagString: Untagged
@@ -3078,36 +3046,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4, y: -42.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1291869545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291869543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bfa4d0ee6789e049bbf880d03bf21e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreImages:
-  - {fileID: 717233127}
-  - {fileID: 207366147}
-  - {fileID: 1960741290}
-  numberSprites:
-  - {fileID: -720055548, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -1217712247, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 329654440, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 308182947, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 21549963, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -212183300, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: 2138747637, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -1116057886, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -1503569392, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  - {fileID: -36081318, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  infinityImage: {fileID: 0}
-  infinitySprite: {fileID: 609322090, guid: 7df2f3847b326af40936530d011932e3, type: 3}
-  chromaKeyMaterial: {fileID: 2100000, guid: 9409b3ce8a4ab1e48a87ea4d869da443, type: 2}
 --- !u!114 &1291869546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3902,7 +3840,7 @@ GameObject:
   - component: {fileID: 1664426421}
   - component: {fileID: 1664426420}
   m_Layer: 5
-  m_Name: InfinityImage
+  m_Name: aInfinityImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3977,7 +3915,7 @@ GameObject:
   - component: {fileID: 1720864075}
   - component: {fileID: 1720864074}
   m_Layer: 5
-  m_Name: ScoreImage_10
+  m_Name: aScoreImage_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4536,7 +4474,7 @@ GameObject:
   - component: {fileID: 1960741291}
   - component: {fileID: 1960741290}
   m_Layer: 5
-  m_Name: ScoreImage_100
+  m_Name: bScoreImage_100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5015,7 +4953,7 @@ GameObject:
   - component: {fileID: 2052824099}
   - component: {fileID: 2052824098}
   m_Layer: 5
-  m_Name: ScoreImage_100
+  m_Name: aScoreImage_100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5306,7 +5244,7 @@ MonoBehaviour:
   - {fileID: 1720864074}
   - {fileID: 2052824098}
   ammoInfinityImage: {fileID: 1664426420}
-  ammoInfinitySprite: {fileID: 0}
+  ammoInfinitySprite: {fileID: 609322090, guid: 7df2f3847b326af40936530d011932e3, type: 3}
   bombImages:
   - {fileID: 717233127}
   - {fileID: 207366147}
