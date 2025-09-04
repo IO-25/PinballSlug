@@ -7,13 +7,17 @@ public class Projectile : MonoBehaviour, IDamageable
     [SerializeField] private GameObject hitEffect;
     [SerializeField] private LayerMask targetLayerMask;
     [SerializeField] private bool useDestroyOnHit = false;
+    [SerializeField] private float projectileLiveDuration = 20.0f;
     private Rigidbody2D rb;
 
     private void Awake() 
         => rb = GetComponent<Rigidbody2D>();
 
-    private void Start() 
-        => SetDirection(transform.right); // 초기 방향 설정
+    private void Start()
+    { 
+        SetDirection(transform.right); // 초기 방향 설정
+        Destroy(this.gameObject, projectileLiveDuration); // 탄환이 정해진 시간 후 제거
+    }
 
     private void OnBecameInvisible() 
         => Destroy(gameObject);
