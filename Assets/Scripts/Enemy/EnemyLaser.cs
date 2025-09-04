@@ -34,7 +34,7 @@ public class EnemyLaser : MonoBehaviour
 
     public void OnDead()
     {
-        transform.parent.GetComponent<Enemy>().OnDeadActions -= OnDead;
+        transform.parent.parent.GetComponent<Enemy>().OnDeadActions -= OnDead;
         Destroy(this.gameObject);
     }
 }
