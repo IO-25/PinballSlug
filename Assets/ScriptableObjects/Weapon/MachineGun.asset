@@ -17,15 +17,15 @@ MonoBehaviour:
   equipSFX: {fileID: 8300000, guid: c6855cee46d889e4db46acebfd3f4240, type: 3}
   upperAnimController: {fileID: 22100000, guid: 17ab8888f8843fc4c82e463938e23209, type: 2}
   lowerAnimController: {fileID: 22100000, guid: 800e524f92c6dbe43900df835b54e30c, type: 2}
-  bulletPrefab: {fileID: 6532974473074499661, guid: 0ba820a95888f7849acd75f6b59c7736, type: 3}
+  bulletPrefab: {fileID: 6532974473074499661, guid: 64fc60cb4605bc24a8ff62ce7043a391, type: 3}
   fireSFX:
   - {fileID: 8300000, guid: 7b02531867873f14f8dcd7f15a65e76c, type: 3}
   - {fileID: 8300000, guid: 11aca5fa03e0ee642880f29c6420da26, type: 3}
   - {fileID: 8300000, guid: 46fd9a0745a8781489d5738920e52bb4, type: 3}
-  attackDamage: 1.5
+  attackDamage: 5
   attackRate: 10
-  maxAmmo: 200
+  maxAmmo: 100
   useAmmo: 1
   minSpread: 0
-  maxSpread: 10
+  maxSpread: 4
   maxDistance: 10

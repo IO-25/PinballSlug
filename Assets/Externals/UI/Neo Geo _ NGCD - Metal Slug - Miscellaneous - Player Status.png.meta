@@ -1,0 +1,474 @@
+fileFormatVersion: 2
+guid: 28f7744715740cb489b6d795f1ca1013
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 62
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb898feeab3b69498ae0dc4d9dfa0a5
+      internalID: -856218377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 123
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd957a5bda1ad94e9a446b65593d933
+      internalID: 423692872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7775798a61e9195448053552cde7bf29
+      internalID: 1136446085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b544e87c0828c4ab8452c6fdf0898a
+      internalID: 1189089175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6f99bb7ee803a42a30cd02ed55433f
+      internalID: -1622053174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f237498b93ea34e83209133e609181
+      internalID: 1825647318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8374424d54e4e469eec46342540529
+      internalID: -332346018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ec3408f3ff0c84c8f6cfbf2b35814e
+      internalID: -842989105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0a5dcdaf84546419b1ad8871eb88c5
+      internalID: -1942876182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41de82a575e12564a87105b36ffcf9f7
+      internalID: 1982512239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafa7dd4e85d94f44ae7b119b886c65b
+      internalID: 676540728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 2
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0085bad2d8ce05644849edb0ea448689
+      internalID: 1959052135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 99
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a5287a0ef848e438acbc2abe2aeea7
+      internalID: 48994350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      0: 1136446085
+      1: 1189089175
+      2: -1622053174
+      3: 1825647318
+      4: -332346018
+      5: -842989105
+      6: -1942876182
+      7: 1982512239
+      8: 676540728
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_0: -856218377
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_1: 423692872
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_12: 1959052135
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_13: 48994350
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_14: 1153870153
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_15: -2118521573
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_16: -1622759493
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_17: -1568563855
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_18: 1774782677
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_19: -1488890669
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_2: 1371185292
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_20: -2000498928
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_21: -583609660
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_22: -984419571
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_23: 1276908358
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_24: -1614750582
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_25: 1130798166
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_26: -84938527
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_27: 412204788
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_28: 1464160442
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_29: -1530909437
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_30: -2050630604
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_31: 446313725
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_32: 1807196598
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_33: -1274042685
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_34: -1305822012
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_35: 679906949
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_36: 378061397
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_37: 1102778780
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_38: 810078536
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_39: -1825589152
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_40: -1776506187
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_41: 564369201
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_42: -1880465660
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_43: -541548498
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_44: 729301609
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_45: 1801650580
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_46: -338150732
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Player Status_47: 725791497
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

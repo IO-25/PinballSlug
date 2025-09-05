@@ -6,9 +6,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public event Action OnDie;
     public static event Action<int> OnHealthChanged;
     private Player player;
-    [SerializeField] private float invincibilityDuration = 2f; // ���� �ð�
-    [SerializeField] private int maxHealth = 3; // �ִ� ü��
-    [SerializeField] private AudioClip deathSFX; // ��� �Ҹ�
+    [SerializeField] private float invincibilityDuration = 2f; //부활 후 무적 시간
+    [SerializeField] private int maxHealth = 3; //목숨
+    [SerializeField] private AudioClip deathSFX; //사망 사운드
     private int currentHealth;
     private float nextDamageTime;
     private AudioSource audioSource;
@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     {
         player = GetComponent<Player>();
         audioSource = GetComponent<AudioSource>();
-        currentHealth = maxHealth; // ü�� �ʱ�ȭ
+        currentHealth = maxHealth; //현제 체력을 최대체력으로 맞추기
     }
 
     private void OnEnable()
@@ -28,17 +28,17 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void Initialize()
     {
-        nextDamageTime = Time.time + invincibilityDuration; // �ʱ�ȭ �� ���� �ð� ����
+        nextDamageTime = Time.time + invincibilityDuration; // 다음 피해 받기 가능한 시간
         OnHealthChanged?.Invoke(currentHealth);
     }
 
     public void TakeDamage(int damage)
     {
         if (enabled == false) return;
+        //무적 시간
         if (Time.time < nextDamageTime)
         {
-            Debug.Log($"���� �����ð� {(nextDamageTime - Time.time).ToString("F2")}");
-            return; // ���� �ð� ������ ����
+            return; 
         }
         
         player.StartDeathSequence(currentHealth == 0);

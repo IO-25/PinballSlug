@@ -19,7 +19,7 @@ public class PlayerAttack : MonoBehaviour
     private int currentWeaponIndex = 0;
 
     [Header("폭탄 관련")]
-    [SerializeField] private Laser laserPrefab;
+    [SerializeField] private PlayerLaser laserPrefab;
     [SerializeField] private int laserCount = 10;
     [SerializeField] private AudioClip bombEquipSFX;
     private int currentLaserCount = 10;
@@ -40,8 +40,8 @@ public class PlayerAttack : MonoBehaviour
             CurrentWeapon.SetActiveTrajectory(true);
 
             UpdatePlayerAnimator();
-            UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
-            UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
+            InGameUI.Instance.SelectWeaponSlot(currentWeaponIndex);
+            InGameUI.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         }
     }
 
@@ -95,8 +95,8 @@ public class PlayerAttack : MonoBehaviour
             animationController = GetComponent<PlayerAnimationController>();
         if(audioSource == null)
             audioSource = GetComponent<AudioSource>();
-        if(UIManager.Instance.weaponUI)
-            UIManager.Instance.weaponUI.Initialize();
+        if(InGameUI.Instance.weaponUI)
+            InGameUI.Instance.weaponUI.Initialize();
         currentLaserCount = laserCount;
 
         weaponSlots ??= new Weapon[weaponSlotSize];
@@ -105,7 +105,7 @@ public class PlayerAttack : MonoBehaviour
             UnequipWeapon(i);
 
         CurrentWeaponIndex = 0;
-        UIManager.Instance.UpdateBomb(currentLaserCount);
+        InGameUI.Instance.UpdateBomb(currentLaserCount);
     }
 
     private void HandleInput()
@@ -135,7 +135,7 @@ public class PlayerAttack : MonoBehaviour
         if (CurrentWeapon.CurrentAmmo <= 0)
             UnequipWeapon(currentWeaponIndex);
 
-        UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
+        InGameUI.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
 
     private void SwitchWeapon()
@@ -155,8 +155,8 @@ public class PlayerAttack : MonoBehaviour
             audioSource.PlayOneShot(equipSFX);
 
         UpdatePlayerAnimator();
-        UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(CurrentWeaponIndex), CurrentWeaponIndex);
-        UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
+        InGameUI.Instance.SetWeaponSlotSprite(GetWeaponIcon(CurrentWeaponIndex), CurrentWeaponIndex);
+        InGameUI.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
 
     public void UnequipWeapon(int index)
@@ -170,14 +170,14 @@ public class PlayerAttack : MonoBehaviour
         Destroy(weaponSlots[index].gameObject);
         weaponSlots[index] = null;
         UpdatePlayerAnimator();
-        UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
+        InGameUI.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
     }
 
     public void EquipBomb()
     {
         currentLaserCount += laserCount;
         audioSource.PlayOneShot(bombEquipSFX);
-        UIManager.Instance.UpdateBomb(currentLaserCount);
+        InGameUI.Instance.UpdateBomb(currentLaserCount);
     }
     public void UseBomb()
     {
@@ -187,11 +187,11 @@ public class PlayerAttack : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (mousePos - CurrentFirePoint).normalized;
 
-        Laser laser = ObjectPoolingManager.Instance.Get(laserPrefab.gameObject, transform.position).GetComponent<Laser>();
+        PlayerLaser laser = ObjectPoolingManager.Instance.Get(laserPrefab.gameObject, transform.position).GetComponent<PlayerLaser>();
         laser.transform.SetParent(transform);
 
         laser.ShotLaser(CurrentFirePoint, dir);
-        UIManager.Instance.UpdateBomb(currentLaserCount);
+        InGameUI.Instance.UpdateBomb(currentLaserCount);
     }
 
 
