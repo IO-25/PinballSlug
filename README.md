@@ -17,8 +17,8 @@ Run & Gun X Brick Out Ver 1.0.0
 ## 👨‍🏫 프로젝트 소개
 ![Image](https://github.com/user-attachments/assets/b6002ec3-87d6-46a8-a72f-a7751811b03f)
   <br />
--제목 : 핀볼슬러그 ( PinballSlug )
--장르 : 2D 횡스크롤 탄막 액션 슈팅
+- 제목 : 핀볼슬러그 ( PinballSlug )
+- 장르 : 2D 횡스크롤 탄막 액션 슈팅
 
 
 ---
