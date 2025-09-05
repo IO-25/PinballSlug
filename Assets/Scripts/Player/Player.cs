@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
         playerHealth = GetComponent<PlayerHealth>();
 
         playerAnimationController.Initialize();
+        playerAnimationController.SetTrigger("IsSpawning");
         StageManager.Instance.player = this;
     }
 
@@ -37,10 +38,11 @@ public class Player : MonoBehaviour
 
     public void Initialize()
     {
+        playerAnimationController.Initialize();
+        playerAnimationController.SetTrigger("IsSpawning");
         playerMovement.enabled = true;
         playerAttack.enabled = true;
         playerHealth.enabled = true;
-        playerAnimationController.Initialize();
     }
 
     public void StartDeathSequence(bool isDead = false)

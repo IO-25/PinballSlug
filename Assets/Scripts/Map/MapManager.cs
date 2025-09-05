@@ -6,11 +6,31 @@ using UnityEngine.SceneManagement;
 
 public class MapManager : MonoBehaviour
 {
-    public GameObject settingsPanel;
+    // 외부에서 접근 가능한 유일한 인스턴스
+    public static MapManager Instance;
+
+    // UI 스크립트가 연결해 줄 설정 패널
+    private GameObject settingsPanel;
     private bool isPaused = false;
 
-    void Start()
+    void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
+
+    // 다른 스크립트가 설정 패널을 연결
+    public void SetSettingsPanel(GameObject panel)
+    {
+        settingsPanel = panel;
+        // 초기 상태를 비활성화로 설정
         if (settingsPanel != null)
         {
             settingsPanel.SetActive(false);
@@ -19,7 +39,6 @@ public class MapManager : MonoBehaviour
 
     void Update()
     {
-        // ESC 키로 일시정지/재개 토글
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePause();
@@ -58,4 +77,3 @@ public class MapManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 }
-

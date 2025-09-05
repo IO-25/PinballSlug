@@ -8,7 +8,8 @@ public class PlayerAnimationController : MonoBehaviour
 
     public void Initialize()
     {
-        SetAnimSpeed(1f);
+        SetFloat("MoveSpeed", 1f);
+        SetFloat("ShootSpeed", 1f);
         SetBool("IsDying", false);
         SetBool("IsMoving", false);
         SetBool("IsJumping", false);
@@ -35,6 +36,11 @@ public class PlayerAnimationController : MonoBehaviour
         upperBodyAnimator.SetBool(param, value);
         lowerBodyAnimator.SetBool(param, value);
     }
+    public void SetTrigger(string param)
+    {
+        upperBodyAnimator.SetTrigger(param);
+        lowerBodyAnimator.SetTrigger(param);
+    }
 
     public void SetBool_Upper(string param, bool value)
     {
@@ -46,10 +52,10 @@ public class PlayerAnimationController : MonoBehaviour
         lowerBodyAnimator.SetBool(param, value);
     }
 
-    public void SetAnimSpeed(float speed)
+    public void SetFloat(string param, float value)
     {
-        upperBodyAnimator.SetFloat("Speed", speed);
-        lowerBodyAnimator.SetFloat("Speed", speed);
+        upperBodyAnimator.SetFloat(param, value);
+        lowerBodyAnimator.SetFloat(param, value);
     }
 
     public void SetUpperActive(bool active)

@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct BoxColliderData
+{
+    public Vector2 offset;
+    public Vector2 size;
+
+}
+
 public class PlayerMovement : MonoBehaviour
 {
     [Header("이동 관련")]
@@ -16,17 +24,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayerMask; // 바닥 레이어 마스크
     [SerializeField] private Vector2 groundCheckBoxSize = new(1.2f, 0.4f); // 바닥 체크 거리
 
+    [Header("콜라이더 관련")]
+    [SerializeField] private BoxColliderData standingCollider;
+    [SerializeField] private BoxColliderData sittingCollider;
+
     private bool isJumping = false;
     private bool isSitting = false;
     private Rigidbody2D rb;
     private PlayerOneWayPlatform oneWayPlatform;
     private PlayerAnimationController animationController;
+    private BoxCollider2D playerCollider;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         oneWayPlatform = GetComponent<PlayerOneWayPlatform>();
         animationController = GetComponent<PlayerAnimationController>();
+        playerCollider = GetComponentInChildren<BoxCollider2D>();
     }
     void Update()
     {
@@ -44,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
         bool isMoving = moveX != 0;
         animationController.SetBool("IsMoving", isMoving);
-        animationController.SetAnimSpeed(moveX >= 0 ? 1f : -1f);
+        animationController.SetFloat("MoveSpeed", moveX >= 0 ? 1f : -1f);
     }
 
     private void HandleJumpAndSit()
@@ -64,13 +78,8 @@ public class PlayerMovement : MonoBehaviour
                 else
                     StartCoroutine(Jump());
             }
-            /*
-            if (isSittingInput)
-            {
-                animationController.SetBool_Upper("IsShooting", false);
-                Debug.Log("앉음");
-            }
-            */
+
+            UpdateColliderData();
         }
 
         animationController.SetBool("IsDropping", oneWayPlatform.IsDropping);
@@ -110,6 +119,20 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
         => Physics2D.OverlapBox(groundCheck.position, groundCheckBoxSize, 0f, groundLayerMask);
+
+    private void UpdateColliderData()
+    {
+        if (isSitting)
+        {
+            playerCollider.offset = sittingCollider.offset;
+            playerCollider.size = sittingCollider.size;
+        }
+        else
+        {
+            playerCollider.offset = standingCollider.offset;
+            playerCollider.size = standingCollider.size;
+        }
+    }
 
     private void OnDrawGizmos()
     {

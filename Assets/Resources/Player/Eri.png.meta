@@ -4524,6 +4524,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Eri_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3206
+        width: 31
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182d4efe98249de478a8cb7d1395ac3c
+      internalID: -304425946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3207
+        width: 29
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0627e124ff37324488d01d2e41948bba
+      internalID: 1686838603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 3207
+        width: 29
+        height: 173
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22203ed81b689274bbda1fec2bb9b896
+      internalID: -2004287338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 3207
+        width: 29
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c92b4d827440844f826487a7b3eb065
+      internalID: 125636657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3207
+        width: 29
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2566c58ab83004b9ef7c5589cd243a
+      internalID: -1366738675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3207
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1f129127858524ba1f9f4e9212ac86
+      internalID: 1848445838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 3207
+        width: 26
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de3ca947e92f5e4cadfbeef237e2718
+      internalID: -1740617751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -4535,6 +4682,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Eri_0: -304425946
+      Eri_1: 1686838603
       Eri_10: -823229271
       Eri_11: -1673237244
       Eri_111: -499808206
@@ -4574,6 +4723,7 @@ TextureImporter:
       Eri_184: 790390228
       Eri_186: 2061632906
       Eri_187: -1413575265
+      Eri_2: -2004287338
       Eri_203: -1244033362
       Eri_206: -1219219201
       Eri_208: 396090899
@@ -4652,6 +4802,7 @@ TextureImporter:
       Eri_297: 884653930
       Eri_298: 1635850928
       Eri_299: 260663959
+      Eri_3: 125636657
       Eri_30: 205231425
       Eri_300: 1257295074
       Eri_301: -1245954527
@@ -4850,6 +5001,7 @@ TextureImporter:
       Eri_497: -1225154183
       Eri_498: -1684760354
       Eri_499: -2062235924
+      Eri_5: 1848445838
       Eri_50: 1076452158
       Eri_500: -836778854
       Eri_501: -1031481351
