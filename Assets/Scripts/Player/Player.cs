@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
         playerAnimationController.Initialize();
         playerAnimationController.SetBool("IsDying", true);
 
-        if (isDead) Die();
+        if (isDead) Invoke(nameof(Die), 3f);
         else playerSpawner.StartSpawn();
     }
 
