@@ -202,7 +202,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   widthMultiplier: 1
-  damage: 10
+  damage: 3
   damageInterval: 0.1
   maxDistance: 100
   hitBlockerMask:

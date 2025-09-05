@@ -1,22 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectPoolingManager : Singleton<ObjectPoolingManager>
 {
     private Dictionary<GameObject, Queue<GameObject>> poolDictionary = new();
     private Dictionary<GameObject, GameObject> instanceToPrefab = new();
-    private bool isQuitting = false;
 
     protected override void Initialize()
     {
         base.Initialize();
         poolDictionary = new();
         instanceToPrefab = new();
+
+        SceneManager.activeSceneChanged += OnSceneChanged;
     }
+
+    void OnSceneChanged(Scene current, Scene next)
+        => Clear();
+
+
     public GameObject Get(GameObject prefab, Vector3 position, Quaternion rotation)
     {
-        if(isQuitting) return null;
         if (prefab == null) return null;
 
         if (!poolDictionary.ContainsKey(prefab))
@@ -46,7 +52,6 @@ public class ObjectPoolingManager : Singleton<ObjectPoolingManager>
 
     public void Return(GameObject instance)
     {
-        if (isQuitting) return;
         if (instance == null) return;
 
         if (instanceToPrefab.TryGetValue(instance, out GameObject prefab))
@@ -54,7 +59,7 @@ public class ObjectPoolingManager : Singleton<ObjectPoolingManager>
             if (!poolDictionary.ContainsKey(prefab))
                 poolDictionary[prefab] = new();
 
-            // Áßº¹ ¹æÁö
+            // ì¤‘ë³µ ë°©ì§€
             if (!poolDictionary[prefab].Contains(instance))
             {
                 instance.SetActive(false);
@@ -67,9 +72,19 @@ public class ObjectPoolingManager : Singleton<ObjectPoolingManager>
         }
     }
 
-    private void OnApplicationQuit()
+    private void Clear()
     {
-        isQuitting = true;
+        foreach (var queue in poolDictionary.Values)
+        {
+            while (queue.Count > 0)
+            {
+                var obj = queue.Dequeue();
+                if (obj != null)
+                    Destroy(obj);
+            }
+        }
+        poolDictionary.Clear();
+        instanceToPrefab.Clear();
     }
 
 }
