@@ -12,6 +12,14 @@ public class StageManager : Singleton<StageManager>
         LoadStage(0);
     }
 
+#if UNITY_EDITOR
+    //Debug Clear
+    public void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.K))
+            SceneChanger.GoGameClearScene();
+    }
+#endif
     public void LoadStage(int stagenumber)
     {
         enemySpawner.Init(GameManager.Instance.StageDatabase[stagenumber]);
