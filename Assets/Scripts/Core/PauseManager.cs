@@ -4,30 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PauseManager : Singleton<PauseManager>
+public class PauseManager : MonoBehaviour
 {
     // UI 스크립트가 연결해 줄 설정 패널
-    private GameObject settingsPanel;
+    [SerializeField] private GameObject settingsPanel;
     private bool isPaused = false;
 
-    // 다른 스크립트가 설정 패널을 연결
-    public void SetSettingsPanel(GameObject panel)
+    void Start()
     {
-        settingsPanel = panel;
-        // 초기 상태를 비활성화로 설정
-        if (settingsPanel != null)
-        {
-            settingsPanel.SetActive(false);
-        }
-    }
-
-    protected override void Initialize()
-    {
-        dontDestroyOnLoad = false;
+        isPaused = false;
+        settingsPanel.SetActive(false);
     }
 
     void Update()
     {
+        Debug.Log(settingsPanel);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePause();

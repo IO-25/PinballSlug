@@ -24,7 +24,8 @@ public static class DropItemFactory
         WeaponType randomWeapon = possibleWeapons[Random.Range(0, possibleWeapons.Count)];
         return CreateDropItem(randomWeapon, position);
     }
-
+    public static DropItem CreateDropItem(DropItemData data, Vector3 position)
+        => CreateDropItem(data.weaponType, position);
     public static DropItem CreateDropItem(WeaponType weaponType, Vector3 position)
     {
         GameObject dropItemPrefab = Resources.Load<GameObject>(DropItemPrefabPath);
