@@ -12,19 +12,20 @@ public struct BoxColliderData
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("ÀÌµ¿ °ü·Ã")]
-    [SerializeField] private float moveSpeed = 5f;
+    [Header("ì´ë™ ê´€ë ¨")]
+    [SerializeField] private float leftMoveSpeed = 5f;
+    [SerializeField] private float rightMoveSpeed = 7f;
 
-    [Header("Á¡ÇÁ °ü·Ã")]
-    [SerializeField] private float maxJumpTime = 0.5f; // ÃÖ´ë Á¡ÇÁ ½Ã°£
-    [SerializeField] private float jumpInitialVelocity = 10f; // Á¡ÇÁ ÃÊ±â ¼Óµµ
-    [SerializeField] private float jumpCancelVelocity = 2f; // Á¡ÇÁ Áß´Ü ¼Óµµ
-    [SerializeField] private float fallMultiplier = 5f;    // ³»·Á°¥ ¶§ °¡¼Óµµ
-    [SerializeField] private Transform groundCheck; // ¹Ù´Ú Ã¼Å©¿ë Æ®·£½ºÆû
-    [SerializeField] private LayerMask groundLayerMask; // ¹Ù´Ú ·¹ÀÌ¾î ¸¶½ºÅ©
-    [SerializeField] private Vector2 groundCheckBoxSize = new(1.2f, 0.4f); // ¹Ù´Ú Ã¼Å© °Å¸®
+    [Header("ì í”„ ê´€ë ¨")]
+    [SerializeField] private float maxJumpTime = 0.5f; // ìµœëŒ€ ì í”„ ì‹œê°„
+    [SerializeField] private float jumpInitialVelocity = 10f; // ì í”„ ì´ˆê¸° ì†ë„
+    [SerializeField] private float jumpCancelVelocity = 2f; // ì í”„ ì¤‘ë‹¨ ì†ë„
+    [SerializeField] private float fallMultiplier = 5f;    // ë‚´ë ¤ê°ˆ ë•Œ ê°€ì†ë„
+    [SerializeField] private Transform groundCheck; // ë°”ë‹¥ ì²´í¬ìš© íŠ¸ëœìŠ¤í¼
+    [SerializeField] private LayerMask groundLayerMask; // ë°”ë‹¥ ë ˆì´ì–´ ë§ˆìŠ¤í¬
+    [SerializeField] private Vector2 groundCheckBoxSize = new(1.2f, 0.4f); // ë°”ë‹¥ ì²´í¬ ê±°ë¦¬
 
-    [Header("Äİ¶óÀÌ´õ °ü·Ã")]
+    [Header("ì½œë¼ì´ë” ê´€ë ¨")]
     [SerializeField] private BoxColliderData standingCollider;
     [SerializeField] private BoxColliderData sittingCollider;
 
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         if (isSitting) return;
 
         float moveX = Input.GetAxisRaw("Horizontal");
+        float moveSpeed = moveX < 0 ? leftMoveSpeed : rightMoveSpeed;
         rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
 
         bool isMoving = moveX != 0;
@@ -84,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
 
         animationController.SetBool("IsDropping", oneWayPlatform.IsDropping);
 
-        // ¾Ö´Ï¸ŞÀÌ¼Ç »óÅÂ ¾÷µ¥ÀÌÆ®
+        // ì• ë‹ˆë©”ì´ì…˜ ìƒíƒœ ì—…ë°ì´íŠ¸
         if (!oneWayPlatform.IsDropping)
         {
             animationController.SetBool("IsJumping", !isGrounded);
@@ -95,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Jump()
     {
         if (isJumping) yield break;
-        if (rb.velocity.y > 0) yield break; // ÀÌ¹Ì »ó½Â ÁßÀÌ¸é Á¡ÇÁ ºÒ°¡
+        if (rb.velocity.y > 0) yield break; // ì´ë¯¸ ìƒìŠ¹ ì¤‘ì´ë©´ ì í”„ ë¶ˆê°€
         isJumping = true;
 
         float time = 0f;
@@ -113,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void ApplyGravityModifiers()
     {
-        if (rb.velocity.y < 0) // ÇÏ°­ Áß
+        if (rb.velocity.y < 0) // í•˜ê°• ì¤‘
             rb.velocity += Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime * Vector2.up;
     }
 
