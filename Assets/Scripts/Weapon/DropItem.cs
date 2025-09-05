@@ -9,26 +9,26 @@ public class DropItem : MonoBehaviour
     [SerializeField] private float dropItemLiveDuration = 20.0f;
     private DropItemData dropItemData;
 
-    private void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
-
-    public void Initialize(DropItemData newData)
+    private void Awake()
     {
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
         if (rb == null)
             rb = GetComponent<Rigidbody2D>();
+    }
 
-        // ¹«±â Å¸ÀÔ°ú ½ºÇÁ¶óÀÌÆ® ¼³Á¤
+    public void Initialize(DropItemData newData)
+    {
+        // ë¬´ê¸° íƒ€ì…ê³¼ ìŠ¤í”„ë¼ì´íŠ¸ ì„¤ì •
         dropItemData = newData;
         spriteRenderer.sprite = dropItemData.dropItemSprite;
 
-        // ·£´ıÇÑ ¹æÇâÀ¸·Î ¶°¿À¸£´Â ÈûÀ» °¡ÇÔ
+        // ëœë¤í•œ ë°©í–¥ìœ¼ë¡œ ë– ì˜¤ë¥´ëŠ” í˜ì„ ê°€í•¨
         float randomAngle = Random.Range(0f, 360f);
-        Vector2 randomDirection = new(Mathf.Cos(randomAngle * Mathf.Deg2Rad), Mathf.Sin(randomAngle * Mathf.Deg2Rad));
+        Vector2 randomDirection = Quaternion.Euler(0, 0, randomAngle) * Vector2.right;
         rb.velocity = randomDirection * dropItemData.floatStrength;
+
+        // ì¼ì • ì‹œê°„ í›„ ì•„ì´í…œ ì œê±°
         Destroy(gameObject, dropItemLiveDuration);
     }
 
@@ -36,7 +36,7 @@ public class DropItem : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // ÇÃ·¹ÀÌ¾î°¡ ¾ÆÀÌÅÛÀ» È¹µæÇßÀ» ¶§ ¹«±â ±³Ã¼
+            // í”Œë ˆì´ì–´ê°€ ì•„ì´í…œì„ íšë“í–ˆì„ ë•Œ ë¬´ê¸° êµì²´
             Player player = StageManager.Instance.player;
             if (player == null) return;
 
