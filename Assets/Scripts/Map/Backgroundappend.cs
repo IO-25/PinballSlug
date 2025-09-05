@@ -6,7 +6,7 @@ public class Backgroundappend : MonoBehaviour
 {
     [Header("Required Objects")]
     public GameObject backgroundPrefab;
-    public Transform playerTransform;
+    public Transform cameraPosition;
 
     [Header("Manual Setup")]
     public float backgroundWidth; 
@@ -18,7 +18,7 @@ public class Backgroundappend : MonoBehaviour
 
     void Start()
     {
-        if (playerTransform == null)
+        if (cameraPosition == null)
         {
             Debug.LogError("Player Transform이 인스펙터에 연결되지 않았습니다!");
             return;
@@ -40,12 +40,12 @@ public class Backgroundappend : MonoBehaviour
 
     void Update()
     {
-        if (playerTransform == null)
+        if (cameraPosition == null)
         {
             return; 
         }
 
-        if (backgroundPieces.Count > 0 && playerTransform.position.x > backgroundPieces[0].transform.position.x + backgroundWidth)
+        if (backgroundPieces.Count > 0 && cameraPosition.position.x > backgroundPieces[0].transform.position.x + backgroundWidth)
         {
             RecycleFirstPiece();
         }
