@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour, IDamageable
     SpriteRenderer boxSpriteRenderer;
     [SerializeField] EnemyAnimator enemyAnimator;
     BoxCollider2D enemyCollider;
-    EnemySoundEmitter soundEmitter;
+    [SerializeField] EnemySoundEmitter soundEmitter;
 
     [Header("적 웨이브 정보")]
     public EnemyWave parentWave = null;
