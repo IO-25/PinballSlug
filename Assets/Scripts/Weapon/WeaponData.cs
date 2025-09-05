@@ -6,23 +6,23 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Weapon Data", menuName = "ScriptableObjects/Weapon Data")]
 public class WeaponData : ScriptableObject
 {
-    [Header("±âº» Á¤º¸")]
+    [Header("ê¸°ë³¸ ì •ë³´")]
     public string weaponName = "New Weapon";
     public Sprite weaponIcon;
-    public AudioClip equipSFX; // È¹µæ ¼Ò¸®
+    public AudioClip equipSFX; // íšë“ ì†Œë¦¬
     public RuntimeAnimatorController upperAnimController;
     public RuntimeAnimatorController lowerAnimController;
 
-    [Header("°ø°İ °ü·Ã")]
-    public GameObject bulletPrefab; // ÃÑ¾Ë ÇÁ¸®ÆÕ
-    public AudioClip[] fireSFX; // ¹ß»ç ¼Ò¸®
-    public float attackDamage = 1; // °ø°İ·Â
-    public float attackRate = 1f; // ÃÊ´ç °ø°İ È½¼ö
+    [Header("ê³µê²© ê´€ë ¨")]
+    public GameObject bulletPrefab; // ì´ì•Œ í”„ë¦¬íŒ¹
+    public AudioClip[] fireSFX; // ë°œì‚¬ ì†Œë¦¬
+    public int attackDamage = 1; // ê³µê²©ë ¥
+    public float attackRate = 1f; // ì´ˆë‹¹ ê³µê²© íšŸìˆ˜
     public int maxAmmo = 30;
     public bool useAmmo = true;
 
-    [Header("Åº ÆÛÁü ¼³Á¤")]
-    public float minSpread = 0f;    // ÃÖ¼Ò ÆÛÁü °¢µµ(µµ ´ÜÀ§)
-    public float maxSpread = 15f;    // ÃÖ´ë ÆÛÁü °¢µµ
-    public float maxDistance = 10f;  // ÃÖ´ë °Å¸®(ÀÌ ÀÌ»óÀÌ¸é maxSpread Àû¿ë)
+    [Header("íƒ„ í¼ì§ ì„¤ì •")]
+    public float minSpread = 0f;    // ìµœì†Œ í¼ì§ ê°ë„(ë„ ë‹¨ìœ„)
+    public float maxSpread = 15f;    // ìµœëŒ€ í¼ì§ ê°ë„
+    public float maxDistance = 10f;  // ìµœëŒ€ ê±°ë¦¬(ì´ ì´ìƒì´ë©´ maxSpread ì ìš©)
 }

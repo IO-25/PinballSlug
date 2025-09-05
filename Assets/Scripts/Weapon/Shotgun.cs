@@ -17,16 +17,18 @@ public class Shotgun : Weapon
         Vector2 dir = (end - start).normalized;
         float distance = Vector2.Distance(start, end);
 
-        // ÅºÈ¯ »ı¼º
+        // íƒ„í™˜ ìƒì„±
         for (int i = 0; i < ShotgunData.bulletCount; i++)
         {
             float randomAngle = GetRandomSpreadAngle(distance);
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + randomAngle;
             Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
-            Instantiate(weaponData.bulletPrefab, firePoint, rot);
+            Projectile projectile = ObjectPoolingManager.Instance.Get(weaponData.bulletPrefab, firePoint, rot).GetComponent<Projectile>();
+            projectile.Fire(weaponData.attackDamage);
+            // Instantiate(weaponData.bulletPrefab, firePoint, rot);
         }
 
-        // Åº¾à °¨¼Ò
+        // íƒ„ì•½ ê°ì†Œ
         if (weaponData.useAmmo)
             currentAmmo = Mathf.Max(0, currentAmmo - 1);
 
