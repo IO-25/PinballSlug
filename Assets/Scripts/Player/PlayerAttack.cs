@@ -4,20 +4,20 @@ using Random = UnityEngine.Random;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [Header("���� ����")]
+    [Header("공격 관련")]
     [Range(0f, 1f)]
     [SerializeField] private float forwardAttackRange = 0.8f;
     [SerializeField] private Transform upFirePoint;
     [SerializeField] private Transform forwardFirePoint;
     [SerializeField] private Transform downFirePoint;
 
-    [Header("���� ����")]
+    [Header("무기 관련 ")]
     [SerializeField] private Transform weaponParent;
     [SerializeField] private int weaponSlotSize = 2;
     private Weapon[] weaponSlots = null;
     private int currentWeaponIndex = 0;
 
-    [Header("��ź ����")]
+    [Header("폭탄 관련")]
     [SerializeField] private Laser laserPrefab;
     [SerializeField] private int laserCount = 10;
     [SerializeField] private AudioClip bombEquipSFX;
@@ -161,12 +161,11 @@ public class PlayerAttack : MonoBehaviour
             else index = FindEmptySlotIndex();
         }
 
-        // ���� ���� �� �ʱ�ȭ
         GameObject weaponPrefab = Resources.Load<GameObject>($"Weapon/{weaponType}");
         Weapon newWeapon = Instantiate(weaponPrefab, weaponParent).GetComponent<Weapon>();
         newWeapon.Initialize();
 
-        if (weaponSlots[index] != null) // ���� ���� ����
+        if (weaponSlots[index] != null)
             Destroy(weaponSlots[index].gameObject);
 
         weaponSlots[index] = newWeapon;
@@ -192,7 +191,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void EquipBomb()
     {
-        currentLaserCount = laserCount;
+        currentLaserCount += laserCount;
         audioSource.PlayOneShot(bombEquipSFX);
         UIManager.Instance.UpdateBomb(currentLaserCount);
     }
@@ -205,7 +204,7 @@ public class PlayerAttack : MonoBehaviour
             if (weaponSlots[nextIndex] != null) return nextIndex;
             nextIndex = (nextIndex + 1) % weaponSlots.Length;
         }
-        return currentWeaponIndex; // �ٸ� ���Ⱑ ������ ���� �ε��� ��ȯ
+        return currentWeaponIndex;
     }
 
 
@@ -214,7 +213,7 @@ public class PlayerAttack : MonoBehaviour
         for (int i = 0; i < weaponSlots.Length; i++)
             if (weaponSlots[i] == null) return i;
 
-        return -1; // �� ������ ������ -1 ��ȯ
+        return -1;
     }
 
     private void UpdateDirectionY(float dirY)
