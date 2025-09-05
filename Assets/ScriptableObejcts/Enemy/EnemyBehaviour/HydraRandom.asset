@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010e810ff5d550f4c858119ed8b2f46a, type: 3}
   m_Name: HydraRandom
   m_EditorClassIdentifier: 
-  ActionCooldown: 5
+  ActionCooldown: 4
   randomDelayMin: 0
   randomDelayMax: 4
   PossibleActions:
