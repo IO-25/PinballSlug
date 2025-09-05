@@ -4,11 +4,11 @@ using System;
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public event Action OnDie;
-    public event Action<int> OnHealthChanged;
+    public static event Action<int> OnHealthChanged;
     private Player player;
-    [SerializeField] private float invincibilityDuration = 2f; // ¹«Àû ½Ã°£
-    [SerializeField] private int maxHealth = 3; // ÃÖ´ë Ã¼·Â
-    [SerializeField] private AudioClip deathSFX; // »ç¸Á ¼Ò¸®
+    [SerializeField] private float invincibilityDuration = 2f; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
+    [SerializeField] private int maxHealth = 3; // ï¿½Ö´ï¿½ Ã¼ï¿½ï¿½
+    [SerializeField] private AudioClip deathSFX; // ï¿½ï¿½ï¿½ ï¿½Ò¸ï¿½
     private int currentHealth;
     private float nextDamageTime;
     private AudioSource audioSource;
@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     {
         player = GetComponent<Player>();
         audioSource = GetComponent<AudioSource>();
-        currentHealth = maxHealth; // Ã¼·Â ÃÊ±âÈ­
+        currentHealth = maxHealth; // Ã¼ï¿½ï¿½ ï¿½Ê±ï¿½È­
     }
 
     private void OnEnable()
@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void Initialize()
     {
-        nextDamageTime = Time.time + invincibilityDuration; // ÃÊ±âÈ­ ½Ã ¹«Àû ½Ã°£ Àû¿ë
+        nextDamageTime = Time.time + invincibilityDuration; // ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½
         OnHealthChanged?.Invoke(currentHealth);
     }
 
@@ -37,8 +37,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         if (enabled == false) return;
         if (Time.time < nextDamageTime)
         {
-            Debug.Log($"³²Àº ¹«Àû½Ã°£ {(nextDamageTime - Time.time).ToString("F2")}");
-            return; // ¹«Àû ½Ã°£ µ¿¾ÈÀº ¹«½Ã
+            Debug.Log($"ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ {(nextDamageTime - Time.time).ToString("F2")}");
+            return; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
         
         player.StartDeathSequence(currentHealth == 0);
