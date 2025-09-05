@@ -4,6 +4,12 @@ using UnityEngine;
 
 public static class RandomManager
 {
+    public static bool FlipCoin(float successRate)
+    {
+        float randomNumber = Random.Range(0.0f, 1.0f);
+        return randomNumber <= successRate;
+    }
+
     public static int RandomPicker(float[] Probability)
     {
         float sum = 0;

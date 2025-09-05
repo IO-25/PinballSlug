@@ -12,6 +12,10 @@ public class Spawner : MonoBehaviour
     [Header("발판 생성 기준점")]
     public Transform spawnPoint;
 
+    [Header("생성 확률")]
+    [Tooltip("Element 뒤 숫자가 생성 할 플랫폼의 개수 - 각 확률 값 입력")]
+    public float[] spawnProbability = new float[4];
+
     [Header("생성될 범위 설정")]
     [Tooltip("x:중심 X, y:중심 Y, z:너비, w:높이")]
     public List<Vector4> spawnRanges; 
@@ -55,8 +59,18 @@ public class Spawner : MonoBehaviour
             return;
         }
 
+        int spawnnumber = RandomManager.RandomPicker(spawnProbability);
+        float spawnRate = spawnnumber / spawnRanges.Count;
         for (int i = 0; i < spawnRanges.Count; i++)
         {
+            //No more Platform will spawn
+            if (spawnnumber <= 0)
+                break;
+            //Based on Platform count, flip coin
+            if (spawnnumber > spawnRanges.Count - i && !RandomManager.FlipCoin(spawnRate))
+                continue;
+            spawnnumber--;
+            spawnRate = spawnnumber / spawnRanges.Count;
             SpawnPlatformFromRange(spawnRanges[i]);
         }
     }
