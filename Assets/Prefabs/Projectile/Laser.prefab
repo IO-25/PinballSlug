@@ -172,7 +172,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.17499848
+      time: 0.175
       value: 1
       inSlope: 0
       outSlope: 0
@@ -181,8 +181,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.9041809
-      value: 1.0094337
+      time: 0.9
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  widthMultiplier: 1
+  widthMultiplier: 2
   damage: 3
   damageInterval: 0.1
   maxDistance: 100
