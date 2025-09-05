@@ -4609,7 +4609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundPrefab: {fileID: 6015415691774125930, guid: b9252a638cdd650459a44665e94bddad, type: 3}
-  playerTransform: {fileID: 405517137}
+  cameraPosition: {fileID: 405517137}
   backgroundWidth: 193
   startXPosition: 0
 --- !u!1 &1947676546
