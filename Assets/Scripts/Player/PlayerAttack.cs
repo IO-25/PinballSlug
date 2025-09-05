@@ -170,7 +170,7 @@ public class PlayerAttack : MonoBehaviour
             Destroy(weaponSlots[index].gameObject);
 
         weaponSlots[index] = newWeapon;
-        weaponSlots[index].SetActiveTrajectory(false);
+        weaponSlots[index].SetActiveTrajectory(index == currentWeaponIndex);
         AudioClip equipSFX = weaponSlots[index].WeaponData.equipSFX;
         if (equipSFX != null)
             audioSource.PlayOneShot(equipSFX);
