@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pistol
   m_EditorClassIdentifier: 
   weaponName: Pistol
-  weaponIcon: {fileID: 45441792, guid: 530bda5ad2448714b91ec75242a58fc3, type: 3}
+  weaponIcon: {fileID: 21300000, guid: 01867f77c60e78640a131921b3368270, type: 3}
   equipSFX: {fileID: 0}
   upperAnimController: {fileID: 9100000, guid: 8533674528d278b46a0b07ced169ba10, type: 2}
   lowerAnimController: {fileID: 9100000, guid: 3ed2adca5c361414a83e87611bcffd04, type: 2}

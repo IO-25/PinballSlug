@@ -268,7 +268,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.1562297}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -279,7 +279,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1645037, y: 2.3236833}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!1 &3684271087528568491
 GameObject:
@@ -419,6 +419,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1089
   groundCheckBoxSize: {x: 1.2, y: 0.4}
+  standingCollider:
+    offset: {x: 0, y: 1}
+    size: {x: 1, y: 2}
+  sittingCollider:
+    offset: {x: 0, y: 0.6}
+    size: {x: 1, y: 1.2}
 --- !u!114 &2467570041537056974
 MonoBehaviour:
   m_ObjectHideFlags: 0

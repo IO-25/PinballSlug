@@ -44,6 +44,11 @@ public class PlayerAttack : MonoBehaviour
         Initialize();
     }
 
+    private void Start()
+    {
+        UpdatePlayerAnimator();
+    }
+
     void OnDisable()
     {
         if (CurrentWeapon != null)
@@ -73,10 +78,9 @@ public class PlayerAttack : MonoBehaviour
         for (int i = 0; i < weaponSlots.Length; i++)
             UnequipWeapon(i);
 
-        Debug.Log(currentWeaponIndex);
         EquipWeapon(WeaponType.Pistol);
         CurrentWeapon.SetActiveTrajectory(true);
-
+        UpdatePlayerAnimator();
         UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
         UIManager.Instance.UpdateBomb(currentLaserCount);
@@ -123,7 +127,9 @@ public class PlayerAttack : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (mousePos - CurrentFirePoint).normalized;
 
-        Laser laser = Instantiate(laserPrefab, transform);
+        Laser laser = ObjectPoolingManager.Instance.Get(laserPrefab.gameObject, transform.position).GetComponent<Laser>();
+        laser.transform.SetParent(transform);
+
         laser.ShotLaser(CurrentFirePoint, dir);
         UIManager.Instance.UpdateBomb(currentLaserCount);
     }
@@ -139,11 +145,8 @@ public class PlayerAttack : MonoBehaviour
         currentWeaponIndex = FindNextWeaponIndex();
         CurrentWeapon.SetActiveTrajectory(true);
 
-        animationController.SetAnimController(
-            CurrentWeapon.WeaponData.upperAnimController,
-            CurrentWeapon.WeaponData.lowerAnimController
-        );
 
+        UpdatePlayerAnimator();
         UIManager.Instance.SelectWeaponSlot(currentWeaponIndex);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
@@ -167,10 +170,12 @@ public class PlayerAttack : MonoBehaviour
             Destroy(weaponSlots[index].gameObject);
 
         weaponSlots[index] = newWeapon;
-        weaponSlots[index].SetActiveTrajectory(false);
+        weaponSlots[index].SetActiveTrajectory(index == currentWeaponIndex);
         AudioClip equipSFX = weaponSlots[index].WeaponData.equipSFX;
         if (equipSFX != null)
             audioSource.PlayOneShot(equipSFX);
+
+        UpdatePlayerAnimator();
         UIManager.Instance.SetWeaponSlotSprite(GetWeaponIcon(index), index);
         UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.WeaponData.useAmmo);
     }
@@ -224,6 +229,17 @@ public class PlayerAttack : MonoBehaviour
     {
         if (weaponSlots[index] == null) return null;
         return weaponSlots[index].WeaponData.weaponIcon;
+    }
+
+    private void UpdatePlayerAnimator()
+    {
+        animationController.SetAnimController(
+            CurrentWeapon.WeaponData.upperAnimController,
+            CurrentWeapon.WeaponData.lowerAnimController
+        );
+
+        float speed = CurrentWeapon.WeaponData.attackRate;
+        animationController.SetFloat("ShootSpeed", speed);
     }
 
 }

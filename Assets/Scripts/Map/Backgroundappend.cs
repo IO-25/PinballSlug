@@ -4,76 +4,95 @@ using UnityEngine;
 
 public class Backgroundappend : MonoBehaviour
 {
+    [Header("Required Objects")]
     public GameObject backgroundPrefab;
     public Transform playerTransform;
 
-    public int maxPieces = 3;
-    public float destroyPointX = -20f;
-    
-    private List<GameObject> activePieces = new List<GameObject>();
-    private float backgroundWidth;
-    private bool isNextFlipped = false;
-    
+    [Header("Manual Setup")]
+    public float backgroundWidth; 
+    public float startXPosition = 0f;
+
+    private float lastSpawnPositionX;
+    private List<GameObject> backgroundPieces = new List<GameObject>();
+    private int backgroundPieceCount = 0;
+
     void Start()
     {
-        InitializeBackground();
+        if (playerTransform == null)
+        {
+            Debug.LogError("Player Transform이 인스펙터에 연결되지 않았습니다!");
+            return;
+        }
+
+        if (backgroundPrefab == null)
+        {
+            Debug.LogError("Background Prefab이 할당되지 않았습니다");
+            return;
+        }
+
+        lastSpawnPositionX = startXPosition - backgroundWidth;
+        
+        for (int i = 0; i < 3; i++)
+        {
+            SpawnNewBackgroundPiece();
+        }
     }
-    
+
     void Update()
     {
-        UpdateBackgroundSpawnAndDestroy();
-    }
-
-    private void InitializeBackground()
-    {
-        backgroundWidth = backgroundPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.x * backgroundPrefab.transform.localScale.x;
-
-        for (int i = 0; i < maxPieces; i++)
+        if (playerTransform == null)
         {
-            SpawnNextBackgroundPiece();
+            return; 
+        }
+
+        if (backgroundPieces.Count > 0 && playerTransform.position.x > backgroundPieces[0].transform.position.x + backgroundWidth)
+        {
+            RecycleFirstPiece();
         }
     }
 
-    private void UpdateBackgroundSpawnAndDestroy()
+    private void SpawnNewBackgroundPiece()
     {
-        if (activePieces.Count > 0 && activePieces[0].transform.position.x < playerTransform.position.x + destroyPointX)
+        Vector3 spawnPosition = new Vector3(lastSpawnPositionX + backgroundWidth, 0, 0);
+        GameObject newPiece = Instantiate(backgroundPrefab, spawnPosition, Quaternion.identity, transform);
+        backgroundPieces.Add(newPiece);
+        
+        backgroundPieceCount++;
+        if (backgroundPieceCount % 2 == 0)
         {
-            DestroyOldestPiece();
-            SpawnNextBackgroundPiece();
+            Vector3 newScale = newPiece.transform.localScale;
+            newScale.x = -Mathf.Abs(newScale.x);
+            newPiece.transform.localScale = newScale;
         }
+
+        lastSpawnPositionX = newPiece.transform.position.x;
     }
 
-    private void SpawnNextBackgroundPiece()
+    private void RecycleFirstPiece()
     {
-        GameObject newPiece;
-        Vector3 spawnPosition;
+        GameObject pieceToRecycle = backgroundPieces[0];
+        backgroundPieces.RemoveAt(0);
+        
+        float lastPieceX = backgroundPieces[backgroundPieces.Count - 1].transform.position.x;
+        Vector3 newPosition = new Vector3(lastPieceX + backgroundWidth, pieceToRecycle.transform.position.y, pieceToRecycle.transform.position.z);
 
-        if (activePieces.Count == 0)
+        pieceToRecycle.transform.position = newPosition;
+        backgroundPieces.Add(pieceToRecycle);
+        
+        backgroundPieceCount++;
+        if (backgroundPieceCount % 2 == 0)
         {
-            spawnPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, transform.position.z);
+            Vector3 newScale = pieceToRecycle.transform.localScale;
+            newScale.x = -Mathf.Abs(newScale.x);
+            pieceToRecycle.transform.localScale = newScale;
         }
         else
         {
-            Vector3 lastPiecePosition = activePieces[activePieces.Count - 1].transform.position;
-            spawnPosition = new Vector3(lastPiecePosition.x + backgroundWidth, lastPiecePosition.y, lastPiecePosition.z);
+            Vector3 newScale = pieceToRecycle.transform.localScale;
+            newScale.x = Mathf.Abs(newScale.x);
+            pieceToRecycle.transform.localScale = newScale;
         }
 
-        newPiece = Instantiate(backgroundPrefab, spawnPosition, Quaternion.identity, transform);
-        
-        SpriteRenderer renderer = newPiece.GetComponent<SpriteRenderer>();
-        if (renderer != null)
-        {
-            renderer.flipX = isNextFlipped;
-        }
-
-        activePieces.Add(newPiece);
-        isNextFlipped = !isNextFlipped;
-    }
-
-    private void DestroyOldestPiece()
-    {
-        GameObject oldestPiece = activePieces[0];
-        activePieces.RemoveAt(0);
-        Destroy(oldestPiece);
+        lastSpawnPositionX = pieceToRecycle.transform.position.x;
     }
 }

@@ -22,7 +22,6 @@ public class WeaponUI : MonoBehaviour
     public void SelectWeaponSlot(int index)
     {
         if (index < 0 || index >= weaponSlots.Length) return;
-        Debug.Log($"SelectWeaponSlot: {index}");
 
         for (int i = 0; i < weaponSlots.Length; i++)
         {
