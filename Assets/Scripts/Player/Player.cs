@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
         StageManager.Instance.player = this;
     }
 
+#if UNITY_EDITOR
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.H))
@@ -35,6 +36,7 @@ public class Player : MonoBehaviour
             DropItemFactory.CreateRandomDropItem(PlayerAttack.CurrentFirePoint);
         }
     }
+#endif
 
     public void Initialize()
     {
