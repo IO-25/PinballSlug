@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e0a3a03fd5eb96643baf341eca7dea4e, type: 3}
   attackDamage: 4
   attackRate: 1
-  maxAmmo: 40
+  maxAmmo: 10
   useAmmo: 1
   minSpread: 0
   maxSpread: 15

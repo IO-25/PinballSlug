@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf03027c60076234492dcd5953e57bb8, type: 3}
   m_Name: Lerker
   m_EditorClassIdentifier: 
-  InitialHealth: 80
+  InitialHealth: 150
   EnemyAnimatorController: {fileID: 9100000, guid: b03b2935c8960c34ab4e8187baafed21, type: 2}
   enemySize: {x: 1, y: 1}
   behaviours:
@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59c476a471494b34e9c887da18649759, type: 2}
   - {fileID: 0}
   dropRate:
-  - 0.03
-  - 0.03
   - 0.02
+  - 0.01
+  - 0.005
   - 0.92

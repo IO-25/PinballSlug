@@ -201,7 +201,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  widthMultiplier: 2
+  widthMultiplier: 1
   damage: 10
   damageInterval: 0.1
   maxDistance: 100
