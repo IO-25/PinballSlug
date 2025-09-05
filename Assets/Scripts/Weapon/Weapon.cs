@@ -44,18 +44,18 @@ public class Weapon : MonoBehaviour
     {
         trajectoryRenderer.RenderTrajectory(firePoint);
 
-        // Åº ÆÛÁü ½Ã°¢È­
+        // íƒ„ í¼ì§ ì‹œê°í™”
         if (spreadCircle == null) return;
 
         Vector2 start = firePoint;
         Vector2 end = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float distance = Vector2.Distance(start, end);
 
-        // °Å¸® ºñÀ² °è»ê
+        // ê±°ë¦¬ ë¹„ìœ¨ ê³„ì‚°
         float t = Mathf.Clamp01(distance / weaponData.maxDistance);
         float spread = Mathf.Lerp(weaponData.minSpread, weaponData.maxSpread, t);
 
-        // Åº ÆÛÁü ¿ø Á¶Á¤
+        // íƒ„ í¼ì§ ì› ì¡°ì •
         spreadCircle.transform.position = end;
         spreadCircle.transform.localScale = Vector3.one * (Mathf.Tan(spread * Mathf.Deg2Rad) * distance * 2f);
     }
@@ -72,26 +72,25 @@ public class Weapon : MonoBehaviour
         Vector2 dir = (end - start).normalized;
         float distance = Vector2.Distance(start, end);
 
-        // ·£´ı °¢µµ Ãß°¡
+        // ëœë¤ ê°ë„ ì¶”ê°€
         float randomAngle = GetRandomSpreadAngle(distance);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + randomAngle;
         Quaternion rot = Quaternion.Euler(new Vector3(0, 0, angle));
 
-        // ÅºÈ¯ »ı¼º
-        ObjectPoolingManager.Instance.Get(weaponData.bulletPrefab, firePoint, rot);
-
+        // íƒ„í™˜ ìƒì„±
+        Projectile projectile = ObjectPoolingManager.Instance.Get(weaponData.bulletPrefab, firePoint, rot).GetComponent<Projectile>();
+        projectile.Fire(weaponData.attackDamage);
+       
         PlayFireSFX();
 
-        // Åº¾à °¨¼Ò
+        // íƒ„ì•½ ê°ì†Œ
         if (weaponData.useAmmo)
-        {
             currentAmmo = Mathf.Max(0, currentAmmo - 1);
-        }
     }
 
     protected float GetSpreadAngle(float distance)
     {
-        // °Å¸® ºñÀ² °è»ê
+        // ê±°ë¦¬ ë¹„ìœ¨ ê³„ì‚°
         float t = Mathf.Clamp01(distance / weaponData.maxDistance);
         return Mathf.Lerp(weaponData.minSpread, weaponData.maxSpread, t);
     }

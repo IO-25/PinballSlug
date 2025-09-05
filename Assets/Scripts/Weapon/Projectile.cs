@@ -5,11 +5,12 @@ using UnityEngine;
 public class Projectile : MonoBehaviour, IDamageable
 {
     [SerializeField] private float speed = 10f;
-    [SerializeField] private int damage = 20;
     [SerializeField] private GameObject hitEffect;
     [SerializeField] private LayerMask targetLayerMask;
     [SerializeField] private bool useDestroyOnHit = false;
     [SerializeField] private float projectileLiveDuration = 20.0f;
+
+    private int damage = 20;
     private Rigidbody2D rb;
     private Coroutine autoReturnCoroutine;
     private TrailRenderer trailRenderer;
@@ -18,19 +19,19 @@ public class Projectile : MonoBehaviour, IDamageable
         rb = GetComponent<Rigidbody2D>();
         trailRenderer = GetComponentInChildren<TrailRenderer>();
     }
-
-    private void OnEnable()
+    public void Fire(int damage)
     {
+        this.damage = damage;
         ClearTrail();
-        SetDirection(transform.right); // √ ±‚ πÊ«‚ º≥¡§
+        SetDirection(transform.right);
         StartAutoReturn();
     }
-
     public void ClearTrail()
     {
         if (trailRenderer == null) return;
         trailRenderer.Clear();
     }
+
 
     private void StartAutoReturn()
     {
@@ -62,7 +63,7 @@ public class Projectile : MonoBehaviour, IDamageable
         if (hitEffect != null)
             ObjectPoolingManager.Instance.Get(hitEffect, transform.position, Quaternion.identity);
 
-        // ≈∏∞Ÿ¿Ã æ∆¥œ∏È ¡æ∑·
+        // ÌÉÄÍ≤üÏù¥ ÏïÑÎãàÎ©¥ Ï¢ÖÎ£å
         if (((1 << collision.gameObject.layer) & targetLayerMask) == 0) return;
 
         IDamageable damageable = collision.collider.GetComponentInParent<IDamageable>();
