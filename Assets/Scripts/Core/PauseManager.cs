@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MapManager : Singleton<MapManager>
+public class PauseManager : Singleton<PauseManager>
 {
     // UI 스크립트가 연결해 줄 설정 패널
     private GameObject settingsPanel;

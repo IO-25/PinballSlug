@@ -2,27 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laser : MonoBehaviour
+public class PlayerLaser : MonoBehaviour
 {
-    [Header("·¹ÀÌÀú ¼³Á¤")]
-    [SerializeField] private LineRenderer lineRenderer; // ·¹ÀÌÀú ½Ã°¢È­¸¦ À§ÇÑ LineRenderer
-    [SerializeField] private AnimationCurve laserWidthOverTime; // ·¹ÀÌÀú ±½±â º¯È­ °î¼±
-    [SerializeField] private float widthMultiplier = 2f; // ·¹ÀÌÀú Å©±â ¹èÀ²
+    [Header("ë ˆì´ì € ì„¤ì •")]
+    [SerializeField] private LineRenderer lineRenderer; // ë ˆì´ì € ì‹œê°í™”ë¥¼ ìœ„í•œ LineRenderer
+    [SerializeField] private AnimationCurve laserWidthOverTime; // ë ˆì´ì € êµµê¸° ë³€í™” ê³¡ì„ 
+    [SerializeField] private float widthMultiplier = 2f; // ë ˆì´ì € í¬ê¸° ë°°ìœ¨
 
     /*
-    [SerializeField] private float expandDuration = 0.3f; // ÃÖ¼Ò ±½±â¿¡¼­ ÃÖ´ë ±½±â·Î º¯È­ÇÏ´Â ½Ã°£
-    [SerializeField] private float holdMaxDuration = 0.9f; // ÃÖ´ë ±½±â À¯Áö ½Ã°£
-    [SerializeField] private float shrinkDuration = 0.3f; // ÃÖ´ë ±½±â¿¡¼­ ÃÖ¼Ò ±½±â·Î º¯È­ÇÏ´Â ½Ã°£
-    [SerializeField] private float minLaserWidth = 0.4f; // ·¹ÀÌÀú ±½±â ¹èÀ²
-    [SerializeField] private float maxLaserWidth = 2.5f; // ·¹ÀÌÀú ±½±â ¹èÀ²
+    [SerializeField] private float expandDuration = 0.3f; // ìµœì†Œ êµµê¸°ì—ì„œ ìµœëŒ€ êµµê¸°ë¡œ ë³€í™”í•˜ëŠ” ì‹œê°„
+    [SerializeField] private float holdMaxDuration = 0.9f; // ìµœëŒ€ êµµê¸° ìœ ì§€ ì‹œê°„
+    [SerializeField] private float shrinkDuration = 0.3f; // ìµœëŒ€ êµµê¸°ì—ì„œ ìµœì†Œ êµµê¸°ë¡œ ë³€í™”í•˜ëŠ” ì‹œê°„
+    [SerializeField] private float minLaserWidth = 0.4f; // ë ˆì´ì € êµµê¸° ë°°ìœ¨
+    [SerializeField] private float maxLaserWidth = 2.5f; // ë ˆì´ì € êµµê¸° ë°°ìœ¨
     */
 
-    [Header("µ¥¹ÌÁö ¼³Á¤")]
-    [SerializeField] private int damage = 5; // °ø°İ µ¥¹ÌÁö
-    [SerializeField] private float damageInterval = 0.1f; // µ¥¹ÌÁö Àû¿ë °£°İ
-    [SerializeField] private float maxDistance = 100f; // ÃÖ´ë »ç°Å¸®
-    [SerializeField] private LayerMask hitBlockerMask; // ·¹ÀÌÀú°¡ Ãæµ¹ÇÒ ·¹ÀÌ¾î ¸¶½ºÅ©
-    [SerializeField] private LayerMask damageTargetMask; // ·¹ÀÌÀú°¡ Ãæµ¹ÇÒ ·¹ÀÌ¾î ¸¶½ºÅ©
+    [Header("ë°ë¯¸ì§€ ì„¤ì •")]
+    [SerializeField] private int damage = 5; // ê³µê²© ë°ë¯¸ì§€
+    [SerializeField] private float damageInterval = 0.1f; // ë°ë¯¸ì§€ ì ìš© ê°„ê²©
+    [SerializeField] private float maxDistance = 100f; // ìµœëŒ€ ì‚¬ê±°ë¦¬
+    [SerializeField] private LayerMask hitBlockerMask; // ë ˆì´ì €ê°€ ì¶©ëŒí•  ë ˆì´ì–´ ë§ˆìŠ¤í¬
+    [SerializeField] private LayerMask damageTargetMask; // ë ˆì´ì €ê°€ ì¶©ëŒí•  ë ˆì´ì–´ ë§ˆìŠ¤í¬
     private float nextDamageTime = 0f;
 
     private void Awake()
@@ -31,7 +31,7 @@ public class Laser : MonoBehaviour
             lineRenderer = GetComponent<LineRenderer>();
     }
 
-    // ·¹ÀÌÀú ¹ß»ç
+    // ë ˆì´ì € ë°œì‚¬
     public void ShotLaser(Vector2 firePoint, Vector2 direction)
     {
         transform.position = firePoint;
@@ -40,13 +40,13 @@ public class Laser : MonoBehaviour
         StartCoroutine(PlayAnimation());
     }
 
-    // µ¥¹ÌÁö Àû¿ë
+    // ë°ë¯¸ì§€ ì ìš©
     private void ApplyDamage()
     {
         if (Time.time < nextDamageTime) return;
         nextDamageTime = Time.time + damageInterval;
 
-        // BoxCast ½ÇÇà
+        // BoxCast ì‹¤í–‰
         float colliderWidth = lineRenderer.widthMultiplier;
         float colliderLength = Vector2.Distance(lineRenderer.GetPosition(0), lineRenderer.GetPosition(1));
         Vector2 origin = (Vector2)transform.position + (Vector2)transform.right * (colliderLength / 2);
@@ -55,7 +55,7 @@ public class Laser : MonoBehaviour
 
         Collider2D[] colls = Physics2D.OverlapBoxAll(origin, size, angle, damageTargetMask);
 
-        // Ãæµ¹ ½Ã µ¥¹ÌÁö Àû¿ë
+        // ì¶©ëŒ ì‹œ ë°ë¯¸ì§€ ì ìš©
         foreach (var coll in colls)
         {
             if (coll.TryGetComponent<IDamageable>(out var damageable))
@@ -63,7 +63,7 @@ public class Laser : MonoBehaviour
         }
     }
 
-    // ·¹ÀÌÀú À§Ä¡ ¾÷µ¥ÀÌÆ®
+    // ë ˆì´ì € ìœ„ì¹˜ ì—…ë°ì´íŠ¸
     void RayCastLineRenderer()
     {
         lineRenderer.SetPosition(0, transform.position);
@@ -91,7 +91,7 @@ public class Laser : MonoBehaviour
 
         /*
         float time = 0;
-        // ±½±â Áõ°¡
+        // êµµê¸° ì¦ê°€
         while (time < expandDuration)
         {
             time += Time.deltaTime;
@@ -99,10 +99,10 @@ public class Laser : MonoBehaviour
             yield return null;
         }
 
-        // ÃÖ´ë ±½±â À¯Áö
+        // ìµœëŒ€ êµµê¸° ìœ ì§€
         yield return new WaitForSeconds(holdMaxDuration);
 
-        // ±½±â °¨¼Ò
+        // êµµê¸° ê°ì†Œ
         while (time < shrinkDuration)
         {
             time += Time.deltaTime;

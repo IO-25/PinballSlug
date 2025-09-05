@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : Singleton<UIManager>
+public class InGameUI : Singleton<InGameUI>
 {
     // 숫자 스프라이트
     [Header("Number Sprites")]

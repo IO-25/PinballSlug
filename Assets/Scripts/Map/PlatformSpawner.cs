@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class PlatformSpawner : MonoBehaviour
 {
     [Header("생성할 오브젝트 설정")]
     public GameObject platformPrefab; 

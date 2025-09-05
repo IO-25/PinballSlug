@@ -6142,6 +6142,8 @@ MonoBehaviour:
   infinityImage: {fileID: 0}
   infinitySprite: {fileID: 0}
   chromaKeyMaterial: {fileID: 2100000, guid: 9409b3ce8a4ab1e48a87ea4d869da443, type: 2}
+  infinityMode: 0
+  currentScore: 0
 --- !u!114 &2041399163
 MonoBehaviour:
   m_ObjectHideFlags: 0

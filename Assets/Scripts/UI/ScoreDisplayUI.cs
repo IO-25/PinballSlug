@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreDisplayManager : MonoBehaviour
+public class ScoreDisplayUI : MonoBehaviour
 {
     public List<Image> scoreImages;
     public List<Sprite> numberSprites;
