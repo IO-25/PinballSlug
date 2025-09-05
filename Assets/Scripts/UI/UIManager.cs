@@ -37,8 +37,8 @@ public class UIManager : Singleton<UIManager>
     private float elapsedTime = 0f;
     
     [Header("Gauge Runner")]
-    public Transform gaugeRunnerInstance;
-    
+    public RectTransform gaugeRunnerInstance;
+
     void Update()
     {
         UpdateGauge();
@@ -126,14 +126,17 @@ public class UIManager : Singleton<UIManager>
         elapsedTime += Time.deltaTime;
         float progress = elapsedTime / totalFillTime;
         float gaugeValue = progress * gaugeImages.Count;
-        
         SetGaugeValue(gaugeValue);
-    }
 
-    public void SetGaugeValue(float value)
+        // 게이지가 다 찼을 때 클리어 처리
+        if (progress >= 1f) 
+            SceneChanger.GoGameClearScene();
+    }
+    public void SetGaugeValue(float gaugeValue)
     {
-        int filledSections = Mathf.FloorToInt(value);
-        float fillProgress = value - filledSections;
+        int filledSections = Mathf.FloorToInt(gaugeValue);
+        float fillProgress = gaugeValue - filledSections;
+
         // 게이지 채우기
         for (int i = 0; i < gaugeImages.Count; i++)
         {
@@ -151,22 +154,24 @@ public class UIManager : Singleton<UIManager>
                 gaugeImages[i].sprite = emptySprite;
             }
         }
-        
-        // 게이지 러너
+
+        // 게이지 러너 이동
         if (gaugeRunnerInstance != null && gaugeImages.Count > 0)
         {
-            float startX = gaugeImages[0].transform.position.x;
-            
-            // 게이지의 총 너비 계산
-            float totalGaugeWidth = 0;
-            foreach(var image in gaugeImages)
-            {
-                totalGaugeWidth += image.rectTransform.rect.width;
-            }
-            
-            float currentX = startX + (totalGaugeWidth * (value / gaugeImages.Count));
-            
-            gaugeRunnerInstance.position = new Vector3(currentX, gaugeRunnerInstance.position.y, gaugeRunnerInstance.position.z);
+            if (filledSections >= gaugeImages.Count) return;
+            int next = Mathf.Min(filledSections + 1, gaugeImages.Count - 1);  // 다음 칸
+            float t = gaugeValue - filledSections;                          // 0~1 보간값
+
+            float currentX = Mathf.Lerp(
+                gaugeImages[filledSections].rectTransform.anchoredPosition.x,
+                gaugeImages[next].rectTransform.anchoredPosition.x,
+                t
+            );
+
+            Vector2 runnerPos = gaugeRunnerInstance.anchoredPosition;
+            runnerPos.x = currentX;
+            gaugeRunnerInstance.anchoredPosition = runnerPos;
         }
     }
+
 }
