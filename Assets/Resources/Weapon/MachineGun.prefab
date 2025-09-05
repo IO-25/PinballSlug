@@ -152,7 +152,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   obstacleLayerMask:
     serializedVersion: 2
-    m_Bits: 1088
+    m_Bits: 1024
   castRadius: 0.2
   reflectionRenderDistance: 2
   offsetSpeed: -10

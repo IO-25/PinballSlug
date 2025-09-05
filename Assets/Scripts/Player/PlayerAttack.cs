@@ -161,7 +161,11 @@ public class PlayerAttack : MonoBehaviour
 
     public void UnequipWeapon(int index)
     {
-        if (weaponSlots[index] == null) return;
+        if (weaponSlots[index] == null)
+        {
+            CurrentWeapon.SetActiveTrajectory(false);
+            return;
+        }
 
         Destroy(weaponSlots[index].gameObject);
         weaponSlots[index] = null;
