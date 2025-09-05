@@ -209,14 +209,14 @@ lastSpawnPositionX라는 변수를 사용해 위치를 추적했는데, 이 변�
 
 - 시간이 흐를수록 마지막 인덱스 항목의  등장 확률이 높아짐
 
-![image.png](attachment:9d24e702-2ab2-42df-af27-4b13c3a4e64f:image.png)
+![Fig1.png](https://raw.githubusercontent.com/IO-25/PinballSlug/refs/heads/main/ReadmeSourceFiles/JangwonMoon/Fig1.png)
 
 ## 원인 파악
 
 - Scriptable Object의 확률표가 계속해서 변함
 - 이 변동된 확률표를 모든곳에서 참조하다 보니, 마지막 인덱스 확률이 높아짐
 
-![image.png](attachment:e72993fb-bc89-4e21-b789-0d30b3fcdf1f:image.png)
+![Fig2.png](https://github.com/IO-25/PinballSlug/blob/main/ReadmeSourceFiles/JangwonMoon/Fig2.png)
 
 ## 기각한 방식
 
