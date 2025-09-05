@@ -4,27 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MapManager : MonoBehaviour
+public class MapManager : Singleton<MapManager>
 {
-    // 외부에서 접근 가능한 유일한 인스턴스
-    public static MapManager Instance;
-
     // UI 스크립트가 연결해 줄 설정 패널
     private GameObject settingsPanel;
     private bool isPaused = false;
-
-    void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-    }
 
     // 다른 스크립트가 설정 패널을 연결
     public void SetSettingsPanel(GameObject panel)
@@ -35,6 +19,11 @@ public class MapManager : MonoBehaviour
         {
             settingsPanel.SetActive(false);
         }
+    }
+
+    protected override void Initialize()
+    {
+        dontDestroyOnLoad = false;
     }
 
     void Update()

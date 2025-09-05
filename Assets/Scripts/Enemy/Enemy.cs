@@ -11,11 +11,11 @@ public class Enemy : MonoBehaviour, IDamageable
     BoxCollider2D enemyCollider;
     EnemySoundEmitter soundEmitter;
 
-    [Header("Àû ¿şÀÌºê Á¤º¸")]
+    [Header("ì  ì›¨ì´ë¸Œ ì •ë³´")]
     public EnemyWave parentWave = null;
     public int index;
 
-    [Header("Àû Á¤º¸")]
+    [Header("ì  ì •ë³´")]
     [HideInInspector] public Action OnDeadActions;
     public int maxHealth = 0;
     public int curHealth = 0;
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public EnemyBehaviour[] behaviours;
 
-    [Header("µå¶ø Á¤º¸")]
+    [Header("ë“œë ì •ë³´")]
     DropItemData[] dropItemDatas;
     float[] dropRate;
     [SerializeField] DropItem dropItemPrefab;
@@ -71,6 +71,8 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         OnDeadActions?.Invoke();
         soundEmitter.OnDead();
+        for (int i = 0; i < behaviours.Length; i++)
+            StopCoroutine(behaviours[i].ActionCorutine(this.transform));
         StopAllCoroutines();
     }
 

@@ -2336,6 +2336,7 @@ GameObject:
   - component: {fileID: 746395737}
   - component: {fileID: 746395740}
   - component: {fileID: 746395739}
+  - component: {fileID: 746395741}
   - component: {fileID: 746395738}
   m_Layer: 5
   m_Name: ExitButton
@@ -2407,7 +2408,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1848559931}
+      - m_Target: {fileID: 1125569949}
+        m_TargetAssemblyTypeName: MapManager, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 746395741}
         m_TargetAssemblyTypeName: SceneChangeBtn, Assembly-CSharp
         m_MethodName: ToMainScene
         m_Mode: 1
@@ -2457,6 +2470,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746395736}
   m_CullTransparentMesh: 1
+--- !u!114 &746395741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746395736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd94ae61968b5f544a067b113cb0dac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &753859775
 GameObject:
   m_ObjectHideFlags: 0
