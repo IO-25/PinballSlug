@@ -113,8 +113,8 @@ Run & Gun X Brick Out Ver 1.0.0
     **1차 시도: 무기별 프리팹 생성**
     
     - 무기별로 **개별 드랍 아이템 프리팹** 생성
-        
-        ![스크린샷 2025-09-05 184855.png](attachment:80649642-3508-453a-9d27-ec9be68d55ab:스크린샷_2025-09-05_184855.png)
+
+      <img width="197" height="43" alt="Img_01" src="https://github.com/user-attachments/assets/6c5bf97c-fafd-4958-a964-e36eb43df551" />
         
     
     ## **문제점**
@@ -128,16 +128,16 @@ Run & Gun X Brick Out Ver 1.0.0
     - 드랍 아이템 **프리팹 1개만 사용**
     - 무기별 속성(스프라이트, 획득 무기 등)을 **ScriptableObject**(DropItemData)로 분리
     
-    ![스크린샷 2025-09-05 190854.png](attachment:12358b16-837d-411c-b18f-bf0a6412a7ae:스크린샷_2025-09-05_190854.png)
-    
-    ![스크린샷 2025-09-05 192227.png](attachment:c0ca7478-3be0-43f4-9236-0352a9d8a626:스크린샷_2025-09-05_192227.png)
+    <img width="395" height="172" alt="Img_02" src="https://github.com/user-attachments/assets/9fb783d5-f69e-42ce-a065-3ab5c43e861e" />
+    <img width="706" height="289" alt="Img_03" src="https://github.com/user-attachments/assets/7a06534b-6f60-4097-a318-4c2665ae2499" />
     
     ## **성과**
     
     - **새로운 무기 추가 시 데이터만 생성하면 됨** → 프리팹 재사용 가능
     - 공통 로직 변경 시 **프리팹 하나만 수정** → 유지보수 용이
 
-![DropItemGIF.gif](attachment:09578573-29ad-4680-a6cc-7a2035395d1e:DropItemGIF.gif)
+    ![DropItemGIF](https://github.com/user-attachments/assets/e7a2a81c-8939-42fe-95bf-785c8d82ce5b)
+
 
 # **2차 목표**
 
@@ -149,17 +149,20 @@ Run & Gun X Brick Out Ver 1.0.0
 - Resources 폴더를 통해 **드랍 아이템 프리팹**과 **DropItemData**를 동적으로 로드
 - Factory 내부에서 **아이템 생성과 초기화 로직을 한 곳에서 관리**
     
-    ![스크린샷 2025-09-05 192227.png](attachment:8b7c7aeb-c062-4a1d-a7bb-ecf2648d6d2e:스크린샷_2025-09-05_192227.png)
-    
-
-![스크린샷 2025-09-05 192259.png](attachment:80e42b43-464e-4526-aae9-bac1cd6cf130:스크린샷_2025-09-05_192259.png)
+    <img width="836" height="163" alt="Img_04" src="https://github.com/user-attachments/assets/a2343884-6c27-4782-9fed-7eb1faf6007e" />
+    <img width="630" height="147" alt="Img_05" src="https://github.com/user-attachments/assets/c9f04166-c358-48f9-95ba-ad06b257a8bc" />
 
 ## **성과**
 
 몬스터가 죽었을 때 **간단히 Factory 호출만으로 드랍 아이템 생성 가능**
-![스크린샷 2025-09-05 212449.png](attachment:aaf623e7-8d31-4068-a11b-79878afdf8c0:스크린샷_2025-09-05_212449.png)
 
-![스크린샷 2025-09-05 212507.png](attachment:65c11379-63c8-49a0-b7dc-fd87c7020bf1:스크린샷_2025-09-05_212507.png)
+이전
+
+<img width="495" height="208" alt="Img_06" src="https://github.com/user-attachments/assets/548ee85b-0206-4ce1-b9be-6249aab60179" />
+
+이후
+
+<img width="692" height="121" alt="Img_07" src="https://github.com/user-attachments/assets/5f655e93-0167-4c49-84de-63afa867fbe4" />
 
 # 끊임없는 배경화면 생성 (정희찬)
 
