@@ -80,10 +80,15 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         int index = RandomManager.RandomPicker(dropRate);
         if (dropItemDatas[index] != null)
+            DropItemFactory.CreateDropItem(dropItemDatas[index], this.transform.position);
+
+        /*
+        if (dropItemDatas[index] != null)
         {
             DropItem drop = Instantiate(dropItemPrefab);
             drop.transform.position = this.transform.position;
             drop.Initialize(dropItemDatas[index]);
         }
+        */
     }
 }
