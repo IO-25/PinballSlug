@@ -5,5 +5,8 @@ public class InvisibleReturner : MonoBehaviour
     [SerializeField] private GameObject returnTarget;
 
     private void OnBecameInvisible()
-        => ObjectPoolingManager.Instance.Return(returnTarget);
+    {
+        if (ObjectPoolingManager.Instance == null) return;
+        ObjectPoolingManager.Instance.Return(returnTarget);
+    }
 }
