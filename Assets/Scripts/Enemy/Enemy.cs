@@ -8,10 +8,8 @@ public class Enemy : MonoBehaviour, IDamageable
     //Base Components
     SpriteRenderer boxSpriteRenderer;
     [SerializeField] EnemyAnimator enemyAnimator;
-    [SerializeField] AudioClip hitSound;
-    [SerializeField] AudioClip deadSound;
     BoxCollider2D enemyCollider;
-    AudioSource enemyAudioSource;
+    EnemySoundEmitter soundEmitter;
 
     [Header("적 웨이브 정보")]
     public EnemyWave parentWave = null;
@@ -35,7 +33,6 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         boxSpriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<BoxCollider2D>();
-        enemyAudioSource = GetComponent<AudioSource>();
     }
 
     public void Init(EnemyData referenceEnemy)
@@ -48,7 +45,6 @@ public class Enemy : MonoBehaviour, IDamageable
         boxSpriteRenderer.size = referenceEnemy.enemySize;
         enemyCollider.size = referenceEnemy.enemySize;
         behaviours = referenceEnemy.behaviours;
-        enemyAudioSource.clip = hitSound;
         isInitialized = true;
 
         dropItemDatas = referenceEnemy.dropItemDatas;
@@ -59,12 +55,13 @@ public class Enemy : MonoBehaviour, IDamageable
 
         for (int i = 0; i < behaviours.Length; i++)
             StartCoroutine(behaviours[i].ActionCorutine(this.transform));
+        soundEmitter = EnemySoundEmitter.Instance;
     }
 
     public void TakeDamage(int damage)
     {
-        enemyAudioSource.Play();
         curHealth -= damage;
+        soundEmitter.Onhit();
         if (curHealth <= 0)
             OnDead();
         StartCoroutine(enemyAnimator.DamageFlash());
@@ -72,10 +69,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private void OnDead()
     {
-        enemyAudioSource.Stop();
-        enemyAudioSource.clip = deadSound;
-        enemyAudioSource.Play();
         OnDeadActions?.Invoke();
+        soundEmitter.OnDead();
         StopAllCoroutines();
     }
 
