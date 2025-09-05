@@ -10,6 +10,20 @@ public static class RandomManager
         return randomNumber <= successRate;
     }
 
+    public static int PickOne(int endIndex)
+    {
+        float prob = 1.0f / (endIndex+1);
+        float randomNumber = Random.Range(0.0f, 1.0f);
+        int index = 0;
+        while (true)
+        {
+            randomNumber -= prob;
+            if (randomNumber <= 0.0f)
+                return index;
+            index++;
+        }
+    }
+
     public static int RandomPicker(float[] Probability)
     {
         float sum = 0;

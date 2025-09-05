@@ -127,6 +127,10 @@ public class UIManager : Singleton<UIManager>
         float progress = elapsedTime / totalFillTime;
         float gaugeValue = progress * gaugeImages.Count;
         SetGaugeValue(gaugeValue);
+
+        // 게이지가 다 찼을 때 클리어 처리
+        if (progress >= 1f) 
+            SceneChanger.GoGameClearScene();
     }
     public void SetGaugeValue(float gaugeValue)
     {
