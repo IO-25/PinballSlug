@@ -19,5 +19,10 @@ public static class SceneChanger
     {
         SceneManager.LoadScene("EndScene");
     }
+
+    public static void GoGameClearScene()
+    {
+        SceneManager.LoadScene("ClearScene");
+    }
 }  
 
