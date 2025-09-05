@@ -1,0 +1,1128 @@
+fileFormatVersion: 2
+guid: 17e70cdcc43db6b409780295e905fb28
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hopper_Death_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 541
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03eae3e81a8e7a4f9e397a36202a37a
+      internalID: -627272228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 541
+        width: 43
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94fcc3fb4ff97844aa00725c216abe0
+      internalID: -664926081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 541
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f5d56a134da174b9833d8daf3e0082
+      internalID: -1358385787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 541
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f95e688582b2af48aaeb4586b10b2c7
+      internalID: -2144391162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 541
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e88f66117eca054b81477a447bffa2a
+      internalID: 2090303958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 503
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ca6a129e5660c4fb72b3dcc46f1432
+      internalID: 746935199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 504
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09c996e681b4d847892421db0410695
+      internalID: -1942396607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_7
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 504
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20dc723468170344944d2d2bb825c06
+      internalID: -1495467262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 503
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fcb76bd77909d4a975a72eea4dd576
+      internalID: -610013651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_9
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 503
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad70c70901d2c9345b5a85edaea00311
+      internalID: -225544311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 503
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd845278d7fbfde49beae0d7b12457b5
+      internalID: -1452940430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 468
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddd9684db7880643b4f98bef3c765ad
+      internalID: 938391484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 468
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f99c1f70cd87274b94fa09da4461d10
+      internalID: 1374751759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 468
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c394275e81a9749a44441af54bc698
+      internalID: 434900800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 468
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c152f3b6d0f4b1442b784863f805623d
+      internalID: -51258532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_15
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 468
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63985737c1ee1b48a06a2c4bde71a5d
+      internalID: 1227060714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_16
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 433
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b988a78303ac34091a0534002a4312
+      internalID: -1074904302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_17
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 432
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe5eca9158778f4ab67053892598acd
+      internalID: 59814823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_18
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 432
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2919c4d33f2f44a8092f7f2dba9dbb
+      internalID: -1683952513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 432
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9939e5f6355af214a9df0c77fb953ef0
+      internalID: -1839272181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_20
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 432
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1aa49d3b070b84184fd02408f198cd
+      internalID: 2055935446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Death_21
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 432
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24fbc6ac64840d4ba81f1fc6af2f4a9
+      internalID: 1840240110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 283
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8db116d634799b4da5735e68151b064
+      internalID: 1602296539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 283
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905980c382395d24280f8c12a512249f
+      internalID: -2030387419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 283
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198d7387e6941464ba9a213958d811d5
+      internalID: -1192824439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 283
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e6e99b151f92f4aadfc3fcc46a9ece
+      internalID: -862261850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_4
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 283
+        width: 51
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c50f58f7eaf31341b1cd3fd31f28423
+      internalID: 752670237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 247
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c19e261e01502040869026f75013fab
+      internalID: 964472198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 247
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716906ebb9f37e144a01c60b580eb6d1
+      internalID: 1087637569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 247
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29874a99e068db5419bdba5db7f7a1d5
+      internalID: -667704006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_8
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 247
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b162a5f95889b44809d294bfcf1286
+      internalID: -939445328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 247
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c048402f2f305b42a9b2b49160313e4
+      internalID: -1430932967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_10
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 216
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396227cef2a57fe4d9b4a2db498c04f8
+      internalID: 1746006581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hopper_Run_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 216
+        width: 52
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6d719585ed6f44d9fc035f257df3d5
+      internalID: -732594647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hopper_Death_0: -627272228
+      Hopper_Death_1: -664926081
+      Hopper_Death_10: -1452940430
+      Hopper_Death_11: 938391484
+      Hopper_Death_12: 1374751759
+      Hopper_Death_13: 434900800
+      Hopper_Death_14: -51258532
+      Hopper_Death_15: 1227060714
+      Hopper_Death_16: -1074904302
+      Hopper_Death_17: 59814823
+      Hopper_Death_18: -1683952513
+      Hopper_Death_19: -1839272181
+      Hopper_Death_2: -1358385787
+      Hopper_Death_20: 2055935446
+      Hopper_Death_21: 1840240110
+      Hopper_Death_22: -1962751625
+      Hopper_Death_3: -2144391162
+      Hopper_Death_4: 2090303958
+      Hopper_Death_5: 746935199
+      Hopper_Death_6: -1942396607
+      Hopper_Death_7: -1495467262
+      Hopper_Death_8: -610013651
+      Hopper_Death_9: -225544311
+      Hopper_Run_0: 1602296539
+      Hopper_Run_1: -2030387419
+      Hopper_Run_10: 1746006581
+      Hopper_Run_11: -732594647
+      Hopper_Run_2: -1192824439
+      Hopper_Run_3: -862261850
+      Hopper_Run_4: 752670237
+      Hopper_Run_5: 964472198
+      Hopper_Run_6: 1087637569
+      Hopper_Run_7: -667704006
+      Hopper_Run_8: -939445328
+      Hopper_Run_9: -1430932967
+      hopper_0: -1676032064
+      hopper_1: -564092124
+      hopper_10: 103879337
+      hopper_100: -786980097
+      hopper_101: 430553438
+      hopper_102: 1432570974
+      hopper_103: -1052418088
+      hopper_104: -993359247
+      hopper_105: 1384830082
+      hopper_11: -1719692887
+      hopper_111: -842044619
+      hopper_112: -1780851303
+      hopper_113: -766365427
+      hopper_114: 1153934124
+      hopper_115: -1823414918
+      hopper_12: -1382401922
+      hopper_123: -1468237058
+      hopper_124: -1431185059
+      hopper_125: -1515730380
+      hopper_126: 1231881446
+      hopper_127: -55996417
+      hopper_128: -215834487
+      hopper_129: 1013828813
+      hopper_13: -1714689274
+      hopper_130: -897789218
+      hopper_131: 1492287102
+      hopper_132: -1927420293
+      hopper_133: 1115362470
+      hopper_134: -56488044
+      hopper_135: -137235091
+      hopper_136: 1084696497
+      hopper_137: 557418492
+      hopper_138: -1371326465
+      hopper_139: 1700919031
+      hopper_14: -916989372
+      hopper_140: -1047945781
+      hopper_141: -1722679622
+      hopper_142: 1686379767
+      hopper_143: -1192030343
+      hopper_144: -266169889
+      hopper_145: 1065489707
+      hopper_146: -365125755
+      hopper_147: 683760960
+      hopper_148: 815932582
+      hopper_149: 215343668
+      hopper_15: -59531011
+      hopper_150: 677552064
+      hopper_151: -202664026
+      hopper_152: -365855452
+      hopper_153: 1772789109
+      hopper_154: -396115905
+      hopper_155: 2075776203
+      hopper_156: -1384051189
+      hopper_157: -1856039174
+      hopper_158: -1737470611
+      hopper_159: -2107946295
+      hopper_16: -681068852
+      hopper_160: -654519754
+      hopper_161: -2094184005
+      hopper_162: 1654421749
+      hopper_163: -589337636
+      hopper_164: -1428636934
+      hopper_165: -1009108638
+      hopper_17: -1042170488
+      hopper_171: -1266455258
+      hopper_172: 1708385060
+      hopper_173: 1018709533
+      hopper_174: 2134471529
+      hopper_175: 1323822658
+      hopper_18: -1550272061
+      hopper_181: -1503029154
+      hopper_182: -269644035
+      hopper_183: -1026379197
+      hopper_184: -995305202
+      hopper_185: -584550497
+      hopper_188: -1796874847
+      hopper_189: -1718722758
+      hopper_19: 364956284
+      hopper_190: -711516119
+      hopper_191: -1889331092
+      hopper_192: 239934951
+      hopper_193: 45882734
+      hopper_194: 166584375
+      hopper_195: -1273897122
+      hopper_196: -359528434
+      hopper_197: -571814618
+      hopper_198: 652412150
+      hopper_199: -1920603999
+      hopper_2: 599491027
+      hopper_20: 1551434476
+      hopper_200: -1653721116
+      hopper_201: -104829198
+      hopper_202: -694958815
+      hopper_203: -1261795217
+      hopper_204: 1152215139
+      hopper_205: -1769186218
+      hopper_206: -68964325
+      hopper_207: 1603134872
+      hopper_208: 239697491
+      hopper_209: 885012977
+      hopper_21: -6160439
+      hopper_210: 1513441769
+      hopper_211: 793240655
+      hopper_212: -1967187140
+      hopper_213: -712622719
+      hopper_214: -902107037
+      hopper_215: 775428561
+      hopper_216: 1976180392
+      hopper_217: -1250090015
+      hopper_218: -2085481383
+      hopper_219: 286682660
+      hopper_22: 482846350
+      hopper_220: 1458005713
+      hopper_221: 714572750
+      hopper_222: -584893390
+      hopper_223: 1476939118
+      hopper_224: -1627498260
+      hopper_225: -1892489418
+      hopper_226: 558721373
+      hopper_227: -2091457816
+      hopper_228: -507005337
+      hopper_229: 853848054
+      hopper_23: 1056720274
+      hopper_230: -1900783148
+      hopper_231: 1390827300
+      hopper_232: 1381622416
+      hopper_233: 1324664275
+      hopper_234: -1555022688
+      hopper_235: 1368777296
+      hopper_236: -205862068
+      hopper_237: -1382357248
+      hopper_238: 488120225
+      hopper_239: -1970933136
+      hopper_24: 1920729929
+      hopper_240: 876103118
+      hopper_241: -1141110208
+      hopper_242: 27471218
+      hopper_243: 1350230840
+      hopper_244: 348318471
+      hopper_245: -791617699
+      hopper_246: 1894643139
+      hopper_247: -557790935
+      hopper_248: 1911758490
+      hopper_249: -63740977
+      hopper_25: -2091950341
+      hopper_250: -880779395
+      hopper_251: 1991676431
+      hopper_252: -1085267273
+      hopper_253: 2058316824
+      hopper_254: -950410957
+      hopper_255: 2133221531
+      hopper_256: -1446631707
+      hopper_257: 1212847748
+      hopper_258: -692112356
+      hopper_259: -608283406
+      hopper_26: -1971488145
+      hopper_260: 2074631669
+      hopper_261: 1531641261
+      hopper_27: -1584158841
+      hopper_28: 1233761367
+      hopper_29: -2143107894
+      hopper_3: -1344363772
+      hopper_30: 2014022269
+      hopper_31: -1499640127
+      hopper_32: -1105126409
+      hopper_33: 1024593922
+      hopper_34: 1331724296
+      hopper_35: -1605441062
+      hopper_36: -1291187045
+      hopper_37: 1669212767
+      hopper_38: -1939421426
+      hopper_39: 1843977950
+      hopper_4: -399169245
+      hopper_40: -397996422
+      hopper_41: 765993260
+      hopper_42: 1023571313
+      hopper_43: 1728416622
+      hopper_44: -1265918800
+      hopper_45: 1381535378
+      hopper_46: -1564345080
+      hopper_47: -1445468669
+      hopper_48: 622797386
+      hopper_49: -935085925
+      hopper_5: -2086678016
+      hopper_50: -1859147545
+      hopper_51: -338951580
+      hopper_52: -1898638376
+      hopper_53: 1574682567
+      hopper_54: 74926802
+      hopper_55: 1783399499
+      hopper_56: 1555346221
+      hopper_57: 257005142
+      hopper_58: -1918302747
+      hopper_59: 295419086
+      hopper_6: -1863746274
+      hopper_60: -1225792464
+      hopper_61: -1047060139
+      hopper_62: -364090100
+      hopper_63: 910445165
+      hopper_64: -846851420
+      hopper_65: -445231625
+      hopper_66: 1760614293
+      hopper_67: 1414068523
+      hopper_68: 1774359953
+      hopper_69: -977557872
+      hopper_7: 1858743421
+      hopper_70: 713087063
+      hopper_71: 818794338
+      hopper_72: 1005492795
+      hopper_73: 1844850005
+      hopper_74: -122818276
+      hopper_75: -550483430
+      hopper_76: 1949076293
+      hopper_77: 1447571399
+      hopper_78: -1089272229
+      hopper_79: -1229169988
+      hopper_80: -1197357064
+      hopper_81: 1700600424
+      hopper_82: -1630585625
+      hopper_83: 907363296
+      hopper_89: 1654947195
+      hopper_9: 410642201
+      hopper_90: 1106891583
+      hopper_91: -640513659
+      hopper_92: -1096186864
+      hopper_93: 1200075832
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

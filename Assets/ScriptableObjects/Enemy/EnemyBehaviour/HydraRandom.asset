@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010e810ff5d550f4c858119ed8b2f46a, type: 3}
+  m_Name: HydraRandom
+  m_EditorClassIdentifier: 
+  ActionCooldown: 4
+  randomDelayMin: 0
+  randomDelayMax: 4
+  PossibleActions:
+  - {fileID: 11400000, guid: e7ee3f1d8fe558e418aeda086c12f6f9, type: 2}
+  - {fileID: 11400000, guid: 423a0daea56a4a84187bb28ebe291f5f, type: 2}

@@ -1,0 +1,1208 @@
+fileFormatVersion: 2
+guid: 46cbbcf93f60c124ba0f74a8c8772f37
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lurker_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3470
+        width: 164
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fdc1f2057d9604589b95e91d4170e1
+      internalID: -1090844568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3259
+        width: 162
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8037d7fb53e5c78489649e735538e98b
+      internalID: -1773494280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 3259
+        width: 164
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f99a8cea6f476d49bbb2bb27dcf0058
+      internalID: 2129899640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 3259
+        width: 164
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a449faf55e4c8e742a19d4e6b114837e
+      internalID: -1961854306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3259
+        width: 168
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc51b1491d210f24f969f01d7ebd9247
+      internalID: -2113361412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3166
+        width: 170
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276359800cdaa20408127679f01ba99b
+      internalID: 1493065493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_5
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 3166
+        width: 171
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d85215e5b42b04db4c513f8575a534
+      internalID: 1833336843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_6
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 3166
+        width: 168
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90236f8d1cf742e4dbf1dba010295c34
+      internalID: 2089587652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Moving_7
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 3167
+        width: 161
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4de37dabdec79f43bdf605b2ce301af
+      internalID: -313694660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 921
+        width: 164
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19d40fdd7be3854f82eacb9928edf16
+      internalID: -71928168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 921
+        width: 164
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e29606532986b4195a4676793e347c
+      internalID: -6874361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_2
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 921
+        width: 178
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cd3279be5c6ee43b0092c59be14e36
+      internalID: 511778584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 828
+        width: 180
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf53c60366e9b549aca66ed7557ca69
+      internalID: -123635875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 831
+        width: 180
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80c4bac68e97914cb4bdcd1a9d0c54c
+      internalID: -632978958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 831
+        width: 180
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf78ba2e15321f945854bf98ef811d13
+      internalID: 1553167922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_6
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 835
+        width: 180
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887d5c7202a5ba34b9d4a620244a4074
+      internalID: -1217526315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_7
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 835
+        width: 180
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bea64852c29ad442acff2062b102e78
+      internalID: 1453384112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 738
+        width: 148
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2662bcd7f07184cb6a1101209e8724
+      internalID: 632898752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 740
+        width: 147
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ab6d8b36f300142969d66b6e0c5078
+      internalID: 1163788061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 738
+        width: 148
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b9d07e548ddf04d8712c5d8311b8d4
+      internalID: -1457095620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 739
+        width: 148
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb475741e1c0732419350007e9a5ddaf
+      internalID: 2074247378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_12
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 739
+        width: 138
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fbe139cb0705c4eb21b5c8a71075e3
+      internalID: -1813876280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 655
+        width: 180
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69337992a8cef84790947423a875620
+      internalID: -955523215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_14
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 658
+        width: 180
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f54afcc7cff3b94388e9c422aac856c
+      internalID: 1845701590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_15
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 657
+        width: 180
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840b42f1f22d69d42861789133424acb
+      internalID: -302126922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_16
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 657
+        width: 180
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac4d3fb8a43186428e7d569db7369d8
+      internalID: 698285794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_17
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 657
+        width: 177
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72b6c415dfff13438a435513192795e
+      internalID: 1804408062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_18
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 609
+        width: 175
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5856c58d0884449a7e84c94d6a7f68
+      internalID: 1518474170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_19
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 609
+        width: 170
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebfff0658901434799e18604b137c40
+      internalID: 993628498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_20
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 611
+        width: 167
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca71d76be623e64984b17ed8986322e
+      internalID: 1285748852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_21
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 611
+        width: 162
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68848c63d9ad2b041b35afb6331e2cec
+      internalID: -1133495683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Death_22
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 611
+        width: 130
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac704b62df1ecd47abd0e27e3a8166e
+      internalID: -1551195468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 3470
+        width: 164
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd42e9385773754387df79f2ace93f9
+      internalID: 1963217200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 3470
+        width: 164
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa83d82a23024b479cd8da5ed2d16c2
+      internalID: 601973091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lurker_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3470
+        width: 164
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef4d86a066d21b46a8aabaf02f20916
+      internalID: -233843998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lurker_Death_0: -71928168
+      Lurker_Death_1: -6874361
+      Lurker_Death_10: -1457095620
+      Lurker_Death_11: 2074247378
+      Lurker_Death_12: -1813876280
+      Lurker_Death_13: -955523215
+      Lurker_Death_14: 1845701590
+      Lurker_Death_15: -302126922
+      Lurker_Death_16: 698285794
+      Lurker_Death_17: 1804408062
+      Lurker_Death_18: 1518474170
+      Lurker_Death_19: 993628498
+      Lurker_Death_2: 511778584
+      Lurker_Death_20: 1285748852
+      Lurker_Death_21: -1133495683
+      Lurker_Death_22: -1551195468
+      Lurker_Death_3: -123635875
+      Lurker_Death_4: -632978958
+      Lurker_Death_5: 1553167922
+      Lurker_Death_6: -1217526315
+      Lurker_Death_7: 1453384112
+      Lurker_Death_8: 632898752
+      Lurker_Death_9: 1163788061
+      Lurker_Idle_0: -1090844568
+      Lurker_Idle_1: 1963217200
+      Lurker_Idle_2: 601973091
+      Lurker_Idle_3: -233843998
+      Lurker_Moving_0: -1773494280
+      Lurker_Moving_1: 2129899640
+      Lurker_Moving_2: -1961854306
+      Lurker_Moving_3: -2113361412
+      Lurker_Moving_4: 1493065493
+      Lurker_Moving_5: 1833336843
+      Lurker_Moving_6: 2089587652
+      Lurker_Moving_7: -313694660
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_100: -1061945508
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_101: -779177395
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_102: -153786384
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_103: -1130538972
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_104: -2014566494
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_105: -769931917
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_106: -556179475
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_107: -445860566
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_108: -1864192816
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_109: 1906765285
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_110: -306361086
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_111: -1423537930
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_112: 761912530
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_113: -294282935
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_114: -2109714348
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_115: 1392622689
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_116: 1497973315
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_117: 270552105
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_118: 267694691
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_119: 683509744
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_120: 610377544
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_121: 2073128617
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_122: 669521121
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_123: -751407788
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_124: -1964100284
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_125: 652383866
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_126: -511763188
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_127: -177142811
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_128: 1563452280
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_129: -998538920
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_13: -863147974
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_130: 1721531144
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_131: 548093105
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_132: -1681527198
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_133: -1225142338
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_134: -1973084451
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_135: -1657822377
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_136: 392126129
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_137: -803939839
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_138: 1191808057
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_139: -595376736
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_14: -1132312076
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_140: 1452777576
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_141: 32273423
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_142: 1874552289
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_143: 783910577
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_144: -1188797281
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_145: 1995540444
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_146: 229177367
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_147: -1292487355
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_148: 2034612228
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_149: -336036280
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_15: -1981746051
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_150: 1691881996
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_151: -1128865594
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_152: 1116208859
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_153: 44372500
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_154: 1865291294
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_155: 369251459
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_156: 204694912
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_157: 1720336867
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_158: 1468319647
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_159: -1920852550
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_16: -995652812
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_160: 1848934213
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_161: -72283001
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_162: 1919267671
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_163: 1971605407
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_164: 40212600
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_165: 646679541
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_166: 1978585383
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_167: 1838225242
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_168: 821700021
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_169: -584258302
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_17: 1160085006
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_170: -65555079
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_171: 1411931014
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_172: 1861897604
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_173: -1188363252
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_174: -1233957307
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_175: 142350838
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_176: -1628390260
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_177: -425410924
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_178: 35630076
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_179: -1595977974
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_18: -1226710170
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_180: 638117504
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_181: 815489
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_182: -1531520809
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_183: 1309450988
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_184: -1046835797
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_185: 692098530
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_186: 1687243846
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_187: 594071055
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_188: -1413711219
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_189: 1382854708
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_19: 970206225
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_190: -1076099984
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_191: 661391802
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_192: -17304730
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_193: -1318335656
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_194: 1840226630
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_195: -1515575924
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_196: 990779992
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_2: -1042116195
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_20: -811672257
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_21: -1866456496
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_22: -861437000
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_220: -335349536
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_221: 269309342
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_222: 1713301563
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_223: 1738157985
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_224: 1574954213
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_225: 964006372
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_226: -2035857878
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_227: -1693063255
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_228: 2014022016
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_229: 1806808000
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_23: 1364390192
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_230: 1524091886
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_231: -706669553
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_232: -1822812296
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_233: -726709141
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_234: 1938279748
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_235: 696551048
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_236: -1698634437
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_237: 851428062
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_238: 1844139320
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_239: 673879099
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_24: 1754990958
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_240: -489655315
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_241: -1923388148
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_242: -705067694
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_243: 786978592
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_244: 1261176491
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_245: -784739530
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_246: -903019069
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_247: 1498935080
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_248: 402832684
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_249: -2061158831
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_25: -1230312290
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_250: 2013776806
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_251: 1744574750
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_252: 89615055
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_253: -758496359
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_254: -1740107408
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_255: 2111297084
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_256: 451494644
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_257: -910140795
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_258: 526216172
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_259: -1324706951
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_26: 1590608421
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_260: 1776379741
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_261: 1448410417
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_262: 298999750
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_263: -545262457
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_264: 566567933
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_265: -1727909387
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_266: 1159740058
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_267: 1127766129
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_268: 1038331225
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_269: 410856021
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_27: -1149200040
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_270: -234706104
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_271: 1372160709
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_272: -2067674199
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_273: -1330799099
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_274: -164639855
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_275: 1879240728
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_276: -1089547884
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_277: 358667036
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_278: -194882583
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_279: 1495510333
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_28: -1590159946
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_280: -1461809030
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_281: -602754813
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_282: -544985579
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_283: -185204255
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_284: 564409783
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_285: -341795092
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_286: 520709013
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_287: 827204663
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_288: 1752175182
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_289: -1657111630
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_29: 1463850893
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_290: -1193203816
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_291: -1713414529
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_292: -754650063
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_293: 1786859149
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_294: 1698036183
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_295: 1289443639
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_296: -932660743
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_297: 1633449373
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_298: -812349917
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_299: 615578216
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_30: 2075339596
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_300: 641256740
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_301: -829134409
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_302: -70875603
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_303: -897348781
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_304: -678735206
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_305: 1741772211
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_306: -722603073
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_307: -1500168784
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_308: 854189806
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_309: 1489528329
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_31: 1881387105
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_310: -271397205
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_311: -1860569156
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_312: 892497499
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_313: -1331178330
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_314: 1888505568
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_315: -334361517
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_316: 258014989
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_317: -532436477
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_318: 680980148
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_319: -173988012
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_32: -1956404679
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_33: 785575213
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_34: -788778008
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_35: 1718103829
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_36: -1680113436
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_37: -1692943633
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_38: -1675840991
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_39: -1501887650
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_40: -2062995825
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_41: 2060039534
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_42: -1492738944
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_43: -1348815893
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_44: -1573318419
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_45: -1449241814
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_46: -585898363
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_47: 252934737
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_48: -350860009
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_49: 162404676
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_50: 866878482
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_51: -924862194
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_52: -1300336732
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_53: 1826787710
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_54: 386214416
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_55: 351825532
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_56: -2103847772
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_57: 2140630042
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_58: 1295931953
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_59: -143489910
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_60: 1791768819
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_61: -1664341673
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_62: 1883315053
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_63: 1738482095
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_64: 1336103357
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_65: 292453888
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_66: 452621309
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_67: -1815730621
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_68: 2022361490
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_69: -1691846050
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_70: 1968104239
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_71: -416913704
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_72: 1225879200
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_73: -969148746
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_74: 519555597
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_75: -1937233876
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_76: 1965696655
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_77: -2089586412
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_78: 666312390
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_79: -280479047
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_80: -96124030
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_81: 1131801441
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_82: -991385390
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_83: -1300098796
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_84: -69559977
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_85: 627778963
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_86: -779807463
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_87: -1769498498
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_88: 1976070719
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_89: 1169400377
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_90: -305719115
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_91: 872290733
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_92: -1029528514
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_93: 365548093
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_94: 577942888
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_95: 314228634
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_96: 1716101307
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_97: -1813687016
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_98: 358642952
+      Neo Geo _ NGCD - Metal Slug 3 - Enemies &amp; Bosses - Giant Caterpillar_99: -985902740
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

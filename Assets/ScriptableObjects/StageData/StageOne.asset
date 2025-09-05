@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0efe923217c4d4ebd92cd61b05179e, type: 3}
+  m_Name: StageOne
+  m_EditorClassIdentifier: 
+  spawnProbability: 0.6
+  normalEnemyData:
+  - {fileID: 11400000, guid: 9a3c1447642cad7459eb23ac7f30db8f, type: 2}
+  - {fileID: 11400000, guid: 2fad9c2847c7bcc469ea505a631fcb65, type: 2}
+  - {fileID: 11400000, guid: 9ba886f03716cce46a26d7ef50fa84ae, type: 2}
+  enemyProbability:
+  - 0.65
+  - 0.25
+  - 0.1
+  LerkerData: {fileID: 11400000, guid: fdadaa42879254e4f8008ce14b16a378, type: 2}
+  LerkerSpawnDelay: 60
+  lerkerSpawnIndex: 0000000004000000
+  lerkerSpawnIndexProbability:
+  - 0.75
+  - 0.25
+  SpawnDelay: 2
+  moveDistance: {x: -1, y: 0, z: 0}

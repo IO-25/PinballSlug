@@ -1,0 +1,5420 @@
+fileFormatVersion: 2
+guid: e1f1e9e48937c1e409e7fde8f2039942
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3172
+        width: 32
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee588e7dec85404898d417d8750354c
+      internalID: 1601524836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 3172
+        width: 32
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f78275ff0928a45a143aa9369b70ba
+      internalID: 1370657984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 3172
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1690e695d139e4298a5d9ba774ada5
+      internalID: 1962419752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3172
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad04baf78e277384fa9034d62d9ff950
+      internalID: 1977481003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uD558\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 3173
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb41ba1cc119d7439bde5c18a36aa5d
+      internalID: -1182392666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2896
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1b8787035216c45bbfb4412da136e9
+      internalID: 756012542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2896
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff2682869aa65e4abb0fa79b4357aa5
+      internalID: 640268673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2896
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe57858c1181e8348aaeef3f88ff01d3
+      internalID: 1149706162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2896
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae49d3c1c4da25d47b120336836e3336
+      internalID: -287047339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_6"
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2895
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a73cea1d00fde4db2cf67811e19ae4
+      internalID: 2099223557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_7"
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 2895
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab66440fccf81e4e836afc3d89588eb
+      internalID: 31208603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_8"
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2895
+        width: 32
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4c655445a6e8c42bdf8259ea1b4fe4
+      internalID: 1346115776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_9"
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 2895
+        width: 32
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3f55ea9e7677443a24296f10111240
+      internalID: 240837982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_10"
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2894
+        width: 30
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64706288cd3d5eb44b6caad07b77e4bf
+      internalID: -427556431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_11"
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 2894
+        width: 30
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ea1ea84fcd5b545854189e30c3646d
+      internalID: -854034747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2865
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b4635db3ddd2449b1fd7b6c1662256
+      internalID: -373772773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2865
+        width: 25
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ec1ba4362984943b2d0027aa2d3853
+      internalID: -1665904594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2865
+        width: 25
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e36d109421f2764aa2f447acb346a3c
+      internalID: -72023558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 2865
+        width: 23
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd3716867e82b44f96e68501a00e4e8
+      internalID: -1388080235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2865
+        width: 24
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed42710522532ff438f829b1b0052216
+      internalID: -553853664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2865
+        width: 18
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3331d65370fea4f849b36f9f40e169
+      internalID: -974366858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_6"
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2865
+        width: 20
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a940e7cd108b8e4faf0d3e06d5ea92f
+      internalID: 1020935784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_7"
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2865
+        width: 22
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20083db6170312449363f96083a1cd0
+      internalID: 906124699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_8"
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2866
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f746b0bd6a6fff2489012fb5f2398e6c
+      internalID: -1141721830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_9"
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2867
+        width: 27
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90733901f9c314a4eaf514066ab6891a
+      internalID: 3153146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_10"
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 2865
+        width: 25
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08ae402c9ef042479b4201eb9fdeef6
+      internalID: -1091297850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_11"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2865
+        width: 17
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70fe46c4cd455b469f29dd805984e91
+      internalID: 1868119606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_12"
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 2865
+        width: 18
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50972bc629d3404a8cde2546eb6dc1b
+      internalID: -816584379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_13"
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2865
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b2b733550e6bd469644c00ec73be7c
+      internalID: -1845997690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_14"
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2866
+        width: 26
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6c1dc360969954084638894d54b972
+      internalID: -460224209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD558\uBC18\uC2E0_15"
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 2864
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f00074e33d3aa4aa9c0a7bb2909f11
+      internalID: -141034445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2785
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6136068, y: -0.16249436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ae85f8c8040484b8cfb35cda80c9b8
+      internalID: -1462016481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2785
+        width: 31
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6260979, y: -0.16286214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619b8c710a7310a47a2f757611e98632
+      internalID: -256275556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2785
+        width: 31
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6009834, y: -0.17556763}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7573377c48eea54583f9e132a3073be
+      internalID: 78175368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2785
+        width: 30
+        height: 24
+      alignment: 9
+      pivot: {x: 0.58018494, y: -0.18713379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0d83a8c236ada4ebbd4066bafe2bc0
+      internalID: -1413074687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2785
+        width: 30
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6257451, y: -0.17682903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cdbff4db68ed841836fbecd5f9bedd
+      internalID: 1668582871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2784
+        width: 28
+        height: 24
+      alignment: 9
+      pivot: {x: 0.62503433, y: -0.1276652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca726711e570b9f4b979711317c76f83
+      internalID: 1341129628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 2778
+        width: 28
+        height: 33
+      alignment: 9
+      pivot: {x: 0.65488106, y: 0.22256008}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6154dd2a6a714ea4280acdfc6ef6ad81
+      internalID: -1805987596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2777
+        width: 32
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5313978, y: 0.23454733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b65f4456564f954194218a9f52fe08b
+      internalID: 922592812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2778
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5410304, y: 0.23208156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d83643ab6c78b4fbcbf0f3a57cf54b
+      internalID: 550897838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2776
+        width: 32
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5765114, y: 0.25942653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f26df93d55cbf408e75c0cb9810eeb
+      internalID: -277971576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 2779
+        width: 28
+        height: 33
+      alignment: 9
+      pivot: {x: 0.66114914, y: 0.15893555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d653c37d59bab41a5179bfd0c077eb
+      internalID: -1983428394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 2782
+        width: 26
+        height: 30
+      alignment: 9
+      pivot: {x: 0.6667081, y: 0.14930013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d42df314ba17e24283f935f8392f8b6
+      internalID: -1880737281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2750
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5df4b98ff40ac46b0724e3376fea47
+      internalID: 786993418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2750
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38abd884d907014f95674e720b71cbe
+      internalID: 78921202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2751
+        width: 22
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e15e9d7d5e1b245bf6c1b87e4ce807
+      internalID: 1273020696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2752
+        width: 23
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7307e924b01c7946929ffeb6ed556ca
+      internalID: 1916208976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2755
+        width: 24
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c547755c28acd4588f026a77ff9eee
+      internalID: 1339718286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2750
+        width: 28
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5b0bbabe0a538409f96d6ee449a117
+      internalID: -1098669664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2752
+        width: 29
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152b10dc10267f14c8e975f5b7f65021
+      internalID: 1626333083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2754
+        width: 33
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e15627df47a29840a8b9ec2153a40e6
+      internalID: 1729585890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2756
+        width: 30
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65f4881bc3c7e342893c5e64f989e9d
+      internalID: 1966320351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2756
+        width: 30
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84aa3888aabe5ae48a0eeeae7365c386
+      internalID: 1162851133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 2754
+        width: 26
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e27a9f05a5146441b8c844bd937ca31
+      internalID: -553271867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2708
+        width: 36
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839b803ed871a6a4fbefe19a3f774312
+      internalID: 313000037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2708
+        width: 33
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf5429e8e14f324abc14433c39698cc
+      internalID: -1107646512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 2708
+        width: 32
+        height: 22
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b837bc5b37980d4caabef6af045859b
+      internalID: -1912289530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2708
+        width: 27
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba08fa7b1cb2b9c4ea276b3f444aed22
+      internalID: 160040476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2712
+        width: 29
+        height: 24
+      alignment: 9
+      pivot: {x: 0.53405076, y: -0.23138428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2329250fdbb53e946a9e75063084c9e0
+      internalID: -1674539126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2712
+        width: 29
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5322718, y: -0.22905476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5effce15f997e949aebaceade8d36a0
+      internalID: -1742304431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_6"
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2712
+        width: 30
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5058533, y: -0.21536255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473313f7b47096048a25893766f62db7
+      internalID: -1439583319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_7"
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2712
+        width: 30
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49938864, y: -0.22472127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bc6fde3c64bfd4fbf5061e7cc12a60
+      internalID: -547442461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2665
+        width: 24
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f2adf9eb2e28a42b1a10813a62510a
+      internalID: -1866399601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2661
+        width: 19
+        height: 40
+      alignment: 9
+      pivot: {x: 0.52477247, y: 0.21414796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8c0b540d9fb3044b41471b24ef9216
+      internalID: -527823771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2660
+        width: 18
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5264142, y: 0.21374796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9164d48873069c42b0d9360ca4705e3
+      internalID: 118611048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_0"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2612
+        width: 29
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbe928a23aa67e46a2b1e0f485a62e9
+      internalID: 350060552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_1"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2612
+        width: 29
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56df8d64549e95f4fa3c055c7bae00f9
+      internalID: -1174144056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_2"
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2612
+        width: 35
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ebed1dee4265b4f93efa838efb694b
+      internalID: 1239991684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_3"
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2612
+        width: 35
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4796561, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573eb3557fcb3df45856c4afcf2a8a55
+      internalID: -1808747341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_4"
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2612
+        width: 35
+        height: 28
+      alignment: 9
+      pivot: {x: 0.47085485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d5312aa1b2e1c46ae7059dc08cf1b3
+      internalID: 1166136724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_5"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2612
+        width: 34
+        height: 28
+      alignment: 9
+      pivot: {x: 0.48001906, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eff876b0c5d54e4b97e3e94e4bee465
+      internalID: -1117600668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_6"
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2612
+        width: 33
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df79aecb2b3d61f4991dafe4348c6149
+      internalID: 803290685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_8"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2475
+        width: 24
+        height: 59
+      alignment: 9
+      pivot: {x: 0.6986707, y: -0.10606048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06038d29863779e469aed30d3c49b134
+      internalID: 1531386533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_9"
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2475
+        width: 24
+        height: 62
+      alignment: 9
+      pivot: {x: 0.7395784, y: -0.10224373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ff48703b0a1b546ae2a8ba4c43e733
+      internalID: 2061632906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_10"
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2475
+        width: 24
+        height: 64
+      alignment: 9
+      pivot: {x: 0.7088044, y: -0.09769058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca3047d82e63b04f91cb44e2aad50e0
+      internalID: -1413575265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_11"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2475
+        width: 24
+        height: 33
+      alignment: 9
+      pivot: {x: 0.7344449, y: -0.1871301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403cbe7960b9ad74b97aa602417fd814
+      internalID: 813457737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_12"
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2475
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7505398, y: -0.19664001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4b80794cdf7584699925e81842a261
+      internalID: 2029556554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_13"
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2475
+        width: 23
+        height: 33
+      alignment: 9
+      pivot: {x: 0.799262, y: -0.18319425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a2c2ec759669d43958b90b60c5542b
+      internalID: 848380647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_14"
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2475
+        width: 25
+        height: 31
+      alignment: 9
+      pivot: {x: 0.7057105, y: -0.19501323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587e0db41d2881e44beb20fc28f9da8e
+      internalID: 608529942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_15"
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2475
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 0.63891274, y: -0.20974936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb81560647ce8149bbb49c94d0d9d84
+      internalID: 741574766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_16"
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2475
+        width: 27
+        height: 26
+      alignment: 9
+      pivot: {x: 0.59228796, y: -0.22368915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4c5ba9d348f554fbea6666bc4ea6ad
+      internalID: -606564562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_17"
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2475
+        width: 30
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5598857, y: -0.23488362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3bb0cdcf133464a93adc20646f4df5
+      internalID: -953891543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2408
+        width: 19
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5403879, y: 0.45931542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6e209618c6e4e41b0c843cec2f618c
+      internalID: -949403795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2407
+        width: 18
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5296519, y: 0.47679862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430899cdaa9364943a6923d3ff40b7e5
+      internalID: 413001838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2405
+        width: 19
+        height: 62
+      alignment: 9
+      pivot: {x: 0.535458, y: 0.5028588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8099aa12441e41348a79d840ca7e13e9
+      internalID: 1718045480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_6"
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2432
+        width: 22
+        height: 36
+      alignment: 9
+      pivot: {x: 0.46441755, y: 0.16218397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0d5854e0f27da45a67501d5517778c
+      internalID: -74552020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_7"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2427
+        width: 19
+        height: 40
+      alignment: 9
+      pivot: {x: 0.53937167, y: 0.24169922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b900282a39269114bafdb74bc84cf3b9
+      internalID: -2100961145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_8"
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2426
+        width: 18
+        height: 42
+      alignment: 9
+      pivot: {x: 0.59019387, y: 0.24100168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46714b24ac872d4daee972deeaeefe8
+      internalID: -89347280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_0"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2366
+        width: 51
+        height: 28
+      alignment: 9
+      pivot: {x: 0.23249604, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc4debf11501ba418bc02d823ad4b0c
+      internalID: 1208083368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_1"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2366
+        width: 53
+        height: 29
+      alignment: 9
+      pivot: {x: 0.23109911, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5358a962050c89498daed84aa6efd7f
+      internalID: -1244033362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_2"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2366
+        width: 54
+        height: 28
+      alignment: 9
+      pivot: {x: 0.22841616, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067b12b02fcc0b04b9705e3dba7755b9
+      internalID: 138950550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_3"
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2366
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.3839078, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ad20fd0a67d1349a5e74a3d14363ac
+      internalID: 2023678013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_4"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 2366
+        width: 31
+        height: 29
+      alignment: 9
+      pivot: {x: 0.3696092, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1d9e89e150ab845adbe9ce131f6bc7
+      internalID: 1403256221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_5"
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 2366
+        width: 36
+        height: 27
+      alignment: 9
+      pivot: {x: 0.31219736, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2e5541ec3926a419be254daacbbdca
+      internalID: 1202997023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_6"
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2366
+        width: 36
+        height: 27
+      alignment: 9
+      pivot: {x: 0.3166224, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a954c1f8d811543bedd3ffc1050b24
+      internalID: -273695174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_7"
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2366
+        width: 36
+        height: 28
+      alignment: 9
+      pivot: {x: 0.32013023, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01291c2b74ead54d859271e17efc6a0
+      internalID: -557314678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_8"
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 2366
+        width: 36
+        height: 28
+      alignment: 9
+      pivot: {x: 0.34331343, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e905419c5ec89d941bbf199db5e8eab1
+      internalID: -270860699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_0"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2297
+        width: 34
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22896f064dba534eae24c0eef538125
+      internalID: 2083716087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_1"
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2297
+        width: 36
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10f94fd18e6ecb459ca5b02c74497b5
+      internalID: 1262817930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_2"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2297
+        width: 35
+        height: 29
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6588a0015ac0b499ead3f5d62677f5
+      internalID: -1920386439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_3"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2297
+        width: 29
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce23d6bc3f9180648a7101018e02f09c
+      internalID: 571506311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_4"
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2297
+        width: 29
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9b6e2319a048a4195b6a94a67d3d0a
+      internalID: -758251744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_5"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2297
+        width: 31
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f5972ac7cb09d4382d845c541d13c8
+      internalID: 1721461572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_0"
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2256
+        width: 36
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53c3f4370d4d044bbc3de63befe4fdd
+      internalID: 1860691602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_1"
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 2256
+        width: 36
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5368ae7ecd8b34c86259c304b350d4
+      internalID: 1528739526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_2"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2256
+        width: 35
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac6c11a92320184aa38275446b637f5
+      internalID: 1164975003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_3"
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2256
+        width: 37
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78b30668fcac924da9ed79d9fd8b3a1
+      internalID: -338730375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_4"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2256
+        width: 35
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4394cd5eb260fe4884f6e47bdc2090d
+      internalID: -1171801839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_5"
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2256
+        width: 33
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a90f8efcd787d7499ec6e62df6daabc
+      internalID: -691639811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_6"
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 2256
+        width: 33
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af909e72b869d146afd3f1d4cfa1fd1
+      internalID: -239442894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_7"
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2256
+        width: 35
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3342eaab3fca27d40a059152e83e8cbf
+      internalID: -352921814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD074\uB9AC\uC5B4_0"
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1697
+        width: 29
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf28f9f0ee4b5b4499d53193f8ee8975
+      internalID: -785200069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD074\uB9AC\uC5B4_1"
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1697
+        width: 29
+        height: 39
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70fa8ff633f26241adcb2efe719774d
+      internalID: 408757615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD074\uB9AC\uC5B4_2"
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1698
+        width: 30
+        height: 48
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba51dfa603a5e444b01b12164b164d8
+      internalID: -2038982416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD074\uB9AC\uC5B4_3"
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1698
+        width: 29
+        height: 48
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db97b9e46d8079647a8c6c3585ad263d
+      internalID: 1292300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD074\uB9AC\uC5B4_4"
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1697
+        width: 30
+        height: 39
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5f560615a287041840c80eb0e3b250
+      internalID: -790482041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD074\uB9AC\uC5B4_5"
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1697
+        width: 26
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a661deeaecdc6704d999d3416c742530
+      internalID: 353808619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1549
+        width: 41
+        height: 27
+      alignment: 9
+      pivot: {x: 0.38680875, y: -0.00736943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186c3c7dbdc3bd34a926116df51590a6
+      internalID: -1114915541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1548
+        width: 41
+        height: 28
+      alignment: 9
+      pivot: {x: 0.3705927, y: 0.015049526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4e1a0ebc8f36d40bdb1ea3fdc9bcbb
+      internalID: 753564144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1545
+        width: 42
+        height: 28
+      alignment: 9
+      pivot: {x: 0.39904967, y: 0.0057547432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02536c3d13e5d146a160338acf25c90
+      internalID: 233249066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1544
+        width: 42
+        height: 28
+      alignment: 9
+      pivot: {x: 0.39105877, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dff0ba09ea6a8449d8b218fc1c7483
+      internalID: -1368393704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1187
+        width: 40
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4647091, y: -0.22302246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772c7580a56e7c944919adf3a171bf69
+      internalID: 380808815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1187
+        width: 39
+        height: 24
+      alignment: 9
+      pivot: {x: 0.45501807, y: -0.21405537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4af726ea4149e04eaeccc87b8450476
+      internalID: 703648005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1187
+        width: 39
+        height: 25
+      alignment: 9
+      pivot: {x: 0.44084695, y: -0.22762208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7243604601c904b85cd145f8667735
+      internalID: 1776905430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1187
+        width: 38
+        height: 26
+      alignment: 9
+      pivot: {x: 0.46252683, y: -0.17923209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeae71dfdafe28446af39db5ef917898
+      internalID: -228987397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1186
+        width: 39
+        height: 27
+      alignment: 9
+      pivot: {x: 0.47739, y: -0.14150661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824d72d4765a2074aab56dc000f070d0
+      internalID: -232411275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1186
+        width: 37
+        height: 27
+      alignment: 9
+      pivot: {x: 0.47961384, y: -0.1396846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3becbc04b65a136429979b0fc32ab5f4
+      internalID: -953102086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1187
+        width: 36
+        height: 27
+      alignment: 9
+      pivot: {x: 0.49267578, y: -0.066763416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29b5f172f3a7b9418182e105f266186
+      internalID: -1992098643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1186
+        width: 33
+        height: 28
+      alignment: 9
+      pivot: {x: 0.53416395, y: -0.061780658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f409dfbf5ae0664d9b40fb8e3671ff4
+      internalID: -2083857733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1188
+        width: 33
+        height: 26
+      alignment: 9
+      pivot: {x: 0.52619517, y: -0.09500357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009d2017f426a93468236cc936bf419b
+      internalID: 1257609634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1185
+        width: 34
+        height: 29
+      alignment: 9
+      pivot: {x: 0.52445894, y: -0.05734779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a4e7840def5f1428bd2baff135cb7a
+      internalID: 216925139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1187
+        width: 37
+        height: 27
+      alignment: 9
+      pivot: {x: 0.50000083, y: -0.055085357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77145d8abbd6e294e96e38d093678830
+      internalID: -926244049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1187
+        width: 38
+        height: 27
+      alignment: 9
+      pivot: {x: 0.503907, y: -0.07148799}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3df9023d11007d44a3cc178aef88e9e
+      internalID: -1139948751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1035
+        width: 39
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1276f5f97c21c4b8236c9077a9f9f9
+      internalID: -1031481351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1035
+        width: 39
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbf29864ab071d49b5227d37bf46304
+      internalID: 1730401458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1035
+        width: 41
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4943dd034603844b2369389f2cf550
+      internalID: -520383435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1035
+        width: 43
+        height: 28
+      alignment: 9
+      pivot: {x: 0.3084738, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38173d17c0180b249826e158cb7c072e
+      internalID: 679955538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1035
+        width: 44
+        height: 28
+      alignment: 9
+      pivot: {x: 0.32191536, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9cafa8d976c594d8bfcf169dcbb24b
+      internalID: 403936502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1035
+        width: 44
+        height: 28
+      alignment: 9
+      pivot: {x: 0.33031464, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db14029c70db4d145bc12a68cf7aeb90
+      internalID: -24952853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_6"
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1035
+        width: 43
+        height: 36
+      alignment: 9
+      pivot: {x: 0.32201296, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1aa428668d9ed84f9f76db41c135c7f
+      internalID: -787107048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 962
+        width: 64
+        height: 27
+      alignment: 9
+      pivot: {x: 0.24949348, y: -0.037516277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77741a36886c09a4e94693c0eab5432c
+      internalID: 1310740171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 961
+        width: 62
+        height: 28
+      alignment: 9
+      pivot: {x: 0.23792833, y: -0.01841518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6d49865eac0424d83dcd04d4a5e5f3
+      internalID: 1269029883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 962
+        width: 63
+        height: 26
+      alignment: 9
+      pivot: {x: 0.25040278, y: -0.0319566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be904e5e2692aa4983b5cd241c0221a
+      internalID: -47055827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 961
+        width: 63
+        height: 26
+      alignment: 9
+      pivot: {x: 0.26011318, y: -0.03598257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6506c05e434724695a889712379a05
+      internalID: 243605178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 961
+        width: 43
+        height: 26
+      alignment: 9
+      pivot: {x: 0.38919494, y: -0.03355525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f439c3ce0957d55409c9ef5b75ecbf20
+      internalID: -28868244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 961
+        width: 40
+        height: 27
+      alignment: 9
+      pivot: {x: 0.44413835, y: -0.02758789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e32a6d32806424c824b5bcd91a50d4
+      internalID: -1551521528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_6"
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 961
+        width: 38
+        height: 27
+      alignment: 9
+      pivot: {x: 0.43855527, y: -0.0031964337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578d336c9c48d0a4fb3b0daaea2b37e5
+      internalID: -721010283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 896
+        width: 57
+        height: 35
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec35f050e8a26a42bedbe12fdbba9d1
+      internalID: -1943177044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 892
+        width: 52
+        height: 54
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e646dd6badf54f340b48b81220c70660
+      internalID: -92067458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 884
+        width: 24
+        height: 67
+      alignment: 9
+      pivot: {x: 0.6562729, y: -0.0794532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d00206479c93a4d89348fa1f551fa4
+      internalID: -2012894285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 884
+        width: 24
+        height: 68
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba00c382bad9ecf40baeaa3fc5d71d0a
+      internalID: 25822568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_7"
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 884
+        width: 41
+        height: 58
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8d1cf62e0d1c24aa77f43dba674e60
+      internalID: 319309388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_8"
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 884
+        width: 55
+        height: 55
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2bb1fb49b442e4dbdcb6f23a0f2254
+      internalID: 1873679672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 884
+        width: 23
+        height: 69
+      alignment: 9
+      pivot: {x: 0.7054304, y: -0.07955535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbad6c806afd6547bc50abe1e71401c
+      internalID: 895580035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_6"
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 884
+        width: 24
+        height: 70
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fe44b66c6e154478a3a65dd2592ce6
+      internalID: -389120084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_9"
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 884
+        width: 33
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72802de0a019fc438b761a63215092c
+      internalID: 1014048461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_10"
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 884
+        width: 33
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c93c0f5a5aaed64c9d1a2e7220b31bf
+      internalID: 1542647429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_11"
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 884
+        width: 34
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b1da716eba10f40b85abd7f0c7ea47
+      internalID: 477549360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 822
+        width: 54
+        height: 45
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a2fd40aeb097d4fb7ef4d195d39edd
+      internalID: 1906723391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 808
+        width: 53
+        height: 62
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8c4ec284e391344903cbdde88a050a
+      internalID: -105482603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 808
+        width: 30
+        height: 70
+      alignment: 9
+      pivot: {x: 0.44227904, y: 0.50857455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104253f9db7890349a2ceaf0e33bc6c6
+      internalID: 437861819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 806
+        width: 30
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4676127, y: 0.5030146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11601c7a8144bf4e8977d1579fe36b7
+      internalID: -748897411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 803
+        width: 30
+        height: 71
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f2b979ef33b3540b72248ff7c53487
+      internalID: 1318278779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_6"
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 799
+        width: 29
+        height: 71
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd934f67559e4643923e50dbcb6dafc
+      internalID: -214266024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_7"
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 808
+        width: 36
+        height: 63
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b2597c896683e4cb565296f04aa31d
+      internalID: 1699198158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_8"
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 813
+        width: 56
+        height: 53
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab74a6bafad99524db94f01889301247
+      internalID: 349875372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 760
+        width: 66
+        height: 28
+      alignment: 9
+      pivot: {x: 0.16646454, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c862006beae362f49af71c3223ef0372
+      internalID: -357141259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 760
+        width: 65
+        height: 28
+      alignment: 9
+      pivot: {x: 0.16721214, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db977798c6fba34eb6b87ee59136fd5
+      internalID: 1799233973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 760
+        width: 65
+        height: 27
+      alignment: 9
+      pivot: {x: 0.15929471, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4ffaa6e18a6a64fa804b59a11fada7
+      internalID: -1373397272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 760
+        width: 66
+        height: 26
+      alignment: 9
+      pivot: {x: 0.1693721, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7abb02fcb5212459cb67928128269f
+      internalID: 602271692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 255
+        width: 44
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd09a9c2cb242a4593182bc8101122c
+      internalID: -250403033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 252
+        width: 46
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86474e7ca5ba65846b984a7179365fda
+      internalID: 1638090043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 250
+        width: 44
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d7e1d7b5a9e574abcf75c758e81074
+      internalID: -633173306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 251
+        width: 39
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1ba17d915ee7a46b5d91ebc052b7fd
+      internalID: 1236272958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 250
+        width: 39
+        height: 25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45ed46c18c762f4eb3fdbab96c6ea13
+      internalID: -310277315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 251
+        width: 41
+        height: 26
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d71a3a109e36d47933e0e3176f9315
+      internalID: -324688616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 207
+        width: 32
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35ae1035bdddf140bb49fcbcbfaa11d
+      internalID: -2073064025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 207
+        width: 29
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ccd8a2a76696448be28112b35a1193
+      internalID: 182811481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 207
+        width: 30
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c90a3706b988346a2d62f7534e9536
+      internalID: 1943523956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 207
+        width: 39
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc7e30e7502df541aec32044fdd3631
+      internalID: -1404019961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 207
+        width: 34
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab84d88c8f6a524428a74906284304b0
+      internalID: 1697239042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 207
+        width: 32
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f92c8fe361711f41a917eeedef483f3
+      internalID: 2062439382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2896
+        width: 32
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e183b9260310804893d09adc509efb9
+      internalID: -511835457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uC0C1\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2896
+        width: 32
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12b73c93470baa479b2d316f5d1b6f1
+      internalID: -1293207487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 2758
+        width: 25
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fca5421085777748997d6d0fe6279a0
+      internalID: 588256866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_0"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2547
+        width: 51
+        height: 21
+      alignment: 9
+      pivot: {x: 0.2891423, y: -0.27018228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0e6bb725fe74d42a7e1d94a43f55b1
+      internalID: 1190588000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_1"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2547
+        width: 53
+        height: 22
+      alignment: 9
+      pivot: {x: 0.27409363, y: -0.20484509}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59b96b07c8bbc34fb4b7bbcee0a45c8
+      internalID: -1132784540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_2"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2547
+        width: 54
+        height: 21
+      alignment: 9
+      pivot: {x: 0.29496512, y: -0.25752187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1186beaef727bc140bdab700bffe78d1
+      internalID: 971688825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_3"
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2547
+        width: 32
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4966135, y: -0.24253628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaae85dfd7f8b442a850303161198ff
+      internalID: 1600618630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_4"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2547
+        width: 31
+        height: 22
+      alignment: 9
+      pivot: {x: 0.44477007, y: -0.23959073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befb77cd46a468649889ce52112777e7
+      internalID: -1238633505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_5"
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2547
+        width: 36
+        height: 20
+      alignment: 9
+      pivot: {x: 0.39943865, y: -0.26757812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fc1d964e2d5f2449bd38a9ca2ef92b
+      internalID: -471266776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_6"
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2547
+        width: 36
+        height: 20
+      alignment: 9
+      pivot: {x: 0.4264501, y: -0.24763183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f0fc336d6648f4f8f7905b83ef475d
+      internalID: 1738899417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_7"
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 2546
+        width: 36
+        height: 22
+      alignment: 9
+      pivot: {x: 0.44395956, y: -0.19321512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2823bebf5e65a4ba3d5c3a83b50af4
+      internalID: -1638798560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_8"
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 2543
+        width: 36
+        height: 25
+      alignment: 9
+      pivot: {x: 0.45469412, y: -0.07609375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e60439fddbb841b5c465c7136c7e0
+      internalID: -1944548665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_9"
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 2542
+        width: 34
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0660dabf184d7854294166075844a1a4
+      internalID: -1798205450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1136
+        width: 36
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4449536, y: -0.2191504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7220aff9f1e3fca469ef8ba19e256545
+      internalID: -1454731149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1092
+        width: 35
+        height: 33
+      alignment: 9
+      pivot: {x: 0.47632742, y: 0.11204575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1331f3f5b21e040abf25033266a7e0
+      internalID: -33652330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_0"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1275
+        width: 43
+        height: 26
+      alignment: 9
+      pivot: {x: 0.36041012, y: -0.038193922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a259fbed8c6d8840983e3b37ebd648b
+      internalID: 388249462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_1"
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1275
+        width: 43
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3658073, y: -0.047832783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f8ce9ce8552be4baa4ea71d39c7c62
+      internalID: 742961362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_2"
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.38469988, y: -0.04755108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d475a2592f0f31445ab285cf9154c64c
+      internalID: -1078622805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_3"
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3781186, y: -0.059922438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bc59e40343b234aa95c81360ad441b
+      internalID: -2077740270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_4"
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3627203, y: -0.04327862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca0c70a3ae66b745925b711e8093a22
+      internalID: -1805037570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_5"
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.36992463, y: -0.057861328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e174ff6ec5e624b8c93dc9effeec64
+      internalID: 1418326095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_6"
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.35595775, y: -0.03785119}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d23710e964892140b1fa85649ffc211
+      internalID: 242135112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_7"
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.36116973, y: -0.012948843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bde73f495a8aad408926e09ccfd972e
+      internalID: 1267070173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_8"
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1276
+        width: 43
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3640669, y: -0.0572275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7c7b7a20517934d827437dab7c1bc2
+      internalID: 1977192481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_9"
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1275
+        width: 43
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3547704, y: -0.027123084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5b3cc15dcdb2849bc971fa51485ef3
+      internalID: 1681155883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_10"
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.35255286, y: -0.0198599}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190834560bc09514c8263f4b4be973f1
+      internalID: 1167685621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Eri_Run_\uD2B9\uC218\uCD1D_11"
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1275
+        width: 42
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3461478, y: -0.030038686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43786da0de276df48956850e30c3a9bd
+      internalID: 2041855818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3206
+        width: 31
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182d4efe98249de478a8cb7d1395ac3c
+      internalID: -304425946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3207
+        width: 29
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0627e124ff37324488d01d2e41948bba
+      internalID: 1686838603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 3207
+        width: 29
+        height: 173
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22203ed81b689274bbda1fec2bb9b896
+      internalID: -2004287338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 3207
+        width: 29
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c92b4d827440844f826487a7b3eb065
+      internalID: 125636657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3207
+        width: 29
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2566c58ab83004b9ef7c5589cd243a
+      internalID: -1366738675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3207
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1f129127858524ba1f9f4e9212ac86
+      internalID: 1848445838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eri_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 3207
+        width: 26
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de3ca947e92f5e4cadfbeef237e2718
+      internalID: -1740617751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Eri_0: -304425946
+      Eri_1: 1686838603
+      Eri_10: -823229271
+      Eri_11: -1673237244
+      Eri_111: -499808206
+      Eri_112: -844535365
+      Eri_113: 696143555
+      Eri_114: 1457345944
+      Eri_12: 1341129628
+      Eri_121: -1805987596
+      Eri_14: -1912289530
+      Eri_157: -2086771937
+      Eri_158: 1681418271
+      Eri_159: -1061283044
+      Eri_160: -318395463
+      Eri_161: 405723633
+      Eri_162: -1928183401
+      Eri_163: -1836712051
+      Eri_164: 1348259
+      Eri_165: 467801960
+      Eri_166: 795593510
+      Eri_167: -242236422
+      Eri_168: 306484581
+      Eri_169: 1996006889
+      Eri_170: -330464467
+      Eri_171: -1315447972
+      Eri_172: 2068211985
+      Eri_173: 1892640687
+      Eri_174: 1391308246
+      Eri_175: -1404722134
+      Eri_176: -311683846
+      Eri_177: -947353925
+      Eri_178: -634360904
+      Eri_179: 1035232778
+      Eri_180: 1608141778
+      Eri_181: -1043152992
+      Eri_182: 1985229348
+      Eri_183: 1531386533
+      Eri_184: 790390228
+      Eri_186: 2061632906
+      Eri_187: -1413575265
+      Eri_2: -2004287338
+      Eri_203: -1244033362
+      Eri_206: -1219219201
+      Eri_208: 396090899
+      Eri_21: 1202997023
+      Eri_22: 657824323
+      Eri_221: 104529558
+      Eri_223: -1197409741
+      Eri_225: -623741326
+      Eri_227: 1033715509
+      Eri_229: 1721461572
+      Eri_23: -34854969
+      Eri_231: 1528739526
+      Eri_24: -1731368228
+      Eri_240: -2114396218
+      Eri_241: 1431090834
+      Eri_242: -743472368
+      Eri_243: -2029500199
+      Eri_244: 206258525
+      Eri_245: 232729186
+      Eri_246: 786146654
+      Eri_247: -648461970
+      Eri_248: 205056323
+      Eri_249: 888182744
+      Eri_25: 694403710
+      Eri_250: 2142903858
+      Eri_251: 422674029
+      Eri_252: 1967746625
+      Eri_253: 769565317
+      Eri_254: 2012094990
+      Eri_255: -1393524375
+      Eri_256: -1179827022
+      Eri_257: 228039332
+      Eri_258: -154881566
+      Eri_259: 1245440642
+      Eri_26: 42124406
+      Eri_260: 1019621064
+      Eri_261: 705417711
+      Eri_262: 1691787523
+      Eri_263: -997505933
+      Eri_264: -1679716139
+      Eri_265: -1068759790
+      Eri_266: -1832985552
+      Eri_267: -2114525043
+      Eri_268: 1928314872
+      Eri_269: 786091766
+      Eri_27: 2016932661
+      Eri_270: 1032951504
+      Eri_271: -1386926231
+      Eri_272: 1578842353
+      Eri_273: -1134380321
+      Eri_274: -115115697
+      Eri_275: -18379700
+      Eri_276: -482542583
+      Eri_277: 2127139350
+      Eri_278: -54065506
+      Eri_279: 1154845936
+      Eri_28: 2007671652
+      Eri_280: 1261353851
+      Eri_281: -1897484179
+      Eri_282: 1215143330
+      Eri_283: -1849360926
+      Eri_284: 1618845352
+      Eri_285: -1511433655
+      Eri_286: 2087080388
+      Eri_287: 1152275880
+      Eri_288: -838129339
+      Eri_289: -1162321009
+      Eri_29: -1872570986
+      Eri_290: 343110053
+      Eri_291: 570314123
+      Eri_292: 2125637445
+      Eri_293: -829502635
+      Eri_294: 1455580029
+      Eri_295: -1389234174
+      Eri_296: 1849161049
+      Eri_297: 884653930
+      Eri_298: 1635850928
+      Eri_299: 260663959
+      Eri_3: 125636657
+      Eri_30: 205231425
+      Eri_300: 1257295074
+      Eri_301: -1245954527
+      Eri_302: -1747807578
+      Eri_303: -1759406089
+      Eri_304: 1313229160
+      Eri_305: 1031626442
+      Eri_306: 1153390037
+      Eri_307: -461700616
+      Eri_308: 282917473
+      Eri_309: -1384134046
+      Eri_31: 6174327
+      Eri_310: 1649726947
+      Eri_311: 1299467142
+      Eri_312: 248039502
+      Eri_313: 583671284
+      Eri_314: -1276158168
+      Eri_315: 985174420
+      Eri_316: -1912776864
+      Eri_317: -1511654687
+      Eri_318: -1680800244
+      Eri_319: 795522124
+      Eri_32: -1129067111
+      Eri_320: -1748951919
+      Eri_321: 2128182984
+      Eri_322: 1838037255
+      Eri_323: -1108194535
+      Eri_324: 287998757
+      Eri_325: 671557089
+      Eri_326: -928145930
+      Eri_327: -156392285
+      Eri_328: 1922313068
+      Eri_329: -2135065959
+      Eri_33: -1420235983
+      Eri_330: -1158486476
+      Eri_331: -345847271
+      Eri_332: -1214677065
+      Eri_333: -659477153
+      Eri_334: 1899633242
+      Eri_335: 1364409187
+      Eri_336: 607528727
+      Eri_337: 1172260259
+      Eri_338: -700848206
+      Eri_339: -1015480543
+      Eri_34: -407501482
+      Eri_340: 355472161
+      Eri_341: 1799182612
+      Eri_342: 1580347338
+      Eri_343: -1837267131
+      Eri_344: -1767705249
+      Eri_345: 1291948100
+      Eri_346: -304792591
+      Eri_347: 1809948818
+      Eri_348: 1024517231
+      Eri_349: 1567708346
+      Eri_350: 1049420521
+      Eri_351: -32994757
+      Eri_352: -527846094
+      Eri_353: 592209706
+      Eri_354: -1666452491
+      Eri_355: 356216623
+      Eri_356: 1792758930
+      Eri_357: 1933425545
+      Eri_358: 293829453
+      Eri_359: 555013900
+      Eri_36: -1359321356
+      Eri_360: -1518567464
+      Eri_361: -1584492613
+      Eri_362: 1358504692
+      Eri_363: -1138562919
+      Eri_364: 209227327
+      Eri_365: 984461730
+      Eri_366: 1626062760
+      Eri_367: -953358658
+      Eri_368: -237427442
+      Eri_369: 568312112
+      Eri_37: -2122337581
+      Eri_370: 497503512
+      Eri_371: -1657112984
+      Eri_372: 330659814
+      Eri_373: -1637552232
+      Eri_374: 498571326
+      Eri_375: 1952990696
+      Eri_376: -727800208
+      Eri_377: 562887225
+      Eri_378: 852190299
+      Eri_379: -1221098185
+      Eri_38: 228952451
+      Eri_380: -972472168
+      Eri_381: -785200069
+      Eri_382: 408757615
+      Eri_383: -1437878793
+      Eri_39: 1925604500
+      Eri_390: -1623262350
+      Eri_391: -1265422596
+      Eri_392: 14763658
+      Eri_393: 1165288054
+      Eri_394: -1213751740
+      Eri_395: 25767507
+      Eri_396: -492918952
+      Eri_397: 2147022527
+      Eri_398: -1412673037
+      Eri_399: -1790425323
+      Eri_4: -1366738675
+      Eri_40: -1588090936
+      Eri_400: 1273395033
+      Eri_401: -61775738
+      Eri_402: 1276012031
+      Eri_403: -31304309
+      Eri_404: 219075499
+      Eri_405: -846652356
+      Eri_406: -1078570546
+      Eri_407: 873331826
+      Eri_408: -1707247699
+      Eri_409: 560521900
+      Eri_41: 907792725
+      Eri_410: -1231075756
+      Eri_411: 1625988693
+      Eri_412: -1114915541
+      Eri_413: 753564144
+      Eri_414: 1155491969
+      Eri_419: -1454990048
+      Eri_42: 1902411982
+      Eri_420: 1042868921
+      Eri_421: -1713403084
+      Eri_422: -44440721
+      Eri_423: 1088549273
+      Eri_424: -1082473569
+      Eri_425: -1522838867
+      Eri_426: 891791534
+      Eri_427: 634367463
+      Eri_428: -1511180999
+      Eri_429: -318370761
+      Eri_43: -1767977756
+      Eri_430: 1057720360
+      Eri_431: 1505935047
+      Eri_432: 8647112
+      Eri_433: -1428361489
+      Eri_434: 407973860
+      Eri_435: 594279100
+      Eri_436: -265450914
+      Eri_437: -1777843791
+      Eri_438: -1786434875
+      Eri_439: 782754807
+      Eri_44: 906049062
+      Eri_440: -872702515
+      Eri_441: 1887869312
+      Eri_442: 590828128
+      Eri_443: 104227048
+      Eri_444: 1469302700
+      Eri_445: 1242956256
+      Eri_446: -787935231
+      Eri_447: -1090844114
+      Eri_448: 2117922018
+      Eri_449: -1376547859
+      Eri_45: 512012632
+      Eri_450: 810664632
+      Eri_451: 1894461858
+      Eri_452: -1500675380
+      Eri_453: -391029314
+      Eri_454: 1556687877
+      Eri_455: 69063030
+      Eri_456: -2107374863
+      Eri_457: 906698116
+      Eri_458: -797930668
+      Eri_459: -488402592
+      Eri_46: -1892112877
+      Eri_460: 1605297641
+      Eri_461: 103987124
+      Eri_462: -1738097885
+      Eri_463: -1830514456
+      Eri_464: -1232718974
+      Eri_465: -849183749
+      Eri_466: 1452286110
+      Eri_467: 188784204
+      Eri_468: -275661003
+      Eri_469: 64222693
+      Eri_47: 1937352153
+      Eri_470: -1502064917
+      Eri_471: -102139362
+      Eri_472: 2028975787
+      Eri_473: -1204798772
+      Eri_474: -1471830178
+      Eri_475: -629561482
+      Eri_476: -1458611872
+      Eri_477: -1208915376
+      Eri_478: 380808815
+      Eri_479: 703648005
+      Eri_48: -1139948751
+      Eri_49: 2098523864
+      Eri_492: -1131445180
+      Eri_493: -212274218
+      Eri_494: -2124432842
+      Eri_495: -1274759458
+      Eri_496: 1105051136
+      Eri_497: -1225154183
+      Eri_498: -1684760354
+      Eri_499: -2062235924
+      Eri_5: 1848445838
+      Eri_50: 1076452158
+      Eri_500: -836778854
+      Eri_501: -1031481351
+      Eri_502: 1730401458
+      Eri_503: 20935354
+      Eri_507: 1789115230
+      Eri_508: -1996112081
+      Eri_509: 679955538
+      Eri_51: 403936502
+      Eri_510: -2114747745
+      Eri_515: 1382662698
+      Eri_516: 74369835
+      Eri_517: -140615151
+      Eri_518: -1002564661
+      Eri_519: -1321699990
+      Eri_52: 2018142289
+      Eri_520: -513524563
+      Eri_521: 692363681
+      Eri_522: -1757255531
+      Eri_523: 419395287
+      Eri_524: -785253326
+      Eri_525: -662935452
+      Eri_526: -2017685740
+      Eri_527: 523256464
+      Eri_528: 1824585657
+      Eri_529: 1269029883
+      Eri_530: 243605178
+      Eri_533: -1551521528
+      Eri_536: -92067458
+      Eri_54: 1956882348
+      Eri_543: 1873679672
+      Eri_545: -1237777060
+      Eri_548: 1014048461
+      Eri_55: -748897411
+      Eri_556: 602271692
+      Eri_565: -299614240
+      Eri_568: -1985532253
+      Eri_569: -745030197
+      Eri_57: 1720164473
+      Eri_570: -1930829784
+      Eri_571: 416531898
+      Eri_572: 1141496071
+      Eri_573: 2142383803
+      Eri_574: 87533696
+      Eri_578: 2031659833
+      Eri_579: 1087486140
+      Eri_58: -2044882999
+      Eri_580: 586718190
+      Eri_581: 973269153
+      Eri_582: -1023115517
+      Eri_583: 277224561
+      Eri_584: 196029793
+      Eri_585: 69685994
+      Eri_586: 1018722188
+      Eri_587: 484744436
+      Eri_588: -235716672
+      Eri_589: 1709826242
+      Eri_59: -574092827
+      Eri_590: 287460126
+      Eri_591: 1176961
+      Eri_592: 920289998
+      Eri_593: 1179611529
+      Eri_594: -876213698
+      Eri_595: -1501806253
+      Eri_596: 2086255722
+      Eri_597: -1029215391
+      Eri_598: 994181031
+      Eri_599: 2027715924
+      Eri_6: -1740617751
+      Eri_60: 40538200
+      Eri_600: 1278027848
+      Eri_601: -1654407628
+      Eri_602: 1302776893
+      Eri_603: 1706529318
+      Eri_604: 947155846
+      Eri_605: 1738329941
+      Eri_606: -1849442496
+      Eri_607: 387206101
+      Eri_608: -2062621677
+      Eri_609: 1239754276
+      Eri_61: 851198600
+      Eri_610: 951982548
+      Eri_611: 688672205
+      Eri_612: 1431411498
+      Eri_613: -549221630
+      Eri_614: 2134821962
+      Eri_615: -1337783948
+      Eri_616: 704186093
+      Eri_617: 2014008284
+      Eri_618: 463450283
+      Eri_619: -1535723920
+      Eri_62: -519533212
+      Eri_620: 1473749214
+      Eri_621: 1786016889
+      Eri_622: 1467230898
+      Eri_623: -1461368826
+      Eri_624: -1443315787
+      Eri_625: -317188190
+      Eri_626: -1586860926
+      Eri_627: 1034880479
+      Eri_628: 16974192
+      Eri_629: -352306237
+      Eri_63: -73356053
+      Eri_630: -1385895609
+      Eri_631: 1227386981
+      Eri_632: 457438823
+      Eri_633: 1146238211
+      Eri_634: -319273568
+      Eri_635: 1353044342
+      Eri_636: 859428822
+      Eri_637: -74271442
+      Eri_638: 694206546
+      Eri_639: -1698060590
+      Eri_64: 1724732288
+      Eri_640: 1906110027
+      Eri_641: -1262500885
+      Eri_642: -2034048464
+      Eri_643: -246049728
+      Eri_644: -1535701385
+      Eri_645: 1199479706
+      Eri_646: 288279050
+      Eri_647: -1662573221
+      Eri_648: -989683247
+      Eri_649: -67360595
+      Eri_65: -1611573483
+      Eri_650: -1549194046
+      Eri_651: -2059879449
+      Eri_652: 1870312773
+      Eri_653: -1530317061
+      Eri_654: 2120433439
+      Eri_655: 407740046
+      Eri_656: -250403033
+      Eri_657: -1847387752
+      Eri_658: -633173306
+      Eri_66: -2072969965
+      Eri_67: 779463720
+      Eri_671: 1470852663
+      Eri_672: -76567540
+      Eri_673: -77818872
+      Eri_674: -1125106519
+      Eri_675: -1495094511
+      Eri_676: 1385487752
+      Eri_677: -1560359367
+      Eri_678: 1197208249
+      Eri_679: -1322733425
+      Eri_68: -2012356045
+      Eri_680: -613705256
+      Eri_681: 1769280974
+      Eri_682: -972995419
+      Eri_683: -97497038
+      Eri_684: -826956612
+      Eri_685: -1276305851
+      Eri_686: 1878480268
+      Eri_687: 164696564
+      Eri_688: 2032151820
+      Eri_689: -1587682337
+      Eri_69: -1460901293
+      Eri_690: -126689738
+      Eri_691: -1036235795
+      Eri_692: -1605760867
+      Eri_693: -1110029154
+      Eri_694: -1743560419
+      Eri_695: -625136469
+      Eri_696: -294334680
+      Eri_697: -622450714
+      Eri_698: 2141752094
+      Eri_699: -281693234
+      Eri_7: -1140704429
+      Eri_70: 1031426487
+      Eri_700: -387444041
+      Eri_701: -2001004301
+      Eri_702: 984872167
+      Eri_703: -525038455
+      Eri_704: -412693671
+      Eri_705: -611026145
+      Eri_706: -1332962461
+      Eri_707: 245648004
+      Eri_708: -322334914
+      Eri_71: -824794401
+      Eri_72: -1448488226
+      Eri_73: 658376267
+      Eri_74: -845622638
+      Eri_75: 2127318275
+      Eri_76: -970719490
+      Eri_77: -1417059897
+      Eri_78: 1396348472
+      Eri_79: 536680303
+      Eri_8: -1039410265
+      Eri_80: -336353390
+      Eri_81: -399765514
+      Eri_82: 1838776566
+      Eri_83: 1601524836
+      Eri_84: 1370657984
+      Eri_9: 1977481003
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_0": 1601524836
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_1": -1182392666
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_2": -511835457
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_3": -1114915541
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_0": 753564144
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_1": 233249066
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_2": -1368393704
+      "Eri_Idle_\uC0C1\uBC18\uC2E0_\uD2B9\uC218\uCD1D_3": -1293207487
+      "Eri_Idle_\uD558\uBC18\uC2E0_0": -427556431
+      "Eri_Run_\uC0C1\uBC18\uC2E0_0": -854034747
+      "Eri_Run_\uC0C1\uBC18\uC2E0_1": 756012542
+      "Eri_Run_\uC0C1\uBC18\uC2E0_10": 640268673
+      "Eri_Run_\uC0C1\uBC18\uC2E0_11": 1149706162
+      "Eri_Run_\uC0C1\uBC18\uC2E0_2": -287047339
+      "Eri_Run_\uC0C1\uBC18\uC2E0_3": 2099223557
+      "Eri_Run_\uC0C1\uBC18\uC2E0_4": 31208603
+      "Eri_Run_\uC0C1\uBC18\uC2E0_5": 1346115776
+      "Eri_Run_\uC0C1\uBC18\uC2E0_6": 240837982
+      "Eri_Run_\uC0C1\uBC18\uC2E0_7": -373772773
+      "Eri_Run_\uC0C1\uBC18\uC2E0_8": -1665904594
+      "Eri_Run_\uC0C1\uBC18\uC2E0_9": -1091297850
+      "Eri_Run_\uD2B9\uC218\uCD1D_0": 388249462
+      "Eri_Run_\uD2B9\uC218\uCD1D_1": 742961362
+      "Eri_Run_\uD2B9\uC218\uCD1D_10": 1167685621
+      "Eri_Run_\uD2B9\uC218\uCD1D_11": 2041855818
+      "Eri_Run_\uD2B9\uC218\uCD1D_2": -1078622805
+      "Eri_Run_\uD2B9\uC218\uCD1D_3": -2077740270
+      "Eri_Run_\uD2B9\uC218\uCD1D_4": -1805037570
+      "Eri_Run_\uD2B9\uC218\uCD1D_5": 1418326095
+      "Eri_Run_\uD2B9\uC218\uCD1D_6": 242135112
+      "Eri_Run_\uD2B9\uC218\uCD1D_7": 1267070173
+      "Eri_Run_\uD2B9\uC218\uCD1D_8": 1977192481
+      "Eri_Run_\uD2B9\uC218\uCD1D_9": 1681155883
+      "Eri_Run_\uD558\uBC18\uC2E0_0": 1868119606
+      "Eri_Run_\uD558\uBC18\uC2E0_1": -816584379
+      "Eri_Run_\uD558\uBC18\uC2E0_10": -1845997690
+      "Eri_Run_\uD558\uBC18\uC2E0_11": -460224209
+      "Eri_Run_\uD558\uBC18\uC2E0_12": -141034445
+      "Eri_Run_\uD558\uBC18\uC2E0_13": -72023558
+      "Eri_Run_\uD558\uBC18\uC2E0_14": -1388080235
+      "Eri_Run_\uD558\uBC18\uC2E0_15": -553853664
+      "Eri_Run_\uD558\uBC18\uC2E0_2": -974366858
+      "Eri_Run_\uD558\uBC18\uC2E0_3": 1020935784
+      "Eri_Run_\uD558\uBC18\uC2E0_4": 906124699
+      "Eri_Run_\uD558\uBC18\uC2E0_5": -1141721830
+      "Eri_Run_\uD558\uBC18\uC2E0_6": 3153146
+      "Eri_Run_\uD558\uBC18\uC2E0_7": -1462016481
+      "Eri_Run_\uD558\uBC18\uC2E0_8": -1462016481
+      "Eri_Run_\uD558\uBC18\uC2E0_9": -256275556
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_0": 78175368
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_1": -1413074687
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_2": 1668582871
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_3": 1341129628
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_4": 786993418
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uC0C1\uBC18\uC2E0_5": 380808815
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_0": 703648005
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_1": 1776905430
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_2": -228987397
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_3": -232411275
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_4": -953102086
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD2B9\uC218\uCD1D_5": 78921202
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_0": 1273020696
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_1": 1916208976
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_2": 1339718286
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_3": 588256866
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_4": -1805987596
+      "Eri_\uB6F0\uC5B4\uB0B4\uB9AC\uAE30_\uD558\uBC18\uC2E0_5": 1190588000
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_0": -1132784540
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_1": 971688825
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_2": 1600618630
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_3": -1238633505
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_4": -471266776
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_5": 1738899417
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_6": -1638798560
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_7": -1944548665
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_8": -1798205450
+      "Eri_\uC0AC\uACA9_\uC0C1\uBC18\uC2E0_9": 1310740171
+      "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_0": 1269029883
+      "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_1": -47055827
+      "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_2": 243605178
+      "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_3": -28868244
+      "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_4": -1551521528
+      "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_5": -721010283
+      "Eri_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_6": 350060552
+      "Eri_\uC218\uADF8\uB9AC\uAE30_0": -1174144056
+      "Eri_\uC218\uADF8\uB9AC\uAE30_1": 1239991684
+      "Eri_\uC218\uADF8\uB9AC\uAE30_2": -1808747341
+      "Eri_\uC218\uADF8\uB9AC\uAE30_3": 1166136724
+      "Eri_\uC218\uADF8\uB9AC\uAE30_4": -1117600668
+      "Eri_\uC218\uADF8\uB9AC\uAE30_5": 803290685
+      "Eri_\uC218\uADF8\uB9AC\uAE30_6": -454570850
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9 \uD6C4_0": -1370067101
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9 \uD6C4_1": 12524540
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9 \uD6C4_2": -906315722
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9 \uD6C4_3": 1731750782
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9 \uD6C4_4": 1208083368
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_0": -1244033362
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_1": 138950550
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_2": 2023678013
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_3": 1403256221
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_4": 1202997023
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_5": -273695174
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_6": -557314678
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_7": -270860699
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_8": -357141259
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_0": 1799233973
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_1": -1373397272
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_2": 602271692
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_3": 1141496071
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_4": 2142383803
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_5": 1693342678
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uC0AC\uACA9_\uD2B9\uC218\uCD1D_6": 1860691602
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_0": 1528739526
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_1": 1164975003
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_2": -338730375
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_3": -1171801839
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_4": -691639811
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_5": -239442894
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_6": -352921814
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_7": -2073064025
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_0": 182811481
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_1": 1943523956
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_2": -1404019961
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_3": 1697239042
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_4": 2062439382
+      "Eri_\uC218\uADF8\uB9AC\uAE30_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_5": -1866399601
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_0": -527823771
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_1": 118611048
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_2": -949403795
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_3": 413001838
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_4": 1718045480
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_5": -74552020
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_6": -2100961145
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_7": -89347280
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_8": -33652330
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_0": 1906723391
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_1": -105482603
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_2": 437861819
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_3": -748897411
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_4": 1318278779
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_5": -214266024
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_6": 1699198158
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_7": 349875372
+      "Eri_\uC544\uB798\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_8": 313000037
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_0": -1107646512
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_1": -1413575265
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_10": 813457737
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_11": 2029556554
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_12": 848380647
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_13": 608529942
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_14": 741574766
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_15": -606564562
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_16": -953891543
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_17": -1912289530
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_2": 160040476
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_3": -1674539126
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_4": -1742304431
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_5": -1439583319
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_6": -547442461
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_7": 1531386533
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_8": 2061632906
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uC0C1\uBC18\uC2E0_9": -1454731149
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_0": -1943177044
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_1": 1542647429
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_10": 477549360
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_11": -92067458
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_2": -2012894285
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_3": 895580035
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_4": 25822568
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_5": -389120084
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_6": 319309388
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_7": 1873679672
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_8": 1014048461
+      "Eri_\uC704\uB85C \uC0AC\uACA9_\uD2B9\uC218\uCD1D_9": 922592812
+      "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_0": 550897838
+      "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_1": -277971576
+      "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_2": -1983428394
+      "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_3": -1880737281
+      "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_4": -1098669664
+      "Eri_\uC810\uD504_\uC0C1\uBC18\uC2E0_5": 1730401458
+      "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_0": -1031481351
+      "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_1": -520383435
+      "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_2": 679955538
+      "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_3": 403936502
+      "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_4": -24952853
+      "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_5": -787107048
+      "Eri_\uC810\uD504_\uC218\uADF8\uB9AC\uAE30_\uD2B9\uC218\uCD1D_6": -1992098643
+      "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_0": -2083857733
+      "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_1": 1257609634
+      "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_2": 216925139
+      "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_3": -926244049
+      "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_4": -1139948751
+      "Eri_\uC810\uD504_\uD2B9\uC218\uCD1D_5": 1626333083
+      "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_0": 1729585890
+      "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_1": 1966320351
+      "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_2": 1162851133
+      "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_3": -553271867
+      "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_4": 313000037
+      "Eri_\uC810\uD504_\uD558\uBC18\uC2E0_5": -785200069
+      "Eri_\uD074\uB9AC\uC5B4_0": 408757615
+      "Eri_\uD074\uB9AC\uC5B4_1": -2038982416
+      "Eri_\uD074\uB9AC\uC5B4_2": 1292300044
+      "Eri_\uD074\uB9AC\uC5B4_3": -790482041
+      "Eri_\uD074\uB9AC\uC5B4_4": 353808619
+      "Eri_\uD074\uB9AC\uC5B4_5": 2083716087
+      "Eri_\uD3ED\uD0C4_0": 1262817930
+      "Eri_\uD3ED\uD0C4_1": -1920386439
+      "Eri_\uD3ED\uD0C4_2": 571506311
+      "Eri_\uD3ED\uD0C4_3": -758251744
+      "Eri_\uD3ED\uD0C4_4": 1721461572
+      "Eri_\uD3ED\uD0C4_5": -250403033
+      "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_0": 1638090043
+      "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_1": -633173306
+      "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_2": 1236272958
+      "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_3": -310277315
+      "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_4": -324688616
+      "Eri_\uD3ED\uD0C4_\uD2B9\uC218\uCD1D_5": 1601524836
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
