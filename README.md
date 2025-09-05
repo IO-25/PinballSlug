@@ -98,8 +98,18 @@ Run & Gun X Brick Out Ver 1.0.0
 ---
 
 ## 📁 프로젝트 파일 구조
-
-
+```
+Assets
+ ┣ 📂 Animations              # 애니메이션 리소스 (Animator, AnimationClip 등)
+ ┣ 📂 Externals               # 외부 라이브러리 및 플러그인
+ ┣ 📂 Materials               # 머티리얼(Material) 리소스
+ ┣ 📂 Prefabs                 # 프리팹(재사용 가능한 게임 오브젝트 템플릿)
+ ┣ 📂 ReadmeSourceFiles       # 문서/README 관련 리소스
+ ┣ 📂 Resources               # 런타임 로드(Resources.Load)용 리소스
+ ┣ 📂 Scenes                  # Unity 씬(Scene) 파일
+ ┣ 📂 ScriptableObjects       # ScriptableObject 에셋 (데이터 관리용)
+ ┗ 📂 Scripts                 # C# 스크립트 코드
+```
 ---
 
 ## 🛠️ Trouble Shooting
