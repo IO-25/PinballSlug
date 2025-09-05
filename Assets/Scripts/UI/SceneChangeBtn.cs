@@ -18,4 +18,9 @@ public class SceneChangeBtn : MonoBehaviour
     {
         SceneChanger.GoGameOverScene();
     }
+
+    public void OnQuit()
+    {
+        Application.Quit();
+    }
 }

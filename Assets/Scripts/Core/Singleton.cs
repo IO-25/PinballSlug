@@ -1,6 +1,7 @@
 using UnityEngine;
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
+    public static bool AppIsQuitting { get; private set; } = false;
     private static T instance;
     [SerializeField] protected bool dontDestroyOnLoad = true;
 
@@ -8,6 +9,8 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         get
         {
+            if (AppIsQuitting) return null;
+
             if (instance == null)
             {
                 instance = FindObjectOfType<T>();
@@ -44,4 +47,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         if (instance == this)
             instance = null;
     }
+
+    private void OnApplicationQuit()
+        => AppIsQuitting = true;
 }
