@@ -5311,9 +5311,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthIcons:
-  - {fileID: 513031869}
-  - {fileID: 390827555}
   - {fileID: 1938331990}
+  - {fileID: 390827555}
+  - {fileID: 513031869}
 --- !u!1 &1842845099
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,14 +6318,6 @@ PrefabInstance:
     - target: {fileID: 5917691801455432944, guid: 5299ec6a97a97f9438964ab708f9f88d, type: 3}
       propertyPath: m_Name
       value: Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 8665214125641803321, guid: 5299ec6a97a97f9438964ab708f9f88d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8665214125641803321, guid: 5299ec6a97a97f9438964ab708f9f88d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
