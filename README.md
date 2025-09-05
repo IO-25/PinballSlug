@@ -152,7 +152,7 @@ Run & Gun X Brick Out Ver 1.0.0
 
 ## **문제 상황**
 씬 전환시 게임씬의 배경화면에서 오류가 발생
-![스크린샷 2025-09-05 213050.png](attachment:e6319a33-9967-4b40-b65e-1cfab5087a2e:스크린샷_2025-09-05_213050.png)
+<img width="418" height="129" alt="Image" src="https://github.com/user-attachments/assets/ad53efd6-baaf-4d64-b808-04010bcd2679" />
         
 ## **원인파악**
 배경화면 프리팹을 일정한 위치에 도착하면 파괴되도록 만들었는데, 다시 게임씬으로 돌아가려하니 파괴된 배경화면 프리팹에 접근하려 해서 오류가 발생
