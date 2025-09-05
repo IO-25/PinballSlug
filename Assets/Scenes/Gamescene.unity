@@ -3310,7 +3310,7 @@ GameObject:
   - component: {fileID: 1125569950}
   - component: {fileID: 1125569949}
   m_Layer: 0
-  m_Name: MapManager
+  m_Name: PauseManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3328,7 +3328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731fc217494b17c4bbfca58c7d83eec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 0
+  settingsPanel: {fileID: 807167025}
 --- !u!4 &1125569950
 Transform:
   m_ObjectHideFlags: 0
@@ -5404,7 +5404,6 @@ GameObject:
   - component: {fileID: 1848559926}
   - component: {fileID: 1848559930}
   - component: {fileID: 1848559931}
-  - component: {fileID: 1848559932}
   - component: {fileID: 1848559933}
   m_Layer: 5
   m_Name: Canvas
@@ -5514,7 +5513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603265a229b3e7f46b966481595ee696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   numberSprites:
   - {fileID: -720055548, guid: 7df2f3847b326af40936530d011932e3, type: 3}
   - {fileID: -1217712247, guid: 7df2f3847b326af40936530d011932e3, type: 3}
@@ -5571,21 +5570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd94ae61968b5f544a067b113cb0dac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1848559932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848559925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d977297aba507374b8d23c56b8a3633f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseButton: {fileID: 1456825278}
-  resumeButton: {fileID: 2010129869}
-  settingsPanel: {fileID: 807167025}
 --- !u!114 &1848559933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6142,8 +6126,6 @@ MonoBehaviour:
   infinityImage: {fileID: 0}
   infinitySprite: {fileID: 0}
   chromaKeyMaterial: {fileID: 2100000, guid: 9409b3ce8a4ab1e48a87ea4d869da443, type: 2}
-  infinityMode: 0
-  currentScore: 0
 --- !u!114 &2041399163
 MonoBehaviour:
   m_ObjectHideFlags: 0

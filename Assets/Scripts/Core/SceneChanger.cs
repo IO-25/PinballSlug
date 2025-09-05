@@ -8,6 +8,7 @@ public static class SceneChanger
     public static void GoStartScene()
     {
         SceneManager.LoadScene("StartScene");
+        Time.timeScale = 1.0f;
     }
     
     public static void GoGameScene()
