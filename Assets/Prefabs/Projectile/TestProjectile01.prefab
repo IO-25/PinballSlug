@@ -48,7 +48,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+<<<<<<< Updated upstream
   damage: 10
+=======
+  damage: 5
+>>>>>>> Stashed changes
   hitEffect: {fileID: 0}
   targetLayerMask:
     serializedVersion: 2
