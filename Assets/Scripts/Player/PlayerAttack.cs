@@ -20,7 +20,8 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("폭탄 관련")]
     [SerializeField] private PlayerLaser laserPrefab;
-    [SerializeField] private int laserCount = 10;
+    [SerializeField] private int initiaLaserCount = 10;
+    [SerializeField] private int equipLaserCount = 5;
     [SerializeField] private AudioClip bombEquipSFX;
     private int currentLaserCount = 10;
 
@@ -97,7 +98,7 @@ public class PlayerAttack : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
         if(InGameUI.Instance.weaponUI)
             InGameUI.Instance.weaponUI.Initialize();
-        currentLaserCount = laserCount;
+        currentLaserCount = initiaLaserCount;
 
         weaponSlots ??= new Weapon[weaponSlotSize];
 
@@ -175,7 +176,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void EquipBomb()
     {
-        currentLaserCount += laserCount;
+        currentLaserCount += equipLaserCount;
         audioSource.PlayOneShot(bombEquipSFX);
         InGameUI.Instance.UpdateBomb(currentLaserCount);
     }
