@@ -21,7 +21,7 @@ MonoBehaviour:
   fireSFX:
   - {fileID: 8300000, guid: 65f12f47b69652444aa82a555cbf0753, type: 3}
   - {fileID: 8300000, guid: 384562db16b09354e82a4523200d2fcf, type: 3}
-  attackDamage: 3
+  attackDamage: 5
   attackRate: 5
   maxAmmo: 100000
   useAmmo: 0

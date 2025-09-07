@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7b02531867873f14f8dcd7f15a65e76c, type: 3}
   - {fileID: 8300000, guid: 11aca5fa03e0ee642880f29c6420da26, type: 3}
   - {fileID: 8300000, guid: 46fd9a0745a8781489d5738920e52bb4, type: 3}
-  attackDamage: 5
+  attackDamage: 7
   attackRate: 10
   maxAmmo: 100
   useAmmo: 1

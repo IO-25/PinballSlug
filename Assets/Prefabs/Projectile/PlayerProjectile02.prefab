@@ -159,8 +159,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 0.0020449907
+        value: 0.6696434
         inSlope: 0.042032007
         outSlope: 0.042032007
         tangentMode: 0
@@ -168,8 +168,71 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.15652172
       - serializedVersion: 3
-        time: 0.9417987
-        value: 0.105422854
+        time: 0.059299406
+        value: 0.67132103
+        inSlope: 0.0144296875
+        outSlope: 0.0144296875
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.108373225
+        value: 0.6712365
+        inSlope: -0.019444494
+        outSlope: -0.019444494
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.23940304
+        value: 0.6604704
+        inSlope: -0.15608934
+        outSlope: -0.15608934
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.4724177
+        value: 0.580568
+        inSlope: -0.56515646
+        outSlope: -0.56515646
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6056796
+        value: 0.48407122
+        inSlope: -0.8946602
+        outSlope: -0.8946602
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.77029777
+        value: 0.29684514
+        inSlope: -1.3976943
+        outSlope: -1.3976943
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.87431777
+        value: 0.13244706
+        inSlope: -1.7702603
+        outSlope: -1.7702603
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.94384366
+        value: 0
         inSlope: -2.042901
         outSlope: -2.042901
         tangentMode: 0
@@ -263,7 +326,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 447849770571082398}
