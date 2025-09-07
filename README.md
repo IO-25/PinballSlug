@@ -25,6 +25,10 @@ Run & Gun X Brick Out Ver 1.0.0
 
 ---
 
+## 🖼 플로우 차트
+![Image](https://github.com/user-attachments/assets/fd18a7bd-fea1-4881-b171-1b11b6d26a14)
+
+---
 ## 🧑‍🤝‍🧑 팀소개
 ### 🔸기획
 - 오경석
@@ -100,6 +104,7 @@ Run & Gun X Brick Out Ver 1.0.0
 
 ## 🖼 와이어프레임
 
+![Image](https://github.com/user-attachments/assets/5e958c08-427f-45de-ad9e-dd3a5a691fec)
 
 ---
 
