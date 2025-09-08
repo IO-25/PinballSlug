@@ -112,6 +112,18 @@ Run & Gun X Brick Out Ver 1.0.0
 
 ![Image](https://github.com/user-attachments/assets/5e958c08-427f-45de-ad9e-dd3a5a691fec)
 
+
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/2ca0cd17-480c-427f-8b68-fa8329afd751" />
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/8f56d12a-25b9-4926-9a28-0b13715a4a24" />
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/208ecc87-5cf5-4ce7-8ff9-0f952d5b48ee" />
+
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/e5a8a904-4e8f-4c7f-9506-be55aad30a3a" />
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/60ff42e5-7848-4532-a996-ecaf0f7338cc" />
+
+
+
+
+
 ---
 
 ## 📁 프로젝트 파일 구조
