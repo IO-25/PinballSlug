@@ -28,7 +28,7 @@ Run & Gun X Brick Out Ver 1.0.0
 ---
 
 ## 📺게임 영상
-https://github.com/user-attachments/assets/98b3c06f-45e0-40c9-8ceb-b1c6cbaf355b
+![Video Label](https://github.com/user-attachments/assets/98b3c06f-45e0-40c9-8ceb-b1c6cbaf355b)
 ---
 
 ## 🖼 플로우 차트
